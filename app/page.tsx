@@ -8,7 +8,7 @@ export default function Home() {
   // TODO: Use Catalog type
   let catalogs = Catalog["links"].filter(link => link["rel"] == "child");
   return (
-    <div className="h-screen grid grid-cols-1 text-center content-center">
+    <div className="h-full grid grid-cols-1 text-center content-center">
       <div className="my-8">
         <Heading className="py-2" size="jumbo">
           heystac

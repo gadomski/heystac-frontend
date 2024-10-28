@@ -13,8 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <DevseedUiThemeProvider>
-          <Navbar></Navbar>
-          {children}
+          <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
+            <Navbar></Navbar>
+            {children}
+          </div>
         </DevseedUiThemeProvider>
       </body>
     </html>
