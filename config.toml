@@ -1,11 +1,14 @@
 [catalogs.microsoft-pc]
 href = "https://planetarycomputer.microsoft.com/api/stac/v1"
 title = "Microsoft Planetary Computer"
+index = 0
 
 [catalogs.earth-search-aws]
 href = "https://earth-search.aws.element84.com/v1"
 title = "Earth Search by Element 84"
+index = 1
 
 [catalogs.usgs-landsat]
 href = "https://landsatlook.usgs.gov/stac-server"
 title = "USGS Landsat"
+index = 2

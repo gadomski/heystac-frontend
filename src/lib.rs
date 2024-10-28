@@ -20,6 +20,7 @@ pub struct Config {
 struct CatalogConfig {
     href: String,
     title: String,
+    index: usize,
 }
 
 impl Config {
@@ -37,8 +38,17 @@ impl Config {
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
             link.additional_fields
                 .insert("heystac:id".into(), id.as_str().into());
+            link.additional_fields
+                .insert("heystac:index".into(), catalog_config.index.into());
             catalog.links.push(link);
         }
+        catalog.links.sort_by_key(|c| {
+            c.additional_fields
+                .get("heystac:index")
+                .unwrap()
+                .as_i64()
+                .unwrap()
+        });
         let file = File::create(path)?;
         serde_json::to_writer_pretty(file, &catalog).map_err(Error::from)
     }
