@@ -1,5 +1,4 @@
 import "./globals.css";
-import "./open-sans.css";
 
 export const metadata = {
   title: "heystac",

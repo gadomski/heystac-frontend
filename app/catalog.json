@@ -1,10 +1,29 @@
 {
-    "id": "heystac",
-    "links": [
-        {
-            "href": "https://planetarycomputer.microsoft.com/api/stac/v1",
-            "rel": "child",
-            "title": "Microsoft Planetary Computer"
-        }
-    ]
+  "type": "Catalog",
+  "stac_version": "1.1.0",
+  "id": "heystac",
+  "description": "A curated geospatial asset discovery experience™",
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1",
+      "rel": "child",
+      "type": "application/json",
+      "title": "Microsoft Planetary Computer",
+      "heystac:id": "microsoft-pc"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1",
+      "rel": "child",
+      "type": "application/json",
+      "title": "Earth Search by Element 84",
+      "heystac:id": "earth-search-aws"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server",
+      "rel": "child",
+      "type": "application/json",
+      "title": "USGS Landsat",
+      "heystac:id": "usgs-landsat"
+    }
+  ]
 }
