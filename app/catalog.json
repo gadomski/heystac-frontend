@@ -10,20 +10,23 @@
       "type": "application/json",
       "title": "Microsoft Planetary Computer",
       "heystacId": "microsoft-pc"
-    },
-    {
-      "href": "https://landsatlook.usgs.gov/stac-server",
-      "rel": "child",
-      "type": "application/json",
-      "title": "USGS Landsat",
-      "heystacId": "usgs-landsat"
+      "heystac:index": 0
     },
     {
       "href": "https://earth-search.aws.element84.com/v1",
       "rel": "child",
       "type": "application/json",
       "title": "Earth Search by Element 84",
-      "heystacId": "earth-search-aws"
+      "heystacId": "usgs-landsat",
+      "heystac:index": 1
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server",
+      "rel": "child",
+      "type": "application/json",
+      "title": "USGS Landsat",
+      "heystacId": "earth-search-aws",
+      "heystac:index": 2
     }
   ]
 }

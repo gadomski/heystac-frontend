@@ -8,11 +8,9 @@ use std::{
     path::Path,
 };
 
-const CATALOG_ID: &str = "heystac";
-const CATALOG_DESCRIPTION: &str = "A curated geospatial asset discovery experience™";
-
 #[derive(Debug, Deserialize)]
 pub struct Config {
+    catalog: Catalog,
     catalogs: HashMap<String, CatalogConfig>,
 }
 
@@ -20,6 +18,7 @@ pub struct Config {
 struct CatalogConfig {
     href: String,
     title: String,
+    index: usize,
 }
 
 impl Config {
@@ -31,14 +30,24 @@ impl Config {
     }
 
     pub fn write_catalog(&self, path: impl AsRef<Path>) -> Result<()> {
-        let mut catalog = Catalog::new(CATALOG_ID, CATALOG_DESCRIPTION);
+        let mut catalog = self.catalog.clone();
         for (id, catalog_config) in &self.catalogs {
             let mut link =
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
+            // Once https://github.com/stac-utils/stac-rs/issues/501 lands this should be cleaner
             link.additional_fields
                 .insert("heystacId".into(), id.as_str().into());
+            link.additional_fields
+                .insert("heystac:index".into(), catalog_config.index.into());
             catalog.links.push(link);
         }
+        catalog.links.sort_by_key(|c| {
+            c.additional_fields
+                .get("heystac:index")
+                .unwrap()
+                .as_i64()
+                .unwrap()
+        });
         let file = File::create(path)?;
         serde_json::to_writer_pretty(file, &catalog).map_err(Error::from)
     }
