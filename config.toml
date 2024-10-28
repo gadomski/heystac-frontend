@@ -1,3 +1,10 @@
+[catalog]
+type = "Catalog"                                                 # will this be unnecessary once https://github.com/stac-utils/stac-rs/pull/498 is released?
+stac_version = "1.1.0"
+id = "heystac"
+description = "A curated geospatial asset discovery experience™"
+links = []
+
 [catalogs.microsoft-pc]
 href = "https://planetarycomputer.microsoft.com/api/stac/v1"
 title = "Microsoft Planetary Computer"

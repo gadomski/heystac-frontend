@@ -8,11 +8,9 @@ use std::{
     path::Path,
 };
 
-const CATALOG_ID: &str = "heystac";
-const CATALOG_DESCRIPTION: &str = "A curated geospatial asset discovery experience™";
-
 #[derive(Debug, Deserialize)]
 pub struct Config {
+    catalog: Catalog,
     catalogs: HashMap<String, CatalogConfig>,
 }
 
@@ -32,7 +30,7 @@ impl Config {
     }
 
     pub fn write_catalog(&self, path: impl AsRef<Path>) -> Result<()> {
-        let mut catalog = Catalog::new(CATALOG_ID, CATALOG_DESCRIPTION);
+        let mut catalog = self.catalog.clone();
         for (id, catalog_config) in &self.catalogs {
             let mut link =
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
