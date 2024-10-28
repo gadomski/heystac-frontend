@@ -11,3 +11,9 @@ export default function Page({ params }) {
   }
   return <CatalogPage href={link.href} title={link.title}></CatalogPage>;
 }
+
+export async function generateStaticParams() {
+  return Catalog["links"].map((link) => ({
+    id: link["heystac:id"],
+  }));
+}

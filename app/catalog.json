@@ -12,18 +12,18 @@
       "heystac:id": "microsoft-pc"
     },
     {
-      "href": "https://earth-search.aws.element84.com/v1",
-      "rel": "child",
-      "type": "application/json",
-      "title": "Earth Search by Element 84",
-      "heystac:id": "earth-search-aws"
-    },
-    {
       "href": "https://landsatlook.usgs.gov/stac-server",
       "rel": "child",
       "type": "application/json",
       "title": "USGS Landsat",
       "heystac:id": "usgs-landsat"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1",
+      "rel": "child",
+      "type": "application/json",
+      "title": "Earth Search by Element 84",
+      "heystac:id": "earth-search-aws"
     }
   ]
 }
