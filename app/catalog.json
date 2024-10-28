@@ -1,0 +1,10 @@
+{
+    "id": "heystac",
+    "links": [
+        {
+            "href": "https://planetarycomputer.microsoft.com/api/stac/v1",
+            "rel": "child",
+            "title": "Microsoft Planetary Computer"
+        }
+    ]
+}
