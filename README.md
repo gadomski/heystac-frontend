@@ -18,7 +18,7 @@ yarn install
 yarn dev
 ```
 
-**heystac** is hosted via Github Pages, and all content is either pre-rendered or built in the client.
+**heystac** is hosted with [Github Pages](https://github.com/gadomski/heystac/deployments/github-pages).
 
 ### Frontend
 
