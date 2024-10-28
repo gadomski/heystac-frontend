@@ -18,12 +18,12 @@ interface Link {
   rel: string;
   type: string;
   title: string;
-  heystacId: string;
+  "heystac:id": string;
 }
 
 export default function Page({ params }) {
   let { id } = use(params) as LinkIdObject;
-  let link = Catalog["links"].find(link => link["heystacId"] == id);
+  let link = Catalog["links"].find(link => link["heystac:id"] == id);
   if (!link) {
     notFound();
   }
@@ -33,6 +33,6 @@ export default function Page({ params }) {
 export async function generateStaticParams() {
   const stac_catalog: Catalog = Catalog;
   return stac_catalog.links.map(link => ({
-    id: link.heystacId,
+    id: link["heystac:id"],
   }));
 }

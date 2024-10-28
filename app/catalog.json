@@ -9,7 +9,7 @@
       "rel": "child",
       "type": "application/json",
       "title": "Microsoft Planetary Computer",
-      "heystacId": "microsoft-pc"
+      "heystac:id": "microsoft-pc",
       "heystac:index": 0
     },
     {
@@ -17,7 +17,7 @@
       "rel": "child",
       "type": "application/json",
       "title": "Earth Search by Element 84",
-      "heystacId": "usgs-landsat",
+      "heystac:id": "usgs-landsat",
       "heystac:index": 1
     },
     {
@@ -25,7 +25,7 @@
       "rel": "child",
       "type": "application/json",
       "title": "USGS Landsat",
-      "heystacId": "earth-search-aws",
+      "heystac:id": "earth-search-aws",
       "heystac:index": 2
     }
   ]

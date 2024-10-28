@@ -36,7 +36,7 @@ impl Config {
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
             // Once https://github.com/stac-utils/stac-rs/issues/501 lands this should be cleaner
             link.additional_fields
-                .insert("heystacId".into(), id.as_str().into());
+                .insert("heystac:id".into(), id.as_str().into());
             link.additional_fields
                 .insert("heystac:index".into(), catalog_config.index.into());
             catalog.links.push(link);
