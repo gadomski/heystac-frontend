@@ -34,6 +34,7 @@ impl Config {
         for (id, catalog_config) in &self.catalogs {
             let mut link =
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
+            // Once https://github.com/stac-utils/stac-rs/issues/501 lands this should be cleaner
             link.additional_fields
                 .insert("heystac:id".into(), id.as_str().into());
             link.additional_fields
