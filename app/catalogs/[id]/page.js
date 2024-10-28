@@ -7,8 +7,10 @@ export default function CatalogPage({ params }) {
   let data = use(fetch(link.href));
   let catalog = use(data.json());
   return (
-    <div>
-      <h1>{link.title}</h1>
+    <div className="flex mx-8 my-4">
+      <h1 className="text-2xl flex-auto">{link.title}</h1>
+
+      <p className="">STAC version {catalog["stac_version"]}</p>
     </div>
   );
 }

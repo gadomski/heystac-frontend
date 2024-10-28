@@ -1,3 +1,4 @@
+import "./open-sans.css";
 import "./globals.css";
 
 export const metadata = {
