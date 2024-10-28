@@ -10,9 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@devseed-ui/collecticons": "^4.1.0",
+    "@devseed-ui/collecticons-react": "^3.0.3",
+    "@devseed-ui/theme-provider": "^4.1.0",
+    "@devseed-ui/typography": "^4.1.0",
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021"
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "eslint": "^8",
