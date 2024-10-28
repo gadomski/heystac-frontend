@@ -2,10 +2,10 @@ import Card from "./base";
 import Link from "next/link";
 
 export default function CatalogsCard({ catalogs }) {
-  let catalogList = catalogs.map((catalog) => {
+  let catalogList = catalogs.map(catalog => {
     return (
       <li className="py-2" key={catalog.href}>
-        <Link href={"/catalogs/" + catalog["heystac:id"]}>{catalog.title}</Link>
+        <Link href={"/catalogs/" + catalog["heystacId"]}>{catalog.title}</Link>
       </li>
     );
   });

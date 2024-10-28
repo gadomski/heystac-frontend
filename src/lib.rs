@@ -36,7 +36,7 @@ impl Config {
             let mut link =
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
             link.additional_fields
-                .insert("heystac:id".into(), id.as_str().into());
+                .insert("heystacId".into(), id.as_str().into());
             catalog.links.push(link);
         }
         let file = File::create(path)?;
