@@ -14,8 +14,10 @@ export default function RootLayout({ children }) {
       <body>
         {/* @ts-expect-error */}
         <DevseedUiThemeProvider>
-          <Navbar></Navbar>
-          {children}
+          <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
+            <Navbar></Navbar>
+            {children}
+          </div>
         </DevseedUiThemeProvider>
       </body>
     </html>

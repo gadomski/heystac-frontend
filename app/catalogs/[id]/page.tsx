@@ -8,7 +8,7 @@ type Params = { id: string };
 
 export default function Page({ params }) {
   const { id } = use(params) as Params;
-  const link = Root["links"].find((link) => link["heystac:id"] == id);
+  const link = Root["links"].find(link => link["heystac:id"] == id);
   if (!link) {
     notFound();
   }
@@ -17,7 +17,7 @@ export default function Page({ params }) {
 
 export async function generateStaticParams() {
   const stac_catalog: Catalog = Root;
-  return stac_catalog.links.map((link) => ({
+  return stac_catalog.links.map(link => ({
     id: link["heystac:id"],
   }));
 }
