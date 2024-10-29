@@ -17,7 +17,7 @@
       "rel": "child",
       "type": "application/json",
       "title": "Earth Search by Element 84",
-      "heystac:id": "usgs-landsat",
+      "heystac:id": "earth-search-aws",
       "heystac:index": 1
     },
     {
@@ -25,7 +25,7 @@
       "rel": "child",
       "type": "application/json",
       "title": "USGS Landsat",
-      "heystac:id": "earth-search-aws",
+      "heystac:id": "usgs-landsat",
       "heystac:index": 2
     }
   ]
