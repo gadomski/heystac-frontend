@@ -28,7 +28,7 @@ const MapView = ({ center, zoom, children }: MapViewProps) => {
           longitude: center[0],
           zoom,
         }}
-        mapLib={maplibregl}
+        mapLib={maplibregl as any}
         mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
       >
         <div> Test</div>
