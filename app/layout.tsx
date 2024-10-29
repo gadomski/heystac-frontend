@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        {/* @ts-expect-error */}
         <DevseedUiThemeProvider>
           <Navbar></Navbar>
           {children}
