@@ -1,29 +1,14 @@
 import CatalogPage from "../../components/pages/catalog";
-import Catalog from "../../catalog.json";
+import Root from "../../catalog.json";
 import { use } from "react";
 import { notFound } from "next/navigation";
+import type { Catalog } from "../../types/Stac";
 
-interface Catalog {
-  type: string;
-  stac_version: string;
-  id: string;
-  description: string;
-  links: Link[];
-}
-
-type LinkIdObject = { id: string };
-
-interface Link {
-  href: string;
-  rel: string;
-  type: string;
-  title: string;
-  heystacId: string;
-}
+type Params = { id: string };
 
 export default function Page({ params }) {
-  let { id } = use(params) as LinkIdObject;
-  let link = Catalog["links"].find(link => link["heystacId"] == id);
+  const { id } = use(params) as Params;
+  const link = Root["links"].find(link => link["heystac:id"] == id);
   if (!link) {
     notFound();
   }
@@ -31,8 +16,8 @@ export default function Page({ params }) {
 }
 
 export async function generateStaticParams() {
-  const stac_catalog: Catalog = Catalog;
+  const stac_catalog: Catalog = Root;
   return stac_catalog.links.map(link => ({
-    id: link.heystacId,
+    id: link["heystac:id"],
   }));
 }

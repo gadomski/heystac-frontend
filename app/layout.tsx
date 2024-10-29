@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        {/* @ts-expect-error */}
         <DevseedUiThemeProvider>
           <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
             <Navbar></Navbar>
