@@ -23,9 +23,13 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}-
+      - name: Check Rust
+        run: cargo fmt --check && cargo clippy -- -Dwarnings
       - name: Test Rust
         run: cargo test
       - name: Install dependencies
         run: yarn install
+      - name: Lint
+        run: yarn lint
       - name: Build with Next.js
         run: yarn build
