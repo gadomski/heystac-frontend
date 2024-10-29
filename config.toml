@@ -1,3 +1,6 @@
+catalog-path = "app/catalog.json"
+crawl-directory = "crawl"
+
 [catalog]
 type = "Catalog"                                                 # will this be unnecessary once https://github.com/stac-utils/stac-rs/pull/498 is released?
 stac_version = "1.1.0"

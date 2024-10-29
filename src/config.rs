@@ -7,16 +7,22 @@ use std::{
     collections::HashMap,
     fs::File,
     io::{BufReader, Read},
-    path::Path,
+    path::{Path, PathBuf},
 };
 
 #[derive(Clone, Debug, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Config {
     catalog: Catalog,
-    pub catalogs: HashMap<String, CatalogConfig>,
+    #[serde(rename = "crawl-directory")]
+    crawl_directory: PathBuf,
+    #[serde(rename = "catalog-path")]
+    catalog_path: PathBuf,
+    catalogs: HashMap<String, CatalogConfig>,
 }
 
 #[derive(Clone, Debug, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct CatalogConfig {
     href: String,
     title: String,
@@ -31,21 +37,8 @@ impl Config {
         toml::from_str(&s).map_err(Error::from)
     }
 
-    pub async fn crawl_url(self, url: Url) -> Result<Crawl> {
-        let catalog: Catalog = reqwest::get(url).await?.error_for_status()?.json().await?;
-        crate::crawl(catalog).await
-    }
-
-    pub async fn crawl_id(self, id: &str) -> Result<Crawl> {
-        let catalog_config = self
-            .catalogs
-            .get(id)
-            .ok_or_else(|| anyhow!("invalid id: {id}"))?;
-        let url = catalog_config.href.parse()?;
-        self.crawl_url(url).await
-    }
-
-    pub fn into_catalog(mut self) -> Result<Catalog> {
+    pub fn prebuild(mut self) -> Result<()> {
+        // Write the catalog into the app
         for (id, catalog_config) in &self.catalogs {
             let mut link =
                 Link::child(&catalog_config.href).title(Some(catalog_config.title.clone()));
@@ -63,6 +56,48 @@ impl Config {
                 .as_i64()
                 .unwrap()
         });
-        Ok(self.catalog)
+        let file = File::create(&self.catalog_path)?;
+        serde_json::to_writer_pretty(file, &self.catalog).map_err(Error::from)
+    }
+
+    pub async fn crawl(self, id_or_href: String, outfile: Option<String>) -> Result<()> {
+        if let Ok(url) = Url::parse(&id_or_href) {
+            if let Some(outfile) = outfile {
+                let crawl = self.crawl_url(url).await?;
+                std::fs::write(outfile, serde_json::to_string_pretty(&crawl)?).map_err(Error::from)
+            } else {
+                eprint!("ERROR: outfile must be provided when crawling an href");
+                std::process::exit(1);
+            }
+        } else if id_or_href == "all" {
+            for id in self.catalogs.keys() {
+                let config = self.clone();
+                let crawl = config.crawl_id(id).await?;
+                let outfile = self.crawl_directory.join(id).with_extension("json");
+                std::fs::write(outfile, serde_json::to_string_pretty(&crawl)?)?;
+            }
+            Ok(())
+        } else {
+            let outfile = self
+                .crawl_directory
+                .join(&id_or_href)
+                .with_extension("json");
+            let crawl = self.crawl_id(&id_or_href).await?;
+            std::fs::write(outfile, serde_json::to_string_pretty(&crawl)?).map_err(Error::from)
+        }
+    }
+
+    async fn crawl_url(self, url: Url) -> Result<Crawl> {
+        let catalog: Catalog = reqwest::get(url).await?.error_for_status()?.json().await?;
+        crate::crawl(catalog).await
+    }
+
+    async fn crawl_id(self, id: &str) -> Result<Crawl> {
+        let catalog_config = self
+            .catalogs
+            .get(id)
+            .ok_or_else(|| anyhow!("invalid id: {id}"))?;
+        let url = catalog_config.href.parse()?;
+        self.crawl_url(url).await
     }
 }
