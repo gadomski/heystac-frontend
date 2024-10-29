@@ -1,4 +1,6 @@
-use anyhow::{Error, Result};
+use crate::Crawl;
+use anyhow::{anyhow, Error, Result};
+use reqwest::Url;
 use serde::Deserialize;
 use stac::{Catalog, Link};
 use std::{
@@ -8,14 +10,14 @@ use std::{
     path::Path,
 };
 
-#[derive(Debug, Deserialize)]
+#[derive(Clone, Debug, Deserialize)]
 pub struct Config {
     catalog: Catalog,
-    catalogs: HashMap<String, CatalogConfig>,
+    pub catalogs: HashMap<String, CatalogConfig>,
 }
 
-#[derive(Debug, Deserialize)]
-struct CatalogConfig {
+#[derive(Clone, Debug, Deserialize)]
+pub struct CatalogConfig {
     href: String,
     title: String,
     index: usize,
@@ -29,8 +31,18 @@ impl Config {
         toml::from_str(&s).map_err(Error::from)
     }
 
-    pub async fn crawl(self) -> Result<Catalog> {
-        crate::crawl(self.into_catalog()?).await
+    pub async fn crawl_url(self, url: Url) -> Result<Crawl> {
+        let catalog: Catalog = reqwest::get(url).await?.error_for_status()?.json().await?;
+        crate::crawl(catalog).await
+    }
+
+    pub async fn crawl_id(self, id: &str) -> Result<Crawl> {
+        let catalog_config = self
+            .catalogs
+            .get(id)
+            .ok_or_else(|| anyhow!("invalid id: {id}"))?;
+        let url = catalog_config.href.parse()?;
+        self.crawl_url(url).await
     }
 
     pub fn into_catalog(mut self) -> Result<Catalog> {

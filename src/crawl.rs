@@ -6,7 +6,17 @@ use stac::Catalog;
 use std::{collections::HashMap, future::Future, pin::Pin};
 use tokio::task::JoinSet;
 
-pub async fn crawl(catalog: Catalog) -> Result<Catalog> {
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Crawl {
+    children: Vec<Value>,
+
+    item: Option<Value>,
+
+    #[serde(flatten)]
+    additional_fields: HashMap<String, Value>,
+}
+
+pub async fn crawl(catalog: Catalog) -> Result<Crawl> {
     let client = Client::new();
     crawl_value(catalog.try_into()?, client).await?.try_into()
 }
@@ -37,13 +47,9 @@ fn crawl_value(
             }
             "Collection" => {
                 if let Some(link) = value.links.iter().find(|link| link.rel == "item") {
-                    let url = Url::parse_with_params(
-                        &link.href,
-                        [("limit", "1"), ("sortby", "-properties.datetime")],
-                    )?;
-                    tracing::info!("getting item: {}", url);
+                    tracing::info!("getting item: {}", link.href);
                     value.item = client
-                        .get(url)
+                        .get(&link.href)
                         .send()
                         .await?
                         .error_for_status()?
@@ -52,13 +58,13 @@ fn crawl_value(
                 }
                 if value.item.is_none() {
                     if let Some(link) = value.links.iter().find(|link| link.rel == "items") {
-                        // TODO sort items, maybe limit?
-                        tracing::info!("getting items: {}", link.href);
-                        let mut items: CrawlValue = reqwest::get(&link.href)
-                            .await?
-                            .error_for_status()?
-                            .json()
-                            .await?;
+                        let url = Url::parse_with_params(
+                            &link.href,
+                            [("limit", "1"), ("sortby", "-properties.datetime")],
+                        )?;
+                        tracing::info!("getting items: {}", url);
+                        let mut items: CrawlValue =
+                            reqwest::get(url).await?.error_for_status()?.json().await?;
                         if !items.features.is_empty() {
                             value.item = Some(Box::new(items.features.remove(0)));
                         }
@@ -109,7 +115,7 @@ impl TryFrom<Catalog> for CrawlValue {
     }
 }
 
-impl TryFrom<CrawlValue> for Catalog {
+impl TryFrom<CrawlValue> for Crawl {
     type Error = Error;
 
     fn try_from(value: CrawlValue) -> Result<Self> {
