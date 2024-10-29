@@ -6,7 +6,7 @@ use stac::{Catalog, Link};
 use std::{
     collections::HashMap,
     fs::File,
-    io::{BufReader, Read},
+    io::{BufReader, Read, Write},
     path::{Path, PathBuf},
 };
 
@@ -56,8 +56,9 @@ impl Config {
                 .as_i64()
                 .unwrap()
         });
-        let file = File::create(&self.catalog_path)?;
-        serde_json::to_writer_pretty(file, &self.catalog).map_err(Error::from)
+        let mut file = File::create(&self.catalog_path)?;
+        serde_json::to_writer_pretty(&mut file, &self.catalog)?;
+        file.write_all(b"\n").map_err(Error::from)
     }
 
     pub async fn crawl(self, id_or_href: String, outfile: Option<String>) -> Result<()> {
