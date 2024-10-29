@@ -8,6 +8,8 @@
 
 A curated geospatial asset discovery experience™.
 
+![The heystac home page](./img/home.png)
+
 ## Developing
 
 Get [yarn](https://yarnpkg.com/) and [Rust](https://rustup.rs/).
