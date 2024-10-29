@@ -60,7 +60,7 @@ fn crawl_value(
                             .json()
                             .await?;
                         if !items.features.is_empty() {
-                            value.item = Some(items.features.remove(0));
+                            value.item = Some(Box::new(items.features.remove(0)));
                         }
                     }
                 }
@@ -71,7 +71,7 @@ fn crawl_value(
             let child = result??;
             let client = client.clone();
             let child = crawl_value(child, client).await?;
-            value.children.push(Box::new(child));
+            value.children.push(child);
         }
         Ok(value)
     })
@@ -84,11 +84,11 @@ struct CrawlValue {
     #[serde(default)]
     links: Vec<CrawlLink>,
     #[serde(default)]
-    children: Vec<Box<CrawlValue>>,
+    children: Vec<CrawlValue>,
     #[serde(default)]
     item: Option<Box<CrawlValue>>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
-    features: Vec<Box<CrawlValue>>,
+    features: Vec<CrawlValue>,
     #[serde(flatten)]
     additional_fields: HashMap<String, Value>,
 }

@@ -7,7 +7,7 @@
     "build": "next build",
     "prebuild": "cargo run -- prebuild",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "prettier app -c && next lint"
   },
   "dependencies": {
     "@devseed-ui/collecticons": "^4.1.0",
