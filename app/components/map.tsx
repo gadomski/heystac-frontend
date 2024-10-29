@@ -19,7 +19,7 @@ const MapView = ({ center, zoom, children }: MapViewProps) => {
   const setMapRef = (m: MapRef) => setMap(m);
 
   return (
-    <div ref={mapContainer} className="h-full w-full">
+    <div ref={mapContainer} className="h-full w-full border border-gray-200">
       <Map
         ref={setMapRef}
         style={{ width: "100%", height: "100%" }}
