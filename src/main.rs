@@ -32,11 +32,9 @@ async fn main() {
         }
         Subcommand::Prebuild => {
             let catalog = config.into_catalog().unwrap();
-            std::fs::write(
-                "app/catalog.json",
-                serde_json::to_string_pretty(&catalog).unwrap(),
-            )
-            .unwrap();
+            let mut contents = serde_json::to_string_pretty(&catalog).unwrap();
+            contents.push('\n');
+            std::fs::write("app/catalog.json", contents).unwrap();
         }
     }
 }
