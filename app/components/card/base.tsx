@@ -1,4 +1,4 @@
-import { Heading, Prose, Subtitle } from "@devseed-ui/typography";
+import { Heading, Text } from "@chakra-ui/react";
 
 export default function Card({ heading, subtitle, children }) {
   return (
@@ -6,10 +6,10 @@ export default function Card({ heading, subtitle, children }) {
       <div className="my-4">
         <Heading>{heading}</Heading>
 
-        <Subtitle>{subtitle}</Subtitle>
+        <Text>{subtitle}</Text>
       </div>
 
-      <Prose>{children}</Prose>
+      <div>{children}</div>
     </div>
   );
 }

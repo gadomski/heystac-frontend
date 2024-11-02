@@ -2,7 +2,7 @@
 
 import CatalogsCard from "./components/card/catalog";
 import Catalog from "./catalog.json";
-import { Heading, Lead } from "@devseed-ui/typography";
+import { Heading, Text } from "@chakra-ui/react";
 
 export default function Home() {
   // TODO: Use Catalog type
@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <div className="h-full grid grid-cols-1 text-center content-center">
       <div className="my-8">
-        <Heading className="py-2" size="jumbo">
+        <Heading className="py-2" size="3xl">
           heystac
         </Heading>
 
-        <Lead>A curated geospatial asset discovery experience™</Lead>
+        <Text>A curated geospatial asset discovery experience™</Text>
       </div>
 
       <CatalogsCard catalogs={catalogs}></CatalogsCard>

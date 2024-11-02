@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Heading, Subtitle } from "../typography";
 import { use } from "react";
-import { CollecticonExpandTopRight } from "@devseed-ui/collecticons-react";
+import { CollecticonExpandTopRight } from "@devseed-ui/collecticons-chakra";
+
 import Map from "../map";
+import { Heading, Text } from "@chakra-ui/react";
 
 export default function CatalogPage({ title, href }) {
   const data = use(fetch(href));
@@ -15,13 +16,13 @@ export default function CatalogPage({ title, href }) {
           <div className="flex items-center">
             {title}
             <span className="mx-2">
-              <Link href={href}>
-                <CollecticonExpandTopRight />
-              </Link>
+              <Link href={href}>{/*  */}</Link>
+              {/* This throws a React error " React.Children.only expected to receive a single React element child."
+              <CollecticonExpandTopRight /> */}
             </span>
           </div>
         </Heading>
-        <Subtitle>STAC version {catalog["stac_version"]}</Subtitle>
+        <Text>STAC version {catalog["stac_version"]}</Text>
       </div>
 
       <div className="row-start-2 col-start-1 border border-gray-200 p-4">

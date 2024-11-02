@@ -1,7 +1,7 @@
 import "./open-sans.css";
 import "./globals.css";
-import DevseedUiThemeProvider from "./components/theme-provider";
-import Navbar from "./components/navbar";
+import ChakraProvider from "@/components/chakra-ui/provider";
+import Navbar from "@/components/navbar";
 
 export const metadata = {
   title: "heystac",
@@ -10,15 +10,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        {/* @ts-expect-error */}
-        <DevseedUiThemeProvider>
+        <ChakraProvider>
           <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
             <Navbar></Navbar>
             {children}
           </div>
-        </DevseedUiThemeProvider>
+        </ChakraProvider>
       </body>
     </html>
   );
