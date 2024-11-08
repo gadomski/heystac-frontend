@@ -1,0 +1,83 @@
+{
+  "id": "y2dprcp-2006_2020-daily-normals-v1.0",
+  "bbox": [
+    -124.708333,
+    24.541666,
+    -66.999995,
+    49.375001
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/y2dprcp-2006_2020-daily-normals-v1.0"
+    }
+  ],
+  "assets": {
+    "netcdf": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals/normals-daily/2006-2020/y2dprcp-2006_2020-daily-normals-v1.0.nc",
+      "title": "2006-2020 Daily Gridded Climate Normals for Year-to-Date Precipitation",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -66.999995,
+          24.541666
+        ],
+        [
+          -66.999995,
+          49.375001
+        ],
+        [
+          -124.708333,
+          49.375001
+        ],
+        [
+          -124.708333,
+          24.541666
+        ],
+        [
+          -66.999995,
+          24.541666
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-climate-normals-netcdf",
+  "properties": {
+    "created": "2023-01-11T16:38:00.112577Z",
+    "datetime": null,
+    "proj:epsg": 4326,
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "start_datetime": "2006-01-01T00:00:00Z",
+    "noaa_climate_normals:period": "2006-2020",
+    "noaa_climate_normals:frequency": "daily"
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

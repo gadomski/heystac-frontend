@@ -1,0 +1,252 @@
+{
+  "id": "cil-gdpcir-INM-INM-CM5-0-ssp585-r1i1p1f1-day",
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/cil-gdpcir-cc0"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/cil-gdpcir-cc0"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/cil-gdpcir-cc0/items/cil-gdpcir-INM-INM-CM5-0-ssp585-r1i1p1f1-day"
+    }
+  ],
+  "assets": {
+    "pr": {
+      "href": "abfs://cil-gdpcir/ScenarioMIP/INM/INM-CM5-0/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+      "cmip6:grid": "gs2x1.5",
+      "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/INM/INM-CM5-0/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
+      "cmip6:grid_label": "gr1",
+      "cmip6:tracking_id": "hdl:21.14100/ba34d30b-fca8-4737-887f-344ec571901c\\\\\\\\nhdl:21.14100/5894fdc2-5c6c-45e1-835e-fde701be830a",
+      "cmip6:variable_id": "pr",
+      "xarray:open_kwargs": {
+        "chunks": {},
+        "engine": "zarr",
+        "consolidated": true,
+        "storage_options": {
+          "account_name": "rhgeuwest"
+        }
+      },
+      "cmip6:creation_date": "2019-07-23T13:02:14Z",
+      "type": "application/vnd+zarr"
+    },
+    "tasmax": {
+      "href": "abfs://cil-gdpcir/ScenarioMIP/INM/INM-CM5-0/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+      "cmip6:grid": "gs2x1.5",
+      "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/INM/INM-CM5-0/ssp585/r1i1p1f1/day/tasmax/v1.1.zarr",
+      "cmip6:grid_label": "gr1",
+      "cmip6:tracking_id": "hdl:21.14100/5d80d962-c475-4cd3-997b-e2a1a471b568\\\\\\\\nhdl:21.14100/70e28b2d-d6f7-4d9c-acc3-c0f9adf5486a",
+      "cmip6:variable_id": "tasmax",
+      "xarray:open_kwargs": {
+        "chunks": {},
+        "engine": "zarr",
+        "consolidated": true,
+        "storage_options": {
+          "account_name": "rhgeuwest"
+        }
+      },
+      "cmip6:creation_date": "2019-07-23T13:02:16Z",
+      "type": "application/vnd+zarr"
+    },
+    "tasmin": {
+      "href": "abfs://cil-gdpcir/ScenarioMIP/INM/INM-CM5-0/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+      "cmip6:grid": "gs2x1.5",
+      "msft:https-url": "https://rhgeuwest.blob.core.windows.net/cil-gdpcir/ScenarioMIP/INM/INM-CM5-0/ssp585/r1i1p1f1/day/tasmin/v1.1.zarr",
+      "cmip6:grid_label": "gr1",
+      "cmip6:tracking_id": "hdl:21.14100/e16631f9-dea0-462f-b57e-5edcf9febb85\\\\\\\\nhdl:21.14100/d250cd0e-ed14-4752-9459-ae51f8c0565a",
+      "cmip6:variable_id": "tasmin",
+      "xarray:open_kwargs": {
+        "chunks": {},
+        "engine": "zarr",
+        "consolidated": true,
+        "storage_options": {
+          "account_name": "rhgeuwest"
+        }
+      },
+      "cmip6:creation_date": "2019-07-23T13:02:16Z",
+      "type": "application/vnd+zarr"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "cil-gdpcir-cc0",
+  "properties": {
+    "datetime": null,
+    "cmip6:realm": "atmos",
+    "cmip6:source": "INM-CM5-0 (2016): \\\\\\\\naerosol: INM-AER1\\\\\\\\natmos: INM-AM5-0 (2x1.5; 180 x 120 longitude/latitude; 73 levels; top level sigma = 0.0002)\\\\\\\\natmosChem: none\\\\\\\\nland: INM-LND1\\\\\\\\nlandIce: none\\\\\\\\nocean: INM-OM5 (North Pole shifted to 60N, 90E. 0.5x0.25; 720 x 720 longitude/latitude; 40 levels; vertical sigma coordinate)\\\\\\\\nocnBgchem: none\\\\\\\\nseaIce: INM-ICE1",
+    "end_datetime": "2100-12-31T12:00:00Z",
+    "cmip6:license": "https://github.com/ClimateImpactLab/downscaleCMIP6/tree/master/data_licenses/INM-CM5-0.txt",
+    "cmip6:mip_era": "CMIP6",
+    "cmip6:product": "model-output",
+    "cmip6:table_id": "day",
+    "cube:variables": {
+      "pr": {
+        "type": "data",
+        "unit": "mm day-1",
+        "attrs": {
+          "units": "mm day-1"
+        },
+        "shape": [
+          31390,
+          720,
+          1440
+        ],
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ]
+      },
+      "tasmax": {
+        "type": "data",
+        "unit": "K",
+        "attrs": {
+          "units": "K",
+          "comment": "maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')",
+          "history": "2019-07-23T13:02:11Z altered by CMOR: Treated scalar dimension: 'height'.",
+          "long_name": "Daily Maximum Near-Surface Air Temperature",
+          "coordinates": "height",
+          "cell_methods": "area: mean time: maximum (interval: 1 day)",
+          "cell_measures": "area: areacella",
+          "original_name": "tasmax",
+          "standard_name": "air_temperature"
+        },
+        "shape": [
+          31390,
+          720,
+          1440
+        ],
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "description": "Daily Maximum Near-Surface Air Temperature"
+      },
+      "tasmin": {
+        "type": "data",
+        "unit": "K",
+        "attrs": {
+          "units": "K",
+          "comment": "minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')",
+          "history": "2019-07-23T13:02:11Z altered by CMOR: Treated scalar dimension: 'height'.",
+          "long_name": "Daily Minimum Near-Surface Air Temperature",
+          "coordinates": "height",
+          "cell_methods": "area: mean time: minimum (interval: 1 day)",
+          "cell_measures": "area: areacella",
+          "original_name": "tasmin",
+          "standard_name": "air_temperature"
+        },
+        "shape": [
+          31390,
+          720,
+          1440
+        ],
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "description": "Daily Minimum Near-Surface Air Temperature"
+      }
+    },
+    "start_datetime": "2015-01-01T12:00:00Z",
+    "cmip6:frequency": "day",
+    "cmip6:source_id": "INM-CM5-0",
+    "cube:dimensions": {
+      "lat": {
+        "axis": "y",
+        "step": 0.25,
+        "type": "spatial",
+        "extent": [
+          -89.875,
+          89.875
+        ],
+        "reference_system": "epsg:4326"
+      },
+      "lon": {
+        "axis": "x",
+        "step": 0.25,
+        "type": "spatial",
+        "extent": [
+          -179.875,
+          179.875
+        ],
+        "reference_system": "epsg:4326"
+      },
+      "time": {
+        "step": "P1DT0H0M0S",
+        "type": "temporal",
+        "extent": [
+          "2015-01-01T12:00:00Z",
+          "2100-12-31T12:00:00Z"
+        ],
+        "description": "time"
+      }
+    },
+    "cmip6:experiment": "update of RCP8.5 based on SSP5",
+    "cmip6:Conventions": "CF-1.7 CMIP-6.2",
+    "cmip6:activity_id": "ScenarioMIP",
+    "cmip6:institution": "Institute for Numerical Mathematics, Russian Academy of Science, Moscow 119991, Russia",
+    "cmip6:source_type": "AOGCM AER",
+    "cmip6:experiment_id": "ssp585",
+    "cmip6:forcing_index": 1,
+    "cmip6:physics_index": 1,
+    "cmip6:variant_label": "r1i1p1f1",
+    "cmip6:institution_id": "INM",
+    "cmip6:sub_experiment": "none",
+    "cmip6:further_info_url": "https://furtherinfo.es-doc.org/CMIP6.INM.INM-CM5-0.ssp585.none.r1i1p1f1",
+    "cmip6:realization_index": 1,
+    "cmip6:sub_experiment_id": "none",
+    "cmip6:data_specs_version": "01.00.29",
+    "cmip6:nominal_resolution": "100 km",
+    "cmip6:initialization_index": 1
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

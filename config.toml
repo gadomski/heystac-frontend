@@ -1,5 +1,5 @@
 url = "https://www.gadom.ski/heystac"
-stac-path = "stac"
+stac-path = "public/stac"
 
 [root]
 id = "heystac"
