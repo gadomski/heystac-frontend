@@ -92,6 +92,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "requests" },
+    { name = "tqdm" },
 ]
 
 [package.dev-dependencies]
@@ -109,6 +110,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.9.2" },
     { name = "pydantic-settings", specifier = ">=2.6.1" },
     { name = "requests", specifier = ">=2.32.3" },
+    { name = "tqdm", specifier = ">=4.67.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -283,6 +285,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/8c/df/3fba118a1d728de9b9fb92103c7045b021804f9fd5290557fc9402ba7752/stacrs_cli-0.4.0-cp312-cp312-manylinux_2_34_x86_64.whl", hash = "sha256:cb06da9b57fa74c1406f937ed212bb37597c7521af9a25191b2a360540a61f7f", size = 15034868 },
     { url = "https://files.pythonhosted.org/packages/93/db/b92fe0812d5f2bbd2b1952fe0cd5e93096deff446d14927020dc2a59a614/stacrs_cli-0.4.0-cp312-none-win32.whl", hash = "sha256:6162ec725160f110e3ffefa38f26f9691dbfdbeea8e373b6152c1a75840c539c", size = 9702227 },
     { url = "https://files.pythonhosted.org/packages/b8/c0/4d74fd1cb4fb4433e268e07a6e7a5a8902e3f03baab1c938df9d4e0057df/stacrs_cli-0.4.0-cp312-none-win_amd64.whl", hash = "sha256:5433e7eba8e3cf09697698ad2a5bc105b5ce2bd8442abf28ea1f039bb380ee48", size = 10774783 },
+]
+
+[[package]]
+name = "tqdm"
+version = "4.67.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "platform_system == 'Windows'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e8/4f/0153c21dc5779a49a0598c445b1978126b1344bab9ee71e53e44877e14e0/tqdm-4.67.0.tar.gz", hash = "sha256:fe5a6f95e6fe0b9755e9469b77b9c3cf850048224ecaa8293d7d2d31f97d869a", size = 169739 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2b/78/57043611a16c655c8350b4c01b8d6abfb38cc2acb475238b62c2146186d7/tqdm-4.67.0-py3-none-any.whl", hash = "sha256:0cd8af9d56911acab92182e88d763100d4788bdf421d251616040cc4d44863be", size = 78590 },
 ]
 
 [[package]]
