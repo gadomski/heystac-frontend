@@ -1,8 +1,8 @@
 "use client";
 
-import CatalogsCard from "./components/card/catalog";
-import Catalog from "./catalog.json";
 import { Heading, Lead } from "@devseed-ui/typography";
+import CatalogsCard from "./components/card/catalog";
+import Catalog from "./stac/catalog.json";
 
 export default function Home() {
   // TODO: Use Catalog type

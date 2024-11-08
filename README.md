@@ -12,7 +12,7 @@ A curated geospatial asset discovery experience™.
 
 ## Developing
 
-Get [yarn](https://yarnpkg.com/) and [Rust](https://rustup.rs/).
+Get [yarn](https://yarnpkg.com/).
 Then:
 
 ```shell
@@ -29,7 +29,7 @@ The frontend code lives in [app](./app/).
 
 ### Backend
 
-We have our own Rust command-line interface (CLI), also called **heystac**, for generating pre-rendered content.
+We have a command-line interface (CLI), also called **heystac**, for generating pre-rendered content.
 To run:
 
 ```shell
@@ -39,10 +39,10 @@ yarn build
 Under the hood, the prebuild script does this:
 
 ```shell
-cargo run -- prebuild
+heystac prebuild
 ```
 
-The Rust code for the prebuild script lives in [src](./src/).
+The Python code for the CLI lives in [src](./src/).
 
 ## License
 

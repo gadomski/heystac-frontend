@@ -2,7 +2,12 @@ export interface Catalog {
   type: string;
   stac_version: string;
   id: string;
+  title: string;
   description: string;
+  created: string;
+  updated: string;
+  license: string;
+  providers: Provider[];
   links: Link[];
 }
 
@@ -11,5 +16,11 @@ export interface Link {
   rel: string;
   type: string;
   title: string;
-  "heystac:id": string;
+  "heystac:id"?: string;
+}
+
+export interface Provider {
+  name: string;
+  roles: string[];
+  url: string;
 }

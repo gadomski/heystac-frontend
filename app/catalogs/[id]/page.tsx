@@ -1,7 +1,7 @@
-import CatalogPage from "../../components/pages/catalog";
-import Root from "../../catalog.json";
-import { use } from "react";
 import { notFound } from "next/navigation";
+import { use } from "react";
+import CatalogPage from "../../components/pages/catalog";
+import Root from "../../stac/catalog.json";
 import type { Catalog } from "../../types/Stac";
 
 type Params = { id: string };
