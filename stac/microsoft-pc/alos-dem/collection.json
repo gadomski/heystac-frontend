@@ -1,0 +1,160 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-dem/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://earth.jaxa.jp/policy/en.html",
+      "title": "JAXA Terms of Use of Research Data",
+      "rel": "license"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/alos-dem",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-dem",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./ALPSMLC30_S084W180_DSM.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 2,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "alos-dem",
+  "heystac:rating": 1,
+  "title": "ALOS World 3D-30m",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/alos-dem.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "ALOS DEM"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/alos-dem.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-12-07T00:00:00Z",
+          "2016-12-07T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "ALOS",
+    "PRISM",
+    "JAXA",
+    "DEM",
+    "DSM",
+    "Elevation"
+  ],
+  "providers": [
+    {
+      "url": "https://www.eorc.jaxa.jp/ALOS/en/aw3d30/index.htm",
+      "name": "Japan Aerospace Exploration Agency",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.5069/G94M92HB",
+      "name": "OpenTopography",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "gsd": [
+      30
+    ],
+    "platform": [
+      "alos"
+    ],
+    "instruments": [
+      "prism"
+    ]
+  },
+  "description": "The \"ALOS World 3D-30m\" (AW3D30) dataset is a 30 meter resolution global digital surface model (DSM), developed by the Japan Aerospace Exploration Agency (JAXA). AWD30 was constructed from the Panchromatic Remote-sensing Instrument for Stereo Mapping (PRISM) on board Advanced Land Observing Satellite (ALOS), operated from 2006 to 2011.\n\nSee the [Product Description](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/aw3d30v3.2_product_e_e1.2.pdf) for more details.\n",
+  "item_assets": {
+    "data": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "stac_version": "1.0.0",
+  "msft:container": "alos-dem",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "msft:storage_account": "ai4edataeuwest",
+  "msft:short_description": "ALOS World 3D is a global digital surface model (DSM) with a horizontal resolution of approximately 30 meters, constructed from the Panchromatic Remote-sensing Instrument for Stereo Mapping (PRISM) on board Advanced Land Observing Satellite (ALOS).",
+  "msft:region": "westeurope"
+}

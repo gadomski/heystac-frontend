@@ -1,0 +1,136 @@
+{
+  "links": [
+    {
+      "href": "https://earth-search.aws.element84.com/v1/conformance",
+      "rel": "conformance",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/collections",
+      "rel": "data",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/search",
+      "rel": "search",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/search",
+      "rel": "search",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/aggregate",
+      "rel": "aggregate",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/aggregations",
+      "rel": "aggregations",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/api",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/api.html",
+      "rel": "service-doc",
+      "type": "text/html"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/queryables",
+      "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+      "type": "application/schema+json"
+    },
+    {
+      "href": "https://stac-utils.github.io/stac-server/",
+      "rel": "server",
+      "type": "text/html"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "./sentinel-2-pre-c1-l2a/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cop-dem-glo-30/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./naip/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cop-dem-glo-90/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2-l2/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-2-l2a/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-2-l1c/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-2-c1-l2a/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-1-grd/collection.json",
+      "rel": "child"
+    }
+  ],
+  "heystac:cumulative_rating": 19,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 19,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "stac_version": "1.0.0",
+  "type": "Catalog",
+  "id": "earth-search-aws",
+  "title": "Earth Search by Element 84",
+  "description": "A STAC API of public datasets on AWS",
+  "heystac:rating": 1,
+  "conformsTo": [
+    "https://api.stacspec.org/v1.0.0/core",
+    "https://api.stacspec.org/v1.0.0/collections",
+    "https://api.stacspec.org/v1.0.0/ogcapi-features",
+    "https://api.stacspec.org/v1.0.0/item-search",
+    "https://api.stacspec.org/v1.0.0/ogcapi-features#fields",
+    "https://api.stacspec.org/v1.0.0/ogcapi-features#sort",
+    "https://api.stacspec.org/v1.0.0/ogcapi-features#query",
+    "https://api.stacspec.org/v1.0.0/item-search#fields",
+    "https://api.stacspec.org/v1.0.0/item-search#sort",
+    "https://api.stacspec.org/v1.0.0/item-search#query",
+    "https://api.stacspec.org/v0.3.0/aggregation",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson"
+  ]
+}

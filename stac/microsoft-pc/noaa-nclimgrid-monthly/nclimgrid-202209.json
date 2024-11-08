@@ -1,0 +1,180 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-nclimgrid-monthly&item=nclimgrid-202209",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-nclimgrid-monthly/items/nclimgrid-202209",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "nclimgrid-202209",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID nclimgrid-202209 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID nclimgrid-202209 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'created': '2022-10-26T21:35:01.173368Z', 'proj:epsg': 4326, 'proj:shape': [596, 1385], 'end_datetime': '2022-09-30T23:59:59Z', 'proj:transform': [0.04166667, 0.0, -124.70833333, 0.0, -0.04166667, 49.37500127], 'start_datetime': '2022-09-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'created': '2022-10-26T21:35:01.173368Z',\\n     'proj:epsg': 4326,\\n     'proj:shape': [596, 1385],\\n     'end_datetime': '2022-09-30T23:59:59Z',\\n     'proj:transform': [0.04166667,\\n                        0.0,\\n                        -124.70833333,\\n                        0.0,\\n                        -0.04166667,\\n                        49.37500127],\\n     'start_datetime': '2022-09-01T00:00:00Z'}\"}], 'created': '2022-10-26T21:35:01.173368Z', 'proj:epsg': 4326, 'proj:shape': [596, 1385], 'end_datetime': '2022-09-30T23:59:59Z', 'proj:transform': [0.04166667, 0.0, -124.70833333, 0.0, -0.04166667, 49.37500127], 'start_datetime': '2022-09-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'nclimgrid-202209 against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'created': \"\n                                    \"'2022-10-26T21:35:01.173368Z', \"\n                                    \"'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[596, 1385], 'end_datetime': \"\n                                    \"'2022-09-30T23:59:59Z', \"\n                                    \"'proj:transform': [0.04166667, 0.0, \"\n                                    '-124.70833333, 0.0, -0.04166667, '\n                                    \"49.37500127], 'start_datetime': \"\n                                    \"'2022-09-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'created': \"\n                                    \"'2022-10-26T21:35:01.173368Z',\\n\"\n                                    \"     'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [596, 1385],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2022-09-30T23:59:59Z',\\n\"\n                                    \"     'proj:transform': [0.04166667,\\n\"\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '-124.70833333,\\n'\n                                    '                        0.0,\\n'\n                                    '                        -0.04166667,\\n'\n                                    '                        '\n                                    '49.37500127],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2022-09-01T00:00:00Z'}\"}],\n     'created': '2022-10-26T21:35:01.173368Z',\n     'proj:epsg': 4326,\n     'proj:shape': [596, 1385],\n     'end_datetime': '2022-09-30T23:59:59Z',\n     'proj:transform': [0.04166667,\n                        0.0,\n                        -124.70833333,\n                        0.0,\n                        -0.04166667,\n                        49.37500127],\n     'start_datetime': '2022-09-01T00:00:00Z'}"
+      }
+    ],
+    "created": "2022-10-26T21:35:01.173368Z",
+    "proj:epsg": 4326,
+    "proj:shape": [
+      596,
+      1385
+    ],
+    "end_datetime": "2022-09-30T23:59:59Z",
+    "proj:transform": [
+      0.04166667,
+      0.0,
+      -124.70833333,
+      0.0,
+      -0.04166667,
+      49.37500127
+    ],
+    "start_datetime": "2022-09-01T00:00:00Z"
+  },
+  "bbox": [
+    -124.708333,
+    24.541666,
+    -66.999995,
+    49.375001
+  ],
+  "type": "Feature",
+  "assets": {
+    "prcp": {
+      "href": "https://nclimgridwesteurope.blob.core.windows.net/nclimgrid-cogs/nclimgrid-monthly/nclimgrid-prcp-202209.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Precipitation (mm)",
+      "raster:bands": [
+        {
+          "unit": "mm",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg": {
+      "href": "https://nclimgridwesteurope.blob.core.windows.net/nclimgrid-cogs/nclimgrid-monthly/nclimgrid-tavg-202209.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Average Temperature (degree Celsius)",
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax": {
+      "href": "https://nclimgridwesteurope.blob.core.windows.net/nclimgrid-cogs/nclimgrid-monthly/nclimgrid-tmax-202209.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Maximmum Temperature (degree Celsius)",
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin": {
+      "href": "https://nclimgridwesteurope.blob.core.windows.net/nclimgrid-cogs/nclimgrid-monthly/nclimgrid-tmin-202209.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Monthly Minimum Temperature (degree Celsius)",
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-nclimgrid-monthly&item=nclimgrid-202209&assets=prcp&assets=tavg&assets=tmin&assets=tmax&tile_format=png&colormap_name=ylgnbu&rescale=0&rescale=250&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-nclimgrid-monthly&item=nclimgrid-202209&assets=prcp&assets=tavg&assets=tmin&assets=tmax&tile_format=png&colormap_name=ylgnbu&rescale=0&rescale=250&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -66.999995,
+          24.541666
+        ],
+        [
+          -66.999995,
+          49.375001
+        ],
+        [
+          -124.708333,
+          49.375001
+        ],
+        [
+          -124.708333,
+          24.541666
+        ],
+        [
+          -66.999995,
+          24.541666
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-nclimgrid-monthly",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

@@ -1,0 +1,464 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/prcp-2006_2020-monthly-normals-v1.0",
+      "title": "Source NetCDF File from NOAA NCEI",
+      "rel": "derived_from",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/tavg-2006_2020-monthly-normals-v1.0",
+      "title": "Source NetCDF File from NOAA NCEI",
+      "rel": "derived_from",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/tmax-2006_2020-monthly-normals-v1.0",
+      "title": "Source NetCDF File from NOAA NCEI",
+      "rel": "derived_from",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/tmin-2006_2020-monthly-normals-v1.0",
+      "title": "Source NetCDF File from NOAA NCEI",
+      "rel": "derived_from",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-climate-normals-gridded&item=2006_2020-seasonal-4",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-gridded/items/2006_2020-seasonal-4",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "2006_2020-seasonal-4",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID 2006_2020-seasonal-4 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID 2006_2020-seasonal-4 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'title': '2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)', 'created': '2023-01-11T20:13:58.656543Z', 'proj:epsg': 4326, 'proj:shape': [596, 1385], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [0.04166667, 0.0, -124.70833333, 0.0, -0.04166667, 49.37500127], 'start_datetime': '2006-01-01T00:00:00Z', 'noaa_climate_normals:period': '2006-2020', 'noaa_climate_normals:frequency': 'seasonal', 'noaa_climate_normals:time_index': 4} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'title': '2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)',\\n     'created': '2023-01-11T20:13:58.656543Z',\\n     'proj:epsg': 4326,\\n     'proj:shape': [596, 1385],\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'proj:transform': [0.04166667,\\n                        0.0,\\n                        -124.70833333,\\n                        0.0,\\n                        -0.04166667,\\n                        49.37500127],\\n     'start_datetime': '2006-01-01T00:00:00Z',\\n     'noaa_climate_normals:period': '2006-2020',\\n     'noaa_climate_normals:frequency': 'seasonal',\\n     'noaa_climate_normals:time_index': 4}\"}], 'title': '2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)', 'created': '2023-01-11T20:13:58.656543Z', 'proj:epsg': 4326, 'proj:shape': [596, 1385], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [0.04166667, 0.0, -124.70833333, 0.0, -0.04166667, 49.37500127], 'start_datetime': '2006-01-01T00:00:00Z', 'noaa_climate_normals:period': '2006-2020', 'noaa_climate_normals:frequency': 'seasonal', 'noaa_climate_normals:time_index': 4} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    '2006_2020-seasonal-4 against schema '\n                                    'at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'title': '2006-2020 Seasonal Climate \"\n                                    \"Normals for Fall (Sep-Oct-Nov)', \"\n                                    \"'created': \"\n                                    \"'2023-01-11T20:13:58.656543Z', \"\n                                    \"'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[596, 1385], 'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'proj:transform': [0.04166667, 0.0, \"\n                                    '-124.70833333, 0.0, -0.04166667, '\n                                    \"49.37500127], 'start_datetime': \"\n                                    \"'2006-01-01T00:00:00Z', \"\n                                    \"'noaa_climate_normals:period': \"\n                                    \"'2006-2020', \"\n                                    \"'noaa_climate_normals:frequency': \"\n                                    \"'seasonal', \"\n                                    \"'noaa_climate_normals:time_index': 4} \"\n                                    'is not valid under any of the given '\n                                    'schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'title': '2006-2020 Seasonal \"\n                                    'Climate Normals for Fall '\n                                    \"(Sep-Oct-Nov)',\\n\"\n                                    \"     'created': \"\n                                    \"'2023-01-11T20:13:58.656543Z',\\n\"\n                                    \"     'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [596, 1385],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'proj:transform': [0.04166667,\\n\"\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '-124.70833333,\\n'\n                                    '                        0.0,\\n'\n                                    '                        -0.04166667,\\n'\n                                    '                        '\n                                    '49.37500127],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2006-01-01T00:00:00Z',\\n\"\n                                    \"     'noaa_climate_normals:period': \"\n                                    \"'2006-2020',\\n\"\n                                    '     '\n                                    \"'noaa_climate_normals:frequency': \"\n                                    \"'seasonal',\\n\"\n                                    '     '\n                                    \"'noaa_climate_normals:time_index': \"\n                                    '4}'}],\n     'title': '2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)',\n     'created': '2023-01-11T20:13:58.656543Z',\n     'proj:epsg': 4326,\n     'proj:shape': [596, 1385],\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'proj:transform': [0.04166667,\n                        0.0,\n                        -124.70833333,\n                        0.0,\n                        -0.04166667,\n                        49.37500127],\n     'start_datetime': '2006-01-01T00:00:00Z',\n     'noaa_climate_normals:period': '2006-2020',\n     'noaa_climate_normals:frequency': 'seasonal',\n     'noaa_climate_normals:time_index': 4}"
+      }
+    ],
+    "title": "2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)",
+    "created": "2023-01-11T20:13:58.656543Z",
+    "proj:epsg": 4326,
+    "proj:shape": [
+      596,
+      1385
+    ],
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      0.04166667,
+      0.0,
+      -124.70833333,
+      0.0,
+      -0.04166667,
+      49.37500127
+    ],
+    "start_datetime": "2006-01-01T00:00:00Z",
+    "noaa_climate_normals:period": "2006-2020",
+    "noaa_climate_normals:frequency": "seasonal",
+    "noaa_climate_normals:time_index": 4
+  },
+  "bbox": [
+    -124.708333,
+    24.541666,
+    -66.999995,
+    49.375001
+  ],
+  "type": "Feature",
+  "assets": {
+    "prcp_max": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-prcp_max.tif",
+      "description": "Maximum values of all input monthly precipitation normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeter",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "prcp_min": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-prcp_min.tif",
+      "description": "Minimum values of all input monthly precipitation normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeter",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "prcp_std": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-prcp_std.tif",
+      "description": "Standard deviation of all input monthly precipitation normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeter",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg_max": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tavg_max.tif",
+      "description": "Maximum values of all input monthly mean temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg_min": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tavg_min.tif",
+      "description": "Minimum values of all input monthly mean temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg_std": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tavg_std.tif",
+      "description": "Standard deviation of all input monthly mean temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax_max": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmax_max.tif",
+      "description": "Maximum values of all input monthly maximum temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax_min": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmax_min.tif",
+      "description": "Minimum values of all input monthly maximum temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax_std": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmax_std.tif",
+      "description": "Standard deviation of all input monthly maximum temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin_max": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmin_max.tif",
+      "description": "Maximum values of all input monthly minimum temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin_min": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmin_min.tif",
+      "description": "Minimum values of all input monthly minimum temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin_std": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmin_std.tif",
+      "description": "Standard deviation of all input monthly minimum temperature normal values",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "prcp_flag": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-prcp_flag.tif",
+      "description": "Number of months used to calculate seasonal precipitation normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "months",
+          "nodata": 0,
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "prcp_norm": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-prcp_norm.tif",
+      "description": "Seasonal precipitation normals (WSSF) from monthly normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeter",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg_flag": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tavg_flag.tif",
+      "description": "Number of months used to calculate seasonal mean temperature normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "months",
+          "nodata": 0,
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tavg_norm": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tavg_norm.tif",
+      "description": "Seasonal mean temperature normals (WSSF) from monthly normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax_flag": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmax_flag.tif",
+      "description": "Number of months used to calculate seasonal maximum temperature normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "months",
+          "nodata": 0,
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmax_norm": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmax_norm.tif",
+      "description": "Seasonal maximum temperature normals (WSSF) from monthly normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin_flag": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmin_flag.tif",
+      "description": "Number of months used to calculate seasonal minimum temperature normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "months",
+          "nodata": 0,
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tmin_norm": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-tmin_norm.tif",
+      "description": "Seasonal minimum temperature normals (WSSF) from monthly normals",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32",
+          "spatial_resolution": 5000
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-climate-normals-gridded&item=2006_2020-seasonal-4&assets=tavg_norm&tile_format=png&colormap_name=ylorrd&rescale=-15%2C35&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-climate-normals-gridded&item=2006_2020-seasonal-4&assets=tavg_norm&tile_format=png&colormap_name=ylorrd&rescale=-15%2C35&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -66.999995,
+          24.541666
+        ],
+        [
+          -66.999995,
+          49.375001
+        ],
+        [
+          -124.708333,
+          49.375001
+        ],
+        [
+          -124.708333,
+          24.541666
+        ],
+        [
+          -66.999995,
+          24.541666
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-climate-normals-gridded",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

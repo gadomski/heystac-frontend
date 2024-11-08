@@ -1,0 +1,241 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-slstr-wst-l2-netcdf/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "title": "Sentinel Data License",
+      "rel": "license",
+      "type": "application/pdf"
+    },
+    {
+      "href": "https://sentinel.esa.int/web/sentinel/user-guides/sentinel-3-slstr/product-types/level-2-wst",
+      "title": "Sentinel-3 Sea Surface Temperature Product User Guide",
+      "rel": "about",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/sentinel-3-slstr-wst-l2-netcdf",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-slstr-wst-l2-netcdf",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./S3A_SL_2_WST_20241028T060451_20241028T074550_6059_118_276.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 2,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "sentinel-3-slstr-wst-l2-netcdf",
+  "heystac:rating": 1,
+  "title": "Sentinel-3 Sea Surface Temperature",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/sentinel-3-slstr-wst-l2-netcdf-thumb.png",
+      "title": "Sentinel-3 Sea Surface Temperature Thumbnail",
+      "media_type": "image/png"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/sentinel-3-slstr-wst-l2-netcdf.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC Items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": true,
+        "partition_frequency": "MS"
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-10-31T23:59:57.451604Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Sentinel",
+    "Copernicus",
+    "ESA",
+    "Satellite",
+    "Temperature",
+    "Ocean"
+  ],
+  "providers": [
+    {
+      "url": "https://earth.esa.int/web/guest/home",
+      "name": "ESA",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "eo:bands": [
+      {
+        "name": "S7",
+        "description": "Band 7 - SST, LST, Active fire",
+        "center_wavelength": 3.742,
+        "full_width_half_max": 0.398
+      },
+      {
+        "name": "S8",
+        "description": "Band 8 - SST, LST, Active fire",
+        "center_wavelength": 10.854,
+        "full_width_half_max": 0.776
+      },
+      {
+        "name": "S9",
+        "description": "Band 9 - SST, LST",
+        "center_wavelength": 12.0225,
+        "full_width_half_max": 0.905
+      }
+    ],
+    "platform": [
+      "Sentinel-3A",
+      "Sentinel-3B"
+    ],
+    "instruments": [
+      "SLSTR"
+    ],
+    "constellation": [
+      "Sentinel-3"
+    ],
+    "s3:product_name": [
+      "slstr-wst"
+    ],
+    "s3:product_type": [
+      "SL_2_WST___"
+    ],
+    "sat:orbit_state": [
+      "ascending",
+      "descending"
+    ],
+    "s3:processing_timeliness": [
+      "NT"
+    ],
+    "sat:platform_international_designator": [
+      "2016-011A",
+      "2018-039A"
+    ]
+  },
+  "description": "This Collection provides Sentinel-3 [SLSTR Level-2 Water Surface Temperature](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-3-slstr/product-types/level-2-wst) products containing data on sea surface temperature measurements on a 1km grid. Each product consists of a single NetCDF file containing all data variables:\n\n- Sea Surface Temperature (SST) value\n- SST total uncertainty\n- Latitude and longitude coordinates\n- SST time deviation\n- Single Sensor Error Statistic (SSES) bias and standard deviation estimate\n- Contextual parameters such as wind speed at 10 m and fractional sea-ice contamination\n- Quality flag\n- Satellite zenith angle\n- Top Of Atmosphere (TOA) Brightness Temperature (BT)\n- TOA noise equivalent BT\n\nMore information about the product and data processing can be found in the [User Guide](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-3-slstr/product-types/level-2-wst) and [Technical Guide](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-3-slstr/level-2/sst-processing).\n\nThis Collection contains Level-2 data in NetCDF files from October 2017 to present.\n",
+  "item_assets": {
+    "l2p": {
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "S7",
+          "description": "Band 7 - SST, LST, Active fire",
+          "center_wavelength": 3.742,
+          "full_width_half_max": 0.398
+        },
+        {
+          "name": "S8",
+          "description": "Band 8 - SST, LST, Active fire",
+          "center_wavelength": 10.854,
+          "full_width_half_max": 0.776
+        },
+        {
+          "name": "S9",
+          "description": "Band 9 - SST, LST",
+          "center_wavelength": 12.0225,
+          "full_width_half_max": 0.905
+        }
+      ],
+      "description": "Skin Sea Surface Temperature (SST) values"
+    },
+    "browse-jpg": {
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "description": "Preview image produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)"
+    },
+    "eop-metadata": {
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "Metadata produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)"
+    },
+    "safe-manifest": {
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    }
+  },
+  "msft:region": "westeurope",
+  "stac_version": "1.0.0",
+  "msft:group_id": "sentinel-3",
+  "msft:container": "sentinel-3",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "msft:storage_account": "sentinel3euwest",
+  "msft:short_description": "Sentinel-3 sea surface temperature (SLSTR WST)."
+}

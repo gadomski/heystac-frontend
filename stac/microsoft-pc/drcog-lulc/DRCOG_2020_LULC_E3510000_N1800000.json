@@ -1,0 +1,179 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=drcog-lulc&item=DRCOG_2020_LULC_E3510000_N1800000",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/drcog-lulc/items/DRCOG_2020_LULC_E3510000_N1800000",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "DRCOG_2020_LULC_E3510000_N1800000",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID DRCOG_2020_LULC_E3510000_N1800000 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID DRCOG_2020_LULC_E3510000_N1800000 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'created': '2022-07-15T15:25:46.629201Z', 'mission': '2020 DRCOG LULC study covering 6,000 square miles', 'proj:epsg': 6428, 'proj:shape': [10000, 993], 'description': '2020 Denver Regional Council of Governments (DRCOG) Land Use Land Cover (LULC) at 1ft resolution', 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [1.0, 0.0, 3509999.74968392, 0.0, -1.0, 1810000.750004], 'start_datetime': '2020-01-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'created': '2022-07-15T15:25:46.629201Z',\\n     'mission': '2020 DRCOG LULC study covering 6,000 square miles',\\n     'proj:epsg': 6428,\\n     'proj:shape': [10000, 993],\\n     'description': '2020 Denver Regional Council of Governments (DRCOG) '\\n                    'Land Use Land Cover (LULC) at 1ft resolution',\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'proj:transform': [1.0,\\n                        0.0,\\n                        3509999.74968392,\\n                        0.0,\\n                        -1.0,\\n                        1810000.750004],\\n     'start_datetime': '2020-01-01T00:00:00Z'}\"}], 'created': '2022-07-15T15:25:46.629201Z', 'mission': '2020 DRCOG LULC study covering 6,000 square miles', 'proj:epsg': 6428, 'proj:shape': [10000, 993], 'description': '2020 Denver Regional Council of Governments (DRCOG) Land Use Land Cover (LULC) at 1ft resolution', 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [1.0, 0.0, 3509999.74968392, 0.0, -1.0, 1810000.750004], 'start_datetime': '2020-01-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'DRCOG_2020_LULC_E3510000_N1800000 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'created': \"\n                                    \"'2022-07-15T15:25:46.629201Z', \"\n                                    \"'mission': '2020 DRCOG LULC study \"\n                                    \"covering 6,000 square miles', \"\n                                    \"'proj:epsg': 6428, 'proj:shape': \"\n                                    \"[10000, 993], 'description': '2020 \"\n                                    'Denver Regional Council of '\n                                    'Governments (DRCOG) Land Use Land '\n                                    \"Cover (LULC) at 1ft resolution', \"\n                                    \"'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'proj:transform': [1.0, 0.0, \"\n                                    '3509999.74968392, 0.0, -1.0, '\n                                    \"1810000.750004], 'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'created': \"\n                                    \"'2022-07-15T15:25:46.629201Z',\\n\"\n                                    \"     'mission': '2020 DRCOG LULC \"\n                                    \"study covering 6,000 square miles',\\n\"\n                                    \"     'proj:epsg': 6428,\\n\"\n                                    \"     'proj:shape': [10000, 993],\\n\"\n                                    \"     'description': '2020 Denver \"\n                                    'Regional Council of Governments '\n                                    \"(DRCOG) '\\n\"\n                                    \"                    'Land Use Land \"\n                                    \"Cover (LULC) at 1ft resolution',\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'proj:transform': [1.0,\\n\"\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '3509999.74968392,\\n'\n                                    '                        0.0,\\n'\n                                    '                        -1.0,\\n'\n                                    '                        '\n                                    '1810000.750004],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z'}\"}],\n     'created': '2022-07-15T15:25:46.629201Z',\n     'mission': '2020 DRCOG LULC study covering 6,000 square miles',\n     'proj:epsg': 6428,\n     'proj:shape': [10000, 993],\n     'description': '2020 Denver Regional Council of Governments (DRCOG) '\n                    'Land Use Land Cover (LULC) at 1ft resolution',\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'proj:transform': [1.0,\n                        0.0,\n                        3509999.74968392,\n                        0.0,\n                        -1.0,\n                        1810000.750004],\n     'start_datetime': '2020-01-01T00:00:00Z'}"
+      }
+    ],
+    "created": "2022-07-15T15:25:46.629201Z",
+    "mission": "2020 DRCOG LULC study covering 6,000 square miles",
+    "proj:epsg": 6428,
+    "proj:shape": [
+      10000,
+      993
+    ],
+    "description": "2020 Denver Regional Council of Governments (DRCOG) Land Use Land Cover (LULC) at 1ft resolution",
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      1.0,
+      0.0,
+      3509999.74968392,
+      0.0,
+      -1.0,
+      1810000.750004
+    ],
+    "start_datetime": "2020-01-01T00:00:00Z"
+  },
+  "bbox": [
+    -103.679206,
+    40.015729,
+    -103.674945,
+    40.043227
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://landcoverdata.blob.core.windows.net/drcog-lulc/2020/DRCOG_2020_LULC_E3510000_N1800000.tif",
+      "raster:bands": [
+        {
+          "spatial_resolution": 0.3,
+          "unit": "usft",
+          "sampling": "area",
+          "data_type": "uint8",
+          "description": "Classification values"
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "DRCOG LULC",
+      "description": "Denver Regional Council of Governments (DRCOG) Land Use Land Cover (LULC) Classifications",
+      "classification:classes": [
+        {
+          "value": 1,
+          "color_hint": "FF0000",
+          "description": "Structures"
+        },
+        {
+          "value": 2,
+          "color_hint": "B2B2B2",
+          "description": "Impervious Surfaces"
+        },
+        {
+          "value": 3,
+          "color_hint": "00A9E6",
+          "description": "Water"
+        },
+        {
+          "value": 4,
+          "color_hint": "C7D79E",
+          "description": "Prairie/Grassland/Natural Ground Cover"
+        },
+        {
+          "value": 5,
+          "color_hint": "267300",
+          "description": "Tree Canopy"
+        },
+        {
+          "value": 6,
+          "color_hint": "70A800",
+          "description": "Turf/Irrigated Land"
+        },
+        {
+          "value": 7,
+          "color_hint": "FFEBAF",
+          "description": "Barren Land"
+        },
+        {
+          "value": 8,
+          "color_hint": "FFAE42",
+          "description": "Cropland"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=drcog-lulc&item=DRCOG_2020_LULC_E3510000_N1800000&assets=data&colormap_name=drcog-lulc&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=drcog-lulc&item=DRCOG_2020_LULC_E3510000_N1800000&assets=data&colormap_name=drcog-lulc&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -103.675662,
+          40.015729
+        ],
+        [
+          -103.674945,
+          40.043172
+        ],
+        [
+          -103.678491,
+          40.043227
+        ],
+        [
+          -103.679206,
+          40.015784
+        ],
+        [
+          -103.675662,
+          40.015729
+        ]
+      ]
+    ]
+  },
+  "collection": "drcog-lulc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

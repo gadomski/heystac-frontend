@@ -1,0 +1,50 @@
+{
+  "links": [
+    {
+      "href": "https://www.gadom.ski/heystac/catalog.json",
+      "title": "heystac",
+      "rel": "self",
+      "type": "application/json"
+    },
+    {
+      "href": "./microsoft-pc/catalog.json",
+      "title": "Microsoft Planetary Computer",
+      "rel": "child",
+      "type": "application/json",
+      "heystac:id": "microsoft-pc"
+    },
+    {
+      "href": "./earth-search-aws/catalog.json",
+      "title": "Earth Search by Element 84",
+      "rel": "child",
+      "type": "application/json",
+      "heystac:id": "earth-search-aws"
+    },
+    {
+      "href": "./usgs-landsat/catalog.json",
+      "title": "USGS Landsat",
+      "rel": "child",
+      "type": "application/json",
+      "heystac:id": "usgs-landsat"
+    }
+  ],
+  "stac_version": "1.0.0",
+  "type": "Catalog",
+  "id": "heystac",
+  "title": "heystac",
+  "description": "A curated geospatial asset discovery experience™",
+  "created": "2024-11-08T15:12:00+00:00",
+  "updated": "2024-11-08T22:50:54.822241+00:00",
+  "license": "MIT",
+  "providers": [
+    {
+      "name": "Pete Gadomski",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.gadom.ski/"
+    }
+  ]
+}

@@ -1,0 +1,1519 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=goes-cmi&item=OR_ABI-L2-M1-M6_G18_s20243130737266",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/goes-cmi/items/OR_ABI-L2-M1-M6_G18_s20243130737266",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "OR_ABI-L2-M1-M6_G18_s20243130737266",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2024-11-08T07:37:26.600000Z",
+    "platform": "GOES-18",
+    "goes:mode": "6",
+    "proj:bbox": [
+      962930.340205932,
+      4147313.795279734,
+      1962934.980634215,
+      3147309.154851451
+    ],
+    "proj:wkt2": "PROJCRS[\"undefined\",BASEGEOGCRS[\"undefined\",DATUM[\"undefined\",ELLIPSOID[\"GRS 1980(IUGG, 1980)\",6378137,298.257222101,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8901]]],CONVERSION[\"unknown\",METHOD[\"Geostationary Satellite (Sweep X)\"],PARAMETER[\"Satellite height\",35786023,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",-137,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+    "proj:shape": [
+      500,
+      500
+    ],
+    "instruments": [
+      "ABI"
+    ],
+    "proj:transform": [
+      2004.017315487541,
+      0,
+      961928.3315481882,
+      0,
+      -2004.0173154875406,
+      4148315.8039374775
+    ],
+    "goes:image-type": "MESOSCALE",
+    "processing:software": {
+      "stactools-goes": "0.1.6"
+    },
+    "goes:processing-level": "L2",
+    "goes:system-environment": "OR",
+    "goes:mesoscale-image-number": 1
+  },
+  "bbox": [
+    -126.57981872558594,
+    30.73816680908203,
+    -109.50875854492188,
+    44.37537384033203
+  ],
+  "type": "Feature",
+  "assets": {
+    "C01_1km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C01_G18_s20243130737266_e20243130737323_c20243130737375_CMI.tif",
+      "proj:shape": [
+        1000,
+        1000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 1000
+        }
+      ],
+      "proj:transform": [
+        1002.0086577437705,
+        0.0,
+        961928.2777476695,
+        0.0,
+        -1002.0086577437708,
+        4148315.7910813345,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 01 (full resolution)",
+      "eo:bands": [
+        {
+          "name": "ABI Band 1",
+          "common_name": "blue",
+          "description": "Daytime aerosol over land, coastal water mapping",
+          "center_wavelength": 0.47
+        }
+      ]
+    },
+    "C01_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C01.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 01",
+      "eo:bands": [
+        {
+          "name": "ABI Band 1",
+          "common_name": "blue",
+          "description": "Daytime aerosol over land, coastal water mapping",
+          "center_wavelength": 0.47
+        }
+      ]
+    },
+    "C02_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C02.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 02",
+      "eo:bands": [
+        {
+          "name": "ABI Band 2",
+          "common_name": "red",
+          "description": "Daytime clouds, fog, insolation, winds",
+          "center_wavelength": 0.64
+        }
+      ]
+    },
+    "C03_1km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C03_G18_s20243130737266_e20243130737323_c20243130737376_CMI.tif",
+      "proj:shape": [
+        1000,
+        1000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 1000
+        }
+      ],
+      "proj:transform": [
+        1002.0086577437705,
+        0.0,
+        961928.2777476695,
+        0.0,
+        -1002.0086577437708,
+        4148315.7910813345,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 03 (full resolution)",
+      "eo:bands": [
+        {
+          "name": "ABI Band 3",
+          "common_name": "nir09",
+          "description": "Daytime vegetation, burn scar, aerosol over water, winds",
+          "center_wavelength": 0.87
+        }
+      ]
+    },
+    "C03_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C03.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 03",
+      "eo:bands": [
+        {
+          "name": "ABI Band 3",
+          "common_name": "nir09",
+          "description": "Daytime vegetation, burn scar, aerosol over water, winds",
+          "center_wavelength": 0.87
+        }
+      ]
+    },
+    "C04_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C04.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 04",
+      "eo:bands": [
+        {
+          "name": "ABI Band 4",
+          "common_name": "cirrus",
+          "description": "Daytime cirrus cloud",
+          "center_wavelength": 1.38
+        }
+      ]
+    },
+    "C05_1km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C05_G18_s20243130737266_e20243130737323_c20243130737386_CMI.tif",
+      "proj:shape": [
+        1000,
+        1000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 1000
+        }
+      ],
+      "proj:transform": [
+        1002.0086577437705,
+        0.0,
+        961928.2777476695,
+        0.0,
+        -1002.0086577437708,
+        4148315.7910813345,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 05 (full resolution)",
+      "eo:bands": [
+        {
+          "name": "ABI Band 5",
+          "common_name": "swir16",
+          "description": "Daytime cloud-top phase and particle size, snow",
+          "center_wavelength": 1.61
+        }
+      ]
+    },
+    "C05_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C05.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 05",
+      "eo:bands": [
+        {
+          "name": "ABI Band 5",
+          "common_name": "swir16",
+          "description": "Daytime cloud-top phase and particle size, snow",
+          "center_wavelength": 1.61
+        }
+      ]
+    },
+    "C06_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C06.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 06",
+      "eo:bands": [
+        {
+          "name": "ABI Band 6",
+          "common_name": "swir22",
+          "description": "Daytime land, cloud properties, particle size, vegetation, snow",
+          "center_wavelength": 2.25
+        }
+      ]
+    },
+    "C07_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C07.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 07",
+      "eo:bands": [
+        {
+          "name": "ABI Band 7",
+          "description": "Surface and cloud, fog at night, fire, winds",
+          "center_wavelength": 3.89
+        }
+      ]
+    },
+    "C08_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C08.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 08",
+      "eo:bands": [
+        {
+          "name": "ABI Band 8",
+          "description": "High-level atmospheric water vapor, winds, rainfall",
+          "center_wavelength": 6.17
+        }
+      ]
+    },
+    "C09_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C09.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 09",
+      "eo:bands": [
+        {
+          "name": "ABI Band 9",
+          "description": "Midlevel atmospheric water vapor, winds, rainfall",
+          "center_wavelength": 6.93
+        }
+      ]
+    },
+    "C10_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C10.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 10",
+      "eo:bands": [
+        {
+          "name": "ABI Band 10",
+          "description": "Lower-level water vapor, winds, and silicon dioxide",
+          "center_wavelength": 7.34
+        }
+      ]
+    },
+    "C11_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C11.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 11",
+      "eo:bands": [
+        {
+          "name": "ABI Band 11",
+          "description": "Total water for stability, cloud phase, dust, silicon dioxide, rainfall",
+          "center_wavelength": 8.44
+        }
+      ]
+    },
+    "C12_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C12.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 12",
+      "eo:bands": [
+        {
+          "name": "ABI Band 12",
+          "description": "Total ozone, turbulence, winds",
+          "center_wavelength": 9.61
+        }
+      ]
+    },
+    "C13_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C13.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 13",
+      "eo:bands": [
+        {
+          "name": "ABI Band 13",
+          "description": "Surface and clouds",
+          "center_wavelength": 10.33
+        }
+      ]
+    },
+    "C14_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C14.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 14",
+      "eo:bands": [
+        {
+          "name": "ABI Band 14",
+          "description": "Imagery, sea surface temperature, clouds, rainfall",
+          "center_wavelength": 11.19
+        }
+      ]
+    },
+    "C15_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C15.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 15",
+      "eo:bands": [
+        {
+          "name": "ABI Band 15",
+          "description": "Total water, volcanic ash, sea surface temperature",
+          "center_wavelength": 12.27
+        }
+      ]
+    },
+    "C16_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C16.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 16",
+      "eo:bands": [
+        {
+          "name": "ABI Band 16",
+          "description": "Air temperature, cloud heights",
+          "center_wavelength": 13.27
+        }
+      ]
+    },
+    "MCMIP-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406.nc",
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery - Multiband",
+      "eo:bands": [
+        {
+          "name": "ABI Band 1",
+          "common_name": "blue",
+          "description": "Daytime aerosol over land, coastal water mapping",
+          "center_wavelength": 0.47
+        },
+        {
+          "name": "ABI Band 2",
+          "common_name": "red",
+          "description": "Daytime clouds, fog, insolation, winds",
+          "center_wavelength": 0.64
+        },
+        {
+          "name": "ABI Band 3",
+          "common_name": "nir09",
+          "description": "Daytime vegetation, burn scar, aerosol over water, winds",
+          "center_wavelength": 0.87
+        },
+        {
+          "name": "ABI Band 4",
+          "common_name": "cirrus",
+          "description": "Daytime cirrus cloud",
+          "center_wavelength": 1.38
+        },
+        {
+          "name": "ABI Band 5",
+          "common_name": "swir16",
+          "description": "Daytime cloud-top phase and particle size, snow",
+          "center_wavelength": 1.61
+        },
+        {
+          "name": "ABI Band 6",
+          "common_name": "swir22",
+          "description": "Daytime land, cloud properties, particle size, vegetation, snow",
+          "center_wavelength": 2.25
+        },
+        {
+          "name": "ABI Band 7",
+          "description": "Surface and cloud, fog at night, fire, winds",
+          "center_wavelength": 3.89
+        },
+        {
+          "name": "ABI Band 8",
+          "description": "High-level atmospheric water vapor, winds, rainfall",
+          "center_wavelength": 6.17
+        },
+        {
+          "name": "ABI Band 9",
+          "description": "Midlevel atmospheric water vapor, winds, rainfall",
+          "center_wavelength": 6.93
+        },
+        {
+          "name": "ABI Band 10",
+          "description": "Lower-level water vapor, winds, and silicon dioxide",
+          "center_wavelength": 7.34
+        },
+        {
+          "name": "ABI Band 11",
+          "description": "Total water for stability, cloud phase, dust, silicon dioxide, rainfall",
+          "center_wavelength": 8.44
+        },
+        {
+          "name": "ABI Band 12",
+          "description": "Total ozone, turbulence, winds",
+          "center_wavelength": 9.61
+        },
+        {
+          "name": "ABI Band 13",
+          "description": "Surface and clouds",
+          "center_wavelength": 10.33
+        },
+        {
+          "name": "ABI Band 14",
+          "description": "Imagery, sea surface temperature, clouds, rainfall",
+          "center_wavelength": 11.19
+        },
+        {
+          "name": "ABI Band 15",
+          "description": "Total water, volcanic ash, sea surface temperature",
+          "center_wavelength": 12.27
+        },
+        {
+          "name": "ABI Band 16",
+          "description": "Air temperature, cloud heights",
+          "center_wavelength": 13.27
+        }
+      ],
+      "description": "The Cloud and Moisture Imagery product contains one or more Earth-view images with pixel values identifying 'brightness values' that are scaled to support visual analysis."
+    },
+    "C02_0.5km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C02_G18_s20243130737266_e20243130737323_c20243130737385_CMI.tif",
+      "proj:shape": [
+        2000,
+        2000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ],
+      "proj:transform": [
+        501.0043288718852,
+        0.0,
+        961928.2841757411,
+        0.0,
+        -501.0043288718852,
+        4148315.917966587,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 02 (full resolution)",
+      "eo:bands": [
+        {
+          "name": "ABI Band 2",
+          "common_name": "red",
+          "description": "Daytime clouds, fog, insolation, winds",
+          "center_wavelength": 0.64
+        }
+      ]
+    },
+    "C01_2km_wm": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/web/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C01_wm.tif",
+      "proj:bbox": [
+        -14090800.829701297,
+        3597710.285203322,
+        -12190978.171616776,
+        5523717.329080739
+      ],
+      "proj:epsg": 3857,
+      "proj:shape": [
+        662,
+        653
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "proj:transform": [
+        2909.3761992105997,
+        0.0,
+        -14090800.829701297,
+        0.0,
+        -2909.3761992105997,
+        5523717.329080739
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 01, Web Mercator",
+      "eo:bands": [
+        {
+          "name": "ABI Band 1",
+          "common_name": "blue",
+          "description": "Daytime aerosol over land, coastal water mapping",
+          "center_wavelength": 0.47
+        }
+      ]
+    },
+    "C02_2km_wm": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/web/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C02_wm.tif",
+      "proj:bbox": [
+        -14090800.829701297,
+        3597710.285203322,
+        -12190978.171616776,
+        5523717.329080739
+      ],
+      "proj:epsg": 3857,
+      "proj:shape": [
+        662,
+        653
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "proj:transform": [
+        2909.3761992105997,
+        0.0,
+        -14090800.829701297,
+        0.0,
+        -2909.3761992105997,
+        5523717.329080739
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 02, Web Mercator",
+      "eo:bands": [
+        {
+          "name": "ABI Band 2",
+          "common_name": "red",
+          "description": "Daytime clouds, fog, insolation, winds",
+          "center_wavelength": 0.64
+        }
+      ]
+    },
+    "C03_2km_wm": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/web/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_CMI_C03_wm.tif",
+      "proj:bbox": [
+        -14090800.829701297,
+        3597710.285203322,
+        -12190978.171616776,
+        5523717.329080739
+      ],
+      "proj:epsg": 3857,
+      "proj:shape": [
+        662,
+        653
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "proj:transform": [
+        2909.3761992105997,
+        0.0,
+        -14090800.829701297,
+        0.0,
+        -2909.3761992105997,
+        5523717.329080739
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 03, Web Mercator",
+      "eo:bands": [
+        {
+          "name": "ABI Band 3",
+          "common_name": "nir09",
+          "description": "Daytime vegetation, burn scar, aerosol over water, winds",
+          "center_wavelength": 0.87
+        }
+      ]
+    },
+    "C01_DQF_1km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C01_G18_s20243130737266_e20243130737323_c20243130737375_DQF.tif",
+      "proj:shape": [
+        1000,
+        1000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 1000
+        }
+      ],
+      "proj:transform": [
+        1002.0086577437705,
+        0.0,
+        961928.2777476695,
+        0.0,
+        -1002.0086577437708,
+        4148315.7910813345,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality-mask"
+      ],
+      "title": "Cloud and Moisture Imagery data quality flags - Band 01 (full resolution)"
+    },
+    "C01_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C01.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 01"
+    },
+    "C02_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C02.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 02"
+    },
+    "C03_DQF_1km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C03_G18_s20243130737266_e20243130737323_c20243130737376_DQF.tif",
+      "proj:shape": [
+        1000,
+        1000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 1000
+        }
+      ],
+      "proj:transform": [
+        1002.0086577437705,
+        0.0,
+        961928.2777476695,
+        0.0,
+        -1002.0086577437708,
+        4148315.7910813345,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality-mask"
+      ],
+      "title": "Cloud and Moisture Imagery data quality flags - Band 03 (full resolution)"
+    },
+    "C03_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C03.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 03"
+    },
+    "C04_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C04.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 04"
+    },
+    "C05_DQF_1km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C05_G18_s20243130737266_e20243130737323_c20243130737386_DQF.tif",
+      "proj:shape": [
+        1000,
+        1000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 1000
+        }
+      ],
+      "proj:transform": [
+        1002.0086577437705,
+        0.0,
+        961928.2777476695,
+        0.0,
+        -1002.0086577437708,
+        4148315.7910813345,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality-mask"
+      ],
+      "title": "Cloud and Moisture Imagery data quality flags - Band 05 (full resolution)"
+    },
+    "C05_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C05.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 05"
+    },
+    "C06_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C06.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 06"
+    },
+    "C07_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C07.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 07"
+    },
+    "C08_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C08.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 08"
+    },
+    "C09_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C09.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 09"
+    },
+    "C10_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C10.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 10"
+    },
+    "C11_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C11.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 11"
+    },
+    "C12_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C12.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 12"
+    },
+    "C13_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C13.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 13"
+    },
+    "C14_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C14.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 14"
+    },
+    "C15_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C15.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 15"
+    },
+    "C16_DQF_2km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-MCMIPM/2024/313/07/OR_ABI-L2-MCMIPM1-M6_G18_s20243130737266_e20243130737323_c20243130737406_DQF_C16.tif",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 2000
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Cloud and Moisture Imagery data quality flags - Band 16"
+    },
+    "CMIP_C01-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C01_G18_s20243130737266_e20243130737323_c20243130737375.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 1000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 01",
+      "eo:bands": [
+        {
+          "name": "ABI Band 1",
+          "common_name": "blue",
+          "description": "Daytime aerosol over land, coastal water mapping",
+          "center_wavelength": 0.47
+        }
+      ]
+    },
+    "CMIP_C02-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C02_G18_s20243130737266_e20243130737323_c20243130737385.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 02",
+      "eo:bands": [
+        {
+          "name": "ABI Band 2",
+          "common_name": "red",
+          "description": "Daytime clouds, fog, insolation, winds",
+          "center_wavelength": 0.64
+        }
+      ]
+    },
+    "CMIP_C03-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C03_G18_s20243130737266_e20243130737323_c20243130737376.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 1000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 03",
+      "eo:bands": [
+        {
+          "name": "ABI Band 3",
+          "common_name": "nir09",
+          "description": "Daytime vegetation, burn scar, aerosol over water, winds",
+          "center_wavelength": 0.87
+        }
+      ]
+    },
+    "CMIP_C04-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C04_G18_s20243130737266_e20243130737323_c20243130737369.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 04",
+      "eo:bands": [
+        {
+          "name": "ABI Band 4",
+          "common_name": "cirrus",
+          "description": "Daytime cirrus cloud",
+          "center_wavelength": 1.38
+        }
+      ]
+    },
+    "CMIP_C05-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C05_G18_s20243130737266_e20243130737323_c20243130737386.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 1000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 05",
+      "eo:bands": [
+        {
+          "name": "ABI Band 5",
+          "common_name": "swir16",
+          "description": "Daytime cloud-top phase and particle size, snow",
+          "center_wavelength": 1.61
+        }
+      ]
+    },
+    "CMIP_C06-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C06_G18_s20243130737266_e20243130737329_c20243130737386.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.900000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery reflectance factor - Band 06",
+      "eo:bands": [
+        {
+          "name": "ABI Band 6",
+          "common_name": "swir22",
+          "description": "Daytime land, cloud properties, particle size, vegetation, snow",
+          "center_wavelength": 2.25
+        }
+      ]
+    },
+    "CMIP_C07-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C07_G18_s20243130737266_e20243130737335_c20243130737396.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:33.500000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 07",
+      "eo:bands": [
+        {
+          "name": "ABI Band 7",
+          "description": "Surface and cloud, fog at night, fire, winds",
+          "center_wavelength": 3.89
+        }
+      ]
+    },
+    "CMIP_C08-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C08_G18_s20243130737266_e20243130737323_c20243130737386.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 08",
+      "eo:bands": [
+        {
+          "name": "ABI Band 8",
+          "description": "High-level atmospheric water vapor, winds, rainfall",
+          "center_wavelength": 6.17
+        }
+      ]
+    },
+    "CMIP_C09-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C09_G18_s20243130737266_e20243130737329_c20243130737396.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.900000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 09",
+      "eo:bands": [
+        {
+          "name": "ABI Band 9",
+          "description": "Midlevel atmospheric water vapor, winds, rainfall",
+          "center_wavelength": 6.93
+        }
+      ]
+    },
+    "CMIP_C10-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C10_G18_s20243130737266_e20243130737335_c20243130737397.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:33.500000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 10",
+      "eo:bands": [
+        {
+          "name": "ABI Band 10",
+          "description": "Lower-level water vapor, winds, and silicon dioxide",
+          "center_wavelength": 7.34
+        }
+      ]
+    },
+    "CMIP_C11-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C11_G18_s20243130737266_e20243130737323_c20243130737379.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 11",
+      "eo:bands": [
+        {
+          "name": "ABI Band 11",
+          "description": "Total water for stability, cloud phase, dust, silicon dioxide, rainfall",
+          "center_wavelength": 8.44
+        }
+      ]
+    },
+    "CMIP_C12-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C12_G18_s20243130737266_e20243130737329_c20243130737386.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.900000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 12",
+      "eo:bands": [
+        {
+          "name": "ABI Band 12",
+          "description": "Total ozone, turbulence, winds",
+          "center_wavelength": 9.61
+        }
+      ]
+    },
+    "CMIP_C13-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C13_G18_s20243130737266_e20243130737335_c20243130737396.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:33.500000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 13",
+      "eo:bands": [
+        {
+          "name": "ABI Band 13",
+          "description": "Surface and clouds",
+          "center_wavelength": 10.33
+        }
+      ]
+    },
+    "CMIP_C14-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C14_G18_s20243130737266_e20243130737323_c20243130737406.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:32.300000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 14",
+      "eo:bands": [
+        {
+          "name": "ABI Band 14",
+          "description": "Imagery, sea surface temperature, clouds, rainfall",
+          "center_wavelength": 11.19
+        }
+      ]
+    },
+    "CMIP_C15-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C15_G18_s20243130737266_e20243130737330_c20243130737386.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:33Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 15",
+      "eo:bands": [
+        {
+          "name": "ABI Band 15",
+          "description": "Total water, volcanic ash, sea surface temperature",
+          "center_wavelength": 12.27
+        }
+      ]
+    },
+    "CMIP_C16-nc": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C16_G18_s20243130737266_e20243130737336_c20243130737406.nc",
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int16",
+          "spatial_resolution": 2000
+        }
+      ],
+      "goes:end_observation_time": "2024-11-08T07:37:33.600000Z",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Cloud and Moisture Imagery brightness temperature at top of atmosphere - Band 16",
+      "eo:bands": [
+        {
+          "name": "ABI Band 16",
+          "description": "Air temperature, cloud heights",
+          "center_wavelength": 13.27
+        }
+      ]
+    },
+    "C02_DQF_0.5km": {
+      "href": "https://goeseuwest.blob.core.windows.net/noaa-goes-cogs/goes-18/ABI-L2-CMIPM/2024/313/07/OR_ABI-L2-CMIPM1-M6C02_G18_s20243130737266_e20243130737323_c20243130737385_DQF.tif",
+      "proj:shape": [
+        2000,
+        2000
+      ],
+      "raster:bands": [
+        {
+          "nodata": -1,
+          "data_type": "int8",
+          "spatial_resolution": 500
+        }
+      ],
+      "proj:transform": [
+        501.0043288718852,
+        0.0,
+        961928.2841757411,
+        0.0,
+        -501.0043288718852,
+        4148315.917966587,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality-mask"
+      ],
+      "title": "Cloud and Moisture Imagery data quality flags - Band 02 (full resolution)"
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=goes-cmi&item=OR_ABI-L2-M1-M6_G18_s20243130737266&expression=C02_2km_wm%3B0.45%2AC02_2km_wm%2B0.1%2AC03_2km_wm%2B0.45%2AC01_2km_wm%3BC01_2km_wm&nodata=-1&rescale=1%2C1000&color_formula=Gamma+RGB+2.5+Saturation+1.4+Sigmoidal+RGB+2+0.7&asset_as_band=True&resampling=bilinear&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=goes-cmi&item=OR_ABI-L2-M1-M6_G18_s20243130737266&expression=C02_2km_wm%3B0.45%2AC02_2km_wm%2B0.1%2AC03_2km_wm%2B0.45%2AC01_2km_wm%3BC01_2km_wm&nodata=-1&rescale=1%2C1000&color_formula=Gamma+RGB+2.5+Saturation+1.4+Sigmoidal+RGB+2+0.7&asset_as_band=True&resampling=bilinear&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -124.23542485661538,
+          43.700748791245125
+        ],
+        [
+          -126.56728697833492,
+          30.749860685133317
+        ],
+        [
+          -115.04864670830628,
+          31.04909938232803
+        ],
+        [
+          -109.53416974204004,
+          44.35870480768571
+        ],
+        [
+          -124.23542485661538,
+          43.700748791245125
+        ]
+      ]
+    ]
+  },
+  "collection": "goes-cmi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/processing/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

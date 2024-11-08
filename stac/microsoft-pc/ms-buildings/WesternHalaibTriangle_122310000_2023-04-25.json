@@ -1,0 +1,105 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/ms-buildings/items/WesternHalaibTriangle_122310000_2023-04-25",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "WesternHalaibTriangle_122310000_2023-04-25",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "title": "Building footprints",
+    "datetime": "2023-04-25T00:00:00Z",
+    "description": "Parquet dataset with the building footprints",
+    "table:columns": [
+      {
+        "name": "geometry",
+        "type": "byte_array",
+        "description": "Building footprint polygons"
+      },
+      {
+        "name": "meanHeight",
+        "type": "float"
+      }
+    ],
+    "table:row_count": 130,
+    "msbuildings:region": "WesternHalaibTriangle",
+    "msbuildings:quadkey": 122310000,
+    "msbuildings:processing-date": "2023-04-25"
+  },
+  "bbox": [
+    33.75310880749859,
+    21.821240707701463,
+    33.895686222188225,
+    21.861457041503243
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "abfs://footprints/delta/2023-04-25/ml-buildings.parquet/RegionName=WesternHalaibTriangle/quadkey=122310000",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ],
+      "title": "Building Footprints",
+      "description": "Parquet dataset with the building footprints for this region.",
+      "table:storage_options": {
+        "account_name": "bingmlbuildings"
+      }
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          34.453125,
+          21.28937435586042
+        ],
+        [
+          34.453125,
+          21.943045533438177
+        ],
+        [
+          33.75,
+          21.943045533438177
+        ],
+        [
+          33.75,
+          21.28937435586042
+        ],
+        [
+          34.453125,
+          21.28937435586042
+        ]
+      ]
+    ]
+  },
+  "collection": "ms-buildings",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

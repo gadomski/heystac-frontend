@@ -1,11 +1,7 @@
-from __future__ import annotations
-
 import datetime
-import json
+import shutil
 from pathlib import Path
-from typing import Any
 
-import requests
 import tqdm
 from pydantic import BaseModel, Field
 from pydantic_settings import (
@@ -15,32 +11,14 @@ from pydantic_settings import (
     TomlConfigSettingsSource,
 )
 
-
-class Node(BaseModel):
-    value: dict[str, Any]
-    children: list[Node]
-    items: list[dict[str, Any]]
-
-    def write_to(self, path: Path) -> None:
-        # TODO set up the links correctly
-
-        if not path.exists():
-            path.mkdir(parents=True)
-        type_ = self.value["type"]
-        assert isinstance(type_, str)
-        file_name = type_.lower() + ".json"
-        with open(path / file_name, "w") as f:
-            json.dump(self.value, f, indent=2)
-        for child in self.children:
-            id = child.value["id"]
-            assert isinstance(id, str)
-            child.write_to(path / id)
-        for item in self.items:
-            id = item["id"]
-            assert isinstance(id, str)
-            file_name = id + ".json"
-            with open(path / file_name, "w") as f:
-                json.dump(item, f, indent=2)
+from .catalog import Catalog
+from .client import Client
+from .collection import Collection
+from .items import Items
+from .link import Link
+from .node import Node
+from .provider import Provider
+from .stac_object import StacObject
 
 
 class Root(BaseModel):
@@ -49,18 +27,31 @@ class Root(BaseModel):
     description: str
     created: datetime.datetime
     license: str
+    providers: list[Provider]
+
+    def to_catalog(self, links: list[Link]) -> Catalog:
+        return Catalog(
+            id=self.id,
+            title=self.title,
+            description=self.description,
+            created=self.created.astimezone(tz=datetime.UTC).isoformat(),
+            updated=datetime.datetime.now().astimezone(tz=datetime.UTC).isoformat(),
+            license=self.license,
+            providers=self.providers,
+            links=links,
+        )
 
 
-class Catalog(BaseModel):
+class CatalogConfig(BaseModel):
     href: str
     title: str
 
 
 class Config(BaseSettings):
     stac_path: Path = Field(alias="stac-path")
-    url: str
     root: Root
-    catalogs: dict[str, Catalog]
+    url: str
+    catalogs: dict[str, CatalogConfig]
 
     model_config = SettingsConfigDict(
         toml_file=Path(__file__).parents[2] / "config.toml"
@@ -77,78 +68,83 @@ class Config(BaseSettings):
     ):
         return (TomlConfigSettingsSource(settings_cls),)
 
-    def prebuild(self) -> None:
+    def bootstrap(self) -> None:
         links = [
-            {
-                "href": f"{self.url}/catalog.json",
-                "title": "heystac",
-                "rel": "self",
-                "type": "application/json",
-            }
-        ]
-        for id_, catalog in self.catalogs.items():
-            links.append(
-                {
-                    "href": f"./{id_}/catalog.json",
-                    "title": catalog.title,
-                    "type": "application/json",
-                    "rel": "child",
-                    "heystac:id": id_,
-                }
+            Link(
+                href=f"{self.url}/catalog.json",
+                title="heystac",
+                rel="self",
+                type_="application/json",
             )
-        catalog_dict = {
-            "stac_version": "1.1.0",
-            "type": "Catalog",
-            "id": self.root.id,
-            "title": self.root.title,
-            "description": self.root.description,
-            "created": self.root.created.astimezone(tz=datetime.UTC).isoformat(),
-            "updated": datetime.datetime.now().astimezone(tz=datetime.UTC).isoformat(),
-            "license": self.root.license,
-            "providers": [
-                {
-                    "name": "Pete Gadomski",
-                    "roles": ["licensor", "producer", "processor"],
-                    "url": self.url,
-                }
-            ],
-            "links": links,
-        }
-        stac_path = self._stac_path()
-        with open(stac_path / "catalog.json", "w") as f:
-            json.dump(catalog_dict, f, indent=2)
+        ]
+        for id, catalog_config in self.catalogs.items():
+            links.append(
+                Link(
+                    href=f"./{id}/catalog.json",
+                    title=catalog_config.title,
+                    type_="application/json",
+                    rel="child",
+                    id=id,
+                )
+            )
+        catalog = self.root.to_catalog(links)
+        self.write_stac(catalog, "catalog.json")
 
     def crawl(self, id: str) -> None:
-        response = requests.get(self.catalogs[id].href)
-        response.raise_for_status()
-        catalog = response.json()
-        child_links = [link for link in catalog["links"] if link["rel"] == "child"]
-        node = Node(value=catalog, children=[], items=[])
+        client = Client()
+        catalog = Catalog.model_validate(client.get(self.catalogs[id].href))
+        catalog.id = id
+
+        child_links = catalog.child_links()
+        catalog.remove_structural_links()
+        catalog.links.append(Link(href="../catalog.json", rel="root"))
+        catalog.links.append(Link(href="../catalog.json", rel="parent"))
+
         progress_bar = tqdm.tqdm(total=len(child_links) * 2)
+        if (self.stac_path / id).exists():
+            shutil.rmtree(self.stac_path / id)
         for link in child_links:
-            response = requests.get(link["href"])
-            response.raise_for_status()
-            child = response.json()
+            child = Collection.model_validate(client.get(link.href))
             progress_bar.update(1)
-            items_link = next(
-                (link for link in child["links"] if link["rel"] == "items"), None
+
+            items_link = child.items_link()
+            child.remove_structural_links()
+            catalog.links.append(
+                Link(href=f"./{child.id}/collection.json", rel="child")
             )
-            child_node = Node(value=child, children=[], items=[])
+            child.links.append(Link(href="../catalog.json", rel="parent"))
+            child.links.append(Link(href="../../catalog.json", rel="root"))
+
             if items_link:
-                response = requests.get(
-                    items_link["href"],
-                    params=[("sortby", "-properties.datetime"), ("limit", 1)],
+                items = Items.model_validate(
+                    client.get(
+                        items_link.href,
+                        params=[("sortby", "-properties.datetime"), ("limit", 1)],
+                    )
                 )
-                response.raise_for_status()
-                items = response.json()
-                child_node.items.extend(items["features"])
-            node.children.append(child_node)
+                for item in items.features:
+                    item.remove_structural_links()
+                    child.links.append(Link(href=f"./{item.id}.json", rel="item"))
+                    item.links.append(Link(href="../collection.json", rel="parent"))
+                    item.links.append(Link(href="../collection.json", rel="collection"))
+                    item.links.append(Link(href="../../../catalog.json", rel="root"))
+                    self.write_stac(item, f"{id}/{child.id}/{item.id}.json")
+            self.write_stac(child, f"{id}/{child.id}/collection.json")
+
             progress_bar.update(1)
+        self.write_stac(catalog, f"{id}/catalog.json")
 
-        node.write_to(self._stac_path() / id)
+    def rate(self) -> None:
+        with open(self.stac_path / "catalog.json") as f:
+            catalog = Catalog.model_validate_json(f.read())
+        node = Node(value=catalog)
+        node.resolve(self.stac_path)
+        node.rate()
+        node.write_to(self.stac_path)
 
-    def _stac_path(self) -> Path:
-        stac_path = Path(__file__).parents[2] / self.stac_path
-        if not stac_path.exists():
-            stac_path.mkdir(parents=True)
-        return stac_path
+    def write_stac(self, stac_object: StacObject, subpath: str) -> None:
+        path = Path(__file__).parents[2] / self.stac_path / subpath
+        if not path.parent.exists():
+            path.parent.mkdir(parents=True)
+        with open(path, "w") as f:
+            f.write(stac_object.to_json())

@@ -1,0 +1,174 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=naip&item=pr_m_1806551_nw_20_030_20221212_20230329",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip/items/pr_m_1806551_nw_20_030_20221212_20230329",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "pr_m_1806551_nw_20_030_20221212_20230329",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "gsd": 0.3,
+    "datetime": "2022-12-12T16:00:00Z",
+    "naip:year": "2022",
+    "proj:bbox": [
+      208796.4,
+      2012712.9000000001,
+      216113.69999999998,
+      2020332.3
+    ],
+    "proj:epsg": 26920,
+    "providers": [
+      {
+        "url": "https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/",
+        "name": "USDA Farm Service Agency",
+        "roles": [
+          "producer",
+          "licensor"
+        ]
+      }
+    ],
+    "naip:state": "pr",
+    "proj:shape": [
+      25398,
+      24391
+    ],
+    "proj:centroid": {
+      "lat": 18.21876,
+      "lon": -65.71875
+    },
+    "proj:transform": [
+      0.3,
+      0.0,
+      208796.4,
+      0.0,
+      -0.3,
+      2020332.3,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "bbox": [
+    -65.75386,
+    18.183872,
+    -65.683663,
+    18.253643
+  ],
+  "type": "Feature",
+  "assets": {
+    "image": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/pr/2022/pr_030cm_2022/18065/51/m_1806551_nw_20_030_20221212_20230329.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "RGBIR COG tile",
+      "eo:bands": [
+        {
+          "name": "Red",
+          "common_name": "red"
+        },
+        {
+          "name": "Green",
+          "common_name": "green"
+        },
+        {
+          "name": "Blue",
+          "common_name": "blue"
+        },
+        {
+          "name": "NIR",
+          "common_name": "nir",
+          "description": "near-infrared"
+        }
+      ]
+    },
+    "thumbnail": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/pr/2022/pr_030cm_2022/18065/m_1806551_nw_20_030_20221212_20230329.200.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail"
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=naip&item=pr_m_1806551_nw_20_030_20221212_20230329&assets=image&asset_bidx=image%7C1%2C2%2C3&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=naip&item=pr_m_1806551_nw_20_030_20221212_20230329&assets=image&asset_bidx=image%7C1%2C2%2C3&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -65.683663,
+          18.184851
+        ],
+        [
+          -65.684718,
+          18.253643
+        ],
+        [
+          -65.75386,
+          18.25266
+        ],
+        [
+          -65.752778,
+          18.183872
+        ],
+        [
+          -65.683663,
+          18.184851
+        ]
+      ]
+    ]
+  },
+  "collection": "naip",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

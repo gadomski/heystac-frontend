@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { use } from "react";
-import Root from "../../../public/stac/catalog.json";
+import Root from "../../../stac/catalog.json";
 import CatalogPage from "../../components/pages/catalog";
 import type { Catalog } from "../../types/Stac";
 
@@ -12,10 +12,7 @@ export default function Page({ params }) {
   if (!link) {
     notFound();
   }
-  const catalog: Catalog = use(
-    import("../../../public/stac/" + id + "/catalog.json")
-  );
-  console.log(catalog.description);
+  const catalog: Catalog = use(import("../../../stac/" + id + "/catalog.json"));
   return <CatalogPage catalog={catalog} title={link.title}></CatalogPage>;
 }
 

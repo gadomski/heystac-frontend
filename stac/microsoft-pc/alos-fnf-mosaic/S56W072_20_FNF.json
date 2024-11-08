@@ -1,0 +1,172 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-fnf-mosaic&item=S56W072_20_FNF",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-fnf-mosaic/items/S56W072_20_FNF",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "S56W072_20_FNF",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "gsd": 25,
+    "title": "S56W072_20_FNF",
+    "datetime": "2020-01-01T00:00:00Z",
+    "platform": "ALOS-2",
+    "proj:bbox": [
+      -72.0,
+      -57.0,
+      -71.0,
+      -56.0
+    ],
+    "proj:epsg": 4326,
+    "proj:shape": [
+      4500,
+      4500
+    ],
+    "description": "Forest/Non-Forest Classification",
+    "instruments": [
+      "PALSAR-2"
+    ],
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      0.00022222222222222223,
+      0.0,
+      -72.0,
+      0.0,
+      -0.00022222222222222223,
+      -56.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "start_datetime": "2020-01-01T00:00:00Z"
+  },
+  "bbox": [
+    -72.0,
+    -57.0,
+    -71.0,
+    -56.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "C": {
+      "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_fnf_mosaic/2020/S55W075/S56W072_20_C.tif",
+      "roles": [
+        "data"
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "C",
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "data_type": "uint8"
+        }
+      ],
+      "classification:classes": [
+        {
+          "name": "no_data",
+          "value": 0,
+          "description": "No data"
+        },
+        {
+          "name": "forest (>90%)",
+          "value": 1,
+          "description": "Forest (>90% canopy cover)"
+        },
+        {
+          "name": "forest (10-90%)",
+          "value": 2,
+          "description": "Forest (10-90% canopy cover)"
+        },
+        {
+          "name": "non_forest",
+          "value": 3,
+          "description": "Non-forest"
+        },
+        {
+          "name": "water",
+          "value": 4,
+          "description": "Water"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=alos-fnf-mosaic&item=S56W072_20_FNF&assets=C&colormap_name=alos-fnf&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=alos-fnf-mosaic&item=S56W072_20_FNF&assets=C&colormap_name=alos-fnf&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -71,
+          -57
+        ],
+        [
+          -71,
+          -56
+        ],
+        [
+          -72,
+          -56
+        ],
+        [
+          -72,
+          -57
+        ],
+        [
+          -71,
+          -57
+        ]
+      ]
+    ]
+  },
+  "collection": "alos-fnf-mosaic",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

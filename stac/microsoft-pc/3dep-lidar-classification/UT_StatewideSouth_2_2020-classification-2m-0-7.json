@@ -1,0 +1,867 @@
+{
+  "links": [
+    {
+      "href": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/UT_StatewideSouth_2020_A20/UT_StatewideSouth_2_2020/metadata/",
+      "title": "USGS Metadata",
+      "rel": "alternate",
+      "type": "application/xml"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5822",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5822",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5823",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5823",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5824",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5824",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5825",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5825",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5922",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5922",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5923",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5923",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5924",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5924",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5925",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5925",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6022",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6022",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6023",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6023",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6024",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6024",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6025",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6025",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6122",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6122",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6123",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6123",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6124",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6124",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6125",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6125",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6222",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6222",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6223",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6223",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6224",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6224",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6225",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6225",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6322",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6322",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6323",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6323",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6324",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6324",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6325",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6325",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-lidar-classification&item=UT_StatewideSouth_2_2020-classification-2m-0-7",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-classification/items/UT_StatewideSouth_2_2020-classification-2m-0-7",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "UT_StatewideSouth_2_2020-classification-2m-0-7",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID UT_StatewideSouth_2_2020-classification-2m-0-7 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID UT_StatewideSouth_2_2020-classification-2m-0-7 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:shape': [2449, 3073], '3dep:usgs_id': 'UT_StatewideSouth_2_2020', 'end_datetime': '2020-12-31T00:00:00Z', 'raster:bands': {'unit': 'metre', 'nodata': 'nan', 'sampling': 'point', 'data_type': 'Float32', 'histogram': {'max': 2.0019607843137255, 'min': 0.9980392156862745, 'count': 256, 'buckets': [862, 0, 3, 1, 2, 3, 2, 10, 14, 20, 11, 22, 16, 36, 44, 37, 67, 67, 85, 83, 110, 103, 145, 138, 175, 196, 230, 239, 284, 317, 339, 380, 443, 436, 494, 570, 614, 692, 759, 810, 828, 885, 976, 1087, 1148, 1309, 1339, 1455, 1537, 1611, 1766, 1806, 1949, 2113, 2222, 2308, 2507, 2693, 2635, 2941, 2864, 3208, 3282, 3498, 3698, 3941, 3979, 4203, 4356, 4401, 4834, 4827, 5077, 5360, 5512, 5666, 5781, 6073, 6203, 6292, 6727, 6829, 7216, 7384, 7500, 7780, 8032, 8109, 8357, 8512, 8855, 9072, 9352, 9451, 9743, 9836, 10000, 10485, 10689, 10894, 10953, 11190, 11426, 11508, 11713, 11895, 12051, 12055, 12287, 12309, 12661, 12713, 12847, 13093, 13107, 13305, 13243, 13232, 13304, 13649, 13513, 13717, 13768, 13645, 14058, 13390, 14119, 13655, 14031, 13785, 13938, 13978, 14066, 13895, 14252, 14022, 14058, 13980, 14046, 14126, 13869, 14138, 14265, 14149, 14179, 14172, 14404, 14059, 14397, 14398, 14313, 14344, 14695, 14569, 14630, 14865, 14775, 14816, 14760, 14852, 15072, 15003, 15161, 15213, 15075, 15302, 15786, 15590, 15990, 16068, 16148, 16306, 16248, 16599, 16694, 16756, 16996, 17146, 17460, 17576, 17686, 17797, 18211, 18297, 18489, 18897, 19270, 19164, 19640, 20197, 20111, 20552, 20604, 21225, 21265, 21574, 22087, 22320, 22750, 23283, 23790, 24105, 24069, 24876, 25221, 26017, 26358, 26769, 27529, 28004, 28042, 29035, 29715, 30482, 31080, 31881, 32680, 33213, 33923, 35050, 36023, 37076, 38167, 38770, 40424, 41328, 42734, 43773, 45491, 46843, 48120, 49791, 51193, 53288, 55347, 57638, 59947, 62314, 64867, 67949, 71790, 74926, 78870, 82726, 87461, 93810, 99182, 106166, 112501, 120876, 131576, 146774, 142635, 252133, 35227, 1632700]}, 'statistics': {'mean': '1.8406654222466', 'stddev': '0.20139009208558', 'maximum': '2', 'minimum': '1', 'valid_percent': '88.69'}, 'pdal_pipeline': [{'tag': 'classification_cleanup', 'type': 'filters.range', 'limits': 'Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]'}, {'tag': 'noise_remover', 'type': 'filters.range', 'limits': 'Classification![7:7]'}, {'tag': 'gdal_writer', 'type': 'writers.gdal', 'filename': None, 'data_type': 'float32', 'dimension': 'Classification', 'resolution': None, 'output_type': 'idw', 'window_size': 0, 'pdal_metadata': True}], 'spatial_resolution': 7525777}, 'proj:geometry': {'type': 'Polygon', 'coordinates': [[[-114.0510183, 38.154449], [-114.0527931, 38.1103634], [-113.9827819, 38.1085848], [-113.9809651, 38.1526676], [-114.0510183, 38.154449]]]}, 'proj:projjson': {'name': 'NAD83 / UTM zone 11N + NAVD88 height', 'type': 'CompoundCRS', '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json', 'components': [{'id': {'code': 26911, 'authority': 'EPSG'}, 'name': 'NAD83 / UTM zone 11N', 'type': 'ProjectedCRS', 'base_crs': {'id': {'code': 4269, 'authority': 'EPSG'}, 'name': 'NAD83', 'datum': {'name': 'North American Datum 1983', 'type': 'GeodeticReferenceFrame', 'ellipsoid': {'name': 'GRS 1980', 'semi_major_axis': 6378137, 'inverse_flattening': 298.257222101}}, 'coordinate_system': {'axis': [{'name': 'Geodetic latitude', 'unit': 'degree', 'direction': 'north', 'abbreviation': 'Lat'}, {'name': 'Geodetic longitude', 'unit': 'degree', 'direction': 'east', 'abbreviation': 'Lon'}], 'subtype': 'ellipsoidal'}}, 'conversion': {'name': 'UTM zone 11N', 'method': {'id': {'code': 9807, 'authority': 'EPSG'}, 'name': 'Transverse Mercator'}, 'parameters': [{'id': {'code': 8801, 'authority': 'EPSG'}, 'name': 'Latitude of natural origin', 'unit': 'degree', 'value': 0}, {'id': {'code': 8802, 'authority': 'EPSG'}, 'name': 'Longitude of natural origin', 'unit': 'degree', 'value': -117}, {'id': {'code': 8805, 'authority': 'EPSG'}, 'name': 'Scale factor at natural origin', 'unit': 'unity', 'value': 0.9996}, {'id': {'code': 8806, 'authority': 'EPSG'}, 'name': 'False easting', 'unit': 'metre', 'value': 500000}, {'id': {'code': 8807, 'authority': 'EPSG'}, 'name': 'False northing', 'unit': 'metre', 'value': 0}]}, 'coordinate_system': {'axis': [{'name': 'Easting', 'unit': 'metre', 'direction': 'east', 'abbreviation': ''}, {'name': 'Northing', 'unit': 'metre', 'direction': 'north', 'abbreviation': ''}], 'subtype': 'Cartesian'}}, {'id': {'code': 5703, 'authority': 'EPSG'}, 'name': 'NAVD88 height', 'type': 'VerticalCRS', 'datum': {'name': 'North American Vertical Datum 1988', 'type': 'VerticalReferenceFrame'}, 'coordinate_system': {'axis': [{'name': 'Gravity-related height', 'unit': 'metre', 'direction': 'up', 'abbreviation': ''}], 'subtype': 'vertical'}}]}, 'proj:transform': [2.0, 0.0, 758397.0, 0.0, -2.0, 4227061.0, 0, 0, 1], 'start_datetime': '2020-01-01T00:00:00Z', 'classification:classes': [{'value': 0, 'description': 'None'}, {'value': 2, 'description': 'Ground'}, {'value': 3, 'description': 'Low Veg'}, {'value': 4, 'description': 'Med Veg'}, {'value': 5, 'description': 'High Veg'}, {'value': 6, 'description': 'Building'}, {'value': 7, 'description': 'Low Point'}, {'value': 8, 'description': 'Reserved'}, {'value': 9, 'description': 'Water'}, {'value': 10, 'description': 'Rail'}, {'value': 11, 'description': 'Road'}, {'value': 12, 'description': 'Reserved'}, {'value': 13, 'description': 'Wire - Guard (Shield)'}, {'value': 14, 'description': 'Wire - Conductor (Phase)'}, {'value': 15, 'description': 'Transmission Tower'}, {'value': 16, 'description': 'Wire-Structure Connector (Insulator)'}, {'value': 17, 'description': 'Bridge Deck'}, {'value': 18, 'description': 'High Noise'}, {'value': 19, 'description': 'Reserved'}, {'value': 21, 'description': 'Reserved'}, {'value': 22, 'description': 'Reserved'}, {'value': 23, 'description': 'Reserved'}, {'value': 26, 'description': 'Reserved'}]} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:shape': [2449, 3073],\\n     '3dep:usgs_id': 'UT_StatewideSouth_2_2020',\\n     'end_datetime': '2020-12-31T00:00:00Z',\\n     'raster:bands': {'unit': 'metre',\\n                      'nodata': 'nan',\\n                      'sampling': 'point',\\n                      'data_type': 'Float32',\\n                      'histogram': {'max': 2.0019607843137255,\\n                                    'min': 0.9980392156862745,\\n                                    'count': 256,\\n                                    'buckets': [862,\\n                                                0,\\n                                                3,\\n                                                1,\\n                                                2,\\n                                                3,\\n                                                2,\\n                                                10,\\n                                                14,\\n                                                20,\\n                                                11,\\n                                                22,\\n                                                16,\\n                                                36,\\n                                                44,\\n                                                37,\\n                                                67,\\n                                                67,\\n                                                85,\\n                                                83,\\n                                                110,\\n                                                103,\\n                                                145,\\n                                                138,\\n                                                175,\\n                                                196,\\n                                                230,\\n                                                239,\\n                                                284,\\n                                                317,\\n                                                339,\\n                                                380,\\n                                                443,\\n                                                436,\\n                                                494,\\n                                                570,\\n                                                614,\\n                                                692,\\n                                                759,\\n                                                810,\\n                                                828,\\n                                                885,\\n                                                976,\\n                                                1087,\\n                                                1148,\\n                                                1309,\\n                                                1339,\\n                                                1455,\\n                                                1537,\\n                                                1611,\\n                                                1766,\\n                                                1806,\\n                                                1949,\\n                                                2113,\\n                                                2222,\\n                                                2308,\\n                                                2507,\\n                                                2693,\\n                                                2635,\\n                                                2941,\\n                                                2864,\\n                                                3208,\\n                                                3282,\\n                                                3498,\\n                                                3698,\\n                                                3941,\\n                                                3979,\\n                                                4203,\\n                                                4356,\\n                                                4401,\\n                                                4834,\\n                                                4827,\\n                                                5077,\\n                                                5360,\\n                                                5512,\\n                                                5666,\\n                                                5781,\\n                                                6073,\\n                                                6203,\\n                                                6292,\\n                                                6727,\\n                                                6829,\\n                                                7216,\\n                                                7384,\\n                                                7500,\\n                                                7780,\\n                                                8032,\\n                                                8109,\\n                                                8357,\\n                                                8512,\\n                                                8855,\\n                                                9072,\\n                                                9352,\\n                                                9451,\\n                                                9743,\\n                                                9836,\\n                                                10000,\\n                                                10485,\\n                                                10689,\\n                                                10894,\\n                                                10953,\\n                                                11190,\\n                                                11426,\\n                                                11508,\\n                                                11713,\\n                                                11895,\\n                                                12051,\\n                                                12055,\\n                                                12287,\\n                                                12309,\\n                                                12661,\\n                                                12713,\\n                                                12847,\\n                                                13093,\\n                                                13107,\\n                                                13305,\\n                                                13243,\\n                                                13232,\\n                                                13304,\\n                                                13649,\\n                                                13513,\\n                                                13717,\\n                                                13768,\\n                                                13645,\\n                                                14058,\\n                                                13390,\\n                                                14119,\\n                                                13655,\\n                                                14031,\\n                                                13785,\\n                                                13938,\\n                                                13978,\\n                                                14066,\\n                                                13895,\\n                                                14252,\\n                                                14022,\\n                                                14058,\\n                                                13980,\\n                                                14046,\\n                                                14126,\\n                                                13869,\\n                                                14138,\\n                                                14265,\\n                                                14149,\\n                                                14179,\\n                                                14172,\\n                                                14404,\\n                                                14059,\\n                                                14397,\\n                                                14398,\\n                                                14313,\\n                                                14344,\\n                                                14695,\\n                                                14569,\\n                                                14630,\\n                                                14865,\\n                                                14775,\\n                                                14816,\\n                                                14760,\\n                                                14852,\\n                                                15072,\\n                                                15003,\\n                                                15161,\\n                                                15213,\\n                                                15075,\\n                                                15302,\\n                                                15786,\\n                                                15590,\\n                                                15990,\\n                                                16068,\\n                                                16148,\\n                                                16306,\\n                                                16248,\\n                                                16599,\\n                                                16694,\\n                                                16756,\\n                                                16996,\\n                                                17146,\\n                                                17460,\\n                                                17576,\\n                                                17686,\\n                                                17797,\\n                                                18211,\\n                                                18297,\\n                                                18489,\\n                                                18897,\\n                                                19270,\\n                                                19164,\\n                                                19640,\\n                                                20197,\\n                                                20111,\\n                                                20552,\\n                                                20604,\\n                                                21225,\\n                                                21265,\\n                                                21574,\\n                                                22087,\\n                                                22320,\\n                                                22750,\\n                                                23283,\\n                                                23790,\\n                                                24105,\\n                                                24069,\\n                                                24876,\\n                                                25221,\\n                                                26017,\\n                                                26358,\\n                                                26769,\\n                                                27529,\\n                                                28004,\\n                                                28042,\\n                                                29035,\\n                                                29715,\\n                                                30482,\\n                                                31080,\\n                                                31881,\\n                                                32680,\\n                                                33213,\\n                                                33923,\\n                                                35050,\\n                                                36023,\\n                                                37076,\\n                                                38167,\\n                                                38770,\\n                                                40424,\\n                                                41328,\\n                                                42734,\\n                                                43773,\\n                                                45491,\\n                                                46843,\\n                                                48120,\\n                                                49791,\\n                                                51193,\\n                                                53288,\\n                                                55347,\\n                                                57638,\\n                                                59947,\\n                                                62314,\\n                                                64867,\\n                                                67949,\\n                                                71790,\\n                                                74926,\\n                                                78870,\\n                                                82726,\\n                                                87461,\\n                                                93810,\\n                                                99182,\\n                                                106166,\\n                                                112501,\\n                                                120876,\\n                                                131576,\\n                                                146774,\\n                                                142635,\\n                                                252133,\\n                                                35227,\\n                                                1632700]},\\n                      'statistics': {'mean': '1.8406654222466',\\n                                     'stddev': '0.20139009208558',\\n                                     'maximum': '2',\\n                                     'minimum': '1',\\n                                     'valid_percent': '88.69'},\\n                      'pdal_pipeline': [{'tag': 'classification_cleanup',\\n                                         'type': 'filters.range',\\n                                         'limits': 'Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]'},\\n                                        {'tag': 'noise_remover',\\n                                         'type': 'filters.range',\\n                                         'limits': 'Classification![7:7]'},\\n                                        {'tag': 'gdal_writer',\\n                                         'type': 'writers.gdal',\\n                                         'filename': None,\\n                                         'data_type': 'float32',\\n                                         'dimension': 'Classification',\\n                                         'resolution': None,\\n                                         'output_type': 'idw',\\n                                         'window_size': 0,\\n                                         'pdal_metadata': True}],\\n                      'spatial_resolution': 7525777},\\n     'proj:geometry': {'type': 'Polygon',\\n                       'coordinates': [[[-114.0510183, 38.154449],\\n                                        [-114.0527931, 38.1103634],\\n                                        [-113.9827819, 38.1085848],\\n                                        [-113.9809651, 38.1526676],\\n                                        [-114.0510183, 38.154449]]]},\\n     'proj:projjson': {'name': 'NAD83 / UTM zone 11N + NAVD88 height',\\n                       'type': 'CompoundCRS',\\n                       '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json',\\n                       'components': [{'id': {'code': 26911,\\n                                              'authority': 'EPSG'},\\n                                       'name': 'NAD83 / UTM zone 11N',\\n                                       'type': 'ProjectedCRS',\\n                                       'base_crs': {'id': {'code': 4269,\\n                                                           'authority': 'EPSG'},\\n                                                    'name': 'NAD83',\\n                                                    'datum': {'name': 'North '\\n                                                                      'American '\\n                                                                      'Datum '\\n                                                                      '1983',\\n                                                              'type': 'GeodeticReferenceFrame',\\n                                                              'ellipsoid': {'name': 'GRS '\\n                                                                                    '1980',\\n                                                                            'semi_major_axis': 6378137,\\n                                                                            'inverse_flattening': 298.257222101}},\\n                                                    'coordinate_system': {'axis': [{'name': 'Geodetic '\\n                                                                                            'latitude',\\n                                                                                    'unit': 'degree',\\n                                                                                    'direction': 'north',\\n                                                                                    'abbreviation': 'Lat'},\\n                                                                                   {'name': 'Geodetic '\\n                                                                                            'longitude',\\n                                                                                    'unit': 'degree',\\n                                                                                    'direction': 'east',\\n                                                                                    'abbreviation': 'Lon'}],\\n                                                                          'subtype': 'ellipsoidal'}},\\n                                       'conversion': {'name': 'UTM zone '\\n                                                              '11N',\\n                                                      'method': {'id': {'code': 9807,\\n                                                                        'authority': 'EPSG'},\\n                                                                 'name': 'Transverse '\\n                                                                         'Mercator'},\\n                                                      'parameters': [{'id': {'code': 8801,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'Latitude '\\n                                                                              'of '\\n                                                                              'natural '\\n                                                                              'origin',\\n                                                                      'unit': 'degree',\\n                                                                      'value': 0},\\n                                                                     {'id': {'code': 8802,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'Longitude '\\n                                                                              'of '\\n                                                                              'natural '\\n                                                                              'origin',\\n                                                                      'unit': 'degree',\\n                                                                      'value': -117},\\n                                                                     {'id': {'code': 8805,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'Scale '\\n                                                                              'factor '\\n                                                                              'at '\\n                                                                              'natural '\\n                                                                              'origin',\\n                                                                      'unit': 'unity',\\n                                                                      'value': 0.9996},\\n                                                                     {'id': {'code': 8806,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'False '\\n                                                                              'easting',\\n                                                                      'unit': 'metre',\\n                                                                      'value': 500000},\\n                                                                     {'id': {'code': 8807,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'False '\\n                                                                              'northing',\\n                                                                      'unit': 'metre',\\n                                                                      'value': 0}]},\\n                                       'coordinate_system': {'axis': [{'name': 'Easting',\\n                                                                       'unit': 'metre',\\n                                                                       'direction': 'east',\\n                                                                       'abbreviation': ''},\\n                                                                      {'name': 'Northing',\\n                                                                       'unit': 'metre',\\n                                                                       'direction': 'north',\\n                                                                       'abbreviation': ''}],\\n                                                             'subtype': 'Cartesian'}},\\n                                      {'id': {'code': 5703,\\n                                              'authority': 'EPSG'},\\n                                       'name': 'NAVD88 height',\\n                                       'type': 'VerticalCRS',\\n                                       'datum': {'name': 'North American '\\n                                                         'Vertical Datum '\\n                                                         '1988',\\n                                                 'type': 'VerticalReferenceFrame'},\\n                                       'coordinate_system': {'axis': [{'name': 'Gravity-related '\\n                                                                               'height',\\n                                                                       'unit': 'metre',\\n                                                                       'direction': 'up',\\n                                                                       'abbreviation': ''}],\\n                                                             'subtype': 'vertical'}}]},\\n     'proj:transform': [2.0, 0.0, 758397.0, 0.0, -2.0, 4227061.0, 0, 0, 1],\\n     'start_datetime': '2020-01-01T00:00:00Z',\\n     'classification:classes': [{'value': 0, 'description': 'None'},\\n                                {'value': 2, 'description': 'Ground'},\\n                                {'value': 3, 'description': 'Low Veg'},\\n                                {'value': 4, 'description': 'Med Veg'},\\n                                {'value': 5, 'description': 'High Veg'},\\n                                {'value': 6, 'description': 'Building'},\\n                                {'value': 7, 'description': 'Low Point'},\\n                                {'value': 8, 'description': 'Reserved'},\\n                                {'value': 9, 'description': 'Water'},\\n                                {'value': 10, 'description': 'Rail'},\\n                                {'value': 11, 'description': 'Road'},\\n                                {'value': 12, 'description': 'Reserved'},\\n                                {'value': 13,\\n                                 'description': 'Wire - Guard (Shield)'},\\n                                {'value': 14,\\n                                 'description': 'Wire - Conductor (Phase)'},\\n                                {'value': 15,\\n                                 'description': 'Transmission Tower'},\\n                                {'value': 16,\\n                                 'description': 'Wire-Structure Connector '\\n                                                '(Insulator)'},\\n                                {'value': 17, 'description': 'Bridge Deck'},\\n                                {'value': 18, 'description': 'High Noise'},\\n                                {'value': 19, 'description': 'Reserved'},\\n                                {'value': 21, 'description': 'Reserved'},\\n                                {'value': 22, 'description': 'Reserved'},\\n                                {'value': 23, 'description': 'Reserved'},\\n                                {'value': 26, 'description': 'Reserved'}]}\"}], 'proj:shape': [2449, 3073], '3dep:usgs_id': 'UT_StatewideSouth_2_2020', 'end_datetime': '2020-12-31T00:00:00Z', 'raster:bands': {'unit': 'metre', 'nodata': 'nan', 'sampling': 'point', 'data_type': 'Float32', 'histogram': {'max': 2.0019607843137255, 'min': 0.9980392156862745, 'count': 256, 'buckets': [862, 0, 3, 1, 2, 3, 2, 10, 14, 20, 11, 22, 16, 36, 44, 37, 67, 67, 85, 83, 110, 103, 145, 138, 175, 196, 230, 239, 284, 317, 339, 380, 443, 436, 494, 570, 614, 692, 759, 810, 828, 885, 976, 1087, 1148, 1309, 1339, 1455, 1537, 1611, 1766, 1806, 1949, 2113, 2222, 2308, 2507, 2693, 2635, 2941, 2864, 3208, 3282, 3498, 3698, 3941, 3979, 4203, 4356, 4401, 4834, 4827, 5077, 5360, 5512, 5666, 5781, 6073, 6203, 6292, 6727, 6829, 7216, 7384, 7500, 7780, 8032, 8109, 8357, 8512, 8855, 9072, 9352, 9451, 9743, 9836, 10000, 10485, 10689, 10894, 10953, 11190, 11426, 11508, 11713, 11895, 12051, 12055, 12287, 12309, 12661, 12713, 12847, 13093, 13107, 13305, 13243, 13232, 13304, 13649, 13513, 13717, 13768, 13645, 14058, 13390, 14119, 13655, 14031, 13785, 13938, 13978, 14066, 13895, 14252, 14022, 14058, 13980, 14046, 14126, 13869, 14138, 14265, 14149, 14179, 14172, 14404, 14059, 14397, 14398, 14313, 14344, 14695, 14569, 14630, 14865, 14775, 14816, 14760, 14852, 15072, 15003, 15161, 15213, 15075, 15302, 15786, 15590, 15990, 16068, 16148, 16306, 16248, 16599, 16694, 16756, 16996, 17146, 17460, 17576, 17686, 17797, 18211, 18297, 18489, 18897, 19270, 19164, 19640, 20197, 20111, 20552, 20604, 21225, 21265, 21574, 22087, 22320, 22750, 23283, 23790, 24105, 24069, 24876, 25221, 26017, 26358, 26769, 27529, 28004, 28042, 29035, 29715, 30482, 31080, 31881, 32680, 33213, 33923, 35050, 36023, 37076, 38167, 38770, 40424, 41328, 42734, 43773, 45491, 46843, 48120, 49791, 51193, 53288, 55347, 57638, 59947, 62314, 64867, 67949, 71790, 74926, 78870, 82726, 87461, 93810, 99182, 106166, 112501, 120876, 131576, 146774, 142635, 252133, 35227, 1632700]}, 'statistics': {'mean': '1.8406654222466', 'stddev': '0.20139009208558', 'maximum': '2', 'minimum': '1', 'valid_percent': '88.69'}, 'pdal_pipeline': [{'tag': 'classification_cleanup', 'type': 'filters.range', 'limits': 'Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]'}, {'tag': 'noise_remover', 'type': 'filters.range', 'limits': 'Classification![7:7]'}, {'tag': 'gdal_writer', 'type': 'writers.gdal', 'filename': None, 'data_type': 'float32', 'dimension': 'Classification', 'resolution': None, 'output_type': 'idw', 'window_size': 0, 'pdal_metadata': True}], 'spatial_resolution': 7525777}, 'proj:geometry': {'type': 'Polygon', 'coordinates': [[[-114.0510183, 38.154449], [-114.0527931, 38.1103634], [-113.9827819, 38.1085848], [-113.9809651, 38.1526676], [-114.0510183, 38.154449]]]}, 'proj:projjson': {'name': 'NAD83 / UTM zone 11N + NAVD88 height', 'type': 'CompoundCRS', '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json', 'components': [{'id': {'code': 26911, 'authority': 'EPSG'}, 'name': 'NAD83 / UTM zone 11N', 'type': 'ProjectedCRS', 'base_crs': {'id': {'code': 4269, 'authority': 'EPSG'}, 'name': 'NAD83', 'datum': {'name': 'North American Datum 1983', 'type': 'GeodeticReferenceFrame', 'ellipsoid': {'name': 'GRS 1980', 'semi_major_axis': 6378137, 'inverse_flattening': 298.257222101}}, 'coordinate_system': {'axis': [{'name': 'Geodetic latitude', 'unit': 'degree', 'direction': 'north', 'abbreviation': 'Lat'}, {'name': 'Geodetic longitude', 'unit': 'degree', 'direction': 'east', 'abbreviation': 'Lon'}], 'subtype': 'ellipsoidal'}}, 'conversion': {'name': 'UTM zone 11N', 'method': {'id': {'code': 9807, 'authority': 'EPSG'}, 'name': 'Transverse Mercator'}, 'parameters': [{'id': {'code': 8801, 'authority': 'EPSG'}, 'name': 'Latitude of natural origin', 'unit': 'degree', 'value': 0}, {'id': {'code': 8802, 'authority': 'EPSG'}, 'name': 'Longitude of natural origin', 'unit': 'degree', 'value': -117}, {'id': {'code': 8805, 'authority': 'EPSG'}, 'name': 'Scale factor at natural origin', 'unit': 'unity', 'value': 0.9996}, {'id': {'code': 8806, 'authority': 'EPSG'}, 'name': 'False easting', 'unit': 'metre', 'value': 500000}, {'id': {'code': 8807, 'authority': 'EPSG'}, 'name': 'False northing', 'unit': 'metre', 'value': 0}]}, 'coordinate_system': {'axis': [{'name': 'Easting', 'unit': 'metre', 'direction': 'east', 'abbreviation': ''}, {'name': 'Northing', 'unit': 'metre', 'direction': 'north', 'abbreviation': ''}], 'subtype': 'Cartesian'}}, {'id': {'code': 5703, 'authority': 'EPSG'}, 'name': 'NAVD88 height', 'type': 'VerticalCRS', 'datum': {'name': 'North American Vertical Datum 1988', 'type': 'VerticalReferenceFrame'}, 'coordinate_system': {'axis': [{'name': 'Gravity-related height', 'unit': 'metre', 'direction': 'up', 'abbreviation': ''}], 'subtype': 'vertical'}}]}, 'proj:transform': [2.0, 0.0, 758397.0, 0.0, -2.0, 4227061.0, 0, 0, 1], 'start_datetime': '2020-01-01T00:00:00Z', 'classification:classes': [{'value': 0, 'description': 'None'}, {'value': 2, 'description': 'Ground'}, {'value': 3, 'description': 'Low Veg'}, {'value': 4, 'description': 'Med Veg'}, {'value': 5, 'description': 'High Veg'}, {'value': 6, 'description': 'Building'}, {'value': 7, 'description': 'Low Point'}, {'value': 8, 'description': 'Reserved'}, {'value': 9, 'description': 'Water'}, {'value': 10, 'description': 'Rail'}, {'value': 11, 'description': 'Road'}, {'value': 12, 'description': 'Reserved'}, {'value': 13, 'description': 'Wire - Guard (Shield)'}, {'value': 14, 'description': 'Wire - Conductor (Phase)'}, {'value': 15, 'description': 'Transmission Tower'}, {'value': 16, 'description': 'Wire-Structure Connector (Insulator)'}, {'value': 17, 'description': 'Bridge Deck'}, {'value': 18, 'description': 'High Noise'}, {'value': 19, 'description': 'Reserved'}, {'value': 21, 'description': 'Reserved'}, {'value': 22, 'description': 'Reserved'}, {'value': 23, 'description': 'Reserved'}, {'value': 26, 'description': 'Reserved'}]} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'UT_StatewideSouth_2_2020-classification-2m-0-7 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:shape': [2449, 3073], \"\n                                    \"'3dep:usgs_id': \"\n                                    \"'UT_StatewideSouth_2_2020', \"\n                                    \"'end_datetime': \"\n                                    \"'2020-12-31T00:00:00Z', \"\n                                    \"'raster:bands': {'unit': 'metre', \"\n                                    \"'nodata': 'nan', 'sampling': 'point', \"\n                                    \"'data_type': 'Float32', 'histogram': \"\n                                    \"{'max': 2.0019607843137255, 'min': \"\n                                    \"0.9980392156862745, 'count': 256, \"\n                                    \"'buckets': [862, 0, 3, 1, 2, 3, 2, \"\n                                    '10, 14, 20, 11, 22, 16, 36, 44, 37, '\n                                    '67, 67, 85, 83, 110, 103, 145, 138, '\n                                    '175, 196, 230, 239, 284, 317, 339, '\n                                    '380, 443, 436, 494, 570, 614, 692, '\n                                    '759, 810, 828, 885, 976, 1087, 1148, '\n                                    '1309, 1339, 1455, 1537, 1611, 1766, '\n                                    '1806, 1949, 2113, 2222, 2308, 2507, '\n                                    '2693, 2635, 2941, 2864, 3208, 3282, '\n                                    '3498, 3698, 3941, 3979, 4203, 4356, '\n                                    '4401, 4834, 4827, 5077, 5360, 5512, '\n                                    '5666, 5781, 6073, 6203, 6292, 6727, '\n                                    '6829, 7216, 7384, 7500, 7780, 8032, '\n                                    '8109, 8357, 8512, 8855, 9072, 9352, '\n                                    '9451, 9743, 9836, 10000, 10485, '\n                                    '10689, 10894, 10953, 11190, 11426, '\n                                    '11508, 11713, 11895, 12051, 12055, '\n                                    '12287, 12309, 12661, 12713, 12847, '\n                                    '13093, 13107, 13305, 13243, 13232, '\n                                    '13304, 13649, 13513, 13717, 13768, '\n                                    '13645, 14058, 13390, 14119, 13655, '\n                                    '14031, 13785, 13938, 13978, 14066, '\n                                    '13895, 14252, 14022, 14058, 13980, '\n                                    '14046, 14126, 13869, 14138, 14265, '\n                                    '14149, 14179, 14172, 14404, 14059, '\n                                    '14397, 14398, 14313, 14344, 14695, '\n                                    '14569, 14630, 14865, 14775, 14816, '\n                                    '14760, 14852, 15072, 15003, 15161, '\n                                    '15213, 15075, 15302, 15786, 15590, '\n                                    '15990, 16068, 16148, 16306, 16248, '\n                                    '16599, 16694, 16756, 16996, 17146, '\n                                    '17460, 17576, 17686, 17797, 18211, '\n                                    '18297, 18489, 18897, 19270, 19164, '\n                                    '19640, 20197, 20111, 20552, 20604, '\n                                    '21225, 21265, 21574, 22087, 22320, '\n                                    '22750, 23283, 23790, 24105, 24069, '\n                                    '24876, 25221, 26017, 26358, 26769, '\n                                    '27529, 28004, 28042, 29035, 29715, '\n                                    '30482, 31080, 31881, 32680, 33213, '\n                                    '33923, 35050, 36023, 37076, 38167, '\n                                    '38770, 40424, 41328, 42734, 43773, '\n                                    '45491, 46843, 48120, 49791, 51193, '\n                                    '53288, 55347, 57638, 59947, 62314, '\n                                    '64867, 67949, 71790, 74926, 78870, '\n                                    '82726, 87461, 93810, 99182, 106166, '\n                                    '112501, 120876, 131576, 146774, '\n                                    '142635, 252133, 35227, 1632700]}, '\n                                    \"'statistics': {'mean': \"\n                                    \"'1.8406654222466', 'stddev': \"\n                                    \"'0.20139009208558', 'maximum': '2', \"\n                                    \"'minimum': '1', 'valid_percent': \"\n                                    \"'88.69'}, 'pdal_pipeline': [{'tag': \"\n                                    \"'classification_cleanup', 'type': \"\n                                    \"'filters.range', 'limits': \"\n                                    \"'Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]'}, \"\n                                    \"{'tag': 'noise_remover', 'type': \"\n                                    \"'filters.range', 'limits': \"\n                                    \"'Classification![7:7]'}, {'tag': \"\n                                    \"'gdal_writer', 'type': \"\n                                    \"'writers.gdal', 'filename': None, \"\n                                    \"'data_type': 'float32', 'dimension': \"\n                                    \"'Classification', 'resolution': None, \"\n                                    \"'output_type': 'idw', 'window_size': \"\n                                    \"0, 'pdal_metadata': True}], \"\n                                    \"'spatial_resolution': 7525777}, \"\n                                    \"'proj:geometry': {'type': 'Polygon', \"\n                                    \"'coordinates': [[[-114.0510183, \"\n                                    '38.154449], [-114.0527931, '\n                                    '38.1103634], [-113.9827819, '\n                                    '38.1085848], [-113.9809651, '\n                                    '38.1526676], [-114.0510183, '\n                                    \"38.154449]]]}, 'proj:projjson': \"\n                                    \"{'name': 'NAD83 / UTM zone 11N + \"\n                                    \"NAVD88 height', 'type': \"\n                                    \"'CompoundCRS', '$schema': \"\n                                    \"'https://proj.org/schemas/v0.4/projjson.schema.json', \"\n                                    \"'components': [{'id': {'code': 26911, \"\n                                    \"'authority': 'EPSG'}, 'name': 'NAD83 \"\n                                    \"/ UTM zone 11N', 'type': \"\n                                    \"'ProjectedCRS', 'base_crs': {'id': \"\n                                    \"{'code': 4269, 'authority': 'EPSG'}, \"\n                                    \"'name': 'NAD83', 'datum': {'name': \"\n                                    \"'North American Datum 1983', 'type': \"\n                                    \"'GeodeticReferenceFrame', \"\n                                    \"'ellipsoid': {'name': 'GRS 1980', \"\n                                    \"'semi_major_axis': 6378137, \"\n                                    \"'inverse_flattening': \"\n                                    \"298.257222101}}, 'coordinate_system': \"\n                                    \"{'axis': [{'name': 'Geodetic \"\n                                    \"latitude', 'unit': 'degree', \"\n                                    \"'direction': 'north', 'abbreviation': \"\n                                    \"'Lat'}, {'name': 'Geodetic \"\n                                    \"longitude', 'unit': 'degree', \"\n                                    \"'direction': 'east', 'abbreviation': \"\n                                    \"'Lon'}], 'subtype': 'ellipsoidal'}}, \"\n                                    \"'conversion': {'name': 'UTM zone \"\n                                    \"11N', 'method': {'id': {'code': 9807, \"\n                                    \"'authority': 'EPSG'}, 'name': \"\n                                    \"'Transverse Mercator'}, 'parameters': \"\n                                    \"[{'id': {'code': 8801, 'authority': \"\n                                    \"'EPSG'}, 'name': 'Latitude of natural \"\n                                    \"origin', 'unit': 'degree', 'value': \"\n                                    \"0}, {'id': {'code': 8802, \"\n                                    \"'authority': 'EPSG'}, 'name': \"\n                                    \"'Longitude of natural origin', \"\n                                    \"'unit': 'degree', 'value': -117}, \"\n                                    \"{'id': {'code': 8805, 'authority': \"\n                                    \"'EPSG'}, 'name': 'Scale factor at \"\n                                    \"natural origin', 'unit': 'unity', \"\n                                    \"'value': 0.9996}, {'id': {'code': \"\n                                    \"8806, 'authority': 'EPSG'}, 'name': \"\n                                    \"'False easting', 'unit': 'metre', \"\n                                    \"'value': 500000}, {'id': {'code': \"\n                                    \"8807, 'authority': 'EPSG'}, 'name': \"\n                                    \"'False northing', 'unit': 'metre', \"\n                                    \"'value': 0}]}, 'coordinate_system': \"\n                                    \"{'axis': [{'name': 'Easting', 'unit': \"\n                                    \"'metre', 'direction': 'east', \"\n                                    \"'abbreviation': ''}, {'name': \"\n                                    \"'Northing', 'unit': 'metre', \"\n                                    \"'direction': 'north', 'abbreviation': \"\n                                    \"''}], 'subtype': 'Cartesian'}}, \"\n                                    \"{'id': {'code': 5703, 'authority': \"\n                                    \"'EPSG'}, 'name': 'NAVD88 height', \"\n                                    \"'type': 'VerticalCRS', 'datum': \"\n                                    \"{'name': 'North American Vertical \"\n                                    \"Datum 1988', 'type': \"\n                                    \"'VerticalReferenceFrame'}, \"\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Gravity-related height', \"\n                                    \"'unit': 'metre', 'direction': 'up', \"\n                                    \"'abbreviation': ''}], 'subtype': \"\n                                    \"'vertical'}}]}, 'proj:transform': \"\n                                    '[2.0, 0.0, 758397.0, 0.0, -2.0, '\n                                    '4227061.0, 0, 0, 1], '\n                                    \"'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z', \"\n                                    \"'classification:classes': [{'value': \"\n                                    \"0, 'description': 'None'}, {'value': \"\n                                    \"2, 'description': 'Ground'}, \"\n                                    \"{'value': 3, 'description': 'Low \"\n                                    \"Veg'}, {'value': 4, 'description': \"\n                                    \"'Med Veg'}, {'value': 5, \"\n                                    \"'description': 'High Veg'}, {'value': \"\n                                    \"6, 'description': 'Building'}, \"\n                                    \"{'value': 7, 'description': 'Low \"\n                                    \"Point'}, {'value': 8, 'description': \"\n                                    \"'Reserved'}, {'value': 9, \"\n                                    \"'description': 'Water'}, {'value': \"\n                                    \"10, 'description': 'Rail'}, {'value': \"\n                                    \"11, 'description': 'Road'}, {'value': \"\n                                    \"12, 'description': 'Reserved'}, \"\n                                    \"{'value': 13, 'description': 'Wire - \"\n                                    \"Guard (Shield)'}, {'value': 14, \"\n                                    \"'description': 'Wire - Conductor \"\n                                    \"(Phase)'}, {'value': 15, \"\n                                    \"'description': 'Transmission Tower'}, \"\n                                    \"{'value': 16, 'description': \"\n                                    \"'Wire-Structure Connector \"\n                                    \"(Insulator)'}, {'value': 17, \"\n                                    \"'description': 'Bridge Deck'}, \"\n                                    \"{'value': 18, 'description': 'High \"\n                                    \"Noise'}, {'value': 19, 'description': \"\n                                    \"'Reserved'}, {'value': 21, \"\n                                    \"'description': 'Reserved'}, {'value': \"\n                                    \"22, 'description': 'Reserved'}, \"\n                                    \"{'value': 23, 'description': \"\n                                    \"'Reserved'}, {'value': 26, \"\n                                    \"'description': 'Reserved'}]} is not \"\n                                    'valid under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:shape': [2449, 3073],\\n\"\n                                    \"     '3dep:usgs_id': \"\n                                    \"'UT_StatewideSouth_2_2020',\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T00:00:00Z',\\n\"\n                                    \"     'raster:bands': {'unit': \"\n                                    \"'metre',\\n\"\n                                    \"                      'nodata': \"\n                                    \"'nan',\\n\"\n                                    \"                      'sampling': \"\n                                    \"'point',\\n\"\n                                    \"                      'data_type': \"\n                                    \"'Float32',\\n\"\n                                    \"                      'histogram': \"\n                                    \"{'max': 2.0019607843137255,\\n\"\n                                    '                                    '\n                                    \"'min': 0.9980392156862745,\\n\"\n                                    '                                    '\n                                    \"'count': 256,\\n\"\n                                    '                                    '\n                                    \"'buckets': [862,\\n\"\n                                    '                                                '\n                                    '0,\\n'\n                                    '                                                '\n                                    '3,\\n'\n                                    '                                                '\n                                    '1,\\n'\n                                    '                                                '\n                                    '2,\\n'\n                                    '                                                '\n                                    '3,\\n'\n                                    '                                                '\n                                    '2,\\n'\n                                    '                                                '\n                                    '10,\\n'\n                                    '                                                '\n                                    '14,\\n'\n                                    '                                                '\n                                    '20,\\n'\n                                    '                                                '\n                                    '11,\\n'\n                                    '                                                '\n                                    '22,\\n'\n                                    '                                                '\n                                    '16,\\n'\n                                    '                                                '\n                                    '36,\\n'\n                                    '                                                '\n                                    '44,\\n'\n                                    '                                                '\n                                    '37,\\n'\n                                    '                                                '\n                                    '67,\\n'\n                                    '                                                '\n                                    '67,\\n'\n                                    '                                                '\n                                    '85,\\n'\n                                    '                                                '\n                                    '83,\\n'\n                                    '                                                '\n                                    '110,\\n'\n                                    '                                                '\n                                    '103,\\n'\n                                    '                                                '\n                                    '145,\\n'\n                                    '                                                '\n                                    '138,\\n'\n                                    '                                                '\n                                    '175,\\n'\n                                    '                                                '\n                                    '196,\\n'\n                                    '                                                '\n                                    '230,\\n'\n                                    '                                                '\n                                    '239,\\n'\n                                    '                                                '\n                                    '284,\\n'\n                                    '                                                '\n                                    '317,\\n'\n                                    '                                                '\n                                    '339,\\n'\n                                    '                                                '\n                                    '380,\\n'\n                                    '                                                '\n                                    '443,\\n'\n                                    '                                                '\n                                    '436,\\n'\n                                    '                                                '\n                                    '494,\\n'\n                                    '                                                '\n                                    '570,\\n'\n                                    '                                                '\n                                    '614,\\n'\n                                    '                                                '\n                                    '692,\\n'\n                                    '                                                '\n                                    '759,\\n'\n                                    '                                                '\n                                    '810,\\n'\n                                    '                                                '\n                                    '828,\\n'\n                                    '                                                '\n                                    '885,\\n'\n                                    '                                                '\n                                    '976,\\n'\n                                    '                                                '\n                                    '1087,\\n'\n                                    '                                                '\n                                    '1148,\\n'\n                                    '                                                '\n                                    '1309,\\n'\n                                    '                                                '\n                                    '1339,\\n'\n                                    '                                                '\n                                    '1455,\\n'\n                                    '                                                '\n                                    '1537,\\n'\n                                    '                                                '\n                                    '1611,\\n'\n                                    '                                                '\n                                    '1766,\\n'\n                                    '                                                '\n                                    '1806,\\n'\n                                    '                                                '\n                                    '1949,\\n'\n                                    '                                                '\n                                    '2113,\\n'\n                                    '                                                '\n                                    '2222,\\n'\n                                    '                                                '\n                                    '2308,\\n'\n                                    '                                                '\n                                    '2507,\\n'\n                                    '                                                '\n                                    '2693,\\n'\n                                    '                                                '\n                                    '2635,\\n'\n                                    '                                                '\n                                    '2941,\\n'\n                                    '                                                '\n                                    '2864,\\n'\n                                    '                                                '\n                                    '3208,\\n'\n                                    '                                                '\n                                    '3282,\\n'\n                                    '                                                '\n                                    '3498,\\n'\n                                    '                                                '\n                                    '3698,\\n'\n                                    '                                                '\n                                    '3941,\\n'\n                                    '                                                '\n                                    '3979,\\n'\n                                    '                                                '\n                                    '4203,\\n'\n                                    '                                                '\n                                    '4356,\\n'\n                                    '                                                '\n                                    '4401,\\n'\n                                    '                                                '\n                                    '4834,\\n'\n                                    '                                                '\n                                    '4827,\\n'\n                                    '                                                '\n                                    '5077,\\n'\n                                    '                                                '\n                                    '5360,\\n'\n                                    '                                                '\n                                    '5512,\\n'\n                                    '                                                '\n                                    '5666,\\n'\n                                    '                                                '\n                                    '5781,\\n'\n                                    '                                                '\n                                    '6073,\\n'\n                                    '                                                '\n                                    '6203,\\n'\n                                    '                                                '\n                                    '6292,\\n'\n                                    '                                                '\n                                    '6727,\\n'\n                                    '                                                '\n                                    '6829,\\n'\n                                    '                                                '\n                                    '7216,\\n'\n                                    '                                                '\n                                    '7384,\\n'\n                                    '                                                '\n                                    '7500,\\n'\n                                    '                                                '\n                                    '7780,\\n'\n                                    '                                                '\n                                    '8032,\\n'\n                                    '                                                '\n                                    '8109,\\n'\n                                    '                                                '\n                                    '8357,\\n'\n                                    '                                                '\n                                    '8512,\\n'\n                                    '                                                '\n                                    '8855,\\n'\n                                    '                                                '\n                                    '9072,\\n'\n                                    '                                                '\n                                    '9352,\\n'\n                                    '                                                '\n                                    '9451,\\n'\n                                    '                                                '\n                                    '9743,\\n'\n                                    '                                                '\n                                    '9836,\\n'\n                                    '                                                '\n                                    '10000,\\n'\n                                    '                                                '\n                                    '10485,\\n'\n                                    '                                                '\n                                    '10689,\\n'\n                                    '                                                '\n                                    '10894,\\n'\n                                    '                                                '\n                                    '10953,\\n'\n                                    '                                                '\n                                    '11190,\\n'\n                                    '                                                '\n                                    '11426,\\n'\n                                    '                                                '\n                                    '11508,\\n'\n                                    '                                                '\n                                    '11713,\\n'\n                                    '                                                '\n                                    '11895,\\n'\n                                    '                                                '\n                                    '12051,\\n'\n                                    '                                                '\n                                    '12055,\\n'\n                                    '                                                '\n                                    '12287,\\n'\n                                    '                                                '\n                                    '12309,\\n'\n                                    '                                                '\n                                    '12661,\\n'\n                                    '                                                '\n                                    '12713,\\n'\n                                    '                                                '\n                                    '12847,\\n'\n                                    '                                                '\n                                    '13093,\\n'\n                                    '                                                '\n                                    '13107,\\n'\n                                    '                                                '\n                                    '13305,\\n'\n                                    '                                                '\n                                    '13243,\\n'\n                                    '                                                '\n                                    '13232,\\n'\n                                    '                                                '\n                                    '13304,\\n'\n                                    '                                                '\n                                    '13649,\\n'\n                                    '                                                '\n                                    '13513,\\n'\n                                    '                                                '\n                                    '13717,\\n'\n                                    '                                                '\n                                    '13768,\\n'\n                                    '                                                '\n                                    '13645,\\n'\n                                    '                                                '\n                                    '14058,\\n'\n                                    '                                                '\n                                    '13390,\\n'\n                                    '                                                '\n                                    '14119,\\n'\n                                    '                                                '\n                                    '13655,\\n'\n                                    '                                                '\n                                    '14031,\\n'\n                                    '                                                '\n                                    '13785,\\n'\n                                    '                                                '\n                                    '13938,\\n'\n                                    '                                                '\n                                    '13978,\\n'\n                                    '                                                '\n                                    '14066,\\n'\n                                    '                                                '\n                                    '13895,\\n'\n                                    '                                                '\n                                    '14252,\\n'\n                                    '                                                '\n                                    '14022,\\n'\n                                    '                                                '\n                                    '14058,\\n'\n                                    '                                                '\n                                    '13980,\\n'\n                                    '                                                '\n                                    '14046,\\n'\n                                    '                                                '\n                                    '14126,\\n'\n                                    '                                                '\n                                    '13869,\\n'\n                                    '                                                '\n                                    '14138,\\n'\n                                    '                                                '\n                                    '14265,\\n'\n                                    '                                                '\n                                    '14149,\\n'\n                                    '                                                '\n                                    '14179,\\n'\n                                    '                                                '\n                                    '14172,\\n'\n                                    '                                                '\n                                    '14404,\\n'\n                                    '                                                '\n                                    '14059,\\n'\n                                    '                                                '\n                                    '14397,\\n'\n                                    '                                                '\n                                    '14398,\\n'\n                                    '                                                '\n                                    '14313,\\n'\n                                    '                                                '\n                                    '14344,\\n'\n                                    '                                                '\n                                    '14695,\\n'\n                                    '                                                '\n                                    '14569,\\n'\n                                    '                                                '\n                                    '14630,\\n'\n                                    '                                                '\n                                    '14865,\\n'\n                                    '                                                '\n                                    '14775,\\n'\n                                    '                                                '\n                                    '14816,\\n'\n                                    '                                                '\n                                    '14760,\\n'\n                                    '                                                '\n                                    '14852,\\n'\n                                    '                                                '\n                                    '15072,\\n'\n                                    '                                                '\n                                    '15003,\\n'\n                                    '                                                '\n                                    '15161,\\n'\n                                    '                                                '\n                                    '15213,\\n'\n                                    '                                                '\n                                    '15075,\\n'\n                                    '                                                '\n                                    '15302,\\n'\n                                    '                                                '\n                                    '15786,\\n'\n                                    '                                                '\n                                    '15590,\\n'\n                                    '                                                '\n                                    '15990,\\n'\n                                    '                                                '\n                                    '16068,\\n'\n                                    '                                                '\n                                    '16148,\\n'\n                                    '                                                '\n                                    '16306,\\n'\n                                    '                                                '\n                                    '16248,\\n'\n                                    '                                                '\n                                    '16599,\\n'\n                                    '                                                '\n                                    '16694,\\n'\n                                    '                                                '\n                                    '16756,\\n'\n                                    '                                                '\n                                    '16996,\\n'\n                                    '                                                '\n                                    '17146,\\n'\n                                    '                                                '\n                                    '17460,\\n'\n                                    '                                                '\n                                    '17576,\\n'\n                                    '                                                '\n                                    '17686,\\n'\n                                    '                                                '\n                                    '17797,\\n'\n                                    '                                                '\n                                    '18211,\\n'\n                                    '                                                '\n                                    '18297,\\n'\n                                    '                                                '\n                                    '18489,\\n'\n                                    '                                                '\n                                    '18897,\\n'\n                                    '                                                '\n                                    '19270,\\n'\n                                    '                                                '\n                                    '19164,\\n'\n                                    '                                                '\n                                    '19640,\\n'\n                                    '                                                '\n                                    '20197,\\n'\n                                    '                                                '\n                                    '20111,\\n'\n                                    '                                                '\n                                    '20552,\\n'\n                                    '                                                '\n                                    '20604,\\n'\n                                    '                                                '\n                                    '21225,\\n'\n                                    '                                                '\n                                    '21265,\\n'\n                                    '                                                '\n                                    '21574,\\n'\n                                    '                                                '\n                                    '22087,\\n'\n                                    '                                                '\n                                    '22320,\\n'\n                                    '                                                '\n                                    '22750,\\n'\n                                    '                                                '\n                                    '23283,\\n'\n                                    '                                                '\n                                    '23790,\\n'\n                                    '                                                '\n                                    '24105,\\n'\n                                    '                                                '\n                                    '24069,\\n'\n                                    '                                                '\n                                    '24876,\\n'\n                                    '                                                '\n                                    '25221,\\n'\n                                    '                                                '\n                                    '26017,\\n'\n                                    '                                                '\n                                    '26358,\\n'\n                                    '                                                '\n                                    '26769,\\n'\n                                    '                                                '\n                                    '27529,\\n'\n                                    '                                                '\n                                    '28004,\\n'\n                                    '                                                '\n                                    '28042,\\n'\n                                    '                                                '\n                                    '29035,\\n'\n                                    '                                                '\n                                    '29715,\\n'\n                                    '                                                '\n                                    '30482,\\n'\n                                    '                                                '\n                                    '31080,\\n'\n                                    '                                                '\n                                    '31881,\\n'\n                                    '                                                '\n                                    '32680,\\n'\n                                    '                                                '\n                                    '33213,\\n'\n                                    '                                                '\n                                    '33923,\\n'\n                                    '                                                '\n                                    '35050,\\n'\n                                    '                                                '\n                                    '36023,\\n'\n                                    '                                                '\n                                    '37076,\\n'\n                                    '                                                '\n                                    '38167,\\n'\n                                    '                                                '\n                                    '38770,\\n'\n                                    '                                                '\n                                    '40424,\\n'\n                                    '                                                '\n                                    '41328,\\n'\n                                    '                                                '\n                                    '42734,\\n'\n                                    '                                                '\n                                    '43773,\\n'\n                                    '                                                '\n                                    '45491,\\n'\n                                    '                                                '\n                                    '46843,\\n'\n                                    '                                                '\n                                    '48120,\\n'\n                                    '                                                '\n                                    '49791,\\n'\n                                    '                                                '\n                                    '51193,\\n'\n                                    '                                                '\n                                    '53288,\\n'\n                                    '                                                '\n                                    '55347,\\n'\n                                    '                                                '\n                                    '57638,\\n'\n                                    '                                                '\n                                    '59947,\\n'\n                                    '                                                '\n                                    '62314,\\n'\n                                    '                                                '\n                                    '64867,\\n'\n                                    '                                                '\n                                    '67949,\\n'\n                                    '                                                '\n                                    '71790,\\n'\n                                    '                                                '\n                                    '74926,\\n'\n                                    '                                                '\n                                    '78870,\\n'\n                                    '                                                '\n                                    '82726,\\n'\n                                    '                                                '\n                                    '87461,\\n'\n                                    '                                                '\n                                    '93810,\\n'\n                                    '                                                '\n                                    '99182,\\n'\n                                    '                                                '\n                                    '106166,\\n'\n                                    '                                                '\n                                    '112501,\\n'\n                                    '                                                '\n                                    '120876,\\n'\n                                    '                                                '\n                                    '131576,\\n'\n                                    '                                                '\n                                    '146774,\\n'\n                                    '                                                '\n                                    '142635,\\n'\n                                    '                                                '\n                                    '252133,\\n'\n                                    '                                                '\n                                    '35227,\\n'\n                                    '                                                '\n                                    '1632700]},\\n'\n                                    \"                      'statistics': \"\n                                    \"{'mean': '1.8406654222466',\\n\"\n                                    '                                     '\n                                    \"'stddev': '0.20139009208558',\\n\"\n                                    '                                     '\n                                    \"'maximum': '2',\\n\"\n                                    '                                     '\n                                    \"'minimum': '1',\\n\"\n                                    '                                     '\n                                    \"'valid_percent': '88.69'},\\n\"\n                                    '                      '\n                                    \"'pdal_pipeline': [{'tag': \"\n                                    \"'classification_cleanup',\\n\"\n                                    '                                         '\n                                    \"'type': 'filters.range',\\n\"\n                                    '                                         '\n                                    \"'limits': \"\n                                    \"'Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]'},\\n\"\n                                    '                                        '\n                                    \"{'tag': 'noise_remover',\\n\"\n                                    '                                         '\n                                    \"'type': 'filters.range',\\n\"\n                                    '                                         '\n                                    \"'limits': 'Classification![7:7]'},\\n\"\n                                    '                                        '\n                                    \"{'tag': 'gdal_writer',\\n\"\n                                    '                                         '\n                                    \"'type': 'writers.gdal',\\n\"\n                                    '                                         '\n                                    \"'filename': None,\\n\"\n                                    '                                         '\n                                    \"'data_type': 'float32',\\n\"\n                                    '                                         '\n                                    \"'dimension': 'Classification',\\n\"\n                                    '                                         '\n                                    \"'resolution': None,\\n\"\n                                    '                                         '\n                                    \"'output_type': 'idw',\\n\"\n                                    '                                         '\n                                    \"'window_size': 0,\\n\"\n                                    '                                         '\n                                    \"'pdal_metadata': True}],\\n\"\n                                    '                      '\n                                    \"'spatial_resolution': 7525777},\\n\"\n                                    \"     'proj:geometry': {'type': \"\n                                    \"'Polygon',\\n\"\n                                    \"                       'coordinates': \"\n                                    '[[[-114.0510183, 38.154449],\\n'\n                                    '                                        '\n                                    '[-114.0527931, 38.1103634],\\n'\n                                    '                                        '\n                                    '[-113.9827819, 38.1085848],\\n'\n                                    '                                        '\n                                    '[-113.9809651, 38.1526676],\\n'\n                                    '                                        '\n                                    '[-114.0510183, 38.154449]]]},\\n'\n                                    \"     'proj:projjson': {'name': 'NAD83 \"\n                                    \"/ UTM zone 11N + NAVD88 height',\\n\"\n                                    \"                       'type': \"\n                                    \"'CompoundCRS',\\n\"\n                                    \"                       '$schema': \"\n                                    \"'https://proj.org/schemas/v0.4/projjson.schema.json',\\n\"\n                                    \"                       'components': \"\n                                    \"[{'id': {'code': 26911,\\n\"\n                                    '                                              '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                       '\n                                    \"'name': 'NAD83 / UTM zone 11N',\\n\"\n                                    '                                       '\n                                    \"'type': 'ProjectedCRS',\\n\"\n                                    '                                       '\n                                    \"'base_crs': {'id': {'code': 4269,\\n\"\n                                    '                                                           '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                    '\n                                    \"'name': 'NAD83',\\n\"\n                                    '                                                    '\n                                    \"'datum': {'name': 'North '\\n\"\n                                    '                                                                      '\n                                    \"'American '\\n\"\n                                    '                                                                      '\n                                    \"'Datum '\\n\"\n                                    '                                                                      '\n                                    \"'1983',\\n\"\n                                    '                                                              '\n                                    \"'type': 'GeodeticReferenceFrame',\\n\"\n                                    '                                                              '\n                                    \"'ellipsoid': {'name': 'GRS '\\n\"\n                                    '                                                                                    '\n                                    \"'1980',\\n\"\n                                    '                                                                            '\n                                    \"'semi_major_axis': 6378137,\\n\"\n                                    '                                                                            '\n                                    \"'inverse_flattening': \"\n                                    '298.257222101}},\\n'\n                                    '                                                    '\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Geodetic '\\n\"\n                                    '                                                                                            '\n                                    \"'latitude',\\n\"\n                                    '                                                                                    '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                                    '\n                                    \"'direction': 'north',\\n\"\n                                    '                                                                                    '\n                                    \"'abbreviation': 'Lat'},\\n\"\n                                    '                                                                                   '\n                                    \"{'name': 'Geodetic '\\n\"\n                                    '                                                                                            '\n                                    \"'longitude',\\n\"\n                                    '                                                                                    '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                                    '\n                                    \"'direction': 'east',\\n\"\n                                    '                                                                                    '\n                                    \"'abbreviation': 'Lon'}],\\n\"\n                                    '                                                                          '\n                                    \"'subtype': 'ellipsoidal'}},\\n\"\n                                    '                                       '\n                                    \"'conversion': {'name': 'UTM zone '\\n\"\n                                    '                                                              '\n                                    \"'11N',\\n\"\n                                    '                                                      '\n                                    \"'method': {'id': {'code': 9807,\\n\"\n                                    '                                                                        '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                 '\n                                    \"'name': 'Transverse '\\n\"\n                                    '                                                                         '\n                                    \"'Mercator'},\\n\"\n                                    '                                                      '\n                                    \"'parameters': [{'id': {'code': 8801,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'Latitude '\\n\"\n                                    '                                                                              '\n                                    \"'of '\\n\"\n                                    '                                                                              '\n                                    \"'natural '\\n\"\n                                    '                                                                              '\n                                    \"'origin',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                      '\n                                    \"'value': 0},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8802,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'Longitude '\\n\"\n                                    '                                                                              '\n                                    \"'of '\\n\"\n                                    '                                                                              '\n                                    \"'natural '\\n\"\n                                    '                                                                              '\n                                    \"'origin',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                      '\n                                    \"'value': -117},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8805,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'Scale '\\n\"\n                                    '                                                                              '\n                                    \"'factor '\\n\"\n                                    '                                                                              '\n                                    \"'at '\\n\"\n                                    '                                                                              '\n                                    \"'natural '\\n\"\n                                    '                                                                              '\n                                    \"'origin',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'unity',\\n\"\n                                    '                                                                      '\n                                    \"'value': 0.9996},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8806,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'False '\\n\"\n                                    '                                                                              '\n                                    \"'easting',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                      '\n                                    \"'value': 500000},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8807,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'False '\\n\"\n                                    '                                                                              '\n                                    \"'northing',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                      '\n                                    \"'value': 0}]},\\n\"\n                                    '                                       '\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Easting',\\n\"\n                                    '                                                                       '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                       '\n                                    \"'direction': 'east',\\n\"\n                                    '                                                                       '\n                                    \"'abbreviation': ''},\\n\"\n                                    '                                                                      '\n                                    \"{'name': 'Northing',\\n\"\n                                    '                                                                       '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                       '\n                                    \"'direction': 'north',\\n\"\n                                    '                                                                       '\n                                    \"'abbreviation': ''}],\\n\"\n                                    '                                                             '\n                                    \"'subtype': 'Cartesian'}},\\n\"\n                                    '                                      '\n                                    \"{'id': {'code': 5703,\\n\"\n                                    '                                              '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                       '\n                                    \"'name': 'NAVD88 height',\\n\"\n                                    '                                       '\n                                    \"'type': 'VerticalCRS',\\n\"\n                                    '                                       '\n                                    \"'datum': {'name': 'North American '\\n\"\n                                    '                                                         '\n                                    \"'Vertical Datum '\\n\"\n                                    '                                                         '\n                                    \"'1988',\\n\"\n                                    '                                                 '\n                                    \"'type': 'VerticalReferenceFrame'},\\n\"\n                                    '                                       '\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Gravity-related '\\n\"\n                                    '                                                                               '\n                                    \"'height',\\n\"\n                                    '                                                                       '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                       '\n                                    \"'direction': 'up',\\n\"\n                                    '                                                                       '\n                                    \"'abbreviation': ''}],\\n\"\n                                    '                                                             '\n                                    \"'subtype': 'vertical'}}]},\\n\"\n                                    \"     'proj:transform': [2.0, 0.0, \"\n                                    '758397.0, 0.0, -2.0, 4227061.0, 0, 0, '\n                                    '1],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z',\\n\"\n                                    \"     'classification:classes': \"\n                                    \"[{'value': 0, 'description': \"\n                                    \"'None'},\\n\"\n                                    '                                '\n                                    \"{'value': 2, 'description': \"\n                                    \"'Ground'},\\n\"\n                                    '                                '\n                                    \"{'value': 3, 'description': 'Low \"\n                                    \"Veg'},\\n\"\n                                    '                                '\n                                    \"{'value': 4, 'description': 'Med \"\n                                    \"Veg'},\\n\"\n                                    '                                '\n                                    \"{'value': 5, 'description': 'High \"\n                                    \"Veg'},\\n\"\n                                    '                                '\n                                    \"{'value': 6, 'description': \"\n                                    \"'Building'},\\n\"\n                                    '                                '\n                                    \"{'value': 7, 'description': 'Low \"\n                                    \"Point'},\\n\"\n                                    '                                '\n                                    \"{'value': 8, 'description': \"\n                                    \"'Reserved'},\\n\"\n                                    '                                '\n                                    \"{'value': 9, 'description': \"\n                                    \"'Water'},\\n\"\n                                    '                                '\n                                    \"{'value': 10, 'description': \"\n                                    \"'Rail'},\\n\"\n                                    '                                '\n                                    \"{'value': 11, 'description': \"\n                                    \"'Road'},\\n\"\n                                    '                                '\n                                    \"{'value': 12, 'description': \"\n                                    \"'Reserved'},\\n\"\n                                    '                                '\n                                    \"{'value': 13,\\n\"\n                                    '                                 '\n                                    \"'description': 'Wire - Guard \"\n                                    \"(Shield)'},\\n\"\n                                    '                                '\n                                    \"{'value': 14,\\n\"\n                                    '                                 '\n                                    \"'description': 'Wire - Conductor \"\n                                    \"(Phase)'},\\n\"\n                                    '                                '\n                                    \"{'value': 15,\\n\"\n                                    '                                 '\n                                    \"'description': 'Transmission \"\n                                    \"Tower'},\\n\"\n                                    '                                '\n                                    \"{'value': 16,\\n\"\n                                    '                                 '\n                                    \"'description': 'Wire-Structure \"\n                                    \"Connector '\\n\"\n                                    '                                                '\n                                    \"'(Insulator)'},\\n\"\n                                    '                                '\n                                    \"{'value': 17, 'description': 'Bridge \"\n                                    \"Deck'},\\n\"\n                                    '                                '\n                                    \"{'value': 18, 'description': 'High \"\n                                    \"Noise'},\\n\"\n                                    '                                '\n                                    \"{'value': 19, 'description': \"\n                                    \"'Reserved'},\\n\"\n                                    '                                '\n                                    \"{'value': 21, 'description': \"\n                                    \"'Reserved'},\\n\"\n                                    '                                '\n                                    \"{'value': 22, 'description': \"\n                                    \"'Reserved'},\\n\"\n                                    '                                '\n                                    \"{'value': 23, 'description': \"\n                                    \"'Reserved'},\\n\"\n                                    '                                '\n                                    \"{'value': 26, 'description': \"\n                                    \"'Reserved'}]}\"}],\n     'proj:shape': [2449, 3073],\n     '3dep:usgs_id': 'UT_StatewideSouth_2_2020',\n     'end_datetime': '2020-12-31T00:00:00Z',\n     'raster:bands': {'unit': 'metre',\n                      'nodata': 'nan',\n                      'sampling': 'point',\n                      'data_type': 'Float32',\n                      'histogram': {'max': 2.0019607843137255,\n                                    'min': 0.9980392156862745,\n                                    'count': 256,\n                                    'buckets': [862,\n                                                0,\n                                                3,\n                                                1,\n                                                2,\n                                                3,\n                                                2,\n                                                10,\n                                                14,\n                                                20,\n                                                11,\n                                                22,\n                                                16,\n                                                36,\n                                                44,\n                                                37,\n                                                67,\n                                                67,\n                                                85,\n                                                83,\n                                                110,\n                                                103,\n                                                145,\n                                                138,\n                                                175,\n                                                196,\n                                                230,\n                                                239,\n                                                284,\n                                                317,\n                                                339,\n                                                380,\n                                                443,\n                                                436,\n                                                494,\n                                                570,\n                                                614,\n                                                692,\n                                                759,\n                                                810,\n                                                828,\n                                                885,\n                                                976,\n                                                1087,\n                                                1148,\n                                                1309,\n                                                1339,\n                                                1455,\n                                                1537,\n                                                1611,\n                                                1766,\n                                                1806,\n                                                1949,\n                                                2113,\n                                                2222,\n                                                2308,\n                                                2507,\n                                                2693,\n                                                2635,\n                                                2941,\n                                                2864,\n                                                3208,\n                                                3282,\n                                                3498,\n                                                3698,\n                                                3941,\n                                                3979,\n                                                4203,\n                                                4356,\n                                                4401,\n                                                4834,\n                                                4827,\n                                                5077,\n                                                5360,\n                                                5512,\n                                                5666,\n                                                5781,\n                                                6073,\n                                                6203,\n                                                6292,\n                                                6727,\n                                                6829,\n                                                7216,\n                                                7384,\n                                                7500,\n                                                7780,\n                                                8032,\n                                                8109,\n                                                8357,\n                                                8512,\n                                                8855,\n                                                9072,\n                                                9352,\n                                                9451,\n                                                9743,\n                                                9836,\n                                                10000,\n                                                10485,\n                                                10689,\n                                                10894,\n                                                10953,\n                                                11190,\n                                                11426,\n                                                11508,\n                                                11713,\n                                                11895,\n                                                12051,\n                                                12055,\n                                                12287,\n                                                12309,\n                                                12661,\n                                                12713,\n                                                12847,\n                                                13093,\n                                                13107,\n                                                13305,\n                                                13243,\n                                                13232,\n                                                13304,\n                                                13649,\n                                                13513,\n                                                13717,\n                                                13768,\n                                                13645,\n                                                14058,\n                                                13390,\n                                                14119,\n                                                13655,\n                                                14031,\n                                                13785,\n                                                13938,\n                                                13978,\n                                                14066,\n                                                13895,\n                                                14252,\n                                                14022,\n                                                14058,\n                                                13980,\n                                                14046,\n                                                14126,\n                                                13869,\n                                                14138,\n                                                14265,\n                                                14149,\n                                                14179,\n                                                14172,\n                                                14404,\n                                                14059,\n                                                14397,\n                                                14398,\n                                                14313,\n                                                14344,\n                                                14695,\n                                                14569,\n                                                14630,\n                                                14865,\n                                                14775,\n                                                14816,\n                                                14760,\n                                                14852,\n                                                15072,\n                                                15003,\n                                                15161,\n                                                15213,\n                                                15075,\n                                                15302,\n                                                15786,\n                                                15590,\n                                                15990,\n                                                16068,\n                                                16148,\n                                                16306,\n                                                16248,\n                                                16599,\n                                                16694,\n                                                16756,\n                                                16996,\n                                                17146,\n                                                17460,\n                                                17576,\n                                                17686,\n                                                17797,\n                                                18211,\n                                                18297,\n                                                18489,\n                                                18897,\n                                                19270,\n                                                19164,\n                                                19640,\n                                                20197,\n                                                20111,\n                                                20552,\n                                                20604,\n                                                21225,\n                                                21265,\n                                                21574,\n                                                22087,\n                                                22320,\n                                                22750,\n                                                23283,\n                                                23790,\n                                                24105,\n                                                24069,\n                                                24876,\n                                                25221,\n                                                26017,\n                                                26358,\n                                                26769,\n                                                27529,\n                                                28004,\n                                                28042,\n                                                29035,\n                                                29715,\n                                                30482,\n                                                31080,\n                                                31881,\n                                                32680,\n                                                33213,\n                                                33923,\n                                                35050,\n                                                36023,\n                                                37076,\n                                                38167,\n                                                38770,\n                                                40424,\n                                                41328,\n                                                42734,\n                                                43773,\n                                                45491,\n                                                46843,\n                                                48120,\n                                                49791,\n                                                51193,\n                                                53288,\n                                                55347,\n                                                57638,\n                                                59947,\n                                                62314,\n                                                64867,\n                                                67949,\n                                                71790,\n                                                74926,\n                                                78870,\n                                                82726,\n                                                87461,\n                                                93810,\n                                                99182,\n                                                106166,\n                                                112501,\n                                                120876,\n                                                131576,\n                                                146774,\n                                                142635,\n                                                252133,\n                                                35227,\n                                                1632700]},\n                      'statistics': {'mean': '1.8406654222466',\n                                     'stddev': '0.20139009208558',\n                                     'maximum': '2',\n                                     'minimum': '1',\n                                     'valid_percent': '88.69'},\n                      'pdal_pipeline': [{'tag': 'classification_cleanup',\n                                         'type': 'filters.range',\n                                         'limits': 'Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]'},\n                                        {'tag': 'noise_remover',\n                                         'type': 'filters.range',\n                                         'limits': 'Classification![7:7]'},\n                                        {'tag': 'gdal_writer',\n                                         'type': 'writers.gdal',\n                                         'filename': None,\n                                         'data_type': 'float32',\n                                         'dimension': 'Classification',\n                                         'resolution': None,\n                                         'output_type': 'idw',\n                                         'window_size': 0,\n                                         'pdal_metadata': True}],\n                      'spatial_resolution': 7525777},\n     'proj:geometry': {'type': 'Polygon',\n                       'coordinates': [[[-114.0510183, 38.154449],\n                                        [-114.0527931, 38.1103634],\n                                        [-113.9827819, 38.1085848],\n                                        [-113.9809651, 38.1526676],\n                                        [-114.0510183, 38.154449]]]},\n     'proj:projjson': {'name': 'NAD83 / UTM zone 11N + NAVD88 height',\n                       'type': 'CompoundCRS',\n                       '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json',\n                       'components': [{'id': {'code': 26911,\n                                              'authority': 'EPSG'},\n                                       'name': 'NAD83 / UTM zone 11N',\n                                       'type': 'ProjectedCRS',\n                                       'base_crs': {'id': {'code': 4269,\n                                                           'authority': 'EPSG'},\n                                                    'name': 'NAD83',\n                                                    'datum': {'name': 'North '\n                                                                      'American '\n                                                                      'Datum '\n                                                                      '1983',\n                                                              'type': 'GeodeticReferenceFrame',\n                                                              'ellipsoid': {'name': 'GRS '\n                                                                                    '1980',\n                                                                            'semi_major_axis': 6378137,\n                                                                            'inverse_flattening': 298.257222101}},\n                                                    'coordinate_system': {'axis': [{'name': 'Geodetic '\n                                                                                            'latitude',\n                                                                                    'unit': 'degree',\n                                                                                    'direction': 'north',\n                                                                                    'abbreviation': 'Lat'},\n                                                                                   {'name': 'Geodetic '\n                                                                                            'longitude',\n                                                                                    'unit': 'degree',\n                                                                                    'direction': 'east',\n                                                                                    'abbreviation': 'Lon'}],\n                                                                          'subtype': 'ellipsoidal'}},\n                                       'conversion': {'name': 'UTM zone '\n                                                              '11N',\n                                                      'method': {'id': {'code': 9807,\n                                                                        'authority': 'EPSG'},\n                                                                 'name': 'Transverse '\n                                                                         'Mercator'},\n                                                      'parameters': [{'id': {'code': 8801,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'Latitude '\n                                                                              'of '\n                                                                              'natural '\n                                                                              'origin',\n                                                                      'unit': 'degree',\n                                                                      'value': 0},\n                                                                     {'id': {'code': 8802,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'Longitude '\n                                                                              'of '\n                                                                              'natural '\n                                                                              'origin',\n                                                                      'unit': 'degree',\n                                                                      'value': -117},\n                                                                     {'id': {'code': 8805,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'Scale '\n                                                                              'factor '\n                                                                              'at '\n                                                                              'natural '\n                                                                              'origin',\n                                                                      'unit': 'unity',\n                                                                      'value': 0.9996},\n                                                                     {'id': {'code': 8806,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'False '\n                                                                              'easting',\n                                                                      'unit': 'metre',\n                                                                      'value': 500000},\n                                                                     {'id': {'code': 8807,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'False '\n                                                                              'northing',\n                                                                      'unit': 'metre',\n                                                                      'value': 0}]},\n                                       'coordinate_system': {'axis': [{'name': 'Easting',\n                                                                       'unit': 'metre',\n                                                                       'direction': 'east',\n                                                                       'abbreviation': ''},\n                                                                      {'name': 'Northing',\n                                                                       'unit': 'metre',\n                                                                       'direction': 'north',\n                                                                       'abbreviation': ''}],\n                                                             'subtype': 'Cartesian'}},\n                                      {'id': {'code': 5703,\n                                              'authority': 'EPSG'},\n                                       'name': 'NAVD88 height',\n                                       'type': 'VerticalCRS',\n                                       'datum': {'name': 'North American '\n                                                         'Vertical Datum '\n                                                         '1988',\n                                                 'type': 'VerticalReferenceFrame'},\n                                       'coordinate_system': {'axis': [{'name': 'Gravity-related '\n                                                                               'height',\n                                                                       'unit': 'metre',\n                                                                       'direction': 'up',\n                                                                       'abbreviation': ''}],\n                                                             'subtype': 'vertical'}}]},\n     'proj:transform': [2.0, 0.0, 758397.0, 0.0, -2.0, 4227061.0, 0, 0, 1],\n     'start_datetime': '2020-01-01T00:00:00Z',\n     'classification:classes': [{'value': 0, 'description': 'None'},\n                                {'value': 2, 'description': 'Ground'},\n                                {'value': 3, 'description': 'Low Veg'},\n                                {'value': 4, 'description': 'Med Veg'},\n                                {'value': 5, 'description': 'High Veg'},\n                                {'value': 6, 'description': 'Building'},\n                                {'value': 7, 'description': 'Low Point'},\n                                {'value': 8, 'description': 'Reserved'},\n                                {'value': 9, 'description': 'Water'},\n                                {'value': 10, 'description': 'Rail'},\n                                {'value': 11, 'description': 'Road'},\n                                {'value': 12, 'description': 'Reserved'},\n                                {'value': 13,\n                                 'description': 'Wire - Guard (Shield)'},\n                                {'value': 14,\n                                 'description': 'Wire - Conductor (Phase)'},\n                                {'value': 15,\n                                 'description': 'Transmission Tower'},\n                                {'value': 16,\n                                 'description': 'Wire-Structure Connector '\n                                                '(Insulator)'},\n                                {'value': 17, 'description': 'Bridge Deck'},\n                                {'value': 18, 'description': 'High Noise'},\n                                {'value': 19, 'description': 'Reserved'},\n                                {'value': 21, 'description': 'Reserved'},\n                                {'value': 22, 'description': 'Reserved'},\n                                {'value': 23, 'description': 'Reserved'},\n                                {'value': 26, 'description': 'Reserved'}]}"
+      }
+    ],
+    "proj:shape": [
+      2449,
+      3073
+    ],
+    "3dep:usgs_id": "UT_StatewideSouth_2_2020",
+    "end_datetime": "2020-12-31T00:00:00Z",
+    "raster:bands": {
+      "unit": "metre",
+      "nodata": "nan",
+      "sampling": "point",
+      "data_type": "Float32",
+      "histogram": {
+        "max": 2.0019607843137255,
+        "min": 0.9980392156862745,
+        "count": 256,
+        "buckets": [
+          862,
+          0,
+          3,
+          1,
+          2,
+          3,
+          2,
+          10,
+          14,
+          20,
+          11,
+          22,
+          16,
+          36,
+          44,
+          37,
+          67,
+          67,
+          85,
+          83,
+          110,
+          103,
+          145,
+          138,
+          175,
+          196,
+          230,
+          239,
+          284,
+          317,
+          339,
+          380,
+          443,
+          436,
+          494,
+          570,
+          614,
+          692,
+          759,
+          810,
+          828,
+          885,
+          976,
+          1087,
+          1148,
+          1309,
+          1339,
+          1455,
+          1537,
+          1611,
+          1766,
+          1806,
+          1949,
+          2113,
+          2222,
+          2308,
+          2507,
+          2693,
+          2635,
+          2941,
+          2864,
+          3208,
+          3282,
+          3498,
+          3698,
+          3941,
+          3979,
+          4203,
+          4356,
+          4401,
+          4834,
+          4827,
+          5077,
+          5360,
+          5512,
+          5666,
+          5781,
+          6073,
+          6203,
+          6292,
+          6727,
+          6829,
+          7216,
+          7384,
+          7500,
+          7780,
+          8032,
+          8109,
+          8357,
+          8512,
+          8855,
+          9072,
+          9352,
+          9451,
+          9743,
+          9836,
+          10000,
+          10485,
+          10689,
+          10894,
+          10953,
+          11190,
+          11426,
+          11508,
+          11713,
+          11895,
+          12051,
+          12055,
+          12287,
+          12309,
+          12661,
+          12713,
+          12847,
+          13093,
+          13107,
+          13305,
+          13243,
+          13232,
+          13304,
+          13649,
+          13513,
+          13717,
+          13768,
+          13645,
+          14058,
+          13390,
+          14119,
+          13655,
+          14031,
+          13785,
+          13938,
+          13978,
+          14066,
+          13895,
+          14252,
+          14022,
+          14058,
+          13980,
+          14046,
+          14126,
+          13869,
+          14138,
+          14265,
+          14149,
+          14179,
+          14172,
+          14404,
+          14059,
+          14397,
+          14398,
+          14313,
+          14344,
+          14695,
+          14569,
+          14630,
+          14865,
+          14775,
+          14816,
+          14760,
+          14852,
+          15072,
+          15003,
+          15161,
+          15213,
+          15075,
+          15302,
+          15786,
+          15590,
+          15990,
+          16068,
+          16148,
+          16306,
+          16248,
+          16599,
+          16694,
+          16756,
+          16996,
+          17146,
+          17460,
+          17576,
+          17686,
+          17797,
+          18211,
+          18297,
+          18489,
+          18897,
+          19270,
+          19164,
+          19640,
+          20197,
+          20111,
+          20552,
+          20604,
+          21225,
+          21265,
+          21574,
+          22087,
+          22320,
+          22750,
+          23283,
+          23790,
+          24105,
+          24069,
+          24876,
+          25221,
+          26017,
+          26358,
+          26769,
+          27529,
+          28004,
+          28042,
+          29035,
+          29715,
+          30482,
+          31080,
+          31881,
+          32680,
+          33213,
+          33923,
+          35050,
+          36023,
+          37076,
+          38167,
+          38770,
+          40424,
+          41328,
+          42734,
+          43773,
+          45491,
+          46843,
+          48120,
+          49791,
+          51193,
+          53288,
+          55347,
+          57638,
+          59947,
+          62314,
+          64867,
+          67949,
+          71790,
+          74926,
+          78870,
+          82726,
+          87461,
+          93810,
+          99182,
+          106166,
+          112501,
+          120876,
+          131576,
+          146774,
+          142635,
+          252133,
+          35227,
+          1632700
+        ]
+      },
+      "statistics": {
+        "mean": "1.8406654222466",
+        "stddev": "0.20139009208558",
+        "maximum": "2",
+        "minimum": "1",
+        "valid_percent": "88.69"
+      },
+      "pdal_pipeline": [
+        {
+          "tag": "classification_cleanup",
+          "type": "filters.range",
+          "limits": "Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]"
+        },
+        {
+          "tag": "noise_remover",
+          "type": "filters.range",
+          "limits": "Classification![7:7]"
+        },
+        {
+          "tag": "gdal_writer",
+          "type": "writers.gdal",
+          "filename": null,
+          "data_type": "float32",
+          "dimension": "Classification",
+          "resolution": null,
+          "output_type": "idw",
+          "window_size": 0,
+          "pdal_metadata": true
+        }
+      ],
+      "spatial_resolution": 7525777
+    },
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -114.0510183,
+            38.154449
+          ],
+          [
+            -114.0527931,
+            38.1103634
+          ],
+          [
+            -113.9827819,
+            38.1085848
+          ],
+          [
+            -113.9809651,
+            38.1526676
+          ],
+          [
+            -114.0510183,
+            38.154449
+          ]
+        ]
+      ]
+    },
+    "proj:projjson": {
+      "name": "NAD83 / UTM zone 11N + NAVD88 height",
+      "type": "CompoundCRS",
+      "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+      "components": [
+        {
+          "id": {
+            "code": 26911,
+            "authority": "EPSG"
+          },
+          "name": "NAD83 / UTM zone 11N",
+          "type": "ProjectedCRS",
+          "base_crs": {
+            "id": {
+              "code": 4269,
+              "authority": "EPSG"
+            },
+            "name": "NAD83",
+            "datum": {
+              "name": "North American Datum 1983",
+              "type": "GeodeticReferenceFrame",
+              "ellipsoid": {
+                "name": "GRS 1980",
+                "semi_major_axis": 6378137,
+                "inverse_flattening": 298.257222101
+              }
+            },
+            "coordinate_system": {
+              "axis": [
+                {
+                  "name": "Geodetic latitude",
+                  "unit": "degree",
+                  "direction": "north",
+                  "abbreviation": "Lat"
+                },
+                {
+                  "name": "Geodetic longitude",
+                  "unit": "degree",
+                  "direction": "east",
+                  "abbreviation": "Lon"
+                }
+              ],
+              "subtype": "ellipsoidal"
+            }
+          },
+          "conversion": {
+            "name": "UTM zone 11N",
+            "method": {
+              "id": {
+                "code": 9807,
+                "authority": "EPSG"
+              },
+              "name": "Transverse Mercator"
+            },
+            "parameters": [
+              {
+                "id": {
+                  "code": 8801,
+                  "authority": "EPSG"
+                },
+                "name": "Latitude of natural origin",
+                "unit": "degree",
+                "value": 0
+              },
+              {
+                "id": {
+                  "code": 8802,
+                  "authority": "EPSG"
+                },
+                "name": "Longitude of natural origin",
+                "unit": "degree",
+                "value": -117
+              },
+              {
+                "id": {
+                  "code": 8805,
+                  "authority": "EPSG"
+                },
+                "name": "Scale factor at natural origin",
+                "unit": "unity",
+                "value": 0.9996
+              },
+              {
+                "id": {
+                  "code": 8806,
+                  "authority": "EPSG"
+                },
+                "name": "False easting",
+                "unit": "metre",
+                "value": 500000
+              },
+              {
+                "id": {
+                  "code": 8807,
+                  "authority": "EPSG"
+                },
+                "name": "False northing",
+                "unit": "metre",
+                "value": 0
+              }
+            ]
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Easting",
+                "unit": "metre",
+                "direction": "east",
+                "abbreviation": ""
+              },
+              {
+                "name": "Northing",
+                "unit": "metre",
+                "direction": "north",
+                "abbreviation": ""
+              }
+            ],
+            "subtype": "Cartesian"
+          }
+        },
+        {
+          "id": {
+            "code": 5703,
+            "authority": "EPSG"
+          },
+          "name": "NAVD88 height",
+          "type": "VerticalCRS",
+          "datum": {
+            "name": "North American Vertical Datum 1988",
+            "type": "VerticalReferenceFrame"
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Gravity-related height",
+                "unit": "metre",
+                "direction": "up",
+                "abbreviation": ""
+              }
+            ],
+            "subtype": "vertical"
+          }
+        }
+      ]
+    },
+    "proj:transform": [
+      2.0,
+      0.0,
+      758397.0,
+      0.0,
+      -2.0,
+      4227061.0,
+      0,
+      0,
+      1
+    ],
+    "start_datetime": "2020-01-01T00:00:00Z",
+    "classification:classes": [
+      {
+        "value": 0,
+        "description": "None"
+      },
+      {
+        "value": 2,
+        "description": "Ground"
+      },
+      {
+        "value": 3,
+        "description": "Low Veg"
+      },
+      {
+        "value": 4,
+        "description": "Med Veg"
+      },
+      {
+        "value": 5,
+        "description": "High Veg"
+      },
+      {
+        "value": 6,
+        "description": "Building"
+      },
+      {
+        "value": 7,
+        "description": "Low Point"
+      },
+      {
+        "value": 8,
+        "description": "Reserved"
+      },
+      {
+        "value": 9,
+        "description": "Water"
+      },
+      {
+        "value": 10,
+        "description": "Rail"
+      },
+      {
+        "value": 11,
+        "description": "Road"
+      },
+      {
+        "value": 12,
+        "description": "Reserved"
+      },
+      {
+        "value": 13,
+        "description": "Wire - Guard (Shield)"
+      },
+      {
+        "value": 14,
+        "description": "Wire - Conductor (Phase)"
+      },
+      {
+        "value": 15,
+        "description": "Transmission Tower"
+      },
+      {
+        "value": 16,
+        "description": "Wire-Structure Connector (Insulator)"
+      },
+      {
+        "value": 17,
+        "description": "Bridge Deck"
+      },
+      {
+        "value": 18,
+        "description": "High Noise"
+      },
+      {
+        "value": 19,
+        "description": "Reserved"
+      },
+      {
+        "value": 21,
+        "description": "Reserved"
+      },
+      {
+        "value": 22,
+        "description": "Reserved"
+      },
+      {
+        "value": 23,
+        "description": "Reserved"
+      },
+      {
+        "value": 26,
+        "description": "Reserved"
+      }
+    ]
+  },
+  "bbox": [
+    -114.0527931,
+    38.1085848,
+    -113.9809651,
+    38.154449
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/UT_StatewideSouth_2_2020/classification/UT_StatewideSouth_2_2020-classification-2m-0-7.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "COG data"
+    },
+    "thumbnail": {
+      "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/UT_StatewideSouth_2_2020/classification/thumbnails/UT_StatewideSouth_2_2020-classification-2m-0-7-thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "3DEP Lidar COG"
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=3dep-lidar-classification&item=UT_StatewideSouth_2_2020-classification-2m-0-7&assets=data&colormap_name=lidar-classification&nodata=-9999&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=3dep-lidar-classification&item=UT_StatewideSouth_2_2020-classification-2m-0-7&assets=data&colormap_name=lidar-classification&nodata=-9999&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.0510183,
+          38.154449
+        ],
+        [
+          -114.0527931,
+          38.1103634
+        ],
+        [
+          -113.9827819,
+          38.1085848
+        ],
+        [
+          -113.9809651,
+          38.1526676
+        ],
+        [
+          -114.0510183,
+          38.154449
+        ]
+      ]
+    ]
+  },
+  "collection": "3dep-lidar-classification",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

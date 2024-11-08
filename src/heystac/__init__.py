@@ -10,9 +10,9 @@ def cli() -> None:
 
 
 @click.command()
-def prebuild() -> None:
-    """Build our catalog"""
-    Config().prebuild()
+def bootstrap() -> None:
+    """Build our catalog from scratch"""
+    Config().bootstrap()
 
 
 @click.command()
@@ -22,8 +22,15 @@ def crawl(id: str) -> None:
     Config().crawl(id)
 
 
+@click.command()
+def rate() -> None:
+    """Rate everything in our catalog"""
+    Config().rate()
+
+
 cli.add_command(crawl)
-cli.add_command(prebuild)
+cli.add_command(bootstrap)
+cli.add_command(rate)
 
 
 if __name__ == "__main__":

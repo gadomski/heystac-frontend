@@ -1,0 +1,499 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc-netcdf/items/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1",
+      "title": "Source NetCDF Item",
+      "rel": "derived_from",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=esa-cci-lc&item=C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc/items/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'title': 'ESA CCI Land Cover Map for Year 2020, Tile S90W180', 'created': '2023-01-11T23:08:36.109666Z', 'proj:epsg': 4326, 'proj:shape': [16200, 16200], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [0.002777777777777778, 0.0, -180.0, 0.0, -0.0027777777777777783, -45.000000000000014], 'start_datetime': '2020-01-01T00:00:00Z', 'esa_cci_lc:tile': 'S90W180', 'esa_cci_lc:version': 'v2.1.1'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'title': 'ESA CCI Land Cover Map for Year 2020, Tile S90W180',\\n     'created': '2023-01-11T23:08:36.109666Z',\\n     'proj:epsg': 4326,\\n     'proj:shape': [16200, 16200],\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'proj:transform': [0.002777777777777778,\\n                        0.0,\\n                        -180.0,\\n                        0.0,\\n                        -0.0027777777777777783,\\n                        -45.000000000000014],\\n     'start_datetime': '2020-01-01T00:00:00Z',\\n     'esa_cci_lc:tile': 'S90W180',\\n     'esa_cci_lc:version': 'v2.1.1'}\"}], 'title': 'ESA CCI Land Cover Map for Year 2020, Tile S90W180', 'created': '2023-01-11T23:08:36.109666Z', 'proj:epsg': 4326, 'proj:shape': [16200, 16200], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [0.002777777777777778, 0.0, -180.0, 0.0, -0.0027777777777777783, -45.000000000000014], 'start_datetime': '2020-01-01T00:00:00Z', 'esa_cci_lc:tile': 'S90W180', 'esa_cci_lc:version': 'v2.1.1'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'title': 'ESA CCI Land Cover Map for \"\n                                    \"Year 2020, Tile S90W180', 'created': \"\n                                    \"'2023-01-11T23:08:36.109666Z', \"\n                                    \"'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[16200, 16200], 'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'proj:transform': \"\n                                    '[0.002777777777777778, 0.0, -180.0, '\n                                    '0.0, -0.0027777777777777783, '\n                                    '-45.000000000000014], '\n                                    \"'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z', \"\n                                    \"'esa_cci_lc:tile': 'S90W180', \"\n                                    \"'esa_cci_lc:version': 'v2.1.1'} is \"\n                                    'not valid under any of the given '\n                                    'schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'title': 'ESA CCI Land Cover Map \"\n                                    \"for Year 2020, Tile S90W180',\\n\"\n                                    \"     'created': \"\n                                    \"'2023-01-11T23:08:36.109666Z',\\n\"\n                                    \"     'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [16200, 16200],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'proj:transform': \"\n                                    '[0.002777777777777778,\\n'\n                                    '                        0.0,\\n'\n                                    '                        -180.0,\\n'\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '-0.0027777777777777783,\\n'\n                                    '                        '\n                                    '-45.000000000000014],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z',\\n\"\n                                    \"     'esa_cci_lc:tile': 'S90W180',\\n\"\n                                    \"     'esa_cci_lc:version': \"\n                                    \"'v2.1.1'}\"}],\n     'title': 'ESA CCI Land Cover Map for Year 2020, Tile S90W180',\n     'created': '2023-01-11T23:08:36.109666Z',\n     'proj:epsg': 4326,\n     'proj:shape': [16200, 16200],\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'proj:transform': [0.002777777777777778,\n                        0.0,\n                        -180.0,\n                        0.0,\n                        -0.0027777777777777783,\n                        -45.000000000000014],\n     'start_datetime': '2020-01-01T00:00:00Z',\n     'esa_cci_lc:tile': 'S90W180',\n     'esa_cci_lc:version': 'v2.1.1'}"
+      }
+    ],
+    "title": "ESA CCI Land Cover Map for Year 2020, Tile S90W180",
+    "created": "2023-01-11T23:08:36.109666Z",
+    "proj:epsg": 4326,
+    "proj:shape": [
+      16200,
+      16200
+    ],
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      0.002777777777777778,
+      0.0,
+      -180.0,
+      0.0,
+      -0.0027777777777777783,
+      -45.000000000000014
+    ],
+    "start_datetime": "2020-01-01T00:00:00Z",
+    "esa_cci_lc:tile": "S90W180",
+    "esa_cci_lc:version": "v2.1.1"
+  },
+  "bbox": [
+    -180.0,
+    -90.00000000000003,
+    -135.0,
+    -45.000000000000014
+  ],
+  "type": "Feature",
+  "assets": {
+    "lccs_class": {
+      "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/cog/v2.1.1/S90W180/2020/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180-lccs_class.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Land Cover Class Defined in the Land Cover Classification System",
+      "description": "Land cover class per pixel, defined using the Land Cover Classification System developed by the United Nations Food and Agriculture Organization.",
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "spatial_resolution": 300
+        }
+      ],
+      "classification:classes": [
+        {
+          "name": "no-data",
+          "value": 0,
+          "no_data": true,
+          "color_hint": "000000",
+          "description": "No data"
+        },
+        {
+          "name": "cropland-1",
+          "value": 10,
+          "color_hint": "FFFF64",
+          "description": "Cropland, rainfed"
+        },
+        {
+          "name": "cropland-1a",
+          "value": 11,
+          "regional": true,
+          "color_hint": "FFFF64",
+          "description": "Cropland, rainfed, herbaceous cover"
+        },
+        {
+          "name": "cropland-1b",
+          "value": 12,
+          "regional": true,
+          "color_hint": "FFFF00",
+          "description": "Cropland, rainfed, tree, or shrub cover"
+        },
+        {
+          "name": "cropland-2",
+          "value": 20,
+          "color_hint": "AAF0F0",
+          "description": "Cropland, irrigated or post-flooding"
+        },
+        {
+          "name": "cropland-3",
+          "value": 30,
+          "color_hint": "DCF064",
+          "description": "Mosaic cropland (>50%) / natural vegetation (tree, shrub, herbaceous cover) (<50%)"
+        },
+        {
+          "name": "natural-veg",
+          "value": 40,
+          "color_hint": "C8C864",
+          "description": "Mosaic natural vegetation (tree, shrub, herbaceous cover) (>50%) / cropland (<50%)"
+        },
+        {
+          "name": "tree-1",
+          "value": 50,
+          "color_hint": "006400",
+          "description": "Tree cover, broadleaved, evergreen, closed to open (>15%)"
+        },
+        {
+          "name": "tree-2",
+          "value": 60,
+          "color_hint": "00A000",
+          "description": "Tree cover, broadleaved, deciduous, closed to open (>15%)"
+        },
+        {
+          "name": "tree-2a",
+          "value": 61,
+          "regional": true,
+          "color_hint": "00A000",
+          "description": "Tree cover, broadleaved, deciduous, closed (>40%)"
+        },
+        {
+          "name": "tree-2b",
+          "value": 62,
+          "regional": true,
+          "color_hint": "AAC800",
+          "description": "Tree cover, broadleaved, deciduous, open (15-40%)"
+        },
+        {
+          "name": "tree-3",
+          "value": 70,
+          "color_hint": "003C00",
+          "description": "Tree cover, needleleaved, evergreen, closed to open (>15%)"
+        },
+        {
+          "name": "tree-3a",
+          "value": 71,
+          "regional": true,
+          "color_hint": "003C00",
+          "description": "Tree cover, needleleaved, evergreen, closed (>40%)"
+        },
+        {
+          "name": "tree-3b",
+          "value": 72,
+          "regional": true,
+          "color_hint": "005000",
+          "description": "Tree cover, needleleaved, evergreen, open (15-40%)"
+        },
+        {
+          "name": "tree-4",
+          "value": 80,
+          "color_hint": "285000",
+          "description": "Tree cover, needleleaved, deciduous, closed to open (>15%)"
+        },
+        {
+          "name": "tree-4a",
+          "value": 81,
+          "regional": true,
+          "color_hint": "285000",
+          "description": "Tree cover, needleleaved, deciduous, closed (>40%)"
+        },
+        {
+          "name": "tree-4b",
+          "value": 82,
+          "regional": true,
+          "color_hint": "286400",
+          "description": "Tree cover, needleleaved, deciduous, open (15-40%)"
+        },
+        {
+          "name": "tree-5",
+          "value": 90,
+          "color_hint": "788200",
+          "description": "Tree cover, mixed leaf type (broadleaved and needleleaved)"
+        },
+        {
+          "name": "tree-shrub",
+          "value": 100,
+          "color_hint": "8CA000",
+          "description": "Mosaic tree and shrub (>50%) / herbaceous cover (<50%)"
+        },
+        {
+          "name": "herbaceous",
+          "value": 110,
+          "color_hint": "BE9600",
+          "description": "Mosaic herbaceous cover (>50%) / tree and shrub (<50%)"
+        },
+        {
+          "name": "shrubland",
+          "value": 120,
+          "color_hint": "966400",
+          "description": "Shrubland"
+        },
+        {
+          "name": "shrubland-a",
+          "value": 121,
+          "regional": true,
+          "color_hint": "966400",
+          "description": "Evergreen shrubland"
+        },
+        {
+          "name": "shrubland-b",
+          "value": 122,
+          "regional": true,
+          "color_hint": "966400",
+          "description": "Deciduous shrubland"
+        },
+        {
+          "name": "grassland",
+          "value": 130,
+          "color_hint": "FFB432",
+          "description": "Grassland"
+        },
+        {
+          "name": "lichens-moses",
+          "value": 140,
+          "color_hint": "FFDCD2",
+          "description": "Lichens and mosses"
+        },
+        {
+          "name": "sparse-veg",
+          "value": 150,
+          "color_hint": "FFEBAF",
+          "description": "Sparse vegetation (tree, shrub, herbaceous cover) (<15%)"
+        },
+        {
+          "name": "sparse-veg-a",
+          "value": 151,
+          "regional": true,
+          "color_hint": "FFC864",
+          "description": "Sparse tree (<15%)"
+        },
+        {
+          "name": "sparse-veg-b",
+          "value": 152,
+          "regional": true,
+          "color_hint": "FFD278",
+          "description": "Sparse shrub (<15%)"
+        },
+        {
+          "name": "sparse-veg-c",
+          "value": 153,
+          "regional": true,
+          "color_hint": "FFEBAF",
+          "description": "Sparse herbaceous cover (<15%)"
+        },
+        {
+          "name": "flooded-tree-1",
+          "value": 160,
+          "color_hint": "00785A",
+          "description": "Tree cover, flooded, fresh or brackish water"
+        },
+        {
+          "name": "flooded-tree-2",
+          "value": 170,
+          "color_hint": "009678",
+          "description": "Tree cover, flooded, saline water"
+        },
+        {
+          "name": "flooded-shrub-herbaceous",
+          "value": 180,
+          "color_hint": "00DC82",
+          "description": "Shrub or herbaceous cover, flooded, fresh/saline/brackish water"
+        },
+        {
+          "name": "urban",
+          "value": 190,
+          "color_hint": "C31400",
+          "description": "Urban areas"
+        },
+        {
+          "name": "bare",
+          "value": 200,
+          "color_hint": "FFF5D7",
+          "description": "Bare areas"
+        },
+        {
+          "name": "bare-a",
+          "value": 201,
+          "regional": true,
+          "color_hint": "DCDCDC",
+          "description": "Consolidated bare areas"
+        },
+        {
+          "name": "bare-b",
+          "value": 202,
+          "regional": true,
+          "color_hint": "FFF5D7",
+          "description": "Unconsolidated bare areas"
+        },
+        {
+          "name": "water",
+          "value": 210,
+          "color_hint": "0046C8",
+          "description": "Water bodies"
+        },
+        {
+          "name": "snow-ice",
+          "value": 220,
+          "color_hint": "FFFFFF",
+          "description": "Permanent snow and ice"
+        }
+      ]
+    },
+    "change_count": {
+      "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/cog/v2.1.1/S90W180/2020/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180-change_count.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality"
+      ],
+      "title": "Number of Class Changes",
+      "description": "Number of years where land cover class changes have occurred, since 1992. 0 for stable, greater than 0 for changes.",
+      "raster:bands": [
+        {
+          "sampling": "area",
+          "data_type": "uint8",
+          "spatial_resolution": 300
+        }
+      ]
+    },
+    "processed_flag": {
+      "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/cog/v2.1.1/S90W180/2020/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180-processed_flag.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality"
+      ],
+      "title": "Land Cover Map Processed Area Flag",
+      "description": "Flag to mark areas that could not be classified.",
+      "raster:bands": [
+        {
+          "nodata": 255,
+          "sampling": "area",
+          "data_type": "uint8",
+          "spatial_resolution": 300
+        }
+      ],
+      "classification:classes": [
+        {
+          "name": "not_processed",
+          "value": 0,
+          "description": "Not processed"
+        },
+        {
+          "name": "processed",
+          "value": 1,
+          "description": "Processed"
+        }
+      ]
+    },
+    "observation_count": {
+      "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/cog/v2.1.1/S90W180/2020/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180-observation_count.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality"
+      ],
+      "title": "Number of Valid Observations",
+      "description": "Number of valid satellite observations that have contributed to each pixel's classification.",
+      "raster:bands": [
+        {
+          "sampling": "area",
+          "data_type": "uint16",
+          "spatial_resolution": 300
+        }
+      ]
+    },
+    "current_pixel_state": {
+      "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/cog/v2.1.1/S90W180/2020/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180-current_pixel_state.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "quality"
+      ],
+      "title": "Land Cover Pixel Type Mask",
+      "description": "Pixel identification from satellite surface reflectance observations, mainly distinguishing between land, water, and snow/ice.",
+      "raster:bands": [
+        {
+          "nodata": 255,
+          "sampling": "area",
+          "data_type": "uint8",
+          "spatial_resolution": 300
+        }
+      ],
+      "classification:classes": [
+        {
+          "name": "land",
+          "value": 1,
+          "description": "Clear land"
+        },
+        {
+          "name": "water",
+          "value": 2,
+          "description": "Clear water"
+        },
+        {
+          "name": "snow",
+          "value": 3,
+          "description": "Clear snow / ice"
+        },
+        {
+          "name": "cloud",
+          "value": 4,
+          "description": "Cloud"
+        },
+        {
+          "name": "cloud_shadow",
+          "value": 5,
+          "description": "Cloud shadow"
+        },
+        {
+          "name": "filled",
+          "value": 6,
+          "description": "Filled"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=esa-cci-lc&item=C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180&assets=lccs_class&tile_format=png&colormap_name=esa-cci-lc&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=esa-cci-lc&item=C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180&assets=lccs_class&tile_format=png&colormap_name=esa-cci-lc&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -135,
+          -90.00000000000003
+        ],
+        [
+          -135,
+          -45.000000000000014
+        ],
+        [
+          -180,
+          -45.000000000000014
+        ],
+        [
+          -180,
+          -90.00000000000003
+        ],
+        [
+          -135,
+          -90.00000000000003
+        ]
+      ]
+    ]
+  },
+  "collection": "esa-cci-lc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

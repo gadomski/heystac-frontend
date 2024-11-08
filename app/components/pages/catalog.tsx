@@ -22,7 +22,7 @@ export default function CatalogPage({ catalog, title }) {
       </div>
 
       <div className="row-start-2 col-start-1 border border-gray-200 p-4">
-        Placeholder for your content
+        {catalog["heystac:stars"]}
       </div>
 
       <div className="row-start-3 col-start-1 md:col-start-2 md:row-start-2">

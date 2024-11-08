@@ -1,0 +1,368 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-13Q1-061&item=MOD13Q1.A2024289.h35v10.061.2024306175757",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-13Q1-061/items/MOD13Q1.A2024289.h35v10.061.2024306175757",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "MOD13Q1.A2024289.h35v10.061.2024306175757",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID MOD13Q1.A2024289.h35v10.061.2024306175757 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': 'Validation failed for Feature with ID MOD13Q1.A2024289.h35v10.061.2024306175757 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{\\'created\\': \\'2024-11-01T21:57:57Z\\', \\'updated\\': \\'2024-11-01T17:00:56.981000Z\\', \\'platform\\': \\'\\', \\'proj:wkt2\\': \\'PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]\\', \\'proj:shape\\': [4800, 4800], \\'instruments\\': [], \\'end_datetime\\': \\'2024-10-30T23:59:59Z\\', \\'modis:tile-id\\': \\'51035010\\', \\'proj:geometry\\': {\\'type\\': \\'Polygon\\', \\'coordinates\\': [[[20015109.354, -2223901.039333], [20015109.354, -1111950.519667], [18903158.834333, -1111950.519667], [18903158.834333, -2223901.039333], [20015109.354, -2223901.039333]]]}, \\'proj:transform\\': [231.65635826395825, 0.0, 18903158.834333, 0.0, -231.65635826374995, -1111950.519667], \\'start_datetime\\': \\'2024-10-15T00:00:00Z\\', \\'modis:vertical-tile\\': 10, \\'modis:horizontal-tile\\': 35} is not valid under any of the given schemas\\n\\nFailed validating \\'anyOf\\' in schema[\\'allOf\\'][0][\\'allOf\\'][2][\\'properties\\'][\\'properties\\'][\\'allOf\\'][1]:\\n    {\\'anyOf\\': [{\\'required\\': [\\'datetime\\'],\\n                \\'properties\\': {\\'datetime\\': {\\'not\\': {\\'type\\': \\'null\\'}}}},\\n               {\\'required\\': [\\'datetime\\',\\n                             \\'start_datetime\\',\\n                             \\'end_datetime\\']}]}\\n\\nOn instance[\\'properties\\']:\\n    {\\'created\\': \\'2024-11-01T21:57:57Z\\',\\n     \\'updated\\': \\'2024-11-01T17:00:56.981000Z\\',\\n     \\'platform\\': \\'\\',\\n     \\'proj:wkt2\\': \\'PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the \\'\\n                  \\'custom spheroid\",DATUM[\"Not specified (based on custom \\'\\n                  \\'spheroid)\",SPHEROID[\"Custom \\'\\n                  \\'spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]\\',\\n     \\'proj:shape\\': [4800, 4800],\\n     \\'instruments\\': [],\\n     \\'end_datetime\\': \\'2024-10-30T23:59:59Z\\',\\n     \\'modis:tile-id\\': \\'51035010\\',\\n     \\'proj:geometry\\': {\\'type\\': \\'Polygon\\',\\n                       \\'coordinates\\': [[[20015109.354, -2223901.039333],\\n                                        [20015109.354, -1111950.519667],\\n                                        [18903158.834333, -1111950.519667],\\n                                        [18903158.834333, -2223901.039333],\\n                                        [20015109.354, -2223901.039333]]]},\\n     \\'proj:transform\\': [231.65635826395825,\\n                        0.0,\\n                        18903158.834333,\\n                        0.0,\\n                        -231.65635826374995,\\n                        -1111950.519667],\\n     \\'start_datetime\\': \\'2024-10-15T00:00:00Z\\',\\n     \\'modis:vertical-tile\\': 10,\\n     \\'modis:horizontal-tile\\': 35}'}], 'created': '2024-11-01T21:57:57Z', 'updated': '2024-11-01T17:00:56.981000Z', 'platform': '', 'proj:wkt2': 'PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]', 'proj:shape': [4800, 4800], 'instruments': [], 'end_datetime': '2024-10-30T23:59:59Z', 'modis:tile-id': '51035010', 'proj:geometry': {'type': 'Polygon', 'coordinates': [[[20015109.354, -2223901.039333], [20015109.354, -1111950.519667], [18903158.834333, -1111950.519667], [18903158.834333, -2223901.039333], [20015109.354, -2223901.039333]]]}, 'proj:transform': [231.65635826395825, 0.0, 18903158.834333, 0.0, -231.65635826374995, -1111950.519667], 'start_datetime': '2024-10-15T00:00:00Z', 'modis:vertical-tile': 10, 'modis:horizontal-tile': 35} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'MOD13Q1.A2024289.h35v10.061.2024306175757 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'created': '2024-11-01T21:57:57Z', \"\n                                    \"'updated': \"\n                                    \"'2024-11-01T17:00:56.981000Z', \"\n                                    \"'platform': '', 'proj:wkt2': \"\n                                    '\\'PROJCS[\"unnamed\",GEOGCS[\"Unknown '\n                                    'datum based upon the custom '\n                                    'spheroid\",DATUM[\"Not specified (based '\n                                    'on custom spheroid)\",SPHEROID[\"Custom '\n                                    'spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]\\', '\n                                    \"'proj:shape': [4800, 4800], \"\n                                    \"'instruments': [], 'end_datetime': \"\n                                    \"'2024-10-30T23:59:59Z', \"\n                                    \"'modis:tile-id': '51035010', \"\n                                    \"'proj:geometry': {'type': 'Polygon', \"\n                                    \"'coordinates': [[[20015109.354, \"\n                                    '-2223901.039333], [20015109.354, '\n                                    '-1111950.519667], [18903158.834333, '\n                                    '-1111950.519667], [18903158.834333, '\n                                    '-2223901.039333], [20015109.354, '\n                                    '-2223901.039333]]]}, '\n                                    \"'proj:transform': \"\n                                    '[231.65635826395825, 0.0, '\n                                    '18903158.834333, 0.0, '\n                                    '-231.65635826374995, '\n                                    \"-1111950.519667], 'start_datetime': \"\n                                    \"'2024-10-15T00:00:00Z', \"\n                                    \"'modis:vertical-tile': 10, \"\n                                    \"'modis:horizontal-tile': 35} is not \"\n                                    'valid under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'created': \"\n                                    \"'2024-11-01T21:57:57Z',\\n\"\n                                    \"     'updated': \"\n                                    \"'2024-11-01T17:00:56.981000Z',\\n\"\n                                    \"     'platform': '',\\n\"\n                                    \"     'proj:wkt2': \"\n                                    '\\'PROJCS[\"unnamed\",GEOGCS[\"Unknown '\n                                    \"datum based upon the '\\n\"\n                                    \"                  'custom \"\n                                    'spheroid\",DATUM[\"Not specified (based '\n                                    \"on custom '\\n\"\n                                    '                  '\n                                    '\\'spheroid)\",SPHEROID[\"Custom \\'\\n'\n                                    '                  '\n                                    '\\'spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]\\',\\n'\n                                    \"     'proj:shape': [4800, 4800],\\n\"\n                                    \"     'instruments': [],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2024-10-30T23:59:59Z',\\n\"\n                                    \"     'modis:tile-id': '51035010',\\n\"\n                                    \"     'proj:geometry': {'type': \"\n                                    \"'Polygon',\\n\"\n                                    \"                       'coordinates': \"\n                                    '[[[20015109.354, -2223901.039333],\\n'\n                                    '                                        '\n                                    '[20015109.354, -1111950.519667],\\n'\n                                    '                                        '\n                                    '[18903158.834333, -1111950.519667],\\n'\n                                    '                                        '\n                                    '[18903158.834333, -2223901.039333],\\n'\n                                    '                                        '\n                                    '[20015109.354, -2223901.039333]]]},\\n'\n                                    \"     'proj:transform': \"\n                                    '[231.65635826395825,\\n'\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '18903158.834333,\\n'\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '-231.65635826374995,\\n'\n                                    '                        '\n                                    '-1111950.519667],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2024-10-15T00:00:00Z',\\n\"\n                                    \"     'modis:vertical-tile': 10,\\n\"\n                                    \"     'modis:horizontal-tile': 35}\"}],\n     'created': '2024-11-01T21:57:57Z',\n     'updated': '2024-11-01T17:00:56.981000Z',\n     'platform': '',\n     'proj:wkt2': 'PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the '\n                  'custom spheroid\",DATUM[\"Not specified (based on custom '\n                  'spheroid)\",SPHEROID[\"Custom '\n                  'spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]',\n     'proj:shape': [4800, 4800],\n     'instruments': [],\n     'end_datetime': '2024-10-30T23:59:59Z',\n     'modis:tile-id': '51035010',\n     'proj:geometry': {'type': 'Polygon',\n                       'coordinates': [[[20015109.354, -2223901.039333],\n                                        [20015109.354, -1111950.519667],\n                                        [18903158.834333, -1111950.519667],\n                                        [18903158.834333, -2223901.039333],\n                                        [20015109.354, -2223901.039333]]]},\n     'proj:transform': [231.65635826395825,\n                        0.0,\n                        18903158.834333,\n                        0.0,\n                        -231.65635826374995,\n                        -1111950.519667],\n     'start_datetime': '2024-10-15T00:00:00Z',\n     'modis:vertical-tile': 10,\n     'modis:horizontal-tile': 35}"
+      }
+    ],
+    "created": "2024-11-01T21:57:57Z",
+    "updated": "2024-11-01T17:00:56.981000Z",
+    "platform": "",
+    "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "proj:shape": [
+      4800,
+      4800
+    ],
+    "instruments": [],
+    "end_datetime": "2024-10-30T23:59:59Z",
+    "modis:tile-id": "51035010",
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            20015109.354,
+            -2223901.039333
+          ],
+          [
+            20015109.354,
+            -1111950.519667
+          ],
+          [
+            18903158.834333,
+            -1111950.519667
+          ],
+          [
+            18903158.834333,
+            -2223901.039333
+          ],
+          [
+            20015109.354,
+            -2223901.039333
+          ]
+        ]
+      ]
+    },
+    "proj:transform": [
+      231.65635826395825,
+      0.0,
+      18903158.834333,
+      0.0,
+      -231.65635826374995,
+      -1111950.519667
+    ],
+    "start_datetime": "2024-10-15T00:00:00Z",
+    "modis:vertical-tile": 10,
+    "modis:horizontal-tile": 35
+  },
+  "bbox": [
+    172.4793,
+    -19.1807,
+    180.1436,
+    -9.9753
+  ],
+  "type": "Feature",
+  "assets": {
+    "hdf": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757.hdf",
+      "type": "application/x-hdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Source data containing all bands"
+    },
+    "metadata": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757.hdf.xml",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "title": "Federal Geographic Data Committee (FGDC) Metadata"
+    },
+    "250m_16_days_EVI": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_EVI.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "16 day EVI",
+      "raster:bands": [
+        {
+          "unit": "EVI",
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_NDVI": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_NDVI.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "16 day NDVI",
+      "raster:bands": [
+        {
+          "unit": "NDVI",
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_VI_Quality": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_VI_Quality.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "VI quality indicators",
+      "raster:bands": [
+        {
+          "data_type": "uint16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_MIR_reflectance": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_MIR_reflectance.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Surface Reflectance Band 7",
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_NIR_reflectance": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_NIR_reflectance.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Surface Reflectance Band 2",
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_red_reflectance": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_red_reflectance.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Surface Reflectance Band 1",
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_blue_reflectance": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_blue_reflectance.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Surface Reflectance Band 3",
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_sun_zenith_angle": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_sun_zenith_angle.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Sun zenith angle of VI pixel",
+      "raster:bands": [
+        {
+          "unit": "Degree",
+          "scale": 0.01,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_pixel_reliability": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_pixel_reliability.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Quality reliability of VI pixel",
+      "raster:bands": [
+        {
+          "unit": "Rank",
+          "data_type": "int8",
+          "spatial_resolution": 250
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Good data, use with confidence"
+        },
+        {
+          "value": 1,
+          "description": "Marginal data, useful, but look at other QA information"
+        },
+        {
+          "value": 2,
+          "description": "Snow/Ice Target covered with snow/ice"
+        },
+        {
+          "value": 3,
+          "description": "Cloudy data"
+        }
+      ]
+    },
+    "250m_16_days_view_zenith_angle": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_view_zenith_angle.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "View zenith angle of VI Pixel",
+      "raster:bands": [
+        {
+          "unit": "Degree",
+          "scale": 0.01,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_relative_azimuth_angle": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_relative_azimuth_angle.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Relative azimuth angle of VI pixel",
+      "raster:bands": [
+        {
+          "unit": "Degree",
+          "scale": 0.01,
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "250m_16_days_composite_day_of_the_year": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MOD13Q1/35/10/2024289/MOD13Q1.A2024289.h35v10.061.2024306175757_250m_16_days_composite_day_of_the_year.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Day of year VI pixel",
+      "raster:bands": [
+        {
+          "unit": "Julian Day",
+          "data_type": "int16",
+          "spatial_resolution": 250
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-13Q1-061&item=MOD13Q1.A2024289.h35v10.061.2024306175757&assets=250m_16_days_NDVI&tile_format=png&colormap_name=modis-13A1%7CQ1&rescale=0%2C10000&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-13Q1-061&item=MOD13Q1.A2024289.h35v10.061.2024306175757&assets=250m_16_days_NDVI&tile_format=png&colormap_name=modis-13A1%7CQ1&rescale=0%2C10000&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          172.6228,
+          -9.9836
+        ],
+        [
+          172.4793,
+          -19.1662
+        ],
+        [
+          180.1436,
+          -19.1807
+        ],
+        [
+          179.9995,
+          -9.9753
+        ],
+        [
+          172.6228,
+          -9.9836
+        ]
+      ]
+    ]
+  },
+  "collection": "modis-13Q1-061",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

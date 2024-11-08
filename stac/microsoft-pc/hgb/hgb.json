@@ -1,0 +1,153 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=hgb&item=hgb",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hgb/items/hgb",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "hgb",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2010-12-31T00:00:00Z",
+    "proj:bbox": [
+      -180.00000000000006,
+      -61.002777777777894,
+      180.00000000000023,
+      84.00000000000001
+    ],
+    "proj:epsg": 4326,
+    "proj:shape": [
+      52201,
+      129600
+    ],
+    "proj:transform": [
+      0.00277777777777778,
+      0.0,
+      -180.00000000000006,
+      0.0,
+      -0.00277777777777778,
+      84.00000000000001,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "bbox": [
+    -180.0,
+    -61.002778,
+    180.0,
+    84.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "aboveground": {
+      "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/2010-harmonized-biomass/global/300m/aboveground.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Global above-ground biomass"
+    },
+    "belowground": {
+      "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/2010-harmonized-biomass/global/300m/belowground.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Global below-ground biomass"
+    },
+    "aboveground_uncertainty": {
+      "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/2010-harmonized-biomass/global/300m/aboveground_uncertainty.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Uncertainty associated with global above-ground biomass"
+    },
+    "belowground_uncertainty": {
+      "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/2010-harmonized-biomass/global/300m/belowground_uncertainty.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Uncertainty associated with global below-ground biomass"
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=hgb&item=hgb&assets=aboveground&colormap_name=greens&nodata=0&rescale=0%2C255&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=hgb&item=hgb&assets=aboveground&colormap_name=greens&nodata=0&rescale=0%2C255&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -61.00277778
+        ],
+        [
+          180,
+          84
+        ],
+        [
+          -180,
+          84
+        ],
+        [
+          -180,
+          -61.00277778
+        ],
+        [
+          180,
+          -61.00277778
+        ]
+      ]
+    ]
+  },
+  "collection": "hgb",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

@@ -1,0 +1,192 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=hrea&item=HREA_Zimbabwe_2019_v1",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hrea/items/HREA_Zimbabwe_2019_v1",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "HREA_Zimbabwe_2019_v1",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2019-12-31T00:00:00Z",
+    "proj:epsg": 4326
+  },
+  "bbox": [
+    25.237177,
+    -22.421859,
+    33.054955,
+    -15.609359
+  ],
+  "type": "Feature",
+  "assets": {
+    "lightscore": {
+      "href": "https://hreadatasa.blob.core.windows.net/hrea/HREA/HREA_Zimbabwe_2019_v1/Zimbabwe_set_lightscore_sy_2019.tif",
+      "proj:shape": [
+        24519,
+        28144
+      ],
+      "proj:transform": [
+        0.00027777779999289365,
+        0.0,
+        25.2371769,
+        0.0,
+        -0.000277777799991843,
+        -15.60935879,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Probability of electrification"
+    },
+    "light-composite": {
+      "href": "https://hreadatasa.blob.core.windows.net/hrea/HREA/HREA_Zimbabwe_2019_v1/Zimbabwe_rade9lnmu_2019.tif",
+      "proj:shape": [
+        1635,
+        1876
+      ],
+      "proj:transform": [
+        0.004166666699893389,
+        0.0,
+        25.2371769,
+        0.0,
+        -0.00416666670030581,
+        -15.60935879,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Nighttime light annual composite"
+    },
+    "night-proportion": {
+      "href": "https://hreadatasa.blob.core.windows.net/hrea/HREA/HREA_Zimbabwe_2019_v1/Zimbabwe_set_prplit_conf90_sy_2019.tif",
+      "proj:shape": [
+        24519,
+        28144
+      ],
+      "proj:transform": [
+        0.00027777779999289365,
+        0.0,
+        25.2371769,
+        0.0,
+        -0.000277777799991843,
+        -15.60935879,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Proportion of nights a settlement is brighter than uninhabited areas"
+    },
+    "estimated-brightness": {
+      "href": "https://hreadatasa.blob.core.windows.net/hrea/HREA/HREA_Zimbabwe_2019_v1/Zimbabwe_set_zscore_sy_2019.tif",
+      "proj:shape": [
+        24519,
+        28144
+      ],
+      "proj:transform": [
+        0.00027777779999289365,
+        0.0,
+        25.2371769,
+        0.0,
+        -0.000277777799991843,
+        -15.60935879,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Estimated brightness levels"
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=hrea&item=HREA_Zimbabwe_2019_v1&assets=estimated-brightness&colormap_name=magma&rescale=1%2C200&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=hrea&item=HREA_Zimbabwe_2019_v1&assets=estimated-brightness&colormap_name=magma&rescale=1%2C200&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          25.237177,
+          -22.421859
+        ],
+        [
+          33.054955,
+          -22.421859
+        ],
+        [
+          33.054955,
+          -15.609359
+        ],
+        [
+          25.237177,
+          -15.609359
+        ],
+        [
+          25.237177,
+          -22.421859
+        ]
+      ]
+    ]
+  },
+  "collection": "hrea",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

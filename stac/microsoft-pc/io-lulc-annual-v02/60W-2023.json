@@ -1,0 +1,552 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=io-lulc-annual-v02&item=60W-2023",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-lulc-annual-v02/items/60W-2023",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "60W-2023",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID 60W-2023 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID 60W-2023 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:bbox': [353310.0, 7097020.0, 646690.0, 7991500.0], 'proj:epsg': 32660, 'supercell': '60W', 'io:tile_id': '60W', 'proj:shape': [89448, 29338], 'end_datetime': '2024-01-01T00:00:00Z', 'proj:transform': [10.0, 0.0, 353310.0, 0.0, -10.0, 7991500.0], 'start_datetime': '2023-01-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:bbox': [353310.0, 7097020.0, 646690.0, 7991500.0],\\n     'proj:epsg': 32660,\\n     'supercell': '60W',\\n     'io:tile_id': '60W',\\n     'proj:shape': [89448, 29338],\\n     'end_datetime': '2024-01-01T00:00:00Z',\\n     'proj:transform': [10.0, 0.0, 353310.0, 0.0, -10.0, 7991500.0],\\n     'start_datetime': '2023-01-01T00:00:00Z'}\"}], 'proj:bbox': [353310.0, 7097020.0, 646690.0, 7991500.0], 'proj:epsg': 32660, 'supercell': '60W', 'io:tile_id': '60W', 'proj:shape': [89448, 29338], 'end_datetime': '2024-01-01T00:00:00Z', 'proj:transform': [10.0, 0.0, 353310.0, 0.0, -10.0, 7991500.0], 'start_datetime': '2023-01-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    '60W-2023 against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:bbox': [353310.0, 7097020.0, \"\n                                    \"646690.0, 7991500.0], 'proj:epsg': \"\n                                    \"32660, 'supercell': '60W', \"\n                                    \"'io:tile_id': '60W', 'proj:shape': \"\n                                    \"[89448, 29338], 'end_datetime': \"\n                                    \"'2024-01-01T00:00:00Z', \"\n                                    \"'proj:transform': [10.0, 0.0, \"\n                                    '353310.0, 0.0, -10.0, 7991500.0], '\n                                    \"'start_datetime': \"\n                                    \"'2023-01-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:bbox': [353310.0, \"\n                                    '7097020.0, 646690.0, 7991500.0],\\n'\n                                    \"     'proj:epsg': 32660,\\n\"\n                                    \"     'supercell': '60W',\\n\"\n                                    \"     'io:tile_id': '60W',\\n\"\n                                    \"     'proj:shape': [89448, 29338],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2024-01-01T00:00:00Z',\\n\"\n                                    \"     'proj:transform': [10.0, 0.0, \"\n                                    '353310.0, 0.0, -10.0, 7991500.0],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2023-01-01T00:00:00Z'}\"}],\n     'proj:bbox': [353310.0, 7097020.0, 646690.0, 7991500.0],\n     'proj:epsg': 32660,\n     'supercell': '60W',\n     'io:tile_id': '60W',\n     'proj:shape': [89448, 29338],\n     'end_datetime': '2024-01-01T00:00:00Z',\n     'proj:transform': [10.0, 0.0, 353310.0, 0.0, -10.0, 7991500.0],\n     'start_datetime': '2023-01-01T00:00:00Z'}"
+      }
+    ],
+    "proj:bbox": [
+      353310.0,
+      7097020.0,
+      646690.0,
+      7991500.0
+    ],
+    "proj:epsg": 32660,
+    "supercell": "60W",
+    "io:tile_id": "60W",
+    "proj:shape": [
+      89448,
+      29338
+    ],
+    "end_datetime": "2024-01-01T00:00:00Z",
+    "proj:transform": [
+      10.0,
+      0.0,
+      353310.0,
+      0.0,
+      -10.0,
+      7991500.0
+    ],
+    "start_datetime": "2023-01-01T00:00:00Z"
+  },
+  "bbox": [
+    -180.0,
+    63.969110597182826,
+    180.0,
+    72.02291285284377
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/io-lulc/io-annual-lulc-v02/60W_20230101-20240101.tif",
+      "file:size": 71713777,
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "spatial_resolution": 10
+        }
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "file:values": [
+        {
+          "values": [
+            0
+          ],
+          "summary": "No Data"
+        },
+        {
+          "values": [
+            1
+          ],
+          "summary": "Water"
+        },
+        {
+          "values": [
+            2
+          ],
+          "summary": "Trees"
+        },
+        {
+          "values": [
+            4
+          ],
+          "summary": "Flooded vegetation"
+        },
+        {
+          "values": [
+            5
+          ],
+          "summary": "Crops"
+        },
+        {
+          "values": [
+            7
+          ],
+          "summary": "Built area"
+        },
+        {
+          "values": [
+            8
+          ],
+          "summary": "Bare ground"
+        },
+        {
+          "values": [
+            9
+          ],
+          "summary": "Snow/ice"
+        },
+        {
+          "values": [
+            10
+          ],
+          "summary": "Clouds"
+        },
+        {
+          "values": [
+            11
+          ],
+          "summary": "Rangeland"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=io-lulc-annual-v02&item=60W-2023&assets=data&colormap_name=io-lulc-9-class&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=io-lulc-annual-v02&item=60W-2023&assets=data&colormap_name=io-lulc-9-class&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.96105597239537,
+          71.99931920113342
+        ],
+        [
+          -179.5567374561556,
+          71.9925845979195
+        ],
+        [
+          -179.1527456156581,
+          71.98501158337118
+        ],
+        [
+          -178.749118249608,
+          71.97660135706714
+        ],
+        [
+          -178.83422688774704,
+          71.59575337321792
+        ],
+        [
+          -178.91582295034922,
+          71.21484971059314
+        ],
+        [
+          -178.9941151935927,
+          70.83389249972971
+        ],
+        [
+          -179.06929615873713,
+          70.45288368684791
+        ],
+        [
+          -179.14154371377705,
+          70.07182505172449
+        ],
+        [
+          -179.21102242273136,
+          69.69071822356703
+        ],
+        [
+          -179.27788476460995,
+          69.30956469514618
+        ],
+        [
+          -179.34227222093875,
+          68.92836583540452
+        ],
+        [
+          -179.40431624806632,
+          68.54712290073145
+        ],
+        [
+          -179.46413914822833,
+          68.16583704506535
+        ],
+        [
+          -179.5218548514443,
+          67.78450932896362
+        ],
+        [
+          -179.57756961870547,
+          67.40314072776223
+        ],
+        [
+          -179.6313826755338,
+          67.02173213892904
+        ],
+        [
+          -179.68338678381724,
+          66.64028438870366
+        ],
+        [
+          -179.73366875881675,
+          66.25879823810286
+        ],
+        [
+          -179.78230993737628,
+          65.87727438836185
+        ],
+        [
+          -179.82938660262008,
+          65.49571348587249
+        ],
+        [
+          -179.87497036977857,
+          65.1141161266718
+        ],
+        [
+          -179.91912853722772,
+          64.7324828605287
+        ],
+        [
+          -179.96192440634286,
+          64.35081419467004
+        ],
+        [
+          179.99658242664972,
+          63.969110597182826
+        ],
+        [
+          179.71159890202534,
+          63.97472008429889
+        ],
+        [
+          179.4264939658463,
+          63.97976996144282
+        ],
+        [
+          179.14128030795268,
+          63.98425980649534
+        ],
+        [
+          178.85597064820865,
+          63.988189243883845
+        ],
+        [
+          178.5705777330196,
+          63.99155794470757
+        ],
+        [
+          178.28511433183036,
+          63.99436562684723
+        ],
+        [
+          177.999593233608,
+          63.99661205505918
+        ],
+        [
+          177.71402724331085,
+          63.99829704105409
+        ],
+        [
+          177.42842917834625,
+          63.99942044355975
+        ],
+        [
+          177.14281186502012,
+          63.999982168368454
+        ],
+        [
+          176.85718813497982,
+          63.999982168368454
+        ],
+        [
+          176.57157082165372,
+          63.99942044355975
+        ],
+        [
+          176.28597275668912,
+          63.99829704105409
+        ],
+        [
+          176.00040676639196,
+          63.99661205505918
+        ],
+        [
+          175.71488566816961,
+          63.99436562684723
+        ],
+        [
+          175.42942226698037,
+          63.99155794470757
+        ],
+        [
+          175.14402935179132,
+          63.988189243883845
+        ],
+        [
+          174.8587196920473,
+          63.98425980649534
+        ],
+        [
+          174.57350603415367,
+          63.97976996144282
+        ],
+        [
+          174.28840109797463,
+          63.97472008429889
+        ],
+        [
+          174.00341757335025,
+          63.969110597182826
+        ],
+        [
+          173.96192440634286,
+          64.35081419467004
+        ],
+        [
+          173.91912853722766,
+          64.7324828605287
+        ],
+        [
+          173.87497036977854,
+          65.1141161266718
+        ],
+        [
+          173.82938660262002,
+          65.49571348587249
+        ],
+        [
+          173.78230993737623,
+          65.87727438836185
+        ],
+        [
+          173.73366875881672,
+          66.25879823810286
+        ],
+        [
+          173.68338678381724,
+          66.64028438870366
+        ],
+        [
+          173.6313826755338,
+          67.02173213892904
+        ],
+        [
+          173.57756961870547,
+          67.40314072776223
+        ],
+        [
+          173.52185485144426,
+          67.78450932896362
+        ],
+        [
+          173.46413914822827,
+          68.16583704506535
+        ],
+        [
+          173.4043162480663,
+          68.54712290073144
+        ],
+        [
+          173.34227222093872,
+          68.92836583540452
+        ],
+        [
+          173.2778847646099,
+          69.30956469514618
+        ],
+        [
+          173.21102242273133,
+          69.69071822356703
+        ],
+        [
+          173.14154371377703,
+          70.07182505172449
+        ],
+        [
+          173.0692961587371,
+          70.45288368684791
+        ],
+        [
+          172.99411519359268,
+          70.83389249972971
+        ],
+        [
+          172.91582295034917,
+          71.21484971059313
+        ],
+        [
+          172.83422688774704,
+          71.59575337321792
+        ],
+        [
+          172.74911824960796,
+          71.97660135706714
+        ],
+        [
+          173.15274561565803,
+          71.98501158337118
+        ],
+        [
+          173.5567374561556,
+          71.9925845979195
+        ],
+        [
+          173.96105597239534,
+          71.99931920113342
+        ],
+        [
+          174.3656631777604,
+          72.00521432458423
+        ],
+        [
+          174.7705209191862,
+          72.0102690317429
+        ],
+        [
+          175.17559089886421,
+          72.01448251863873
+        ],
+        [
+          175.5808346961538,
+          72.017854114426
+        ],
+        [
+          175.9862137896717,
+          72.02038328185762
+        ],
+        [
+          176.39168957952728,
+          72.02206961766508
+        ],
+        [
+          176.79722340967166,
+          72.02291285284377
+        ],
+        [
+          177.2027765903283,
+          72.02291285284377
+        ],
+        [
+          177.6083104204727,
+          72.02206961766508
+        ],
+        [
+          178.01378621032828,
+          72.02038328185762
+        ],
+        [
+          178.41916530384617,
+          72.017854114426
+        ],
+        [
+          178.82440910113576,
+          72.01448251863873
+        ],
+        [
+          179.22947908081377,
+          72.0102690317429
+        ],
+        [
+          179.63433682223956,
+          72.00521432458423
+        ],
+        [
+          180,
+          71.99992332732286
+        ],
+        [
+          180,
+          71.99992332728132
+        ],
+        [
+          180,
+          64.00099674315756
+        ],
+        [
+          180,
+          64.00099674215754
+        ],
+        [
+          -180,
+          64.00099674215755
+        ],
+        [
+          -180,
+          64.00099674315756
+        ],
+        [
+          -180,
+          71.99992332728134
+        ],
+        [
+          -180,
+          71.99992332729201
+        ],
+        [
+          -179.96105597239537,
+          71.99931920113342
+        ]
+      ]
+    ]
+  },
+  "collection": "io-lulc-annual-v02",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

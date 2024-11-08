@@ -1,0 +1,90 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/y2dprcp-2006_2020-daily-normals-v1.0",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "y2dprcp-2006_2020-daily-normals-v1.0",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID y2dprcp-2006_2020-daily-normals-v1.0 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID y2dprcp-2006_2020-daily-normals-v1.0 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'created': '2023-01-11T16:38:00.112577Z', 'proj:epsg': 4326, 'end_datetime': '2020-12-31T23:59:59Z', 'start_datetime': '2006-01-01T00:00:00Z', 'noaa_climate_normals:period': '2006-2020', 'noaa_climate_normals:frequency': 'daily'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'created': '2023-01-11T16:38:00.112577Z',\\n     'proj:epsg': 4326,\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'start_datetime': '2006-01-01T00:00:00Z',\\n     'noaa_climate_normals:period': '2006-2020',\\n     'noaa_climate_normals:frequency': 'daily'}\"}], 'created': '2023-01-11T16:38:00.112577Z', 'proj:epsg': 4326, 'end_datetime': '2020-12-31T23:59:59Z', 'start_datetime': '2006-01-01T00:00:00Z', 'noaa_climate_normals:period': '2006-2020', 'noaa_climate_normals:frequency': 'daily'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'y2dprcp-2006_2020-daily-normals-v1.0 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'created': \"\n                                    \"'2023-01-11T16:38:00.112577Z', \"\n                                    \"'proj:epsg': 4326, 'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'start_datetime': \"\n                                    \"'2006-01-01T00:00:00Z', \"\n                                    \"'noaa_climate_normals:period': \"\n                                    \"'2006-2020', \"\n                                    \"'noaa_climate_normals:frequency': \"\n                                    \"'daily'} is not valid under any of \"\n                                    'the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'created': \"\n                                    \"'2023-01-11T16:38:00.112577Z',\\n\"\n                                    \"     'proj:epsg': 4326,\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'start_datetime': \"\n                                    \"'2006-01-01T00:00:00Z',\\n\"\n                                    \"     'noaa_climate_normals:period': \"\n                                    \"'2006-2020',\\n\"\n                                    '     '\n                                    \"'noaa_climate_normals:frequency': \"\n                                    \"'daily'}\"}],\n     'created': '2023-01-11T16:38:00.112577Z',\n     'proj:epsg': 4326,\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'start_datetime': '2006-01-01T00:00:00Z',\n     'noaa_climate_normals:period': '2006-2020',\n     'noaa_climate_normals:frequency': 'daily'}"
+      }
+    ],
+    "created": "2023-01-11T16:38:00.112577Z",
+    "proj:epsg": 4326,
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "start_datetime": "2006-01-01T00:00:00Z",
+    "noaa_climate_normals:period": "2006-2020",
+    "noaa_climate_normals:frequency": "daily"
+  },
+  "bbox": [
+    -124.708333,
+    24.541666,
+    -66.999995,
+    49.375001
+  ],
+  "type": "Feature",
+  "assets": {
+    "netcdf": {
+      "href": "https://noaanormals.blob.core.windows.net/gridded-normals/normals-daily/2006-2020/y2dprcp-2006_2020-daily-normals-v1.0.nc",
+      "title": "2006-2020 Daily Gridded Climate Normals for Year-to-Date Precipitation",
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -66.999995,
+          24.541666
+        ],
+        [
+          -66.999995,
+          49.375001
+        ],
+        [
+          -124.708333,
+          49.375001
+        ],
+        [
+          -124.708333,
+          24.541666
+        ],
+        [
+          -66.999995,
+          24.541666
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-climate-normals-netcdf",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

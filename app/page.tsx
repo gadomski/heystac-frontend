@@ -1,7 +1,7 @@
 "use client";
 
 import { Heading, Lead } from "@devseed-ui/typography";
-import Catalog from "../public/stac/catalog.json";
+import Catalog from "../stac/catalog.json";
 import CatalogsCard from "./components/card/catalog";
 
 export default function Home() {

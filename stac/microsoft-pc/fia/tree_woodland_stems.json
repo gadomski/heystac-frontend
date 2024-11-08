@@ -1,0 +1,194 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/fia/items/tree_woodland_stems",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "tree_woodland_stems",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2020-06-01T00:00:00Z",
+    "table:columns": [
+      {
+        "name": "CN",
+        "type": "int64",
+        "description": "Sequence number"
+      },
+      {
+        "name": "PLT_CN",
+        "type": "int64",
+        "description": "Plot sequence number"
+      },
+      {
+        "name": "INVYR",
+        "type": "int64",
+        "description": "Inventory year"
+      },
+      {
+        "name": "STATECD",
+        "type": "int64",
+        "description": "State code"
+      },
+      {
+        "name": "UNITCD",
+        "type": "int64",
+        "description": "Survey unit code"
+      },
+      {
+        "name": "COUNTYCD",
+        "type": "int64",
+        "description": "County code"
+      },
+      {
+        "name": "PLOT",
+        "type": "int64",
+        "description": "Plot number"
+      },
+      {
+        "name": "SUBP",
+        "type": "int64",
+        "description": "Subplot number"
+      },
+      {
+        "name": "TREE",
+        "type": "int64",
+        "description": "Woodland tree number"
+      },
+      {
+        "name": "TRE_CN",
+        "type": "int64",
+        "description": "Tree sequence number"
+      },
+      {
+        "name": "DIA",
+        "type": "double",
+        "description": "Woodland stem diameter"
+      },
+      {
+        "name": "STATUSCD",
+        "type": "int64",
+        "description": "Woodland stem status code"
+      },
+      {
+        "name": "STEM_NBR",
+        "type": "int64",
+        "description": "Woodland stem number"
+      },
+      {
+        "name": "CYCLE",
+        "type": "int64",
+        "description": "Inventory cycle number"
+      },
+      {
+        "name": "SUBCYCLE",
+        "type": "int64",
+        "description": "Inventory subcycle number"
+      },
+      {
+        "name": "CREATED_BY",
+        "type": "double",
+        "description": "Created by"
+      },
+      {
+        "name": "CREATED_DATE",
+        "type": "byte_array",
+        "description": "Created date"
+      },
+      {
+        "name": "CREATED_IN_INSTANCE",
+        "type": "int64",
+        "description": "Created in instance"
+      },
+      {
+        "name": "MODIFIED_BY",
+        "type": "double",
+        "description": "Modified by"
+      },
+      {
+        "name": "MODIFIED_DATE",
+        "type": "byte_array",
+        "description": "Modified date"
+      },
+      {
+        "name": "MODIFIED_IN_INSTANCE",
+        "type": "double",
+        "description": "Modified in instance"
+      }
+    ]
+  },
+  "bbox": [
+    -179.14734,
+    -14.53,
+    179.77847,
+    71.352561
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "abfs://cpdata/raw/fia/tree_woodland_stems.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ],
+      "title": "Dataset root",
+      "table:storage_options": {
+        "account_name": "cpdataeuwest"
+      }
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          179.77847,
+          -14.53
+        ],
+        [
+          179.77847,
+          71.352561
+        ],
+        [
+          -179.14734,
+          71.352561
+        ],
+        [
+          -179.14734,
+          -14.53
+        ],
+        [
+          179.77847,
+          -14.53
+        ]
+      ]
+    ]
+  },
+  "collection": "fia",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

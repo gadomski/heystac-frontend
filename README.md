@@ -30,18 +30,6 @@ The frontend code lives in [app](./app/).
 ### Backend
 
 We have a command-line interface (CLI), also called **heystac**, for generating pre-rendered content.
-To run:
-
-```shell
-yarn build
-```
-
-Under the hood, the prebuild script does this:
-
-```shell
-heystac prebuild
-```
-
 The Python code for the CLI lives in [src](./src/).
 
 ## License

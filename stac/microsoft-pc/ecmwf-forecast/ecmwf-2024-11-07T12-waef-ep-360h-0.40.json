@@ -1,0 +1,94 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/ecmwf-forecast/items/ecmwf-2024-11-07T12-waef-ep-360h-0.40",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "ecmwf-2024-11-07T12-waef-ep-360h-0.40",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2024-11-22T12:00:00Z",
+    "ecmwf:step": "360h",
+    "ecmwf:type": "ep",
+    "ecmwf:stream": "waef",
+    "ecmwf:resolution": "0.40",
+    "ecmwf:forecast_datetime": "2024-11-22T12:00:00Z",
+    "ecmwf:reference_datetime": "2024-11-07T12:00:00Z"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20241107/12z/ifs/0p4-beta/waef/20241107120000-360h-waef-ep.grib2",
+      "type": "application/wmo-GRIB2",
+      "roles": [
+        "data"
+      ]
+    },
+    "index": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20241107/12z/ifs/0p4-beta/waef/20241107120000-360h-waef-ep.index",
+      "type": "application/x-ndjson",
+      "roles": [
+        "index"
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "ecmwf-forecast",
+  "stac_extensions": [],
+  "stac_version": "1.0.0"
+}

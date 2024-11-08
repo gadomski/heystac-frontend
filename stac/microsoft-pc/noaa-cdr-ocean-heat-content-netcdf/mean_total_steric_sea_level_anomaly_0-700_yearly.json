@@ -1,0 +1,106 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_total_steric_sea_level_anomaly_0-700_yearly",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "mean_total_steric_sea_level_anomaly_0-700_yearly",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID mean_total_steric_sea_level_anomaly_0-700_yearly against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID mean_total_steric_sea_level_anomaly_0-700_yearly against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:epsg': 4326, 'proj:shape': [180, 360], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0], 'start_datetime': '2005-01-01T00:00:00Z', 'processing:level': 'Ld', 'noaa_cdr:interval': 'yearly', 'noaa_cdr:max_depth': 700} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:epsg': 4326,\\n     'proj:shape': [180, 360],\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0],\\n     'start_datetime': '2005-01-01T00:00:00Z',\\n     'processing:level': 'Ld',\\n     'noaa_cdr:interval': 'yearly',\\n     'noaa_cdr:max_depth': 700}\"}], 'proj:epsg': 4326, 'proj:shape': [180, 360], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0], 'start_datetime': '2005-01-01T00:00:00Z', 'processing:level': 'Ld', 'noaa_cdr:interval': 'yearly', 'noaa_cdr:max_depth': 700} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'mean_total_steric_sea_level_anomaly_0-700_yearly '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[180, 360], 'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'proj:transform': [1.0, 0.0, -180.0, \"\n                                    \"0.0, -1.0, 90.0], 'start_datetime': \"\n                                    \"'2005-01-01T00:00:00Z', \"\n                                    \"'processing:level': 'Ld', \"\n                                    \"'noaa_cdr:interval': 'yearly', \"\n                                    \"'noaa_cdr:max_depth': 700} is not \"\n                                    'valid under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [180, 360],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'proj:transform': [1.0, 0.0, \"\n                                    '-180.0, 0.0, -1.0, 90.0],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2005-01-01T00:00:00Z',\\n\"\n                                    \"     'processing:level': 'Ld',\\n\"\n                                    \"     'noaa_cdr:interval': 'yearly',\\n\"\n                                    \"     'noaa_cdr:max_depth': 700}\"}],\n     'proj:epsg': 4326,\n     'proj:shape': [180, 360],\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0],\n     'start_datetime': '2005-01-01T00:00:00Z',\n     'processing:level': 'Ld',\n     'noaa_cdr:interval': 'yearly',\n     'noaa_cdr:max_depth': 700}"
+      }
+    ],
+    "proj:epsg": 4326,
+    "proj:shape": [
+      180,
+      360
+    ],
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      1.0,
+      0.0,
+      -180.0,
+      0.0,
+      -1.0,
+      90.0
+    ],
+    "start_datetime": "2005-01-01T00:00:00Z",
+    "processing:level": "Ld",
+    "noaa_cdr:interval": "yearly",
+    "noaa_cdr:max_depth": 700
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    540.0,
+    90.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "netcdf": {
+      "href": "https://noaacdr.blob.core.windows.net/ocean-heat-content/data/derived/mean_total_steric_sea_level_anomaly_0-700_yearly.nc",
+      "type": "application/x-netcdf",
+      "title": "Mean total steric sea level anomalies from WOA09 : mean_total_steric_sea_level_anomaly 0-700 m yearly 1.00 degree NetCDF",
+      "created": "2021-01-11T00:00:00Z",
+      "updated": "2021-01-11T00:00:00Z",
+      "description": "Mean total steric sea level anomaly from in situ profile data",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          540,
+          -90
+        ],
+        [
+          540,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          540,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-cdr-ocean-heat-content-netcdf",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

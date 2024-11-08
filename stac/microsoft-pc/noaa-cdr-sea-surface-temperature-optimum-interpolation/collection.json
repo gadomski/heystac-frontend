@@ -1,0 +1,214 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-optimum-interpolation/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Sea_Surface_Temperature_Optimum_Interpolation/UseAgreement_01B-09.pdf",
+      "title": "NOAA CDR Sea Surface Temperature - Optimum Interpolation Use Agreement",
+      "rel": "license",
+      "type": "application/pdf"
+    },
+    {
+      "href": "https://www.ncei.noaa.gov/products/climate-data-records/sea-surface-temperature-optimum-interpolation",
+      "title": "Sea Surface Temperature - Optimum Interpolation CDR",
+      "rel": "about",
+      "type": "text/html"
+    },
+    {
+      "href": "https://doi.org/10.25921/RE9P-PT57",
+      "rel": "cite-as"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/noaa-cdr-sea-surface-temperature-optimum-interpolation",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-optimum-interpolation",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./oisst-avhrr-v02r01.20240619.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 1,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 2.5,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "noaa-cdr-sea-surface-temperature-optimum-interpolation",
+  "heystac:rating": 1,
+  "title": "Sea Surface Temperature - Optimum Interpolation CDR",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/noaa-cdr-sea-surface-temperature-optimum-interpolation-thumb.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Sea Surface Temperature - Optimum Interpolation CDR thumbnail"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/noaa-cdr-sea-surface-temperature-optimum-interpolation.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-09-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "sci:doi": "10.25921/RE9P-PT57",
+  "keywords": [
+    "Global",
+    "Climate",
+    "NOAA",
+    "Temperature",
+    "Ocean"
+  ],
+  "providers": [
+    {
+      "url": "https://www.ncei.noaa.gov/",
+      "name": "National Centers for Environmental Information",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ],
+      "description": "NCEI is the Nation's leading authority for environmental data, and manage one of the largest archives of atmospheric, coastal, geophysical, and oceanic research in the world. NCEI contributes to the NESDIS mission by developing new products and services that span the science disciplines and enable better data discovery."
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "processor",
+        "host"
+      ]
+    }
+  ],
+  "description": "The NOAA 1/4° daily Optimum Interpolation Sea Surface Temperature (or daily OISST) Climate Data Record (CDR) provides complete ocean temperature fields constructed by combining bias-adjusted observations from different platforms (satellites, ships, buoys) on a regular global grid, with gaps filled in by interpolation. The main input source is satellite data from the Advanced Very High Resolution Radiometer (AVHRR), which provides high temporal-spatial coverage from late 1981-present. This input must be adjusted to the buoys due to erroneous cold SST data following the Mt Pinatubo and El Chichon eruptions. Applications include climate modeling, resource management, ecological studies on annual to daily scales.\n\nThese Cloud Optimized GeoTIFFs (COGs) were created from NetCDF files which are delivered to Azure as part of the [NOAA Open Data Dissemination (NODD) Program](https://www.noaa.gov/information-technology/open-data-dissemination).\nFor the NetCDF files, see collection `noaa-cdr-sea-surface-temperature-optimum-interpolation-netcdf`.\n",
+  "item_assets": {
+    "err": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "Celsius",
+          "scale": 0.009999999776482582,
+          "nodata": -999,
+          "data_type": "int16"
+        }
+      ]
+    },
+    "ice": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "%",
+          "scale": 0.009999999776482582,
+          "nodata": -999,
+          "data_type": "int16"
+        }
+      ]
+    },
+    "sst": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "Celsius",
+          "scale": 0.009999999776482582,
+          "nodata": -999,
+          "data_type": "int16"
+        }
+      ]
+    },
+    "anom": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "Celsius",
+          "scale": 0.009999999776482582,
+          "nodata": -999,
+          "data_type": "int16"
+        }
+      ]
+    },
+    "netcdf": {
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "msft:region": "eastus",
+  "sci:citation": "Huang, Boyin; Liu, Chunying; Banzon, Viva F.; Freeman, Eric; Graham, Garrett; Hankins, Bill; Smith, Thomas M.; Zhang, Huai-Min. (2020): NOAA 0.25-degree Daily Optimum Interpolation Sea Surface Temperature (OISST), Version 2.1. NOAA National Centers for Environmental Information. https://doi.org/10.25921/RE9P-PT57.",
+  "stac_version": "1.0.0",
+  "msft:group_id": "noaa-cdr",
+  "msft:container": "sea-surface-temperature-optimum-interpolation",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "msft:storage_account": "noaacdr",
+  "msft:short_description": "The NOAA 1/4° daily Optimum Interpolation Sea Surface Temperature (or daily OISST) Climate Data Record (CDR) provides complete ocean temperature fields constructed by combining bias-adjusted observations from different platforms (satellites, ships, buoys) on a regular global grid, with gaps filled in by interpolation."
+}
