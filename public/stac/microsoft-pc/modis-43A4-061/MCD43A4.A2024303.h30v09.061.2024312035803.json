@@ -1,0 +1,532 @@
+{
+  "id": "MCD43A4.A2024303.h30v09.061.2024312035803",
+  "bbox": [
+    119.5512,
+    -10.0105,
+    132.0088,
+    0.0122
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-43A4-061"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-43A4-061"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-43A4-061/items/MCD43A4.A2024303.h30v09.061.2024312035803"
+    },
+    {
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-43A4-061&item=MCD43A4.A2024303.h30v09.061.2024312035803",
+      "title": "Map of item",
+      "type": "text/html"
+    }
+  ],
+  "assets": {
+    "hdf": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803.hdf",
+      "type": "application/x-hdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Source data containing all bands"
+    },
+    "metadata": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803.hdf.xml",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "title": "Federal Geographic Data Committee (FGDC) Metadata"
+    },
+    "Nadir_Reflectance_Band1": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band1.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 1",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band1",
+          "common_name": "red",
+          "center_wavelength": 0.645,
+          "full_width_half_max": 0.5
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "Nadir_Reflectance_Band2": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band2.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 2",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band2",
+          "common_name": "nir08",
+          "center_wavelength": 0.8585,
+          "full_width_half_max": 0.35
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "Nadir_Reflectance_Band3": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band3.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 3",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band3",
+          "common_name": "blue",
+          "center_wavelength": 0.469,
+          "full_width_half_max": 0.2
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "Nadir_Reflectance_Band4": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band4.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 4",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band4",
+          "common_name": "green",
+          "center_wavelength": 0.555,
+          "full_width_half_max": 0.2
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "Nadir_Reflectance_Band5": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band5.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 5",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band5",
+          "common_name": "lwir12",
+          "center_wavelength": 1.24,
+          "full_width_half_max": 0.2
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "Nadir_Reflectance_Band6": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band6.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 6",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band6",
+          "common_name": "swir16",
+          "center_wavelength": 1.64,
+          "full_width_half_max": 0.24
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "Nadir_Reflectance_Band7": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_Nadir_Reflectance_Band7.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "NBAR at local solar noon for Band 7",
+      "eo:bands": [
+        {
+          "name": "Nadir_Reflectance_Band7",
+          "common_name": "swir22",
+          "center_wavelength": 2.13,
+          "full_width_half_max": 0.5
+        }
+      ],
+      "raster:bands": [
+        {
+          "scale": 0.0001,
+          "data_type": "int16",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band1": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band1.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 1",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band1"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band2": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band2.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 2",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band2"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band3": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band3.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 3",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band3"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band4": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band4.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 4",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band4"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band5": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band5.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 5",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band5"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band6": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band6.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 6",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band6"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "BRDF_Albedo_Band_Mandatory_Quality_Band7": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MCD43A4/30/09/2024303/MCD43A4.A2024303.h30v09.061.2024312035803_BRDF_Albedo_Band_Mandatory_Quality_Band7.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "BRDF Albedo Mandatory Quality for Band 7",
+      "eo:bands": [
+        {
+          "name": "BRDF_Albedo_Band_Mandatory_Quality_Band7"
+        }
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Processed, good quality (full BRDF inversions)"
+        },
+        {
+          "value": 1,
+          "description": "Processed, see other QA (magnitude BRDF inversions)"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-43A4-061&item=MCD43A4.A2024303.h30v09.061.2024312035803&assets=Nadir_Reflectance_Band1&assets=Nadir_Reflectance_Band4&assets=Nadir_Reflectance_Band3&tile_format=png&rescale=0%2C2000&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-43A4-061&item=MCD43A4.A2024303.h30v09.061.2024312035803&assets=Nadir_Reflectance_Band1&assets=Nadir_Reflectance_Band4&assets=Nadir_Reflectance_Band3&tile_format=png&rescale=0%2C2000&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          119.5512,
+          -0.0005
+        ],
+        [
+          130.02,
+          0.0122
+        ],
+        [
+          132.0088,
+          -9.9999
+        ],
+        [
+          121.3818,
+          -10.0105
+        ],
+        [
+          119.5512,
+          -0.0005
+        ]
+      ]
+    ]
+  },
+  "collection": "modis-43A4-061",
+  "properties": {
+    "created": "2024-11-07T03:59:55Z",
+    "updated": "2024-11-06T22:04:55.638000Z",
+    "datetime": "2024-11-01T23:59:59.999500Z",
+    "platform": "",
+    "proj:epsg": null,
+    "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "proj:shape": [
+      2400,
+      2400
+    ],
+    "instruments": [],
+    "end_datetime": "2024-11-05T23:59:59.999000Z",
+    "modis:tile-id": "51030009",
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            14455356.755667,
+            -1111950.519667
+          ],
+          [
+            14455356.755667,
+            0.0
+          ],
+          [
+            13343406.236,
+            0.0
+          ],
+          [
+            13343406.236,
+            -1111950.519667
+          ],
+          [
+            14455356.755667,
+            -1111950.519667
+          ]
+        ]
+      ]
+    },
+    "proj:transform": [
+      463.3127165279165,
+      0.0,
+      13343406.236,
+      0.0,
+      -463.3127165279167,
+      0.0
+    ],
+    "start_datetime": "2024-10-29T00:00:00Z",
+    "modis:vertical-tile": 9,
+    "modis:horizontal-tile": 30
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

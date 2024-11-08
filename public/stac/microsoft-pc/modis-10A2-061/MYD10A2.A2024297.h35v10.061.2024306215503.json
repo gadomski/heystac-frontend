@@ -1,0 +1,230 @@
+{
+  "id": "MYD10A2.A2024297.h35v10.061.2024306215503",
+  "bbox": [
+    172.4793,
+    -19.1807,
+    180.1436,
+    -9.9753
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-10A2-061"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-10A2-061"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-10A2-061/items/MYD10A2.A2024297.h35v10.061.2024306215503"
+    },
+    {
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-10A2-061&item=MYD10A2.A2024297.h35v10.061.2024306215503",
+      "title": "Map of item",
+      "type": "text/html"
+    }
+  ],
+  "assets": {
+    "hdf": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD10A2/35/10/2024297/MYD10A2.A2024297.h35v10.061.2024306215503.hdf",
+      "type": "application/x-hdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Source data containing all bands"
+    },
+    "metadata": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD10A2/35/10/2024297/MYD10A2.A2024297.h35v10.061.2024306215503.hdf.xml",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "title": "Federal Geographic Data Committee (FGDC) Metadata"
+    },
+    "Maximum_Snow_Extent": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD10A2/35/10/2024297/MYD10A2.A2024297.h35v10.061.2024306215503_Maximum_Snow_Extent.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Maximum snow extent over the 8-day period.",
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "missing data"
+        },
+        {
+          "value": 1,
+          "description": "no decision"
+        },
+        {
+          "value": 11,
+          "description": "night"
+        },
+        {
+          "value": 25,
+          "description": "no snow"
+        },
+        {
+          "value": 37,
+          "description": "lake"
+        },
+        {
+          "value": 39,
+          "description": "ocean"
+        },
+        {
+          "value": 50,
+          "description": "cloud"
+        },
+        {
+          "value": 100,
+          "description": "lake ice"
+        },
+        {
+          "value": 200,
+          "description": "snow"
+        },
+        {
+          "value": 254,
+          "description": "detector saturated"
+        }
+      ]
+    },
+    "Eight_Day_Snow_Cover": {
+      "href": "https://modiseuwest.blob.core.windows.net/modis-061-cogs/MYD10A2/35/10/2024297/MYD10A2.A2024297.h35v10.061.2024306215503_Eight_Day_Snow_Cover.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Snow chronology bit flags for each day in the eight-day observation period.",
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 500
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=modis-10A2-061&item=MYD10A2.A2024297.h35v10.061.2024306215503&assets=Maximum_Snow_Extent&tile_format=png&colormap_name=modis-10A2&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=modis-10A2-061&item=MYD10A2.A2024297.h35v10.061.2024306215503&assets=Maximum_Snow_Extent&tile_format=png&colormap_name=modis-10A2&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          172.6228,
+          -9.9836
+        ],
+        [
+          172.4793,
+          -19.1662
+        ],
+        [
+          180.1436,
+          -19.1807
+        ],
+        [
+          179.9995,
+          -9.9753
+        ],
+        [
+          172.6228,
+          -9.9836
+        ]
+      ]
+    ]
+  },
+  "collection": "modis-10A2-061",
+  "properties": {
+    "created": "2024-11-01T21:55:07Z",
+    "updated": "2024-11-01T16:01:30.660000Z",
+    "datetime": null,
+    "platform": "",
+    "proj:epsg": null,
+    "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"Unknown datum based upon the custom spheroid\",DATUM[\"Not specified (based on custom spheroid)\",SPHEROID[\"Custom spheroid\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"Meter\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "proj:shape": [
+      2400,
+      2400
+    ],
+    "instruments": [],
+    "end_datetime": "2024-10-30T23:59:59Z",
+    "modis:tile-id": "51035010",
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            20015109.354,
+            -2223901.039333
+          ],
+          [
+            20015109.354,
+            -1111950.519667
+          ],
+          [
+            18903158.834333,
+            -1111950.519667
+          ],
+          [
+            18903158.834333,
+            -2223901.039333
+          ],
+          [
+            20015109.354,
+            -2223901.039333
+          ]
+        ]
+      ]
+    },
+    "proj:transform": [
+      463.3127165279165,
+      0.0,
+      18903158.834333,
+      0.0,
+      -463.3127165274999,
+      -1111950.519667
+    ],
+    "start_datetime": "2024-10-23T00:00:00Z",
+    "modis:vertical-tile": 10,
+    "modis:horizontal-tile": 35
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

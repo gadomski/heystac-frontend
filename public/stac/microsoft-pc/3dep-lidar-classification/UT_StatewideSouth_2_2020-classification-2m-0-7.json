@@ -1,0 +1,861 @@
+{
+  "id": "UT_StatewideSouth_2_2020-classification-2m-0-7",
+  "bbox": [
+    -114.0527931,
+    38.1085848,
+    -113.9809651,
+    38.154449
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-classification"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-classification"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-classification/items/UT_StatewideSouth_2_2020-classification-2m-0-7"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/UT_StatewideSouth_2020_A20/UT_StatewideSouth_2_2020/metadata/",
+      "type": "application/xml",
+      "title": "USGS Metadata"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5822",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5822"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5823",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5823"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5824",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5824"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5825",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5825"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5922",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5922"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5923",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5923"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5924",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5924"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5925",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5925"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6022",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6022"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6023",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6023"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6024",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6024"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6025",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6025"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6122",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6122"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6123",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6123"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6124",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6124"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6125",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6125"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6222",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6222"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6223",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6223"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6224",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6224"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6225",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6225"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6322",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6322"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6323",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6323"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6324",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6324"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6325",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6325"
+    },
+    {
+      "rel": "derived_from",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326"
+    },
+    {
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-lidar-classification&item=UT_StatewideSouth_2_2020-classification-2m-0-7",
+      "title": "Map of item",
+      "type": "text/html"
+    }
+  ],
+  "assets": {
+    "data": {
+      "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/UT_StatewideSouth_2_2020/classification/UT_StatewideSouth_2_2020-classification-2m-0-7.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "COG data"
+    },
+    "thumbnail": {
+      "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/UT_StatewideSouth_2_2020/classification/thumbnails/UT_StatewideSouth_2_2020-classification-2m-0-7-thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "3DEP Lidar COG"
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=3dep-lidar-classification&item=UT_StatewideSouth_2_2020-classification-2m-0-7&assets=data&colormap_name=lidar-classification&nodata=-9999&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=3dep-lidar-classification&item=UT_StatewideSouth_2_2020-classification-2m-0-7&assets=data&colormap_name=lidar-classification&nodata=-9999&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -114.0510183,
+          38.154449
+        ],
+        [
+          -114.0527931,
+          38.1103634
+        ],
+        [
+          -113.9827819,
+          38.1085848
+        ],
+        [
+          -113.9809651,
+          38.1526676
+        ],
+        [
+          -114.0510183,
+          38.154449
+        ]
+      ]
+    ]
+  },
+  "collection": "3dep-lidar-classification",
+  "properties": {
+    "datetime": null,
+    "proj:epsg": null,
+    "proj:shape": [
+      2449,
+      3073
+    ],
+    "3dep:usgs_id": "UT_StatewideSouth_2_2020",
+    "end_datetime": "2020-12-31T00:00:00Z",
+    "raster:bands": {
+      "unit": "metre",
+      "nodata": "nan",
+      "sampling": "point",
+      "data_type": "Float32",
+      "histogram": {
+        "max": 2.0019607843137255,
+        "min": 0.9980392156862745,
+        "count": 256,
+        "buckets": [
+          862,
+          0,
+          3,
+          1,
+          2,
+          3,
+          2,
+          10,
+          14,
+          20,
+          11,
+          22,
+          16,
+          36,
+          44,
+          37,
+          67,
+          67,
+          85,
+          83,
+          110,
+          103,
+          145,
+          138,
+          175,
+          196,
+          230,
+          239,
+          284,
+          317,
+          339,
+          380,
+          443,
+          436,
+          494,
+          570,
+          614,
+          692,
+          759,
+          810,
+          828,
+          885,
+          976,
+          1087,
+          1148,
+          1309,
+          1339,
+          1455,
+          1537,
+          1611,
+          1766,
+          1806,
+          1949,
+          2113,
+          2222,
+          2308,
+          2507,
+          2693,
+          2635,
+          2941,
+          2864,
+          3208,
+          3282,
+          3498,
+          3698,
+          3941,
+          3979,
+          4203,
+          4356,
+          4401,
+          4834,
+          4827,
+          5077,
+          5360,
+          5512,
+          5666,
+          5781,
+          6073,
+          6203,
+          6292,
+          6727,
+          6829,
+          7216,
+          7384,
+          7500,
+          7780,
+          8032,
+          8109,
+          8357,
+          8512,
+          8855,
+          9072,
+          9352,
+          9451,
+          9743,
+          9836,
+          10000,
+          10485,
+          10689,
+          10894,
+          10953,
+          11190,
+          11426,
+          11508,
+          11713,
+          11895,
+          12051,
+          12055,
+          12287,
+          12309,
+          12661,
+          12713,
+          12847,
+          13093,
+          13107,
+          13305,
+          13243,
+          13232,
+          13304,
+          13649,
+          13513,
+          13717,
+          13768,
+          13645,
+          14058,
+          13390,
+          14119,
+          13655,
+          14031,
+          13785,
+          13938,
+          13978,
+          14066,
+          13895,
+          14252,
+          14022,
+          14058,
+          13980,
+          14046,
+          14126,
+          13869,
+          14138,
+          14265,
+          14149,
+          14179,
+          14172,
+          14404,
+          14059,
+          14397,
+          14398,
+          14313,
+          14344,
+          14695,
+          14569,
+          14630,
+          14865,
+          14775,
+          14816,
+          14760,
+          14852,
+          15072,
+          15003,
+          15161,
+          15213,
+          15075,
+          15302,
+          15786,
+          15590,
+          15990,
+          16068,
+          16148,
+          16306,
+          16248,
+          16599,
+          16694,
+          16756,
+          16996,
+          17146,
+          17460,
+          17576,
+          17686,
+          17797,
+          18211,
+          18297,
+          18489,
+          18897,
+          19270,
+          19164,
+          19640,
+          20197,
+          20111,
+          20552,
+          20604,
+          21225,
+          21265,
+          21574,
+          22087,
+          22320,
+          22750,
+          23283,
+          23790,
+          24105,
+          24069,
+          24876,
+          25221,
+          26017,
+          26358,
+          26769,
+          27529,
+          28004,
+          28042,
+          29035,
+          29715,
+          30482,
+          31080,
+          31881,
+          32680,
+          33213,
+          33923,
+          35050,
+          36023,
+          37076,
+          38167,
+          38770,
+          40424,
+          41328,
+          42734,
+          43773,
+          45491,
+          46843,
+          48120,
+          49791,
+          51193,
+          53288,
+          55347,
+          57638,
+          59947,
+          62314,
+          64867,
+          67949,
+          71790,
+          74926,
+          78870,
+          82726,
+          87461,
+          93810,
+          99182,
+          106166,
+          112501,
+          120876,
+          131576,
+          146774,
+          142635,
+          252133,
+          35227,
+          1632700
+        ]
+      },
+      "statistics": {
+        "mean": "1.8406654222466",
+        "stddev": "0.20139009208558",
+        "maximum": "2",
+        "minimum": "1",
+        "valid_percent": "88.69"
+      },
+      "pdal_pipeline": [
+        {
+          "tag": "classification_cleanup",
+          "type": "filters.range",
+          "limits": "Classification[0:6],Classification[17:17],Classification[9:9],Classification[10:10],Classification[11:11]"
+        },
+        {
+          "tag": "noise_remover",
+          "type": "filters.range",
+          "limits": "Classification![7:7]"
+        },
+        {
+          "tag": "gdal_writer",
+          "type": "writers.gdal",
+          "filename": null,
+          "data_type": "float32",
+          "dimension": "Classification",
+          "resolution": null,
+          "output_type": "idw",
+          "window_size": 0,
+          "pdal_metadata": true
+        }
+      ],
+      "spatial_resolution": 7525777
+    },
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -114.0510183,
+            38.154449
+          ],
+          [
+            -114.0527931,
+            38.1103634
+          ],
+          [
+            -113.9827819,
+            38.1085848
+          ],
+          [
+            -113.9809651,
+            38.1526676
+          ],
+          [
+            -114.0510183,
+            38.154449
+          ]
+        ]
+      ]
+    },
+    "proj:projjson": {
+      "name": "NAD83 / UTM zone 11N + NAVD88 height",
+      "type": "CompoundCRS",
+      "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+      "components": [
+        {
+          "id": {
+            "code": 26911,
+            "authority": "EPSG"
+          },
+          "name": "NAD83 / UTM zone 11N",
+          "type": "ProjectedCRS",
+          "base_crs": {
+            "id": {
+              "code": 4269,
+              "authority": "EPSG"
+            },
+            "name": "NAD83",
+            "datum": {
+              "name": "North American Datum 1983",
+              "type": "GeodeticReferenceFrame",
+              "ellipsoid": {
+                "name": "GRS 1980",
+                "semi_major_axis": 6378137,
+                "inverse_flattening": 298.257222101
+              }
+            },
+            "coordinate_system": {
+              "axis": [
+                {
+                  "name": "Geodetic latitude",
+                  "unit": "degree",
+                  "direction": "north",
+                  "abbreviation": "Lat"
+                },
+                {
+                  "name": "Geodetic longitude",
+                  "unit": "degree",
+                  "direction": "east",
+                  "abbreviation": "Lon"
+                }
+              ],
+              "subtype": "ellipsoidal"
+            }
+          },
+          "conversion": {
+            "name": "UTM zone 11N",
+            "method": {
+              "id": {
+                "code": 9807,
+                "authority": "EPSG"
+              },
+              "name": "Transverse Mercator"
+            },
+            "parameters": [
+              {
+                "id": {
+                  "code": 8801,
+                  "authority": "EPSG"
+                },
+                "name": "Latitude of natural origin",
+                "unit": "degree",
+                "value": 0
+              },
+              {
+                "id": {
+                  "code": 8802,
+                  "authority": "EPSG"
+                },
+                "name": "Longitude of natural origin",
+                "unit": "degree",
+                "value": -117
+              },
+              {
+                "id": {
+                  "code": 8805,
+                  "authority": "EPSG"
+                },
+                "name": "Scale factor at natural origin",
+                "unit": "unity",
+                "value": 0.9996
+              },
+              {
+                "id": {
+                  "code": 8806,
+                  "authority": "EPSG"
+                },
+                "name": "False easting",
+                "unit": "metre",
+                "value": 500000
+              },
+              {
+                "id": {
+                  "code": 8807,
+                  "authority": "EPSG"
+                },
+                "name": "False northing",
+                "unit": "metre",
+                "value": 0
+              }
+            ]
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Easting",
+                "unit": "metre",
+                "direction": "east",
+                "abbreviation": ""
+              },
+              {
+                "name": "Northing",
+                "unit": "metre",
+                "direction": "north",
+                "abbreviation": ""
+              }
+            ],
+            "subtype": "Cartesian"
+          }
+        },
+        {
+          "id": {
+            "code": 5703,
+            "authority": "EPSG"
+          },
+          "name": "NAVD88 height",
+          "type": "VerticalCRS",
+          "datum": {
+            "name": "North American Vertical Datum 1988",
+            "type": "VerticalReferenceFrame"
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Gravity-related height",
+                "unit": "metre",
+                "direction": "up",
+                "abbreviation": ""
+              }
+            ],
+            "subtype": "vertical"
+          }
+        }
+      ]
+    },
+    "proj:transform": [
+      2.0,
+      0.0,
+      758397.0,
+      0.0,
+      -2.0,
+      4227061.0,
+      0,
+      0,
+      1
+    ],
+    "start_datetime": "2020-01-01T00:00:00Z",
+    "classification:classes": [
+      {
+        "value": 0,
+        "description": "None"
+      },
+      {
+        "value": 2,
+        "description": "Ground"
+      },
+      {
+        "value": 3,
+        "description": "Low Veg"
+      },
+      {
+        "value": 4,
+        "description": "Med Veg"
+      },
+      {
+        "value": 5,
+        "description": "High Veg"
+      },
+      {
+        "value": 6,
+        "description": "Building"
+      },
+      {
+        "value": 7,
+        "description": "Low Point"
+      },
+      {
+        "value": 8,
+        "description": "Reserved"
+      },
+      {
+        "value": 9,
+        "description": "Water"
+      },
+      {
+        "value": 10,
+        "description": "Rail"
+      },
+      {
+        "value": 11,
+        "description": "Road"
+      },
+      {
+        "value": 12,
+        "description": "Reserved"
+      },
+      {
+        "value": 13,
+        "description": "Wire - Guard (Shield)"
+      },
+      {
+        "value": 14,
+        "description": "Wire - Conductor (Phase)"
+      },
+      {
+        "value": 15,
+        "description": "Transmission Tower"
+      },
+      {
+        "value": 16,
+        "description": "Wire-Structure Connector (Insulator)"
+      },
+      {
+        "value": 17,
+        "description": "Bridge Deck"
+      },
+      {
+        "value": 18,
+        "description": "High Noise"
+      },
+      {
+        "value": 19,
+        "description": "Reserved"
+      },
+      {
+        "value": 21,
+        "description": "Reserved"
+      },
+      {
+        "value": 22,
+        "description": "Reserved"
+      },
+      {
+        "value": 23,
+        "description": "Reserved"
+      },
+      {
+        "value": 26,
+        "description": "Reserved"
+      }
+    ]
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

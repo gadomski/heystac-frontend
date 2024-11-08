@@ -1,7 +1,12 @@
+from __future__ import annotations
+
 import datetime
 import json
 from pathlib import Path
+from typing import Any
 
+import requests
+import tqdm
 from pydantic import BaseModel, Field
 from pydantic_settings import (
     BaseSettings,
@@ -9,6 +14,33 @@ from pydantic_settings import (
     SettingsConfigDict,
     TomlConfigSettingsSource,
 )
+
+
+class Node(BaseModel):
+    value: dict[str, Any]
+    children: list[Node]
+    items: list[dict[str, Any]]
+
+    def write_to(self, path: Path) -> None:
+        # TODO set up the links correctly
+
+        if not path.exists():
+            path.mkdir(parents=True)
+        type_ = self.value["type"]
+        assert isinstance(type_, str)
+        file_name = type_.lower() + ".json"
+        with open(path / file_name, "w") as f:
+            json.dump(self.value, f, indent=2)
+        for child in self.children:
+            id = child.value["id"]
+            assert isinstance(id, str)
+            child.write_to(path / id)
+        for item in self.items:
+            id = item["id"]
+            assert isinstance(id, str)
+            file_name = id + ".json"
+            with open(path / file_name, "w") as f:
+                json.dump(item, f, indent=2)
 
 
 class Root(BaseModel):
@@ -57,7 +89,7 @@ class Config(BaseSettings):
         for id_, catalog in self.catalogs.items():
             links.append(
                 {
-                    "href": catalog.href,
+                    "href": f"./{id_}/catalog.json",
                     "title": catalog.title,
                     "type": "application/json",
                     "rel": "child",
@@ -82,8 +114,41 @@ class Config(BaseSettings):
             ],
             "links": links,
         }
+        stac_path = self._stac_path()
+        with open(stac_path / "catalog.json", "w") as f:
+            json.dump(catalog_dict, f, indent=2)
+
+    def crawl(self, id: str) -> None:
+        response = requests.get(self.catalogs[id].href)
+        response.raise_for_status()
+        catalog = response.json()
+        child_links = [link for link in catalog["links"] if link["rel"] == "child"]
+        node = Node(value=catalog, children=[], items=[])
+        progress_bar = tqdm.tqdm(total=len(child_links) * 2)
+        for link in child_links:
+            response = requests.get(link["href"])
+            response.raise_for_status()
+            child = response.json()
+            progress_bar.update(1)
+            items_link = next(
+                (link for link in child["links"] if link["rel"] == "items"), None
+            )
+            child_node = Node(value=child, children=[], items=[])
+            if items_link:
+                response = requests.get(
+                    items_link["href"],
+                    params=[("sortby", "-properties.datetime"), ("limit", 1)],
+                )
+                response.raise_for_status()
+                items = response.json()
+                child_node.items.extend(items["features"])
+            node.children.append(child_node)
+            progress_bar.update(1)
+
+        node.write_to(self._stac_path() / id)
+
+    def _stac_path(self) -> Path:
         stac_path = Path(__file__).parents[2] / self.stac_path
         if not stac_path.exists():
             stac_path.mkdir(parents=True)
-        with open(stac_path / "catalog.json", "w") as f:
-            json.dump(catalog_dict, f)
+        return stac_path

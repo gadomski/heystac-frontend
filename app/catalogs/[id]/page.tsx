@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { use } from "react";
+import Root from "../../../public/stac/catalog.json";
 import CatalogPage from "../../components/pages/catalog";
-import Root from "../../stac/catalog.json";
 import type { Catalog } from "../../types/Stac";
 
 type Params = { id: string };
@@ -12,7 +12,11 @@ export default function Page({ params }) {
   if (!link) {
     notFound();
   }
-  return <CatalogPage href={link.href} title={link.title}></CatalogPage>;
+  const catalog: Catalog = use(
+    import("../../../public/stac/" + id + "/catalog.json")
+  );
+  console.log(catalog.description);
+  return <CatalogPage catalog={catalog} title={link.title}></CatalogPage>;
 }
 
 export async function generateStaticParams() {

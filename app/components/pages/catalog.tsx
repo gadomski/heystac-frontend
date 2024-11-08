@@ -1,13 +1,10 @@
-import Link from "next/link";
-import { Heading, Subtitle } from "../typography";
-import { use } from "react";
 import { CollecticonExpandTopRight } from "@devseed-ui/collecticons-react";
+import Link from "next/link";
 import Map from "../map";
+import { Heading, Subtitle } from "../typography";
 
-export default function CatalogPage({ title, href }) {
-  const data = use(fetch(href));
-  const catalog = use(data.json());
-
+export default function CatalogPage({ catalog, title }) {
+  const self_link = catalog.links.find(link => (link.rel = "self"));
   return (
     <div className="px-8 py-4 grid grid-cols-1 md:grid-cols-[320px,1fr] md:grid-rows-[auto,1fr] grid-rows-[auto,1fr,1fr] gap-4 h-full">
       <div className="row-span-1 col-span-2">
@@ -15,7 +12,7 @@ export default function CatalogPage({ title, href }) {
           <div className="flex items-center">
             {title}
             <span className="mx-2">
-              <Link href={href}>
+              <Link href={self_link.href}>
                 <CollecticonExpandTopRight />
               </Link>
             </span>
