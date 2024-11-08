@@ -1,24 +1,21 @@
-catalog-path = "app/catalog.json"
-crawl-directory = "crawl"
+url = "https://www.gadom.ski/heystac"
+stac-path = "stac"
 
-[catalog]
-type = "Catalog"                                                 # will this be unnecessary once https://github.com/stac-utils/stac-rs/pull/498 is released?
-stac_version = "1.1.0"
+[root]
 id = "heystac"
+title = "heystac"
 description = "A curated geospatial asset discovery experience™"
-links = []
+created = "2024-11-08T08:12:00-07:00"
+license = "MIT"
 
 [catalogs.microsoft-pc]
 href = "https://planetarycomputer.microsoft.com/api/stac/v1"
 title = "Microsoft Planetary Computer"
-index = 0
 
 [catalogs.earth-search-aws]
 href = "https://earth-search.aws.element84.com/v1"
 title = "Earth Search by Element 84"
-index = 1
 
 [catalogs.usgs-landsat]
 href = "https://landsatlook.usgs.gov/stac-server"
 title = "USGS Landsat"
-index = 2

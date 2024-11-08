@@ -1,2 +1,5 @@
 yarn lint
-cargo fmt --check
+uv run ruff check src
+uv run ruff format src --check
+uv run mypy src
+uv run stacrs validate stac/catalog.json
