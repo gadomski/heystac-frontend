@@ -4,7 +4,7 @@ url = "https://www.gadom.ski/heystac"
 [root]
 id = "heystac"
 title = "heystac"
-description = "A curated geospatial asset discovery experience™"
+description = "A curated geospatial asset discovery experience™\n\nEach collection has a single item, fetched regularly when we crawl the APIs."
 created = "2024-11-08T08:12:00-07:00"
 license = "MIT"
 providers = [
