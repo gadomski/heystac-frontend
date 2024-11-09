@@ -36,7 +36,7 @@ If you want to build the catalog from scratch:
 
 ```shell
 heystac bootstrap
-heystac crawl --all
+heystac crawl all
 heystac rate
 ```
 
