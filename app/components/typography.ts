@@ -1,5 +1,5 @@
 "use client";
 
-import { Heading, Subtitle, Prose } from "@devseed-ui/typography";
+import { Heading, Lead, Prose, Subtitle } from "@devseed-ui/typography";
 
-export { Heading, Subtitle, Prose };
+export { Heading, Lead, Prose, Subtitle };

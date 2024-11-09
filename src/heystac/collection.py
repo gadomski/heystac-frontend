@@ -6,7 +6,5 @@ from .stac_object import StacObject
 class Collection(StacObject):
     model_config = ConfigDict(extra="allow")
 
-    type_: str = Field(
-        alias="type", serialization_alias="type", default="Collection", frozen=True
-    )
+    type_: str = Field(alias="type", default="Collection", frozen=True)
     id: str

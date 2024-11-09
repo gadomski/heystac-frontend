@@ -39,8 +39,10 @@ class Node(BaseModel):
             cumulative_rating += item.properties.rating or 0
             cumulative_total += item.properties.total or 0
         self.value.rate()
-        self.value.cumulative_rating = self.value.rating or 0 + cumulative_rating
-        self.value.cumulative_total = self.value.total or 0 + cumulative_total
+        assert self.value.rating is not None
+        self.value.cumulative_rating = self.value.rating + cumulative_rating
+        assert self.value.total is not None
+        self.value.cumulative_total = self.value.total + cumulative_total
         self.value.stars = (
             5 * self.value.cumulative_rating / self.value.cumulative_total
         )

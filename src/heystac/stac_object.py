@@ -26,32 +26,36 @@ class Check(BaseModel):
         except STACValidationError as e:
             rating = 0
             message = str(e)
+            if len(message) > 100:
+                message = message[0:100] + "..."
         return Check(name="validate-core", rating=rating, total=1, message=message)
 
 
 class StacObject(BaseModel):
     links: list[Link]
     rating: int | None = Field(
-        default=None, alias="heystac:rating", serialization_alias="heystac:rating"
+        default=None,
+        alias="heystac:rating",
     )
     cumulative_rating: int | None = Field(
         default=None,
         alias="heystac:cumulative_rating",
-        serialization_alias="heystac:cumulative_rating",
     )
     total: int | None = Field(
-        default=None, alias="heystac:total", serialization_alias="heystac:total"
+        default=None,
+        alias="heystac:total",
     )
     cumulative_total: int | None = Field(
         default=None,
         alias="heystac:cumulative_total",
-        serialization_alias="heystac:cumulative_total",
     )
     stars: float | None = Field(
-        default=None, alias="heystac:stars", serialization_alias="heystac:stars"
+        default=None,
+        alias="heystac:stars",
     )
     checks: list[Check] | None = Field(
-        default=None, alias="heystac:checks", serialization_alias="heystac:checks"
+        default=None,
+        alias="heystac:checks",
     )
 
     def rate(self) -> None:
