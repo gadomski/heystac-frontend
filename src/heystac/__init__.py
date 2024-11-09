@@ -1,3 +1,5 @@
+import sys
+
 import click
 
 from .config import Config
@@ -11,20 +13,39 @@ def cli() -> None:
 
 @click.command()
 def bootstrap() -> None:
-    """Build our catalog from scratch"""
+    """Build catalog.json from our config.
+
+    Shouldn't need to be run very often.
+    """
     Config().bootstrap()
 
 
 @click.command()
-@click.argument("id")
-def crawl(id: str) -> None:
-    """Crawl a STAC API"""
-    Config().crawl(id)
+@click.argument("id", default=None)
+@click.option("--all", is_flag=True, help="Crawl every catalog")
+def crawl(id: str | None, all: bool) -> None:
+    """Crawl a STAC API.
+
+    We don't crawl every API because that'd be expensive.
+    """
+    config = Config()
+    if id is None:
+        if all:
+            for id in config.catalogs.keys():
+                config.crawl(id)
+        else:
+            print(
+                "To crawl every catalog, pass the --all flag",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+    else:
+        config.crawl(id)
 
 
 @click.command()
 def rate() -> None:
-    """Rate everything in our catalog"""
+    """Rate everything."""
     Config().rate()
 
 

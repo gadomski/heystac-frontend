@@ -9,6 +9,7 @@ export interface Catalog {
   license: string;
   providers: Provider[];
   links: Link[];
+  "heystac:stars"?: number;
 }
 
 export interface Link {

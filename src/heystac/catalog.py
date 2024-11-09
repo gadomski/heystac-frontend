@@ -10,9 +10,7 @@ class Catalog(StacObject):
     model_config = ConfigDict(extra="allow")
 
     stac_version: str = Field(default="1.0.0")
-    type_: str = Field(
-        alias="type", serialization_alias="type", default="Catalog", frozen=True
-    )
+    type_: str = Field(alias="type", default="Catalog", frozen=True)
     id: str
     title: str
     description: str

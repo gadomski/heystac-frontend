@@ -7,16 +7,20 @@ class Properties(BaseModel):
     model_config = ConfigDict(extra="allow")
 
     rating: int | None = Field(
-        default=None, alias="heystac:rating", serialization_alias="heystac:rating"
+        default=None,
+        alias="heystac:rating",
     )
     total: int | None = Field(
-        default=None, alias="heystac:total", serialization_alias="heystac:total"
+        default=None,
+        alias="heystac:total",
     )
     stars: float | None = Field(
-        default=None, alias="heystac:stars", serialization_alias="heystac:stars"
+        default=None,
+        alias="heystac:stars",
     )
     checks: list[Check] | None = Field(
-        default=None, alias="heystac:checks", serialization_alias="heystac:checks"
+        default=None,
+        alias="heystac:checks",
     )
 
 

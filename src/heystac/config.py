@@ -70,21 +70,25 @@ class Config(BaseSettings):
 
     def bootstrap(self) -> None:
         links = [
-            Link(
-                href=f"{self.url}/catalog.json",
-                title="heystac",
-                rel="self",
-                type_="application/json",
+            Link.model_validate(
+                {
+                    "href": f"{self.url}/catalog.json",
+                    "title": "heystac",
+                    "rel": "self",
+                    "type": "application/json",
+                }
             )
         ]
         for id, catalog_config in self.catalogs.items():
             links.append(
-                Link(
-                    href=f"./{id}/catalog.json",
-                    title=catalog_config.title,
-                    type_="application/json",
-                    rel="child",
-                    id=id,
+                Link.model_validate(
+                    {
+                        "href": f"./{id}/catalog.json",
+                        "title": catalog_config.title,
+                        "type": "application/json",
+                        "rel": "child",
+                        "heystac:id": id,
+                    }
                 )
             )
         catalog = self.root.to_catalog(links)
@@ -92,8 +96,10 @@ class Config(BaseSettings):
 
     def crawl(self, id: str) -> None:
         client = Client()
-        catalog = Catalog.model_validate(client.get(self.catalogs[id].href))
+        catalog_config = self.catalogs[id]
+        catalog = Catalog.model_validate(client.get(catalog_config.href))
         catalog.id = id
+        catalog.title = catalog_config.title
 
         child_links = catalog.child_links()
         catalog.remove_structural_links()
