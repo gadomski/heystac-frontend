@@ -1,5 +1,5 @@
+stac-path = "stac"
 url = "https://www.gadom.ski/heystac"
-stac-path = "public/stac"
 
 [root]
 id = "heystac"
@@ -7,6 +7,13 @@ title = "heystac"
 description = "A curated geospatial asset discovery experience™"
 created = "2024-11-08T08:12:00-07:00"
 license = "MIT"
+providers = [
+    { name = "Pete Gadomski", roles = [
+        "licensor",
+        "producer",
+        "processor",
+    ], url = "https://www.gadom.ski/" },
+]
 
 [catalogs.microsoft-pc]
 href = "https://planetarycomputer.microsoft.com/api/stac/v1"

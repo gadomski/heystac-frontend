@@ -1,0 +1,150 @@
+{
+  "links": [
+    {
+      "href": "https://landcoverdata.blob.core.windows.net/usda-cdl-onboarding/2021_Cultivated_Layer.zip",
+      "title": "2021 National Cultivated Layer",
+      "rel": "source",
+      "type": "application/zip"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=usda-cdl&item=cultivated_2021_973905_922575_90000",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/usda-cdl/items/cultivated_2021_973905_922575_90000",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "cultivated_2021_973905_922575_90000",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID cultivated_2021_973905_922575_90000 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID cultivated_2021_973905_922575_90000 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:epsg': 5070, 'proj:shape': [3000, 3000], 'end_datetime': '2021-12-31T23:59:59Z', 'usda_cdl:type': 'cultivated', 'proj:transform': [30.0, 0.0, 973905.0, 0.0, -30.0, 922605.0], 'start_datetime': '2021-01-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:epsg': 5070,\\n     'proj:shape': [3000, 3000],\\n     'end_datetime': '2021-12-31T23:59:59Z',\\n     'usda_cdl:type': 'cultivated',\\n     'proj:transform': [30.0, 0.0, 973905.0, 0.0, -30.0, 922605.0],\\n     'start_datetime': '2021-01-01T00:00:00Z'}\"}], 'proj:epsg': 5070, 'proj:shape': [3000, 3000], 'end_datetime': '2021-12-31T23:59:59Z', 'usda_cdl:type': 'cultivated', 'proj:transform': [30.0, 0.0, 973905.0, 0.0, -30.0, 922605.0], 'start_datetime': '2021-01-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'cultivated_2021_973905_922575_90000 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:epsg': 5070, 'proj:shape': \"\n                                    \"[3000, 3000], 'end_datetime': \"\n                                    \"'2021-12-31T23:59:59Z', \"\n                                    \"'usda_cdl:type': 'cultivated', \"\n                                    \"'proj:transform': [30.0, 0.0, \"\n                                    '973905.0, 0.0, -30.0, 922605.0], '\n                                    \"'start_datetime': \"\n                                    \"'2021-01-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:epsg': 5070,\\n\"\n                                    \"     'proj:shape': [3000, 3000],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2021-12-31T23:59:59Z',\\n\"\n                                    \"     'usda_cdl:type': 'cultivated',\\n\"\n                                    \"     'proj:transform': [30.0, 0.0, \"\n                                    '973905.0, 0.0, -30.0, 922605.0],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2021-01-01T00:00:00Z'}\"}],\n     'proj:epsg': 5070,\n     'proj:shape': [3000, 3000],\n     'end_datetime': '2021-12-31T23:59:59Z',\n     'usda_cdl:type': 'cultivated',\n     'proj:transform': [30.0, 0.0, 973905.0, 0.0, -30.0, 922605.0],\n     'start_datetime': '2021-01-01T00:00:00Z'}"
+      }
+    ],
+    "proj:epsg": 5070,
+    "proj:shape": [
+      3000,
+      3000
+    ],
+    "end_datetime": "2021-12-31T23:59:59Z",
+    "usda_cdl:type": "cultivated",
+    "proj:transform": [
+      30.0,
+      0.0,
+      973905.0,
+      0.0,
+      -30.0,
+      922605.0
+    ],
+    "start_datetime": "2021-01-01T00:00:00Z"
+  },
+  "bbox": [
+    -85.863818,
+    30.011035,
+    -84.82565,
+    30.906785
+  ],
+  "type": "Feature",
+  "assets": {
+    "cultivated": {
+      "href": "https://landcoverdata.blob.core.windows.net/usda-cdl/tiles/973905/2021_cultivated_layer_973905_922575_90000.tif",
+      "title": "Cultivated 2021",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 30
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 1,
+          "color_hint": "000000",
+          "description": "Non-Cultivated"
+        },
+        {
+          "value": 2,
+          "color_hint": "006300",
+          "description": "Cultivated"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=usda-cdl&item=cultivated_2021_973905_922575_90000&assets=cropland&tile_format=png&colormap_name=usda-cdl&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=usda-cdl&item=cultivated_2021_973905_922575_90000&assets=cropland&tile_format=png&colormap_name=usda-cdl&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -84.935209,
+          30.011035
+        ],
+        [
+          -84.82565,
+          30.815783
+        ],
+        [
+          -85.763306,
+          30.906785
+        ],
+        [
+          -85.863818,
+          30.101302
+        ],
+        [
+          -84.935209,
+          30.011035
+        ]
+      ]
+    ]
+  },
+  "collection": "usda-cdl",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

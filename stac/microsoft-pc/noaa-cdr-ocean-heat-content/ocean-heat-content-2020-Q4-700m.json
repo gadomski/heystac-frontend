@@ -1,0 +1,242 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/heat_content_anomaly_0-700_seasonal",
+      "title": "Source NetCDF item",
+      "rel": "derived-from",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_halosteric_sea_level_anomaly_0-700_seasonal",
+      "title": "Source NetCDF item",
+      "rel": "derived-from",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_salinity_anomaly_0-700_seasonal",
+      "title": "Source NetCDF item",
+      "rel": "derived-from",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_temperature_anomaly_0-700_seasonal",
+      "title": "Source NetCDF item",
+      "rel": "derived-from",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_thermosteric_sea_level_anomaly_0-700_seasonal",
+      "title": "Source NetCDF item",
+      "rel": "derived-from",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_total_steric_sea_level_anomaly_0-700_seasonal",
+      "title": "Source NetCDF item",
+      "rel": "derived-from",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-cdr-ocean-heat-content&item=ocean-heat-content-2020-Q4-700m",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content/items/ocean-heat-content-2020-Q4-700m",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "ocean-heat-content-2020-Q4-700m",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID ocean-heat-content-2020-Q4-700m against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID ocean-heat-content-2020-Q4-700m against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:epsg': 4326, 'proj:shape': [180, 360], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0], 'start_datetime': '2020-10-01T00:00:00Z', 'noaa_cdr:interval': 'seasonal', 'noaa_cdr:max_depth': 700} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:epsg': 4326,\\n     'proj:shape': [180, 360],\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0],\\n     'start_datetime': '2020-10-01T00:00:00Z',\\n     'noaa_cdr:interval': 'seasonal',\\n     'noaa_cdr:max_depth': 700}\"}], 'proj:epsg': 4326, 'proj:shape': [180, 360], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0], 'start_datetime': '2020-10-01T00:00:00Z', 'noaa_cdr:interval': 'seasonal', 'noaa_cdr:max_depth': 700} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'ocean-heat-content-2020-Q4-700m '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[180, 360], 'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'proj:transform': [1.0, 0.0, -180.0, \"\n                                    \"0.0, -1.0, 90.0], 'start_datetime': \"\n                                    \"'2020-10-01T00:00:00Z', \"\n                                    \"'noaa_cdr:interval': 'seasonal', \"\n                                    \"'noaa_cdr:max_depth': 700} is not \"\n                                    'valid under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [180, 360],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'proj:transform': [1.0, 0.0, \"\n                                    '-180.0, 0.0, -1.0, 90.0],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2020-10-01T00:00:00Z',\\n\"\n                                    \"     'noaa_cdr:interval': \"\n                                    \"'seasonal',\\n\"\n                                    \"     'noaa_cdr:max_depth': 700}\"}],\n     'proj:epsg': 4326,\n     'proj:shape': [180, 360],\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'proj:transform': [1.0, 0.0, -180.0, 0.0, -1.0, 90.0],\n     'start_datetime': '2020-10-01T00:00:00Z',\n     'noaa_cdr:interval': 'seasonal',\n     'noaa_cdr:max_depth': 700}"
+      }
+    ],
+    "proj:epsg": 4326,
+    "proj:shape": [
+      180,
+      360
+    ],
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      1.0,
+      0.0,
+      -180.0,
+      0.0,
+      -1.0,
+      90.0
+    ],
+    "start_datetime": "2020-10-01T00:00:00Z",
+    "noaa_cdr:interval": "seasonal",
+    "noaa_cdr:max_depth": 700
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "heat_content": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/heat_content_anomaly_0-700_seasonal_2020-Q4.tif",
+      "title": "Ocean Heat Content anomalies from WOA09 : 0-700m 2020-Q4",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "10^18 joules",
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "mean_salinity": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/mean_salinity_anomaly_0-700_seasonal_2020-Q4.tif",
+      "title": "Mean salinity anomalies from WOA09 : 0-700m 2020-Q4",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "mean_temperature": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/mean_temperature_anomaly_0-700_seasonal_2020-Q4.tif",
+      "title": "Mean temperature anomalies from WOA09 : 0-700m 2020-Q4",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degrees Celsius",
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "mean_halosteric_sea_level": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/mean_halosteric_sea_level_anomaly_0-700_seasonal_2020-Q4.tif",
+      "title": "Mean halosteric sea level anomalies from WOA09 : 0-700m 2020-Q4",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeters",
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "mean_thermosteric_sea_level": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/mean_thermosteric_sea_level_anomaly_0-700_seasonal_2020-Q4.tif",
+      "title": "Mean thermosteric sea level anomalies from WOA09 : 0-700m 2020-Q4",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeters",
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "mean_total_steric_sea_level": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/mean_total_steric_sea_level_anomaly_0-700_seasonal_2020-Q4.tif",
+      "title": "Mean total steric sea level anomalies from WOA09 : 0-700m 2020-Q4",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "millimeters",
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-cdr-ocean-heat-content&item=ocean-heat-content-2020-Q4-700m&assets=heat_content&tile_format=png&colormap_name=rdylbu_r&rescale=-25%2C25&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-cdr-ocean-heat-content&item=ocean-heat-content-2020-Q4-700m&assets=heat_content&tile_format=png&colormap_name=rdylbu_r&rescale=-25%2C25&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-cdr-ocean-heat-content",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

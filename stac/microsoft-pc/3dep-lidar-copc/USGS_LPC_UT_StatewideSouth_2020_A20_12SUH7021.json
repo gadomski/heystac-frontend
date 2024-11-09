@@ -1,0 +1,374 @@
+{
+  "links": [
+    {
+      "href": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/UT_StatewideSouth_2020_A20/UT_StatewideSouth_1_2020/metadata/",
+      "title": "USGS Metadata",
+      "rel": "alternate",
+      "type": "application/xml"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'pc:type': 'lidar', 'group_id': '3dep-lidar', 'pc:count': 376166, 'proj:bbox': [370000, 4221000, 2475.74, 370089.35, 4221550.82, 2754.14], 'pc:schemas': [{'name': 'X', 'size': 8, 'type': 'floating'}, {'name': 'Y', 'size': 8, 'type': 'floating'}, {'name': 'Z', 'size': 8, 'type': 'floating'}, {'name': 'Intensity', 'size': 2, 'type': 'unsigned'}, {'name': 'ReturnNumber', 'size': 1, 'type': 'unsigned'}, {'name': 'NumberOfReturns', 'size': 1, 'type': 'unsigned'}, {'name': 'ScanDirectionFlag', 'size': 1, 'type': 'unsigned'}, {'name': 'EdgeOfFlightLine', 'size': 1, 'type': 'unsigned'}, {'name': 'Classification', 'size': 1, 'type': 'unsigned'}, {'name': 'ScanAngleRank', 'size': 4, 'type': 'floating'}, {'name': 'UserData', 'size': 1, 'type': 'unsigned'}, {'name': 'PointSourceId', 'size': 2, 'type': 'unsigned'}, {'name': 'GpsTime', 'size': 8, 'type': 'floating'}, {'name': 'ScanChannel', 'size': 1, 'type': 'unsigned'}, {'name': 'ClassFlags', 'size': 1, 'type': 'unsigned'}], 'pc:encoding': 'application/vnd.laszip+copc', '3dep:usgs_id': 'UT_StatewideSouth_1_2020', 'end_datetime': '2020-12-31T00:00:00Z', 'proj:geometry': {'type': 'Polygon', 'coordinates': [[[370100.06999998, 4220842.99967697], [370150.06999996, 4221622.42254038], [370000.07, 4221709.02508076], [370000.07, 4221362.61491924], [369800.07000005, 4221189.40983849], [370100.06999998, 4220842.99967697]]]}, 'proj:projjson': {'name': 'NAD83 / UTM zone 12N + NAVD88 height', 'type': 'CompoundCRS', '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json', 'components': [{'id': {'code': 26912, 'authority': 'EPSG'}, 'name': 'NAD83 / UTM zone 12N', 'type': 'ProjectedCRS', 'base_crs': {'id': {'code': 4269, 'authority': 'EPSG'}, 'name': 'NAD83', 'datum': {'name': 'North American Datum 1983', 'type': 'GeodeticReferenceFrame', 'ellipsoid': {'name': 'GRS 1980', 'semi_major_axis': 6378137, 'inverse_flattening': 298.257222101}}, 'coordinate_system': {'axis': [{'name': 'Geodetic latitude', 'unit': 'degree', 'direction': 'north', 'abbreviation': 'Lat'}, {'name': 'Geodetic longitude', 'unit': 'degree', 'direction': 'east', 'abbreviation': 'Lon'}], 'subtype': 'ellipsoidal'}}, 'conversion': {'name': 'UTM zone 12N', 'method': {'id': {'code': 9807, 'authority': 'EPSG'}, 'name': 'Transverse Mercator'}, 'parameters': [{'id': {'code': 8801, 'authority': 'EPSG'}, 'name': 'Latitude of natural origin', 'unit': 'degree', 'value': 0}, {'id': {'code': 8802, 'authority': 'EPSG'}, 'name': 'Longitude of natural origin', 'unit': 'degree', 'value': -111}, {'id': {'code': 8805, 'authority': 'EPSG'}, 'name': 'Scale factor at natural origin', 'unit': 'unity', 'value': 0.9996}, {'id': {'code': 8806, 'authority': 'EPSG'}, 'name': 'False easting', 'unit': 'metre', 'value': 500000}, {'id': {'code': 8807, 'authority': 'EPSG'}, 'name': 'False northing', 'unit': 'metre', 'value': 0}]}, 'coordinate_system': {'axis': [{'name': 'Easting', 'unit': 'metre', 'direction': 'east', 'abbreviation': ''}, {'name': 'Northing', 'unit': 'metre', 'direction': 'north', 'abbreviation': ''}], 'subtype': 'Cartesian'}}, {'id': {'code': 5703, 'authority': 'EPSG'}, 'name': 'NAVD88 height', 'type': 'VerticalCRS', 'datum': {'name': 'North American Vertical Datum 1988', 'type': 'VerticalReferenceFrame'}, 'coordinate_system': {'axis': [{'name': 'Gravity-related height', 'unit': 'metre', 'direction': 'up', 'abbreviation': ''}], 'subtype': 'vertical'}}]}, 'start_datetime': '2020-01-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'pc:type': 'lidar',\\n     'group_id': '3dep-lidar',\\n     'pc:count': 376166,\\n     'proj:bbox': [370000,\\n                   4221000,\\n                   2475.74,\\n                   370089.35,\\n                   4221550.82,\\n                   2754.14],\\n     'pc:schemas': [{'name': 'X', 'size': 8, 'type': 'floating'},\\n                    {'name': 'Y', 'size': 8, 'type': 'floating'},\\n                    {'name': 'Z', 'size': 8, 'type': 'floating'},\\n                    {'name': 'Intensity', 'size': 2, 'type': 'unsigned'},\\n                    {'name': 'ReturnNumber', 'size': 1, 'type': 'unsigned'},\\n                    {'name': 'NumberOfReturns',\\n                     'size': 1,\\n                     'type': 'unsigned'},\\n                    {'name': 'ScanDirectionFlag',\\n                     'size': 1,\\n                     'type': 'unsigned'},\\n                    {'name': 'EdgeOfFlightLine',\\n                     'size': 1,\\n                     'type': 'unsigned'},\\n                    {'name': 'Classification',\\n                     'size': 1,\\n                     'type': 'unsigned'},\\n                    {'name': 'ScanAngleRank',\\n                     'size': 4,\\n                     'type': 'floating'},\\n                    {'name': 'UserData', 'size': 1, 'type': 'unsigned'},\\n                    {'name': 'PointSourceId',\\n                     'size': 2,\\n                     'type': 'unsigned'},\\n                    {'name': 'GpsTime', 'size': 8, 'type': 'floating'},\\n                    {'name': 'ScanChannel', 'size': 1, 'type': 'unsigned'},\\n                    {'name': 'ClassFlags', 'size': 1, 'type': 'unsigned'}],\\n     'pc:encoding': 'application/vnd.laszip+copc',\\n     '3dep:usgs_id': 'UT_StatewideSouth_1_2020',\\n     'end_datetime': '2020-12-31T00:00:00Z',\\n     'proj:geometry': {'type': 'Polygon',\\n                       'coordinates': [[[370100.06999998, 4220842.99967697],\\n                                        [370150.06999996, 4221622.42254038],\\n                                        [370000.07, 4221709.02508076],\\n                                        [370000.07, 4221362.61491924],\\n                                        [369800.07000005, 4221189.40983849],\\n                                        [370100.06999998,\\n                                         4220842.99967697]]]},\\n     'proj:projjson': {'name': 'NAD83 / UTM zone 12N + NAVD88 height',\\n                       'type': 'CompoundCRS',\\n                       '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json',\\n                       'components': [{'id': {'code': 26912,\\n                                              'authority': 'EPSG'},\\n                                       'name': 'NAD83 / UTM zone 12N',\\n                                       'type': 'ProjectedCRS',\\n                                       'base_crs': {'id': {'code': 4269,\\n                                                           'authority': 'EPSG'},\\n                                                    'name': 'NAD83',\\n                                                    'datum': {'name': 'North '\\n                                                                      'American '\\n                                                                      'Datum '\\n                                                                      '1983',\\n                                                              'type': 'GeodeticReferenceFrame',\\n                                                              'ellipsoid': {'name': 'GRS '\\n                                                                                    '1980',\\n                                                                            'semi_major_axis': 6378137,\\n                                                                            'inverse_flattening': 298.257222101}},\\n                                                    'coordinate_system': {'axis': [{'name': 'Geodetic '\\n                                                                                            'latitude',\\n                                                                                    'unit': 'degree',\\n                                                                                    'direction': 'north',\\n                                                                                    'abbreviation': 'Lat'},\\n                                                                                   {'name': 'Geodetic '\\n                                                                                            'longitude',\\n                                                                                    'unit': 'degree',\\n                                                                                    'direction': 'east',\\n                                                                                    'abbreviation': 'Lon'}],\\n                                                                          'subtype': 'ellipsoidal'}},\\n                                       'conversion': {'name': 'UTM zone '\\n                                                              '12N',\\n                                                      'method': {'id': {'code': 9807,\\n                                                                        'authority': 'EPSG'},\\n                                                                 'name': 'Transverse '\\n                                                                         'Mercator'},\\n                                                      'parameters': [{'id': {'code': 8801,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'Latitude '\\n                                                                              'of '\\n                                                                              'natural '\\n                                                                              'origin',\\n                                                                      'unit': 'degree',\\n                                                                      'value': 0},\\n                                                                     {'id': {'code': 8802,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'Longitude '\\n                                                                              'of '\\n                                                                              'natural '\\n                                                                              'origin',\\n                                                                      'unit': 'degree',\\n                                                                      'value': -111},\\n                                                                     {'id': {'code': 8805,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'Scale '\\n                                                                              'factor '\\n                                                                              'at '\\n                                                                              'natural '\\n                                                                              'origin',\\n                                                                      'unit': 'unity',\\n                                                                      'value': 0.9996},\\n                                                                     {'id': {'code': 8806,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'False '\\n                                                                              'easting',\\n                                                                      'unit': 'metre',\\n                                                                      'value': 500000},\\n                                                                     {'id': {'code': 8807,\\n                                                                             'authority': 'EPSG'},\\n                                                                      'name': 'False '\\n                                                                              'northing',\\n                                                                      'unit': 'metre',\\n                                                                      'value': 0}]},\\n                                       'coordinate_system': {'axis': [{'name': 'Easting',\\n                                                                       'unit': 'metre',\\n                                                                       'direction': 'east',\\n                                                                       'abbreviation': ''},\\n                                                                      {'name': 'Northing',\\n                                                                       'unit': 'metre',\\n                                                                       'direction': 'north',\\n                                                                       'abbreviation': ''}],\\n                                                             'subtype': 'Cartesian'}},\\n                                      {'id': {'code': 5703,\\n                                              'authority': 'EPSG'},\\n                                       'name': 'NAVD88 height',\\n                                       'type': 'VerticalCRS',\\n                                       'datum': {'name': 'North American '\\n                                                         'Vertical Datum '\\n                                                         '1988',\\n                                                 'type': 'VerticalReferenceFrame'},\\n                                       'coordinate_system': {'axis': [{'name': 'Gravity-related '\\n                                                                               'height',\\n                                                                       'unit': 'metre',\\n                                                                       'direction': 'up',\\n                                                                       'abbreviation': ''}],\\n                                                             'subtype': 'vertical'}}]},\\n     'start_datetime': '2020-01-01T00:00:00Z'}\"}], 'pc:type': 'lidar', 'group_id': '3dep-lidar', 'pc:count': 376166, 'proj:bbox': [370000, 4221000, 2475.74, 370089.35, 4221550.82, 2754.14], 'pc:schemas': [{'name': 'X', 'size': 8, 'type': 'floating'}, {'name': 'Y', 'size': 8, 'type': 'floating'}, {'name': 'Z', 'size': 8, 'type': 'floating'}, {'name': 'Intensity', 'size': 2, 'type': 'unsigned'}, {'name': 'ReturnNumber', 'size': 1, 'type': 'unsigned'}, {'name': 'NumberOfReturns', 'size': 1, 'type': 'unsigned'}, {'name': 'ScanDirectionFlag', 'size': 1, 'type': 'unsigned'}, {'name': 'EdgeOfFlightLine', 'size': 1, 'type': 'unsigned'}, {'name': 'Classification', 'size': 1, 'type': 'unsigned'}, {'name': 'ScanAngleRank', 'size': 4, 'type': 'floating'}, {'name': 'UserData', 'size': 1, 'type': 'unsigned'}, {'name': 'PointSourceId', 'size': 2, 'type': 'unsigned'}, {'name': 'GpsTime', 'size': 8, 'type': 'floating'}, {'name': 'ScanChannel', 'size': 1, 'type': 'unsigned'}, {'name': 'ClassFlags', 'size': 1, 'type': 'unsigned'}], 'pc:encoding': 'application/vnd.laszip+copc', '3dep:usgs_id': 'UT_StatewideSouth_1_2020', 'end_datetime': '2020-12-31T00:00:00Z', 'proj:geometry': {'type': 'Polygon', 'coordinates': [[[370100.06999998, 4220842.99967697], [370150.06999996, 4221622.42254038], [370000.07, 4221709.02508076], [370000.07, 4221362.61491924], [369800.07000005, 4221189.40983849], [370100.06999998, 4220842.99967697]]]}, 'proj:projjson': {'name': 'NAD83 / UTM zone 12N + NAVD88 height', 'type': 'CompoundCRS', '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json', 'components': [{'id': {'code': 26912, 'authority': 'EPSG'}, 'name': 'NAD83 / UTM zone 12N', 'type': 'ProjectedCRS', 'base_crs': {'id': {'code': 4269, 'authority': 'EPSG'}, 'name': 'NAD83', 'datum': {'name': 'North American Datum 1983', 'type': 'GeodeticReferenceFrame', 'ellipsoid': {'name': 'GRS 1980', 'semi_major_axis': 6378137, 'inverse_flattening': 298.257222101}}, 'coordinate_system': {'axis': [{'name': 'Geodetic latitude', 'unit': 'degree', 'direction': 'north', 'abbreviation': 'Lat'}, {'name': 'Geodetic longitude', 'unit': 'degree', 'direction': 'east', 'abbreviation': 'Lon'}], 'subtype': 'ellipsoidal'}}, 'conversion': {'name': 'UTM zone 12N', 'method': {'id': {'code': 9807, 'authority': 'EPSG'}, 'name': 'Transverse Mercator'}, 'parameters': [{'id': {'code': 8801, 'authority': 'EPSG'}, 'name': 'Latitude of natural origin', 'unit': 'degree', 'value': 0}, {'id': {'code': 8802, 'authority': 'EPSG'}, 'name': 'Longitude of natural origin', 'unit': 'degree', 'value': -111}, {'id': {'code': 8805, 'authority': 'EPSG'}, 'name': 'Scale factor at natural origin', 'unit': 'unity', 'value': 0.9996}, {'id': {'code': 8806, 'authority': 'EPSG'}, 'name': 'False easting', 'unit': 'metre', 'value': 500000}, {'id': {'code': 8807, 'authority': 'EPSG'}, 'name': 'False northing', 'unit': 'metre', 'value': 0}]}, 'coordinate_system': {'axis': [{'name': 'Easting', 'unit': 'metre', 'direction': 'east', 'abbreviation': ''}, {'name': 'Northing', 'unit': 'metre', 'direction': 'north', 'abbreviation': ''}], 'subtype': 'Cartesian'}}, {'id': {'code': 5703, 'authority': 'EPSG'}, 'name': 'NAVD88 height', 'type': 'VerticalCRS', 'datum': {'name': 'North American Vertical Datum 1988', 'type': 'VerticalReferenceFrame'}, 'coordinate_system': {'axis': [{'name': 'Gravity-related height', 'unit': 'metre', 'direction': 'up', 'abbreviation': ''}], 'subtype': 'vertical'}}]}, 'start_datetime': '2020-01-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'pc:type': 'lidar', 'group_id': \"\n                                    \"'3dep-lidar', 'pc:count': 376166, \"\n                                    \"'proj:bbox': [370000, 4221000, \"\n                                    '2475.74, 370089.35, 4221550.82, '\n                                    \"2754.14], 'pc:schemas': [{'name': \"\n                                    \"'X', 'size': 8, 'type': 'floating'}, \"\n                                    \"{'name': 'Y', 'size': 8, 'type': \"\n                                    \"'floating'}, {'name': 'Z', 'size': 8, \"\n                                    \"'type': 'floating'}, {'name': \"\n                                    \"'Intensity', 'size': 2, 'type': \"\n                                    \"'unsigned'}, {'name': 'ReturnNumber', \"\n                                    \"'size': 1, 'type': 'unsigned'}, \"\n                                    \"{'name': 'NumberOfReturns', 'size': \"\n                                    \"1, 'type': 'unsigned'}, {'name': \"\n                                    \"'ScanDirectionFlag', 'size': 1, \"\n                                    \"'type': 'unsigned'}, {'name': \"\n                                    \"'EdgeOfFlightLine', 'size': 1, \"\n                                    \"'type': 'unsigned'}, {'name': \"\n                                    \"'Classification', 'size': 1, 'type': \"\n                                    \"'unsigned'}, {'name': \"\n                                    \"'ScanAngleRank', 'size': 4, 'type': \"\n                                    \"'floating'}, {'name': 'UserData', \"\n                                    \"'size': 1, 'type': 'unsigned'}, \"\n                                    \"{'name': 'PointSourceId', 'size': 2, \"\n                                    \"'type': 'unsigned'}, {'name': \"\n                                    \"'GpsTime', 'size': 8, 'type': \"\n                                    \"'floating'}, {'name': 'ScanChannel', \"\n                                    \"'size': 1, 'type': 'unsigned'}, \"\n                                    \"{'name': 'ClassFlags', 'size': 1, \"\n                                    \"'type': 'unsigned'}], 'pc:encoding': \"\n                                    \"'application/vnd.laszip+copc', \"\n                                    \"'3dep:usgs_id': \"\n                                    \"'UT_StatewideSouth_1_2020', \"\n                                    \"'end_datetime': \"\n                                    \"'2020-12-31T00:00:00Z', \"\n                                    \"'proj:geometry': {'type': 'Polygon', \"\n                                    \"'coordinates': [[[370100.06999998, \"\n                                    '4220842.99967697], [370150.06999996, '\n                                    '4221622.42254038], [370000.07, '\n                                    '4221709.02508076], [370000.07, '\n                                    '4221362.61491924], [369800.07000005, '\n                                    '4221189.40983849], [370100.06999998, '\n                                    '4220842.99967697]]]}, '\n                                    \"'proj:projjson': {'name': 'NAD83 / \"\n                                    \"UTM zone 12N + NAVD88 height', \"\n                                    \"'type': 'CompoundCRS', '$schema': \"\n                                    \"'https://proj.org/schemas/v0.4/projjson.schema.json', \"\n                                    \"'components': [{'id': {'code': 26912, \"\n                                    \"'authority': 'EPSG'}, 'name': 'NAD83 \"\n                                    \"/ UTM zone 12N', 'type': \"\n                                    \"'ProjectedCRS', 'base_crs': {'id': \"\n                                    \"{'code': 4269, 'authority': 'EPSG'}, \"\n                                    \"'name': 'NAD83', 'datum': {'name': \"\n                                    \"'North American Datum 1983', 'type': \"\n                                    \"'GeodeticReferenceFrame', \"\n                                    \"'ellipsoid': {'name': 'GRS 1980', \"\n                                    \"'semi_major_axis': 6378137, \"\n                                    \"'inverse_flattening': \"\n                                    \"298.257222101}}, 'coordinate_system': \"\n                                    \"{'axis': [{'name': 'Geodetic \"\n                                    \"latitude', 'unit': 'degree', \"\n                                    \"'direction': 'north', 'abbreviation': \"\n                                    \"'Lat'}, {'name': 'Geodetic \"\n                                    \"longitude', 'unit': 'degree', \"\n                                    \"'direction': 'east', 'abbreviation': \"\n                                    \"'Lon'}], 'subtype': 'ellipsoidal'}}, \"\n                                    \"'conversion': {'name': 'UTM zone \"\n                                    \"12N', 'method': {'id': {'code': 9807, \"\n                                    \"'authority': 'EPSG'}, 'name': \"\n                                    \"'Transverse Mercator'}, 'parameters': \"\n                                    \"[{'id': {'code': 8801, 'authority': \"\n                                    \"'EPSG'}, 'name': 'Latitude of natural \"\n                                    \"origin', 'unit': 'degree', 'value': \"\n                                    \"0}, {'id': {'code': 8802, \"\n                                    \"'authority': 'EPSG'}, 'name': \"\n                                    \"'Longitude of natural origin', \"\n                                    \"'unit': 'degree', 'value': -111}, \"\n                                    \"{'id': {'code': 8805, 'authority': \"\n                                    \"'EPSG'}, 'name': 'Scale factor at \"\n                                    \"natural origin', 'unit': 'unity', \"\n                                    \"'value': 0.9996}, {'id': {'code': \"\n                                    \"8806, 'authority': 'EPSG'}, 'name': \"\n                                    \"'False easting', 'unit': 'metre', \"\n                                    \"'value': 500000}, {'id': {'code': \"\n                                    \"8807, 'authority': 'EPSG'}, 'name': \"\n                                    \"'False northing', 'unit': 'metre', \"\n                                    \"'value': 0}]}, 'coordinate_system': \"\n                                    \"{'axis': [{'name': 'Easting', 'unit': \"\n                                    \"'metre', 'direction': 'east', \"\n                                    \"'abbreviation': ''}, {'name': \"\n                                    \"'Northing', 'unit': 'metre', \"\n                                    \"'direction': 'north', 'abbreviation': \"\n                                    \"''}], 'subtype': 'Cartesian'}}, \"\n                                    \"{'id': {'code': 5703, 'authority': \"\n                                    \"'EPSG'}, 'name': 'NAVD88 height', \"\n                                    \"'type': 'VerticalCRS', 'datum': \"\n                                    \"{'name': 'North American Vertical \"\n                                    \"Datum 1988', 'type': \"\n                                    \"'VerticalReferenceFrame'}, \"\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Gravity-related height', \"\n                                    \"'unit': 'metre', 'direction': 'up', \"\n                                    \"'abbreviation': ''}], 'subtype': \"\n                                    \"'vertical'}}]}, 'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'pc:type': 'lidar',\\n\"\n                                    \"     'group_id': '3dep-lidar',\\n\"\n                                    \"     'pc:count': 376166,\\n\"\n                                    \"     'proj:bbox': [370000,\\n\"\n                                    '                   4221000,\\n'\n                                    '                   2475.74,\\n'\n                                    '                   370089.35,\\n'\n                                    '                   4221550.82,\\n'\n                                    '                   2754.14],\\n'\n                                    \"     'pc:schemas': [{'name': 'X', \"\n                                    \"'size': 8, 'type': 'floating'},\\n\"\n                                    \"                    {'name': 'Y', \"\n                                    \"'size': 8, 'type': 'floating'},\\n\"\n                                    \"                    {'name': 'Z', \"\n                                    \"'size': 8, 'type': 'floating'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'Intensity', 'size': 2, 'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'ReturnNumber', 'size': 1, 'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'NumberOfReturns',\\n\"\n                                    \"                     'size': 1,\\n\"\n                                    \"                     'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'ScanDirectionFlag',\\n\"\n                                    \"                     'size': 1,\\n\"\n                                    \"                     'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'EdgeOfFlightLine',\\n\"\n                                    \"                     'size': 1,\\n\"\n                                    \"                     'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'Classification',\\n\"\n                                    \"                     'size': 1,\\n\"\n                                    \"                     'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'ScanAngleRank',\\n\"\n                                    \"                     'size': 4,\\n\"\n                                    \"                     'type': \"\n                                    \"'floating'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'UserData', 'size': 1, 'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'PointSourceId',\\n\"\n                                    \"                     'size': 2,\\n\"\n                                    \"                     'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'GpsTime', 'size': 8, 'type': \"\n                                    \"'floating'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'ScanChannel', 'size': 1, 'type': \"\n                                    \"'unsigned'},\\n\"\n                                    \"                    {'name': \"\n                                    \"'ClassFlags', 'size': 1, 'type': \"\n                                    \"'unsigned'}],\\n\"\n                                    \"     'pc:encoding': \"\n                                    \"'application/vnd.laszip+copc',\\n\"\n                                    \"     '3dep:usgs_id': \"\n                                    \"'UT_StatewideSouth_1_2020',\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T00:00:00Z',\\n\"\n                                    \"     'proj:geometry': {'type': \"\n                                    \"'Polygon',\\n\"\n                                    \"                       'coordinates': \"\n                                    '[[[370100.06999998, '\n                                    '4220842.99967697],\\n'\n                                    '                                        '\n                                    '[370150.06999996, 4221622.42254038],\\n'\n                                    '                                        '\n                                    '[370000.07, 4221709.02508076],\\n'\n                                    '                                        '\n                                    '[370000.07, 4221362.61491924],\\n'\n                                    '                                        '\n                                    '[369800.07000005, 4221189.40983849],\\n'\n                                    '                                        '\n                                    '[370100.06999998,\\n'\n                                    '                                         '\n                                    '4220842.99967697]]]},\\n'\n                                    \"     'proj:projjson': {'name': 'NAD83 \"\n                                    \"/ UTM zone 12N + NAVD88 height',\\n\"\n                                    \"                       'type': \"\n                                    \"'CompoundCRS',\\n\"\n                                    \"                       '$schema': \"\n                                    \"'https://proj.org/schemas/v0.4/projjson.schema.json',\\n\"\n                                    \"                       'components': \"\n                                    \"[{'id': {'code': 26912,\\n\"\n                                    '                                              '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                       '\n                                    \"'name': 'NAD83 / UTM zone 12N',\\n\"\n                                    '                                       '\n                                    \"'type': 'ProjectedCRS',\\n\"\n                                    '                                       '\n                                    \"'base_crs': {'id': {'code': 4269,\\n\"\n                                    '                                                           '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                    '\n                                    \"'name': 'NAD83',\\n\"\n                                    '                                                    '\n                                    \"'datum': {'name': 'North '\\n\"\n                                    '                                                                      '\n                                    \"'American '\\n\"\n                                    '                                                                      '\n                                    \"'Datum '\\n\"\n                                    '                                                                      '\n                                    \"'1983',\\n\"\n                                    '                                                              '\n                                    \"'type': 'GeodeticReferenceFrame',\\n\"\n                                    '                                                              '\n                                    \"'ellipsoid': {'name': 'GRS '\\n\"\n                                    '                                                                                    '\n                                    \"'1980',\\n\"\n                                    '                                                                            '\n                                    \"'semi_major_axis': 6378137,\\n\"\n                                    '                                                                            '\n                                    \"'inverse_flattening': \"\n                                    '298.257222101}},\\n'\n                                    '                                                    '\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Geodetic '\\n\"\n                                    '                                                                                            '\n                                    \"'latitude',\\n\"\n                                    '                                                                                    '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                                    '\n                                    \"'direction': 'north',\\n\"\n                                    '                                                                                    '\n                                    \"'abbreviation': 'Lat'},\\n\"\n                                    '                                                                                   '\n                                    \"{'name': 'Geodetic '\\n\"\n                                    '                                                                                            '\n                                    \"'longitude',\\n\"\n                                    '                                                                                    '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                                    '\n                                    \"'direction': 'east',\\n\"\n                                    '                                                                                    '\n                                    \"'abbreviation': 'Lon'}],\\n\"\n                                    '                                                                          '\n                                    \"'subtype': 'ellipsoidal'}},\\n\"\n                                    '                                       '\n                                    \"'conversion': {'name': 'UTM zone '\\n\"\n                                    '                                                              '\n                                    \"'12N',\\n\"\n                                    '                                                      '\n                                    \"'method': {'id': {'code': 9807,\\n\"\n                                    '                                                                        '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                 '\n                                    \"'name': 'Transverse '\\n\"\n                                    '                                                                         '\n                                    \"'Mercator'},\\n\"\n                                    '                                                      '\n                                    \"'parameters': [{'id': {'code': 8801,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'Latitude '\\n\"\n                                    '                                                                              '\n                                    \"'of '\\n\"\n                                    '                                                                              '\n                                    \"'natural '\\n\"\n                                    '                                                                              '\n                                    \"'origin',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                      '\n                                    \"'value': 0},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8802,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'Longitude '\\n\"\n                                    '                                                                              '\n                                    \"'of '\\n\"\n                                    '                                                                              '\n                                    \"'natural '\\n\"\n                                    '                                                                              '\n                                    \"'origin',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'degree',\\n\"\n                                    '                                                                      '\n                                    \"'value': -111},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8805,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'Scale '\\n\"\n                                    '                                                                              '\n                                    \"'factor '\\n\"\n                                    '                                                                              '\n                                    \"'at '\\n\"\n                                    '                                                                              '\n                                    \"'natural '\\n\"\n                                    '                                                                              '\n                                    \"'origin',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'unity',\\n\"\n                                    '                                                                      '\n                                    \"'value': 0.9996},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8806,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'False '\\n\"\n                                    '                                                                              '\n                                    \"'easting',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                      '\n                                    \"'value': 500000},\\n\"\n                                    '                                                                     '\n                                    \"{'id': {'code': 8807,\\n\"\n                                    '                                                                             '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                                                      '\n                                    \"'name': 'False '\\n\"\n                                    '                                                                              '\n                                    \"'northing',\\n\"\n                                    '                                                                      '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                      '\n                                    \"'value': 0}]},\\n\"\n                                    '                                       '\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Easting',\\n\"\n                                    '                                                                       '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                       '\n                                    \"'direction': 'east',\\n\"\n                                    '                                                                       '\n                                    \"'abbreviation': ''},\\n\"\n                                    '                                                                      '\n                                    \"{'name': 'Northing',\\n\"\n                                    '                                                                       '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                       '\n                                    \"'direction': 'north',\\n\"\n                                    '                                                                       '\n                                    \"'abbreviation': ''}],\\n\"\n                                    '                                                             '\n                                    \"'subtype': 'Cartesian'}},\\n\"\n                                    '                                      '\n                                    \"{'id': {'code': 5703,\\n\"\n                                    '                                              '\n                                    \"'authority': 'EPSG'},\\n\"\n                                    '                                       '\n                                    \"'name': 'NAVD88 height',\\n\"\n                                    '                                       '\n                                    \"'type': 'VerticalCRS',\\n\"\n                                    '                                       '\n                                    \"'datum': {'name': 'North American '\\n\"\n                                    '                                                         '\n                                    \"'Vertical Datum '\\n\"\n                                    '                                                         '\n                                    \"'1988',\\n\"\n                                    '                                                 '\n                                    \"'type': 'VerticalReferenceFrame'},\\n\"\n                                    '                                       '\n                                    \"'coordinate_system': {'axis': \"\n                                    \"[{'name': 'Gravity-related '\\n\"\n                                    '                                                                               '\n                                    \"'height',\\n\"\n                                    '                                                                       '\n                                    \"'unit': 'metre',\\n\"\n                                    '                                                                       '\n                                    \"'direction': 'up',\\n\"\n                                    '                                                                       '\n                                    \"'abbreviation': ''}],\\n\"\n                                    '                                                             '\n                                    \"'subtype': 'vertical'}}]},\\n\"\n                                    \"     'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z'}\"}],\n     'pc:type': 'lidar',\n     'group_id': '3dep-lidar',\n     'pc:count': 376166,\n     'proj:bbox': [370000,\n                   4221000,\n                   2475.74,\n                   370089.35,\n                   4221550.82,\n                   2754.14],\n     'pc:schemas': [{'name': 'X', 'size': 8, 'type': 'floating'},\n                    {'name': 'Y', 'size': 8, 'type': 'floating'},\n                    {'name': 'Z', 'size': 8, 'type': 'floating'},\n                    {'name': 'Intensity', 'size': 2, 'type': 'unsigned'},\n                    {'name': 'ReturnNumber', 'size': 1, 'type': 'unsigned'},\n                    {'name': 'NumberOfReturns',\n                     'size': 1,\n                     'type': 'unsigned'},\n                    {'name': 'ScanDirectionFlag',\n                     'size': 1,\n                     'type': 'unsigned'},\n                    {'name': 'EdgeOfFlightLine',\n                     'size': 1,\n                     'type': 'unsigned'},\n                    {'name': 'Classification',\n                     'size': 1,\n                     'type': 'unsigned'},\n                    {'name': 'ScanAngleRank',\n                     'size': 4,\n                     'type': 'floating'},\n                    {'name': 'UserData', 'size': 1, 'type': 'unsigned'},\n                    {'name': 'PointSourceId',\n                     'size': 2,\n                     'type': 'unsigned'},\n                    {'name': 'GpsTime', 'size': 8, 'type': 'floating'},\n                    {'name': 'ScanChannel', 'size': 1, 'type': 'unsigned'},\n                    {'name': 'ClassFlags', 'size': 1, 'type': 'unsigned'}],\n     'pc:encoding': 'application/vnd.laszip+copc',\n     '3dep:usgs_id': 'UT_StatewideSouth_1_2020',\n     'end_datetime': '2020-12-31T00:00:00Z',\n     'proj:geometry': {'type': 'Polygon',\n                       'coordinates': [[[370100.06999998, 4220842.99967697],\n                                        [370150.06999996, 4221622.42254038],\n                                        [370000.07, 4221709.02508076],\n                                        [370000.07, 4221362.61491924],\n                                        [369800.07000005, 4221189.40983849],\n                                        [370100.06999998,\n                                         4220842.99967697]]]},\n     'proj:projjson': {'name': 'NAD83 / UTM zone 12N + NAVD88 height',\n                       'type': 'CompoundCRS',\n                       '$schema': 'https://proj.org/schemas/v0.4/projjson.schema.json',\n                       'components': [{'id': {'code': 26912,\n                                              'authority': 'EPSG'},\n                                       'name': 'NAD83 / UTM zone 12N',\n                                       'type': 'ProjectedCRS',\n                                       'base_crs': {'id': {'code': 4269,\n                                                           'authority': 'EPSG'},\n                                                    'name': 'NAD83',\n                                                    'datum': {'name': 'North '\n                                                                      'American '\n                                                                      'Datum '\n                                                                      '1983',\n                                                              'type': 'GeodeticReferenceFrame',\n                                                              'ellipsoid': {'name': 'GRS '\n                                                                                    '1980',\n                                                                            'semi_major_axis': 6378137,\n                                                                            'inverse_flattening': 298.257222101}},\n                                                    'coordinate_system': {'axis': [{'name': 'Geodetic '\n                                                                                            'latitude',\n                                                                                    'unit': 'degree',\n                                                                                    'direction': 'north',\n                                                                                    'abbreviation': 'Lat'},\n                                                                                   {'name': 'Geodetic '\n                                                                                            'longitude',\n                                                                                    'unit': 'degree',\n                                                                                    'direction': 'east',\n                                                                                    'abbreviation': 'Lon'}],\n                                                                          'subtype': 'ellipsoidal'}},\n                                       'conversion': {'name': 'UTM zone '\n                                                              '12N',\n                                                      'method': {'id': {'code': 9807,\n                                                                        'authority': 'EPSG'},\n                                                                 'name': 'Transverse '\n                                                                         'Mercator'},\n                                                      'parameters': [{'id': {'code': 8801,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'Latitude '\n                                                                              'of '\n                                                                              'natural '\n                                                                              'origin',\n                                                                      'unit': 'degree',\n                                                                      'value': 0},\n                                                                     {'id': {'code': 8802,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'Longitude '\n                                                                              'of '\n                                                                              'natural '\n                                                                              'origin',\n                                                                      'unit': 'degree',\n                                                                      'value': -111},\n                                                                     {'id': {'code': 8805,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'Scale '\n                                                                              'factor '\n                                                                              'at '\n                                                                              'natural '\n                                                                              'origin',\n                                                                      'unit': 'unity',\n                                                                      'value': 0.9996},\n                                                                     {'id': {'code': 8806,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'False '\n                                                                              'easting',\n                                                                      'unit': 'metre',\n                                                                      'value': 500000},\n                                                                     {'id': {'code': 8807,\n                                                                             'authority': 'EPSG'},\n                                                                      'name': 'False '\n                                                                              'northing',\n                                                                      'unit': 'metre',\n                                                                      'value': 0}]},\n                                       'coordinate_system': {'axis': [{'name': 'Easting',\n                                                                       'unit': 'metre',\n                                                                       'direction': 'east',\n                                                                       'abbreviation': ''},\n                                                                      {'name': 'Northing',\n                                                                       'unit': 'metre',\n                                                                       'direction': 'north',\n                                                                       'abbreviation': ''}],\n                                                             'subtype': 'Cartesian'}},\n                                      {'id': {'code': 5703,\n                                              'authority': 'EPSG'},\n                                       'name': 'NAVD88 height',\n                                       'type': 'VerticalCRS',\n                                       'datum': {'name': 'North American '\n                                                         'Vertical Datum '\n                                                         '1988',\n                                                 'type': 'VerticalReferenceFrame'},\n                                       'coordinate_system': {'axis': [{'name': 'Gravity-related '\n                                                                               'height',\n                                                                       'unit': 'metre',\n                                                                       'direction': 'up',\n                                                                       'abbreviation': ''}],\n                                                             'subtype': 'vertical'}}]},\n     'start_datetime': '2020-01-01T00:00:00Z'}"
+      }
+    ],
+    "pc:type": "lidar",
+    "group_id": "3dep-lidar",
+    "pc:count": 376166,
+    "proj:bbox": [
+      370000,
+      4221000,
+      2475.74,
+      370089.35,
+      4221550.82,
+      2754.14
+    ],
+    "pc:schemas": [
+      {
+        "name": "X",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Y",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Z",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Intensity",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "ReturnNumber",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "NumberOfReturns",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanDirectionFlag",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "EdgeOfFlightLine",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Classification",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanAngleRank",
+        "size": 4,
+        "type": "floating"
+      },
+      {
+        "name": "UserData",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "PointSourceId",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "GpsTime",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "ScanChannel",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ClassFlags",
+        "size": 1,
+        "type": "unsigned"
+      }
+    ],
+    "pc:encoding": "application/vnd.laszip+copc",
+    "3dep:usgs_id": "UT_StatewideSouth_1_2020",
+    "end_datetime": "2020-12-31T00:00:00Z",
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            370100.06999998,
+            4220842.99967697
+          ],
+          [
+            370150.06999996,
+            4221622.42254038
+          ],
+          [
+            370000.07,
+            4221709.02508076
+          ],
+          [
+            370000.07,
+            4221362.61491924
+          ],
+          [
+            369800.07000005,
+            4221189.40983849
+          ],
+          [
+            370100.06999998,
+            4220842.99967697
+          ]
+        ]
+      ]
+    },
+    "proj:projjson": {
+      "name": "NAD83 / UTM zone 12N + NAVD88 height",
+      "type": "CompoundCRS",
+      "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+      "components": [
+        {
+          "id": {
+            "code": 26912,
+            "authority": "EPSG"
+          },
+          "name": "NAD83 / UTM zone 12N",
+          "type": "ProjectedCRS",
+          "base_crs": {
+            "id": {
+              "code": 4269,
+              "authority": "EPSG"
+            },
+            "name": "NAD83",
+            "datum": {
+              "name": "North American Datum 1983",
+              "type": "GeodeticReferenceFrame",
+              "ellipsoid": {
+                "name": "GRS 1980",
+                "semi_major_axis": 6378137,
+                "inverse_flattening": 298.257222101
+              }
+            },
+            "coordinate_system": {
+              "axis": [
+                {
+                  "name": "Geodetic latitude",
+                  "unit": "degree",
+                  "direction": "north",
+                  "abbreviation": "Lat"
+                },
+                {
+                  "name": "Geodetic longitude",
+                  "unit": "degree",
+                  "direction": "east",
+                  "abbreviation": "Lon"
+                }
+              ],
+              "subtype": "ellipsoidal"
+            }
+          },
+          "conversion": {
+            "name": "UTM zone 12N",
+            "method": {
+              "id": {
+                "code": 9807,
+                "authority": "EPSG"
+              },
+              "name": "Transverse Mercator"
+            },
+            "parameters": [
+              {
+                "id": {
+                  "code": 8801,
+                  "authority": "EPSG"
+                },
+                "name": "Latitude of natural origin",
+                "unit": "degree",
+                "value": 0
+              },
+              {
+                "id": {
+                  "code": 8802,
+                  "authority": "EPSG"
+                },
+                "name": "Longitude of natural origin",
+                "unit": "degree",
+                "value": -111
+              },
+              {
+                "id": {
+                  "code": 8805,
+                  "authority": "EPSG"
+                },
+                "name": "Scale factor at natural origin",
+                "unit": "unity",
+                "value": 0.9996
+              },
+              {
+                "id": {
+                  "code": 8806,
+                  "authority": "EPSG"
+                },
+                "name": "False easting",
+                "unit": "metre",
+                "value": 500000
+              },
+              {
+                "id": {
+                  "code": 8807,
+                  "authority": "EPSG"
+                },
+                "name": "False northing",
+                "unit": "metre",
+                "value": 0
+              }
+            ]
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Easting",
+                "unit": "metre",
+                "direction": "east",
+                "abbreviation": ""
+              },
+              {
+                "name": "Northing",
+                "unit": "metre",
+                "direction": "north",
+                "abbreviation": ""
+              }
+            ],
+            "subtype": "Cartesian"
+          }
+        },
+        {
+          "id": {
+            "code": 5703,
+            "authority": "EPSG"
+          },
+          "name": "NAVD88 height",
+          "type": "VerticalCRS",
+          "datum": {
+            "name": "North American Vertical Datum 1988",
+            "type": "VerticalReferenceFrame"
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Gravity-related height",
+                "unit": "metre",
+                "direction": "up",
+                "abbreviation": ""
+              }
+            ],
+            "subtype": "vertical"
+          }
+        }
+      ]
+    },
+    "start_datetime": "2020-01-01T00:00:00Z"
+  },
+  "bbox": [
+    -112.48332701,
+    38.12750163,
+    2475.74,
+    -112.48220744,
+    38.13247722,
+    2754.14
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-copc/usgs-copc/UT_StatewideSouth_1_2020/copc/USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021.copc.laz",
+      "type": "application/vnd.laszip+copc",
+      "roles": [
+        "data"
+      ],
+      "title": "COPC data"
+    },
+    "thumbnail": {
+      "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-copc/usgs-copc/UT_StatewideSouth_1_2020/copc/thumbnails/USGS_LPC_UT_StatewideSouth_2020_A20_12SUH7021-thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "3DEP Lidar COPC"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -112.4820566,
+          38.1261015
+        ],
+        [
+          -112.4816283,
+          38.1331311
+        ],
+        [
+          -112.4833551,
+          38.1338897
+        ],
+        [
+          -112.4832919,
+          38.1307687
+        ],
+        [
+          -112.4855415,
+          38.1291793
+        ],
+        [
+          -112.4820566,
+          38.1261015
+        ]
+      ]
+    ]
+  },
+  "collection": "3dep-lidar-copc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/pointcloud/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

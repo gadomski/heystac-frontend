@@ -1,0 +1,158 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-whoi-netcdf/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Sea%20Surface%20Temperature%20-%20WHOI/UseAgreement_01B-27a.pdf",
+      "title": "NOAA CDR Sea Surface Temperature - WHOI Use Agreement",
+      "rel": "license",
+      "type": "application/pdf"
+    },
+    {
+      "href": "https://www.ncei.noaa.gov/products/climate-data-records/sea-surface-temperature-whoi",
+      "title": "Sea Surface Temperature - WHOI CDR",
+      "rel": "about",
+      "type": "text/html"
+    },
+    {
+      "href": "https://doi.org/10.7289/V5FB510W",
+      "rel": "cite-as"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/noaa-cdr-sea-surface-temperature-whoi-netcdf",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-whoi-netcdf",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": ".//tmp/tmpjlcsf8o6.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 1,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 2.5,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "noaa-cdr-sea-surface-temperature-whoi-netcdf",
+  "heystac:rating": 1,
+  "title": "Sea Surface Temperature - WHOI CDR NetCDFs",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/noaa-cdr-sea-surface-temperature-whoi-netcdf-thumb.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Sea Surface Temperature - WHOI (NetCDF) CDR thumbnail"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/noaa-cdr-sea-surface-temperature-whoi-netcdf.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1988-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "sci:doi": "10.7289/V5FB510W",
+  "keywords": [
+    "Global",
+    "Climate",
+    "NOAA",
+    "Ocean",
+    "Temperature"
+  ],
+  "providers": [
+    {
+      "url": "https://www.ncei.noaa.gov/",
+      "name": "National Centers for Environmental Information",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ],
+      "description": "NCEI is the Nation's leading authority for environmental data, and manage one of the largest archives of atmospheric, coastal, geophysical, and oceanic research in the world. NCEI contributes to the NESDIS mission by developing new products and services that span the science disciplines and enable better data discovery."
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "processor",
+        "host"
+      ]
+    }
+  ],
+  "description": "The Sea Surface Temperature-Woods Hole Oceanographic Institution (WHOI) Climate Data Record (CDR) is one of three CDRs which combine to form the NOAA Ocean Surface Bundle (OSB) CDR. The resultant sea surface temperature (SST) data are produced through modeling the diurnal variability in combination with AVHRR SST observations. The final record is output to a 3-hourly 0.25° resolution grid over the global ice-free oceans from January 1988—present.\n\nThis is a NetCDF-only collection, for Cloud-Optimized GeoTIFFs use collection `noaa-cdr-sea-surface-temperature-whoi`.\nThe NetCDF files are delivered to Azure as part of the [NOAA Open Data Dissemination (NODD) Program](https://www.noaa.gov/information-technology/open-data-dissemination).\n",
+  "item_assets": {
+    "netcdf": {
+      "type": "application/netcdf",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "msft:region": "eastus",
+  "sci:citation": "Clayson, Carol Anne; Brown, Jeremiah; and NOAA CDR Program (2016). NOAA Climate Data Record (CDR) of Sea Surface Temperature - WHOI, Version 2. NOAA National Climatic Data Center. doi:10.7289/V5FB510W",
+  "stac_version": "1.0.0",
+  "msft:group_id": "noaa-cdr",
+  "msft:container": "sea-surface-temperature-whoi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "msft:storage_account": "noaacdr",
+  "msft:short_description": "The Sea Surface Temperature-Woods Hole Oceanographic Institution (WHOI) Climate Data Record (CDR) is one of three CDRs which combine to form the NOAA Ocean Surface Bundle (OSB) CDR. The resultant sea surface temperature (SST) data are produced through modeling the diurnal variability in combination with AVHRR SST observations."
+}

@@ -1,0 +1,589 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections",
+      "rel": "data",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/conformance",
+      "title": "STAC/OGC conformance classes implemented by this server",
+      "rel": "conformance",
+      "type": "application/json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+      "title": "STAC search",
+      "rel": "search",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+      "title": "STAC search",
+      "rel": "search",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/queryables",
+      "title": "Queryables",
+      "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+      "type": "application/schema+json"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/openapi.json",
+      "title": "OpenAPI service description",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi+json;version=3.0"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/docs",
+      "title": "OpenAPI service documentation",
+      "rel": "service-doc",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "./daymet-annual-pr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-daily-hi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-seamless/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-dsm/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./fia/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-1-rtc/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./gridmet/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-annual-na/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-monthly-na/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-annual-hi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-monthly-hi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-monthly-pr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./gnatsgo-tables/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./hgb/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cop-dem-glo-30/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cop-dem-glo-90/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./goes-cmi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./terraclimate/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./nasa-nex-gddp-cmip6/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./gpm-imerg-hhr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./gnatsgo-rasters/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-hag/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./io-lulc-annual-v02/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./conus404/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-intensity/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-pointsourceid/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./mtbs/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-c-cap/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-copc/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-64A1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./alos-fnf-mosaic/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-returns/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./mobi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2-l2/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./era5-pds/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./chloris-biomass/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./kaza-hydroforecast/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./planet-nicfi-analytic/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-17A2H-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-11A2-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-daily-pr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-dtm-native/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-classification/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./3dep-lidar-dtm/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./gap/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-17A2HGF-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./planet-nicfi-visual/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./gbif/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-17A3HGF-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-09A1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./alos-dem/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./alos-palsar-mosaic/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./deltares-water-availability/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-16A3GF-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-21A2-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./us-census/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./jrc-gsw/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./deltares-floods/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-43A4-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-09Q1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-14A1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./hrea/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-13Q1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-14A2-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-2-l2a/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-15A2H-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-11A1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-15A3H-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-13A1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./daymet-daily-na/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./nrcan-landcover/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-10A2-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./ecmwf-forecast/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-mrms-qpe-24h-pass2/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-1-grd/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./nasadem/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./io-lulc/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2-l1/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./drcog-lulc/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./chesapeake-lc-7/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./chesapeake-lc-13/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./chesapeake-lu/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-mrms-qpe-1h-pass1/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-mrms-qpe-1h-pass2/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-nclimgrid-monthly/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./goes-glm/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./usda-cdl/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./eclipse/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./esa-cci-lc/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./esa-cci-lc-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./fws-nwi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./usgs-lcmap-conus-v13/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./usgs-lcmap-hawaii-v10/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-climate-normals-tabular/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-climate-normals-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-climate-normals-gridded/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./aster-l1t/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cil-gdpcir-cc-by-sa/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./naip/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./io-lulc-9-class/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./io-biodiversity/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-cdr-sea-surface-temperature-whoi/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-cdr-ocean-heat-content/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cil-gdpcir-cc0/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./cil-gdpcir-cc-by/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-cdr-sea-surface-temperature-whoi-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-cdr-sea-surface-temperature-optimum-interpolation/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./modis-10A1-061/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-5p-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-olci-wfr-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./noaa-cdr-ocean-heat-content-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-synergy-aod-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-synergy-v10-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-olci-lfr-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-sral-lan-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-slstr-lst-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-slstr-wst-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-sral-wat-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./ms-buildings/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-slstr-frp-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-synergy-syn-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-synergy-vgp-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./sentinel-3-synergy-vg1-l2-netcdf/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./esa-worldcover/collection.json",
+      "rel": "child"
+    }
+  ],
+  "heystac:cumulative_rating": 179,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 236,
+  "heystac:stars": 3.792372881355932,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "stac_version": "1.0.0",
+  "type": "Catalog",
+  "id": "microsoft-pc",
+  "title": "Microsoft Planetary Computer STAC API",
+  "description": "Searchable spatiotemporal metadata describing Earth science datasets hosted by the Microsoft Planetary Computer",
+  "heystac:rating": 1,
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "https://api.stacspec.org/v1.0.0-rc.2/item-search#filter",
+    "https://api.stacspec.org/v1.0.0/collections",
+    "https://api.stacspec.org/v1.0.0/item-search",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+    "https://api.stacspec.org/v1.0.0/item-search#query",
+    "https://api.stacspec.org/v1.0.0/item-search#sort",
+    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-text",
+    "http://www.opengis.net/spec/cql2/1.0/conf/basic-cql2",
+    "https://api.stacspec.org/v1.0.0/ogcapi-features",
+    "https://api.stacspec.org/v1.0.0/item-search#fields",
+    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-json",
+    "https://api.stacspec.org/v1.0.0/core",
+    "http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/filter",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30"
+  ],
+  "stac_extensions": []
+}

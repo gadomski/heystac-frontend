@@ -1,0 +1,386 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/deltares-water-availability/items/CHIRPS",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "CHIRPS",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "1984-01-01T00:00:00Z",
+    "end_datetime": "2020-12-31T00:00:00Z",
+    "cube:variables": {
+      "P": {
+        "type": "data",
+        "unit": "mm per day",
+        "attrs": {
+          "units": "mm per day",
+          "description": "Average precipitation upstream of reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Average precipitation upstream of reservoir"
+      },
+      "ETa": {
+        "type": "data",
+        "unit": "mm per day",
+        "attrs": {
+          "units": "mm per day",
+          "description": "Average simulated actual evapotransporation upstream of reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Average simulated actual evapotransporation upstream of reservoir"
+      },
+      "PET": {
+        "type": "data",
+        "unit": "mm per day",
+        "attrs": {
+          "units": "mm per day",
+          "description": "Average potential evapotranspiration upstream of reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Average potential evapotranspiration upstream of reservoir"
+      },
+      "Melt": {
+        "type": "data",
+        "unit": "mm per day",
+        "attrs": {
+          "units": "mm per day",
+          "description": "Average simulated snow melt upstream of reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Average simulated snow melt upstream of reservoir"
+      },
+      "Snow": {
+        "type": "data",
+        "unit": "mm",
+        "attrs": {
+          "units": "mm",
+          "description": "Average simulated snow depth upstream of reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Average simulated snow depth upstream of reservoir"
+      },
+      "Temp": {
+        "type": "data",
+        "unit": "degrees C",
+        "attrs": {
+          "units": "degrees C",
+          "description": "Average surface temperature upstream of reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Average surface temperature upstream of reservoir"
+      },
+      "P_res": {
+        "type": "data",
+        "unit": "mm per day",
+        "attrs": {
+          "units": "mm per day",
+          "description": "Precipitation reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Precipitation reservoir"
+      },
+      "S_res": {
+        "type": "data",
+        "unit": "m3",
+        "attrs": {
+          "units": "m3",
+          "description": "Simulated reservoir volume"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Simulated reservoir volume"
+      },
+      "Ea_res": {
+        "type": "data",
+        "unit": "mm per day",
+        "attrs": {
+          "units": "mm per day",
+          "description": "Simulated actual evaporation reservoir"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Simulated actual evaporation reservoir"
+      },
+      "Qin_res": {
+        "type": "data",
+        "unit": "m3 per s",
+        "attrs": {
+          "units": "m3 per s",
+          "description": "Simulated reservoir inflow (surface+subsurface)"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Simulated reservoir inflow (surface+subsurface)"
+      },
+      "FracFull": {
+        "type": "data",
+        "unit": "m3",
+        "attrs": {
+          "units": "m3",
+          "description": "Simulated reservoir volume"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Simulated reservoir volume"
+      },
+      "Qout_res": {
+        "type": "data",
+        "unit": "m3 per s",
+        "attrs": {
+          "units": "m3 per s",
+          "description": "Simulated reservoir outflow"
+        },
+        "shape": [
+          13515,
+          2951,
+          5
+        ],
+        "dimensions": [
+          "time",
+          "GrandID",
+          "ksathorfrac"
+        ],
+        "description": "Simulated reservoir outflow"
+      },
+      "latitude": {
+        "type": "data",
+        "unit": "degrees",
+        "attrs": {
+          "units": "degrees",
+          "description": "Latitude of reservoir"
+        },
+        "shape": [
+          2951
+        ],
+        "dimensions": [
+          "GrandID"
+        ],
+        "description": "Latitude of reservoir"
+      },
+      "longitude": {
+        "type": "data",
+        "unit": "degrees",
+        "attrs": {
+          "units": "degrees",
+          "description": "Longitude of reservoir"
+        },
+        "shape": [
+          2951
+        ],
+        "dimensions": [
+          "GrandID"
+        ],
+        "description": "Longitude of reservoir"
+      }
+    },
+    "start_datetime": "1984-01-01T00:00:00Z",
+    "cube:dimensions": {
+      "time": {
+        "step": "P1DT0H0M0S",
+        "type": "temporal",
+        "extent": [
+          "1984-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      },
+      "GrandID": {
+        "type": "identifier",
+        "extent": [
+          29,
+          6816
+        ],
+        "description": "GrandID number of the reservoir of interest"
+      },
+      "ksathorfrac": {
+        "type": "level",
+        "values": [
+          5,
+          20,
+          50,
+          100,
+          250
+        ],
+        "description": "Five different value lateral anisotropy values used"
+      }
+    },
+    "deltares:reservoir": "CHIRPS"
+  },
+  "bbox": [
+    -125.10416412,
+    -45.88750076,
+    176.7875061,
+    49.88750076
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://deltaresreservoirssa.blob.core.windows.net/reservoirs/v2021.12/reservoirs_CHIRPS.nc",
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "title": "Flood Map",
+      "description": "Inundation maps of flood depth using a model that takes into account water level attenuation and is forced by sea level."
+    },
+    "index": {
+      "href": "https://deltaresreservoirssa.blob.core.windows.net/references/reservoirs/CHIRPS.json",
+      "type": "application/json",
+      "roles": [
+        "index"
+      ],
+      "title": "Index file",
+      "description": "Kerchunk index file."
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          176.7875061,
+          -45.8875008
+        ],
+        [
+          176.7875061,
+          49.8875008
+        ],
+        [
+          -125.1041641,
+          49.8875008
+        ],
+        [
+          -125.1041641,
+          -45.8875008
+        ],
+        [
+          176.7875061,
+          -45.8875008
+        ]
+      ]
+    ]
+  },
+  "collection": "deltares-water-availability",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

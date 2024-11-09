@@ -1,0 +1,264 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-aod-l2-netcdf/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "title": "Sentinel Data License",
+      "rel": "license",
+      "type": "application/pdf"
+    },
+    {
+      "href": "https://sentinels.copernicus.eu/web/sentinel/level-2-aod",
+      "title": "Sentinel-3 Global Aerosol Product User Guide",
+      "rel": "about",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/sentinel-3-synergy-aod-l2-netcdf",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-aod-l2-netcdf",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./S3B_SY_2_AOD_20241107T084545_20241107T093003_2658_099_278.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 2,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "sentinel-3-synergy-aod-l2-netcdf",
+  "heystac:rating": 1,
+  "title": "Sentinel-3 Global Aerosol",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/sentinel-3-synergy-aod-l2-netcdf-thumb.png",
+      "title": "Sentinel-3 Global Aerosol Thumbnail",
+      "media_type": "image/png"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/sentinel-3-synergy-aod-l2-netcdf.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC Items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": true,
+        "partition_frequency": "AS"
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-04-16T19:36:28.012367Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Sentinel",
+    "Copernicus",
+    "ESA",
+    "Satellite",
+    "Global",
+    "Aerosol"
+  ],
+  "providers": [
+    {
+      "url": "https://earth.esa.int/web/guest/home",
+      "name": "ESA",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "eo:bands": [
+      {
+        "name": "SYN_1600",
+        "description": "SLSTR nadir and oblique channel S5",
+        "center_wavelength": 1.61,
+        "full_width_half_max": 0.06
+      },
+      {
+        "name": "SYN_2250",
+        "description": "SLSTR nadir and oblique channel S6",
+        "center_wavelength": 2.25,
+        "full_width_half_max": 0.05
+      },
+      {
+        "name": "SYN_440",
+        "description": "OLCI channel Oa03",
+        "center_wavelength": 0.4425,
+        "full_width_half_max": 0.01
+      },
+      {
+        "name": "SYN_550",
+        "description": "SLSTR nadir and oblique channel S1",
+        "center_wavelength": 0.55,
+        "full_width_half_max": 0.02
+      },
+      {
+        "name": "SYN_670",
+        "description": "SLSTR nadir and oblique channel S2",
+        "center_wavelength": 0.659,
+        "full_width_half_max": 0.02
+      },
+      {
+        "name": "SYN_865",
+        "description": "OLCI channel Oa17, SLSTR nadir and oblique channel S2",
+        "center_wavelength": 0.865,
+        "full_width_half_max": 0.02
+      }
+    ],
+    "platform": [
+      "Sentinel-3A",
+      "Sentinel-3B"
+    ],
+    "instruments": [
+      "OLCI",
+      "SLSTR"
+    ],
+    "constellation": [
+      "Sentinel-3"
+    ],
+    "s3:product_name": [
+      "synergy-aod"
+    ],
+    "s3:product_type": [
+      "SY_2_AOD___"
+    ],
+    "sat:orbit_state": [
+      "ascending",
+      "descending"
+    ],
+    "s3:processing_timeliness": [
+      "NT"
+    ],
+    "sat:platform_international_designator": [
+      "2016-011A",
+      "2018-039A"
+    ]
+  },
+  "description": "This Collection provides the Sentinel-3 [Synergy Level-2 Aerosol Optical Depth](https://sentinels.copernicus.eu/web/sentinel/level-2-aod) product, which is a downstream development of the Sentinel-2 Level-1 [OLCI Full Resolution](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-3-olci/data-formats/level-1) and [SLSTR Radiances and Brightness Temperatures](https://sentinels.copernicus.eu/web/sentinel/user-guides/Sentinel-3-slstr/data-formats/level-1) products. The dataset provides both retrieved and diagnostic global aerosol parameters at super-pixel (4.5 km x 4.5 km) resolution in a single NetCDF file for all regions over land and ocean free of snow/ice cover, excluding high cloud fraction data. The retrieved and derived aerosol parameters are:\n\n- Aerosol Optical Depth (AOD) at 440, 550, 670, 985, 1600 and 2250 nm\n- Error estimates (i.e. standard deviation) in AOD at 440, 550, 670, 985, 1600 and 2250 nm\n- Single Scattering Albedo (SSA) at 440, 550, 670, 985, 1600 and 2250 nm\n- Fine-mode AOD at 550nm\n- Aerosol Angstrom parameter between 550 and 865nm\n- Dust AOD at 550nm\n- Aerosol absorption optical depth at 550nm\n\nAtmospherically corrected nadir surface directional reflectances at 440, 550, 670, 985, 1600 and 2250 nm at super-pixel (4.5 km x 4.5 km) resolution are also provided. More information about the product and data processing can be found in the [User Guide](https://sentinels.copernicus.eu/web/sentinel/level-2-aod) and [Technical Guide](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-3-synergy/products-algorithms/level-2-aod-algorithms-and-products).\n\nThis Collection contains Level-2 data in NetCDF files from April 2020 to present.\n",
+  "item_assets": {
+    "ntc-aod": {
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SYN_440",
+          "description": "OLCI channel Oa03",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "SYN_550",
+          "description": "SLSTR nadir and oblique channel S1",
+          "center_wavelength": 0.55,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "SYN_670",
+          "description": "SLSTR nadir and oblique channel S2",
+          "center_wavelength": 0.659,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "SYN_865",
+          "description": "OLCI channel Oa17, SLSTR nadir and oblique channel S2",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "SYN_1600",
+          "description": "SLSTR nadir and oblique channel S5",
+          "center_wavelength": 1.61,
+          "full_width_half_max": 0.06
+        },
+        {
+          "name": "SYN_2250",
+          "description": "SLSTR nadir and oblique channel S6",
+          "center_wavelength": 2.25,
+          "full_width_half_max": 0.05
+        }
+      ],
+      "description": "Global aerosol parameters"
+    },
+    "safe-manifest": {
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    }
+  },
+  "msft:region": "westeurope",
+  "stac_version": "1.0.0",
+  "msft:group_id": "sentinel-3",
+  "msft:container": "sentinel-3",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "msft:storage_account": "sentinel3euwest",
+  "msft:short_description": "Sentinel-3 global aerosol and surface reflectance at super-pixel (4.5km) resolution (SYNERGY AOD)."
+}

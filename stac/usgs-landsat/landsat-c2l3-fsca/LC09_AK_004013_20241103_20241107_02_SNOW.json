@@ -1,0 +1,227 @@
+{
+  "links": [
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-sr/items/LC09_AK_004013_20241103_20241107_02_SR",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-st/items/LC09_AK_004013_20241103_20241107_02_ST",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-ta/items/LC09_AK_004013_20241103_20241107_02_TOA",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-bt/items/LC09_AK_004013_20241103_20241107_02_BT",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l3-fsca/items/LC09_AK_004013_20241103_20241107_02_SNOW",
+      "rel": "canonical"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "LC09_AK_004013_20241103_20241107_02_SNOW",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2024-11-03T22:30:51.4591920Z",
+    "platform": "LANDSAT_9",
+    "instruments": [
+      "OLI",
+      "TIRS"
+    ],
+    "landsat:grid_horizontal": "04",
+    "landsat:grid_vertical": "13",
+    "landsat:grid_region": "AK",
+    "landsat:scene_count": 1,
+    "eo:cloud_cover": 5.505,
+    "landsat:cloud_shadow_cover": 12.6156,
+    "landsat:snow_ice_cover": 6.2855,
+    "landsat:fill": 89.4782,
+    "proj:shape": [
+      5000,
+      5000
+    ],
+    "proj:transform": [
+      30,
+      0,
+      -1601715,
+      0,
+      -30,
+      524325
+    ],
+    "created": "2024-11-07T13:57:40.732Z",
+    "updated": "2024-11-07T13:57:40.732Z"
+  },
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://landsat.usgs.gov/stac/landsat-ard-extension/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
+  "description": "Landsat Collection 2 Level-3 Fractional Snow Covered Area Product",
+  "bbox": [
+    -175.78487471057772,
+    51.13078248077451,
+    -175.03187942603327,
+    52.019124269491634
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -175.41560322607967,
+          52.019124269491634
+        ],
+        [
+          -175.53197250000207,
+          51.74581236930187
+        ],
+        [
+          -175.78487471057772,
+          51.13078248077451
+        ],
+        [
+          -175.03187942603327,
+          51.29078394072847
+        ],
+        [
+          -175.41560322607967,
+          52.019124269491634
+        ]
+      ]
+    ]
+  },
+  "assets": {
+    "index": {
+      "title": "HTML index page",
+      "type": "text/html",
+      "roles": [
+        "metadata"
+      ],
+      "href": "https://landsatlook.usgs.gov/stac-browser/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02"
+    },
+    "json": {
+      "title": "Albers Extensible Metadata File (json)",
+      "description": "Collection 2 Level-3 Albers Extensible Metadata File (json)",
+      "type": "application/json",
+      "roles": [
+        "metadata"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02.json",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02.json"
+        }
+      }
+    },
+    "fsca_qa": {
+      "title": "Quality Assesment Band",
+      "description": "Collection 2 Level-3 Albers Quality Assesment Band Fractional Snow Covered Area",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_FSCA_QA.TIF",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_FSCA_QA.TIF"
+        }
+      }
+    },
+    "viewable_snow": {
+      "title": "Fractional Snow Covered Area",
+      "description": "Collection 2 Level-3 Albers Fractional Snow Covered Area",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_VIEWABLE_SNOW.TIF",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_VIEWABLE_SNOW.TIF"
+        }
+      }
+    },
+    "scag_shade": {
+      "title": "SCAG Shade Endmember",
+      "description": "Collection 2 Level-3 Albers SCAG Shade Endmember Fractional Snow Covered Area",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_SCAG_SHADE.TIF",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_SCAG_SHADE.TIF"
+        }
+      }
+    },
+    "scag_mask": {
+      "title": "SCAG Model Mask",
+      "description": "Collection 2 Level-3 Albers SCAG Model Mask Fractional Snow Covered Area",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_SCAG_MASK.TIF",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02_SCAG_MASK.TIF"
+        }
+      }
+    },
+    "xml": {
+      "title": "Albers Extensible Metadata File",
+      "description": "Collection 2 Level-3 Albers Extensible Metadata File (xml)",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02.xml",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/SNOW/2024/AK/004/013/LC09_AK_004013_20241103_20241107_02_SNOW/LC09_AK_004013_20241103_20241107_02.xml"
+        }
+      }
+    }
+  },
+  "collection": "landsat-c2l3-fsca"
+}

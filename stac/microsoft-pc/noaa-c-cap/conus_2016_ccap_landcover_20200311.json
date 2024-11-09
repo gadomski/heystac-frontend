@@ -1,0 +1,259 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-c-cap/items/conus_2016_ccap_landcover_20200311",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "conus_2016_ccap_landcover_20200311",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID conus_2016_ccap_landcover_20200311 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID conus_2016_ccap_landcover_20200311 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:epsg': 5070, 'proj:shape': [97471, 154951], 'end_datetime': '2016-12-31T00:00:00Z', 'proj:transform': [29.99999999983544, 0.0, -2362065.0, 0.0, -29.999999999823203, 3177734.999303], 'start_datetime': '2016-01-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:epsg': 5070,\\n     'proj:shape': [97471, 154951],\\n     'end_datetime': '2016-12-31T00:00:00Z',\\n     'proj:transform': [29.99999999983544,\\n                        0.0,\\n                        -2362065.0,\\n                        0.0,\\n                        -29.999999999823203,\\n                        3177734.999303],\\n     'start_datetime': '2016-01-01T00:00:00Z'}\"}], 'proj:epsg': 5070, 'proj:shape': [97471, 154951], 'end_datetime': '2016-12-31T00:00:00Z', 'proj:transform': [29.99999999983544, 0.0, -2362065.0, 0.0, -29.999999999823203, 3177734.999303], 'start_datetime': '2016-01-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'conus_2016_ccap_landcover_20200311 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:epsg': 5070, 'proj:shape': \"\n                                    \"[97471, 154951], 'end_datetime': \"\n                                    \"'2016-12-31T00:00:00Z', \"\n                                    \"'proj:transform': [29.99999999983544, \"\n                                    '0.0, -2362065.0, 0.0, '\n                                    '-29.999999999823203, 3177734.999303], '\n                                    \"'start_datetime': \"\n                                    \"'2016-01-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:epsg': 5070,\\n\"\n                                    \"     'proj:shape': [97471, 154951],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2016-12-31T00:00:00Z',\\n\"\n                                    \"     'proj:transform': \"\n                                    '[29.99999999983544,\\n'\n                                    '                        0.0,\\n'\n                                    '                        -2362065.0,\\n'\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '-29.999999999823203,\\n'\n                                    '                        '\n                                    '3177734.999303],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2016-01-01T00:00:00Z'}\"}],\n     'proj:epsg': 5070,\n     'proj:shape': [97471, 154951],\n     'end_datetime': '2016-12-31T00:00:00Z',\n     'proj:transform': [29.99999999983544,\n                        0.0,\n                        -2362065.0,\n                        0.0,\n                        -29.999999999823203,\n                        3177734.999303],\n     'start_datetime': '2016-01-01T00:00:00Z'}"
+      }
+    ],
+    "proj:epsg": 5070,
+    "proj:shape": [
+      97471,
+      154951
+    ],
+    "end_datetime": "2016-12-31T00:00:00Z",
+    "proj:transform": [
+      29.99999999983544,
+      0.0,
+      -2362065.0,
+      0.0,
+      -29.999999999823203,
+      3177734.999303
+    ],
+    "start_datetime": "2016-01-01T00:00:00Z"
+  },
+  "bbox": [
+    -127.984554,
+    22.718719,
+    -64.966857,
+    48.207712
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_2016_ccap_landcover_20200311.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "spatial_resolution": 30
+        }
+      ],
+      "classification:classes": [
+        {
+          "value": 0,
+          "description": "Background"
+        },
+        {
+          "value": 1,
+          "description": "Unclassified (Cloud, Shadow, etc)"
+        },
+        {
+          "value": 2,
+          "color-hint": "FFFFFF",
+          "description": "High Intensity Developed"
+        },
+        {
+          "value": 3,
+          "color-hint": "C1C1C1",
+          "description": "Medium Intensity Developed"
+        },
+        {
+          "value": 4,
+          "color-hint": "979797",
+          "description": "Low Intensity Developed"
+        },
+        {
+          "value": 5,
+          "color-hint": "CCCA42",
+          "description": "Developed Open Space"
+        },
+        {
+          "value": 6,
+          "color-hint": "4E2409",
+          "description": "Cultivated Crops"
+        },
+        {
+          "value": 7,
+          "color-hint": "BCA05B",
+          "description": "Pasture/Hay"
+        },
+        {
+          "value": 8,
+          "color-hint": "EABB8E",
+          "description": "Grassland/Herbaceous"
+        },
+        {
+          "value": 9,
+          "color-hint": "6FEC48",
+          "description": "Deciduous Forest"
+        },
+        {
+          "value": 10,
+          "color-hint": "15380A",
+          "description": "Evergreen Forest"
+        },
+        {
+          "value": 11,
+          "color-hint": "489D48",
+          "description": "Mixed Forest"
+        },
+        {
+          "value": 12,
+          "color-hint": "6D6C1F",
+          "description": "Scrub/Shrub"
+        },
+        {
+          "value": 13,
+          "color-hint": "245A5A",
+          "description": "Palustrine Forested Wetland"
+        },
+        {
+          "value": 14,
+          "color-hint": "E2742D",
+          "description": "Palustrine Scrub/Shrub Wetland"
+        },
+        {
+          "value": 15,
+          "color-hint": "DE3BEA",
+          "description": "Palustrine Emergent Wetland (Persistent)"
+        },
+        {
+          "value": 16,
+          "color-hint": "37083B",
+          "description": "Estuarine Forested Wetland"
+        },
+        {
+          "value": 17,
+          "color-hint": "631569",
+          "description": "Estuarine Scrub/Shrub Wetland"
+        },
+        {
+          "value": 18,
+          "color-hint": "A028A9",
+          "description": "Estuarine Emergent Wetland"
+        },
+        {
+          "value": 19,
+          "color-hint": "6DEEF0",
+          "description": "Unconsolidated Shore"
+        },
+        {
+          "value": 20,
+          "color-hint": "F3F050",
+          "description": "Bare Land"
+        },
+        {
+          "value": 21,
+          "color-hint": "000A72",
+          "description": "Open Water"
+        },
+        {
+          "value": 22,
+          "color-hint": "0021E8",
+          "description": "Palustrine Aquatic Bed"
+        },
+        {
+          "value": 23,
+          "color-hint": "6777D4",
+          "description": "Estuarine Aquatic Bed"
+        },
+        {
+          "value": 24,
+          "color-hint": "F3D147",
+          "description": "Tundra"
+        },
+        {
+          "value": 25,
+          "color-hint": "BBF7EF",
+          "description": "Perennial Ice/Snow"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311&assets=data&tile_format=png&colormap_name=c-cap&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -73.946445,
+          22.881337
+        ],
+        [
+          -64.966857,
+          48.207712
+        ],
+        [
+          -127.984554,
+          47.984468
+        ],
+        [
+          -118.755598,
+          22.718719
+        ],
+        [
+          -73.946445,
+          22.881337
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-c-cap",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

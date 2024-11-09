@@ -1,0 +1,762 @@
+{
+  "links": [
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/driggs-c.pdf",
+      "title": "driggs-c",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis-a.pdf",
+      "title": "thermopolis-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/price-a.pdf",
+      "title": "price-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/casper-a.pdf",
+      "title": "casper-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/cheyenne-a.pdf",
+      "title": "cheyenne-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/cody-a.pdf",
+      "title": "cody-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ashton-a.pdf",
+      "title": "ashton-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/driggs-a.pdf",
+      "title": "driggs-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis-c.pdf",
+      "title": "thermopolis-c",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis-b.pdf",
+      "title": "thermopolis-b",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/greeley-b.pdf",
+      "title": "greeley-b",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/hardin-a.pdf",
+      "title": "hardin-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/sheridan-c.pdf",
+      "title": "sheridan-c",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/gillette-a.pdf",
+      "title": "gillette-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/gillette-b.pdf",
+      "title": "gillette-b",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/greeley-a.pdf",
+      "title": "greeley-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ogden-a.pdf",
+      "title": "ogden-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/new castle-a.pdf",
+      "title": "new castle-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ekalaka-a.pdf",
+      "title": "ekalaka-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/rock springs-a.pdf",
+      "title": "rock springs-a",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/reno-b.pdf",
+      "title": "reno-b",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/preston-b.pdf",
+      "title": "preston-b",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/lander-b.pdf",
+      "title": "lander-b",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/lander-c.pdf",
+      "title": "lander-c",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/E_Central_Montana.pdf",
+      "title": "E_Central_Montana",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/Eastern_Montana.pdf",
+      "title": "Eastern_Montana",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/Western_Montana.pdf",
+      "title": "Western_Montana",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/West_River_SD_1.pdf",
+      "title": "West_River_SD_1",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/wyoming.pdf",
+      "title": "wyoming",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/Torrington_SW.pdf",
+      "title": "Torrington_SW",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ashton_ne_ashton_se.pdf",
+      "title": "ashton_ne_ashton_se",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/gillette_ne_gillette_se.pdf",
+      "title": "gillette_ne_gillette_se",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis_ne_cody_ne_cody_se.pdf",
+      "title": "thermopolis_ne_cody_ne_cody_se",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/rawlins_se_rawlins_sw_rawlins_nw.pdf",
+      "title": "rawlins_se_rawlins_sw_rawlins_nw",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/vernal_ne.pdf",
+      "title": "vernal_ne",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/upper_yellowstone_river.pdf",
+      "title": "upper_yellowstone_river",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYFieldSummaryReportPatsBottom.pdf",
+      "title": "WYFieldSummaryReportPatsBottom",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYFieldSummaryReportSWWY.pdf",
+      "title": "WYFieldSummaryReportSWWY",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYFieldReportThermopolisLander.pdf",
+      "title": "WYFieldReportThermopolisLander",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYMapNarrativeSheridanSE.pdf",
+      "title": "WYMapNarrativeSheridanSE",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYPICodySheridanArmintoCasperTorr.pdf",
+      "title": "WYPICodySheridanArmintoCasperTorr",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYPIFlamingGorgeWyoming.pdf",
+      "title": "WYPIFlamingGorgeWyoming",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYUserReportCasperNW.pdf",
+      "title": "WYUserReportCasperNW",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYUserReportOgdenNESE.pdf",
+      "title": "WYUserReportOgdenNESE",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/COalpineWetlands.pdf",
+      "title": "COalpineWetlands",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYPIconvBlackHills.pdf",
+      "title": "WYPIconvBlackHills",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/UTsaltLakeII.pdf",
+      "title": "UTsaltLakeII",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "http://www.fws.gov/wetlands/Data/HisMapRep/UTFieldConvNotes.pdf",
+      "title": "UTFieldConvNotes",
+      "rel": "archives",
+      "type": "application/pdf"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/fws-nwi/items/WY",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "WY",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2022-10-01T00:00:00Z",
+    "proj:epsg": 5070,
+    "fws_nwi:state": "Wyoming",
+    "fws_nwi:content": [
+      "riparian",
+      "wetlands"
+    ],
+    "fws_nwi:state_code": "WY"
+  },
+  "bbox": [
+    -111.250783,
+    40.874948,
+    -104.000492,
+    45.124985
+  ],
+  "type": "Feature",
+  "assets": {
+    "zip": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi-onboarding/WY_shapefile_wetlands.zip",
+      "title": "WY_shapefile_wetlands",
+      "description": "WY_shapefile_wetlands source zipfile",
+      "type": "application/zip",
+      "roles": [
+        "data",
+        "archive",
+        "source"
+      ]
+    },
+    "Wyoming": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/Wyoming.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "title": "Wyoming",
+      "description": "Wyoming geoparquet",
+      "table:columns": [
+        {
+          "name": "ST_NAME1",
+          "type": "byte_array"
+        },
+        {
+          "name": "ST_ABBV",
+          "type": "byte_array"
+        },
+        {
+          "name": "AreaAcres",
+          "type": "double"
+        },
+        {
+          "name": "Shape_Leng",
+          "type": "double"
+        },
+        {
+          "name": "Shape_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 1,
+      "table:primary_geometry": "geometry"
+    },
+    "WY_Riparian": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/WY_Riparian.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized",
+        "riparian"
+      ],
+      "title": "WY Riparian",
+      "description": "WY Riparian geoparquet",
+      "table:columns": [
+        {
+          "name": "ATTRIBUTE",
+          "type": "byte_array"
+        },
+        {
+          "name": "WETLAND_TY",
+          "type": "byte_array"
+        },
+        {
+          "name": "ACRES",
+          "type": "double"
+        },
+        {
+          "name": "Shape_Leng",
+          "type": "double"
+        },
+        {
+          "name": "Shape_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 15465,
+      "table:primary_geometry": "geometry"
+    },
+    "WY_Wetlands_East": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/WY_Wetlands_East.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized",
+        "wetlands"
+      ],
+      "title": "WY Wetlands East",
+      "description": "WY Wetlands East geoparquet",
+      "table:columns": [
+        {
+          "name": "ATTRIBUTE",
+          "type": "byte_array"
+        },
+        {
+          "name": "WETLAND_TY",
+          "type": "byte_array"
+        },
+        {
+          "name": "ACRES",
+          "type": "double"
+        },
+        {
+          "name": "SHAPE_Leng",
+          "type": "double"
+        },
+        {
+          "name": "SHAPE_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 459994,
+      "table:primary_geometry": "geometry"
+    },
+    "WY_Wetlands_West": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/WY_Wetlands_West.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized",
+        "wetlands"
+      ],
+      "title": "WY Wetlands West",
+      "description": "WY Wetlands West geoparquet",
+      "table:columns": [
+        {
+          "name": "ATTRIBUTE",
+          "type": "byte_array"
+        },
+        {
+          "name": "WETLAND_TY",
+          "type": "byte_array"
+        },
+        {
+          "name": "ACRES",
+          "type": "double"
+        },
+        {
+          "name": "SHAPE_Leng",
+          "type": "double"
+        },
+        {
+          "name": "SHAPE_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 413883,
+      "table:primary_geometry": "geometry"
+    },
+    "WY_Riparian_Project_Metadata": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/WY_Riparian_Project_Metadata.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized",
+        "riparian"
+      ],
+      "title": "WY Riparian Project Metadata",
+      "description": "WY Riparian Project Metadata geoparquet",
+      "table:columns": [
+        {
+          "name": "PROJECT_NA",
+          "type": "byte_array"
+        },
+        {
+          "name": "STATUS",
+          "type": "byte_array"
+        },
+        {
+          "name": "SUPPMAPINF",
+          "type": "byte_array"
+        },
+        {
+          "name": "FGDC_METAD",
+          "type": "byte_array"
+        },
+        {
+          "name": "DATA_SOURC",
+          "type": "byte_array"
+        },
+        {
+          "name": "IMAGE_YR",
+          "type": "int64"
+        },
+        {
+          "name": "IMAGE_DATE",
+          "type": "byte_array"
+        },
+        {
+          "name": "IMAGE_SCAL",
+          "type": "int64"
+        },
+        {
+          "name": "ALL_SCALES",
+          "type": "byte_array"
+        },
+        {
+          "name": "EMULSION",
+          "type": "byte_array"
+        },
+        {
+          "name": "COMMENTS",
+          "type": "int32"
+        },
+        {
+          "name": "SOURCE_TYP",
+          "type": "byte_array"
+        },
+        {
+          "name": "Shape_Leng",
+          "type": "double"
+        },
+        {
+          "name": "Shape_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 14,
+      "table:primary_geometry": "geometry"
+    },
+    "WY_Wetlands_Project_Metadata": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/WY_Wetlands_Project_Metadata.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "title": "WY Wetlands Project Metadata",
+      "description": "WY Wetlands Project Metadata geoparquet",
+      "table:columns": [
+        {
+          "name": "PROJECT_NA",
+          "type": "byte_array"
+        },
+        {
+          "name": "STATUS",
+          "type": "byte_array"
+        },
+        {
+          "name": "SUPPMAPINF",
+          "type": "byte_array"
+        },
+        {
+          "name": "FGDC_METAD",
+          "type": "byte_array"
+        },
+        {
+          "name": "DATA_SOURC",
+          "type": "byte_array"
+        },
+        {
+          "name": "IMAGE_YR",
+          "type": "int64"
+        },
+        {
+          "name": "IMAGE_DATE",
+          "type": "byte_array"
+        },
+        {
+          "name": "IMAGE_SCAL",
+          "type": "int64"
+        },
+        {
+          "name": "ALL_SCALES",
+          "type": "byte_array"
+        },
+        {
+          "name": "EMULSION",
+          "type": "byte_array"
+        },
+        {
+          "name": "COMMENTS",
+          "type": "byte_array"
+        },
+        {
+          "name": "SOURCE_TYP",
+          "type": "byte_array"
+        },
+        {
+          "name": "Shape_Leng",
+          "type": "double"
+        },
+        {
+          "name": "Shape_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 1737,
+      "table:primary_geometry": "geometry"
+    },
+    "WY_Wetlands_Historic_Map_Info": {
+      "href": "https://landcoverdata.blob.core.windows.net/fws-nwi/geoparquet/WY/WY_Wetlands_Historic_Map_Info.geoparquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data",
+        "cloud-optimized"
+      ],
+      "title": "WY Wetlands Historic Map Info",
+      "description": "WY Wetlands Historic Map Info geoparquet",
+      "table:columns": [
+        {
+          "name": "PDF_NAME",
+          "type": "byte_array"
+        },
+        {
+          "name": "PDF_HYPERL",
+          "type": "byte_array"
+        },
+        {
+          "name": "SHAPE_Leng",
+          "type": "double"
+        },
+        {
+          "name": "SHAPE_Area",
+          "type": "double"
+        },
+        {
+          "name": "geometry",
+          "type": "byte_array"
+        }
+      ],
+      "table:row_count": 48,
+      "table:primary_geometry": "geometry"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -111.125739,
+          40.874948
+        ],
+        [
+          -111.125776,
+          44.37492
+        ],
+        [
+          -111.250782,
+          44.374916
+        ],
+        [
+          -111.250783,
+          44.749925
+        ],
+        [
+          -111.125778,
+          44.749924
+        ],
+        [
+          -111.125782,
+          45.124926
+        ],
+        [
+          -109.375715,
+          45.124941
+        ],
+        [
+          -107.625654,
+          45.12496
+        ],
+        [
+          -105.750561,
+          45.124984
+        ],
+        [
+          -104.000492,
+          45.124985
+        ],
+        [
+          -104.000504,
+          40.874986
+        ],
+        [
+          -105.875562,
+          40.874978
+        ],
+        [
+          -107.625624,
+          40.874963
+        ],
+        [
+          -109.37569,
+          40.874959
+        ],
+        [
+          -111.125739,
+          40.874948
+        ]
+      ]
+    ]
+  },
+  "collection": "fws-nwi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/usfws-nwi/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

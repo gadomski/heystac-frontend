@@ -1,0 +1,190 @@
+{
+  "links": [
+    {
+      "href": "s3://earthsearch-data/naip/ny/2022/ny_m_4207710_sw_18_060_20221126/ny_m_4207710_sw_18_060_20221126.json",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126/thumbnail",
+      "rel": "thumbnail"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "ny_m_4207710_sw_18_060_20221126",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "naip:state": "ny",
+    "naip:year": "2022",
+    "gsd": 0.6,
+    "proj:epsg": 26918,
+    "proj:shape": [
+      12530,
+      9590
+    ],
+    "proj:bbox": [
+      264504,
+      4736688,
+      270258,
+      4744206
+    ],
+    "proj:transform": [
+      0.6,
+      0,
+      264504,
+      0,
+      -0.6,
+      4744206,
+      0,
+      0,
+      1
+    ],
+    "proj:centroid": {
+      "lat": 42.78126,
+      "lon": -77.84377
+    },
+    "grid:code": "DOQQ-4207710SW",
+    "storage:platform": "AWS",
+    "storage:region": "us-west-2",
+    "storage:requester_pays": true,
+    "earthsearch:payload_id": "roda-naip/workflow-naip-to-stac/183d25040838b0b3aa613b1178fa8523",
+    "datetime": "2022-11-26T16:00:00Z",
+    "processing:software": {
+      "naip-to-stac": "2023.05.22"
+    },
+    "created": "2024-05-03T17:52:24.646Z",
+    "updated": "2024-05-03T17:52:24.646Z"
+  },
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -77.807111,
+          42.748316
+        ],
+        [
+          -77.81017,
+          42.815937
+        ],
+        [
+          -77.880466,
+          42.814189
+        ],
+        [
+          -77.877331,
+          42.746572
+        ],
+        [
+          -77.807111,
+          42.748316
+        ]
+      ]
+    ]
+  },
+  "assets": {
+    "image": {
+      "href": "s3://naip-analytic/ny/2022/60cm/rgbir_cog/42077/m_4207710_sw_18_060_20221126.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "RGBIR COG tile",
+      "eo:bands": [
+        {
+          "name": "Red",
+          "common_name": "red"
+        },
+        {
+          "name": "Green",
+          "common_name": "green"
+        },
+        {
+          "name": "Blue",
+          "common_name": "blue"
+        },
+        {
+          "name": "NIR",
+          "common_name": "nir",
+          "description": "near-infrared"
+        }
+      ],
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 0.6,
+          "unit": "none"
+        },
+        {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 0.6,
+          "unit": "none"
+        },
+        {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 0.6,
+          "unit": "none"
+        },
+        {
+          "nodata": 0,
+          "data_type": "uint8",
+          "spatial_resolution": 0.6,
+          "unit": "none"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "metadata": {
+      "href": "s3://naip-analytic/ny/2022/60cm/fgdc/42077/m_4207710_sw_18_060_20221126.xml",
+      "type": "application/xml",
+      "title": "FGDC Metadata",
+      "roles": [
+        "metadata"
+      ]
+    }
+  },
+  "bbox": [
+    -77.880466,
+    42.746572,
+    -77.807111,
+    42.815937
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
+  "collection": "naip"
+}

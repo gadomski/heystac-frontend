@@ -1,0 +1,211 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=chloris-biomass&item=chloris_biomass_50km_2019",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/chloris-biomass/items/chloris_biomass_50km_2019",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "chloris_biomass_50km_2019",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "gsd": 4633,
+    "datetime": "2019-01-01T00:00:00Z",
+    "proj:bbox": [
+      -20015109.354,
+      -6671703.11790004,
+      20015109.35376009,
+      10007554.677
+    ],
+    "proj:wkt2": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",6371007.181,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Sinusoidal\"],PARAMETER[\"longitude_of_center\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "proj:shape": [
+      3600,
+      8640
+    ],
+    "end_datetime": "2019-07-31T00:00:00Z",
+    "proj:transform": [
+      4633.12716525001,
+      0.0,
+      -20015109.354,
+      0.0,
+      -4633.127165250011,
+      10007554.677
+    ],
+    "start_datetime": "2018-07-31T00:00:00Z"
+  },
+  "bbox": [
+    -179.95,
+    -60.0,
+    179.95,
+    90.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "biomass": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/chloris-biomass/cog/bio_2019.tif",
+      "file:size": 20609463,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Annual estimates of aboveground woody biomass.",
+      "raster:bands": [
+        {
+          "unit": "tonnes",
+          "nodata": 2147483647,
+          "data_type": "uint32"
+        }
+      ]
+    },
+    "biomass_wm": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/chloris-biomass/cog/bio_2019_merc.tif",
+      "file:size": 44320986,
+      "proj:bbox": [
+        -20037508.337301563,
+        -8400523.19027713,
+        20034408.51494577,
+        149088735.41090125
+      ],
+      "proj:shape": [
+        33992,
+        8649
+      ],
+      "proj:transform": [
+        4633.12716525001,
+        0.0,
+        -20037508.337301563,
+        0.0,
+        -4633.127165250011,
+        149088735.41090125
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Annual estimates of aboveground woody biomass (Web Mercator).",
+      "raster:bands": [
+        {
+          "unit": "tonnes",
+          "nodata": 2147483647,
+          "data_type": "uint32"
+        }
+      ]
+    },
+    "biomass_change": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/chloris-biomass/cog/bio_change_2018-2019.tif",
+      "file:size": 11611673,
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Annual estimates of changes (gains and losses) in aboveground woody biomass from the previous year.",
+      "raster:bands": [
+        {
+          "unit": "tonnes",
+          "nodata": -32768,
+          "data_type": "int16"
+        }
+      ]
+    },
+    "biomass_change_wm": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/chloris-biomass/cog/bio_change_2018-2019_merc.tif",
+      "file:size": 26876026,
+      "proj:bbox": [
+        -20037508.337301563,
+        -8400523.19027713,
+        20034408.51494577,
+        149088735.41090125
+      ],
+      "proj:shape": [
+        33992,
+        8649
+      ],
+      "proj:transform": [
+        4633.12716525001,
+        0.0,
+        -20037508.337301563,
+        0.0,
+        -4633.127165250011,
+        149088735.41090125
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Annual estimates of changes (gains and losses) in aboveground woody biomass from the previous year (Web Mercator).",
+      "raster:bands": [
+        {
+          "unit": "tonnes",
+          "nodata": -32768,
+          "data_type": "int16"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=chloris-biomass&item=chloris_biomass_50km_2019&assets=biomass_wm&colormap_name=chloris-biomass&rescale=1%2C750000&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=chloris-biomass&item=chloris_biomass_50km_2019&assets=biomass_wm&colormap_name=chloris-biomass&rescale=1%2C750000&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.95,
+          90
+        ],
+        [
+          -179.95,
+          -60
+        ],
+        [
+          179.95,
+          -60
+        ],
+        [
+          179.95,
+          90
+        ],
+        [
+          -179.95,
+          90
+        ]
+      ]
+    ]
+  },
+  "collection": "chloris-biomass",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

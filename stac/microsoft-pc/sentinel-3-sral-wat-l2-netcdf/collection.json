@@ -1,0 +1,244 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-sral-wat-l2-netcdf/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+      "title": "Sentinel Data License",
+      "rel": "license",
+      "type": "application/pdf"
+    },
+    {
+      "href": "https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-3-altimetry/product-types",
+      "title": "Sentinel-3 Ocean Radar Altimetry Product User Guide",
+      "rel": "about",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/sentinel-3-sral-wat-l2-netcdf",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-sral-wat-l2-netcdf",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./S3A_SR_2_WAT_20241013T192723_20241013T201202_2678_118_070.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 2,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "sentinel-3-sral-wat-l2-netcdf",
+  "heystac:rating": 1,
+  "title": "Sentinel-3 Ocean Radar Altimetry",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/sentinel-3-sral-wat-l2-netcdf-thumb.png",
+      "title": "Sentinel-3 Ocean Radar Altimetry Thumbnail",
+      "media_type": "image/png"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/sentinel-3-sral-wat-l2-netcdf.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC Items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": true,
+        "partition_frequency": "QS"
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -81.5,
+          180,
+          81.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-28T00:59:14.149496Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Sentinel",
+    "Copernicus",
+    "ESA",
+    "Satellite",
+    "Radar",
+    "Altimetry",
+    "Ocean"
+  ],
+  "providers": [
+    {
+      "url": "https://earth.esa.int/web/guest/home",
+      "name": "ESA",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "platform": [
+      "Sentinel-3A",
+      "Sentinel-3B"
+    ],
+    "instruments": [
+      "SRAL"
+    ],
+    "constellation": [
+      "Sentinel-3"
+    ],
+    "s3:product_name": [
+      "sral-wat"
+    ],
+    "s3:product_type": [
+      "SR_2_WAT___"
+    ],
+    "sat:orbit_state": [
+      "ascending",
+      "descending"
+    ],
+    "s3:processing_timeliness": [
+      "NT"
+    ],
+    "sat:platform_international_designator": [
+      "2016-011A",
+      "2018-039A"
+    ]
+  },
+  "description": "This Collection provides Sentinel-3 [SRAL Level-2 Ocean Altimetry](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-3-altimetry/level-2-algorithms-products) products, which contain data on ocean radar altimetry measurements. Each product contains three NetCDF files:\n\n- A reduced data file containing a subset of the 1 Hz Ku-band parameters.\n- A standard data file containing the standard 1 Hz and 20 Hz Ku- and C-band parameters.\n- An enhanced data file containing the standard 1 Hz and 20 Hz Ku- and C-band parameters along with the waveforms and parameters necessary to reprocess the data.\n\nMore information about the product and data processing can be found in the [User Guide](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-3-altimetry/overview) and [Technical Guide](https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-3-altimetry).\n\nThis Collection contains Level-2 data in NetCDF files from January 2017 to present.\n",
+  "item_assets": {
+    "eop-metadata": {
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "Product metadata file produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)"
+    },
+    "safe-manifest": {
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    },
+    "reduced-measurement": {
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Reduced measurement data file",
+      "s3:altimetry_bands": [
+        {
+          "band_width": 0.32,
+          "description": "Band Ku - Range measurements",
+          "frequency_band": "Ku",
+          "center_frequency": 13.575000064
+        }
+      ]
+    },
+    "enhanced-measurement": {
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Enhanced measurement data file",
+      "s3:altimetry_bands": [
+        {
+          "band_width": 0.29,
+          "description": "Band C - Ionospheric correction",
+          "frequency_band": "C",
+          "center_frequency": 5.409999872
+        },
+        {
+          "band_width": 0.32,
+          "description": "Band Ku - Range measurements",
+          "frequency_band": "Ku",
+          "center_frequency": 13.575000064
+        }
+      ]
+    },
+    "standard-measurement": {
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Standard measurement data file",
+      "s3:altimetry_bands": [
+        {
+          "band_width": 0.29,
+          "description": "Band C - Ionospheric correction",
+          "frequency_band": "C",
+          "center_frequency": 5.409999872
+        },
+        {
+          "band_width": 0.32,
+          "description": "Band Ku - Range measurements",
+          "frequency_band": "Ku",
+          "center_frequency": 13.575000064
+        }
+      ]
+    }
+  },
+  "msft:region": "westeurope",
+  "stac_version": "1.0.0",
+  "msft:group_id": "sentinel-3",
+  "msft:container": "sentinel-3",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "msft:storage_account": "sentinel3euwest",
+  "msft:short_description": "Sentinel-3 radar altimetry over ocean (SRAL WAT)."
+}

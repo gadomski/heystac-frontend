@@ -1,0 +1,1579 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-v10-l2-netcdf/items/S3B_SY_2_V10_20241021T000000_20241031T235959_EUROPE",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "S3B_SY_2_V10_20241021T000000_20241031T235959_EUROPE",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "s3:gsd": {
+      "OLCI": 300,
+      "SLSTR": {
+        "S1-S6": 500,
+        "S7-S9 and F1-F2": 1000
+      }
+    },
+    "s3:land": 65.140188,
+    "datetime": "2024-10-26T11:59:59.500000Z",
+    "platform": "Sentinel-3B",
+    "instruments": [
+      "OLCI",
+      "SLSTR"
+    ],
+    "end_datetime": "2024-10-31T23:59:59Z",
+    "constellation": "Sentinel-3",
+    "eo:cloud_cover": 6.616976,
+    "s3:snow_or_ice": 0.593432,
+    "start_datetime": "2024-10-21T00:00:00Z",
+    "s3:product_name": "synergy-v10",
+    "s3:product_type": "SY_2_V10___",
+    "sat:orbit_state": "descending",
+    "sat:absolute_orbit": 33767,
+    "sat:relative_orbit": 30,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2018-039A"
+  },
+  "bbox": [
+    -10.9911,
+    25.0,
+    62.0,
+    75.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "ag": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/ag.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 14840557,
+      "file:checksum": "249127940467e911e310ccb756605a54",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Aerosol optical thickness data"
+    },
+    "b0": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/B0.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 36954693,
+      "file:checksum": "5cbee63485647862646c4347400e9f81",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B0",
+          "description": "OLCI channels Oa02, Oa03",
+          "center_wavelength": 0.45,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-B0 channel"
+    },
+    "b2": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/B2.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 39279353,
+      "file:checksum": "4c3491c99b2dbca8230451d568f3426c",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B2",
+          "description": "OLCI channels Oa06, Oa07, Oa08, Oa09, Oa10",
+          "center_wavelength": 0.645,
+          "full_width_half_max": 0.035
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-B2 channel"
+    },
+    "b3": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/B3.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 41094443,
+      "file:checksum": "7f46ded74ff885afc60e8130c210161f",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B3",
+          "description": "OLCI channels Oa16, Oa17, Oa18, Oa21",
+          "center_wavelength": 0.835,
+          "full_width_half_max": 0.055
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-B3 channel"
+    },
+    "og": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/og.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 2268916,
+      "file:checksum": "150e5461408a4ed57c2188178d37f166",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Total Ozone column data"
+    },
+    "sm": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/sm.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 4598860,
+      "file:checksum": "f99a06e08b4622cb794052e222f3ac54",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Status Map data"
+    },
+    "tg": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/tg.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 12760268,
+      "file:checksum": "9050183371e71349678d22828c783285",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Synthesis time data"
+    },
+    "mir": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/MIR.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 41504148,
+      "file:checksum": "bcff6681b9b23918afa8f1634e11a611",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "MIR",
+          "description": "SLSTR nadir and oblique channels S5, S6",
+          "center_wavelength": 1.665,
+          "full_width_half_max": 0.085
+        }
+      ],
+      "description": "Surface Reflectance Data Set associated with VGT-MIR channel"
+    },
+    "saa": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/saa.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 5878363,
+      "file:checksum": "b58c2b84948848976d53861da02cb2af",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Solar azimuth angle data"
+    },
+    "sza": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/sza.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 6574248,
+      "file:checksum": "276c19c4479cb388dbdcdd1c8325fc64",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Solar zenith angle data"
+    },
+    "vaa": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/vaa.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 6514710,
+      "file:checksum": "4ec20d14bda6bb0fb30e6fe830e23756",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "View azimuth angle data"
+    },
+    "vza": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/vza.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 10423928,
+      "file:checksum": "5a2e7508291034cfc3a05e17f839e274",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "View zenith angle data"
+    },
+    "wvg": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/wvg.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 9229432,
+      "file:checksum": "32f8c60ee3d14114aa29a5cb51302e78",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Total column Water vapour data"
+    },
+    "ndvi": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/NDVI.nc",
+      "s3:shape": [
+        5601,
+        8176
+      ],
+      "file:size": 21706541,
+      "file:checksum": "c2793ab62e064a8624229fd0916d8699",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B2",
+          "description": "OLCI channels Oa06, Oa07, Oa08, Oa09, Oa10",
+          "center_wavelength": 0.645,
+          "full_width_half_max": 0.035
+        },
+        {
+          "name": "B3",
+          "description": "OLCI channels Oa16, Oa17, Oa18, Oa21",
+          "center_wavelength": 0.835,
+          "full_width_half_max": 0.055
+        }
+      ],
+      "description": "Normalised difference vegetation index"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/10/21/S3B_SY_2_V10____20241021T000000_20241031T235959_20241103T141649_EUROPE____________PS2_O_NT_002.SEN3/xfdumanifest.xml",
+      "file:size": 7415711,
+      "file:checksum": "efaa7c76d0dd0e821591084e1d3bad59",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -10.9911,
+          25
+        ],
+        [
+          -7.1518,
+          25
+        ],
+        [
+          -3.3125,
+          25
+        ],
+        [
+          0.5268,
+          25
+        ],
+        [
+          4.3661,
+          25
+        ],
+        [
+          8.2054,
+          25
+        ],
+        [
+          12.0446,
+          25
+        ],
+        [
+          15.8839,
+          25
+        ],
+        [
+          19.7232,
+          25
+        ],
+        [
+          23.5625,
+          25
+        ],
+        [
+          27.4018,
+          25
+        ],
+        [
+          31.2411,
+          25
+        ],
+        [
+          35.0804,
+          25
+        ],
+        [
+          38.9196,
+          25
+        ],
+        [
+          42.7589,
+          25
+        ],
+        [
+          46.5982,
+          25
+        ],
+        [
+          50.4375,
+          25
+        ],
+        [
+          54.2768,
+          25
+        ],
+        [
+          58.1161,
+          25
+        ],
+        [
+          61.9554,
+          25
+        ],
+        [
+          62,
+          25
+        ],
+        [
+          62,
+          25.1071
+        ],
+        [
+          62,
+          25.5
+        ],
+        [
+          62,
+          25.8929
+        ],
+        [
+          62,
+          26.2857
+        ],
+        [
+          62,
+          26.6786
+        ],
+        [
+          62,
+          27.0714
+        ],
+        [
+          62,
+          27.4643
+        ],
+        [
+          62,
+          27.8571
+        ],
+        [
+          62,
+          28.25
+        ],
+        [
+          62,
+          28.6429
+        ],
+        [
+          62,
+          29.0357
+        ],
+        [
+          62,
+          29.4286
+        ],
+        [
+          62,
+          29.8214
+        ],
+        [
+          62,
+          30.2143
+        ],
+        [
+          62,
+          30.6071
+        ],
+        [
+          62,
+          31
+        ],
+        [
+          62,
+          31.3929
+        ],
+        [
+          62,
+          31.7857
+        ],
+        [
+          62,
+          32.1786
+        ],
+        [
+          62,
+          32.5714
+        ],
+        [
+          62,
+          32.9643
+        ],
+        [
+          62,
+          33.3571
+        ],
+        [
+          62,
+          33.75
+        ],
+        [
+          62,
+          34.1429
+        ],
+        [
+          62,
+          34.5357
+        ],
+        [
+          62,
+          34.9286
+        ],
+        [
+          62,
+          35.3214
+        ],
+        [
+          62,
+          35.7143
+        ],
+        [
+          62,
+          36.1071
+        ],
+        [
+          62,
+          36.5
+        ],
+        [
+          62,
+          36.8929
+        ],
+        [
+          62,
+          37.2857
+        ],
+        [
+          62,
+          37.6786
+        ],
+        [
+          62,
+          38.0714
+        ],
+        [
+          62,
+          38.4643
+        ],
+        [
+          62,
+          38.8571
+        ],
+        [
+          62,
+          39.25
+        ],
+        [
+          62,
+          39.6429
+        ],
+        [
+          62,
+          40.0357
+        ],
+        [
+          62,
+          40.4286
+        ],
+        [
+          62,
+          40.8214
+        ],
+        [
+          62,
+          41.2143
+        ],
+        [
+          62,
+          41.6071
+        ],
+        [
+          62,
+          42
+        ],
+        [
+          62,
+          42.3929
+        ],
+        [
+          62,
+          42.7857
+        ],
+        [
+          62,
+          43.1786
+        ],
+        [
+          62,
+          43.5714
+        ],
+        [
+          62,
+          43.9643
+        ],
+        [
+          62,
+          44.3571
+        ],
+        [
+          62,
+          44.75
+        ],
+        [
+          62,
+          45.1429
+        ],
+        [
+          62,
+          45.5357
+        ],
+        [
+          62,
+          45.9286
+        ],
+        [
+          62,
+          46.3214
+        ],
+        [
+          62,
+          46.7143
+        ],
+        [
+          62,
+          47.1071
+        ],
+        [
+          62,
+          47.5
+        ],
+        [
+          62,
+          47.8929
+        ],
+        [
+          62,
+          48.2857
+        ],
+        [
+          62,
+          48.6786
+        ],
+        [
+          62,
+          49.0714
+        ],
+        [
+          62,
+          49.4643
+        ],
+        [
+          62,
+          49.8571
+        ],
+        [
+          62,
+          50.25
+        ],
+        [
+          62,
+          50.6429
+        ],
+        [
+          62,
+          51.0357
+        ],
+        [
+          62,
+          51.4286
+        ],
+        [
+          62,
+          51.8214
+        ],
+        [
+          62,
+          52.2143
+        ],
+        [
+          62,
+          52.6071
+        ],
+        [
+          62,
+          53
+        ],
+        [
+          62,
+          53.3929
+        ],
+        [
+          62,
+          53.7857
+        ],
+        [
+          62,
+          54.1786
+        ],
+        [
+          62,
+          54.5714
+        ],
+        [
+          62,
+          54.9643
+        ],
+        [
+          62,
+          55.3571
+        ],
+        [
+          62,
+          55.75
+        ],
+        [
+          62,
+          56.1429
+        ],
+        [
+          62,
+          56.5357
+        ],
+        [
+          62,
+          56.9286
+        ],
+        [
+          62,
+          57.3214
+        ],
+        [
+          62,
+          57.7143
+        ],
+        [
+          62,
+          58.1071
+        ],
+        [
+          62,
+          58.5
+        ],
+        [
+          62,
+          58.8929
+        ],
+        [
+          62,
+          59.2857
+        ],
+        [
+          62,
+          59.6786
+        ],
+        [
+          62,
+          60.0714
+        ],
+        [
+          62,
+          60.4643
+        ],
+        [
+          62,
+          60.8571
+        ],
+        [
+          62,
+          61.25
+        ],
+        [
+          62,
+          61.6429
+        ],
+        [
+          62,
+          62.0357
+        ],
+        [
+          62,
+          62.4286
+        ],
+        [
+          62,
+          62.8214
+        ],
+        [
+          62,
+          63.2143
+        ],
+        [
+          62,
+          63.6071
+        ],
+        [
+          62,
+          64
+        ],
+        [
+          62,
+          64.3929
+        ],
+        [
+          62,
+          64.7857
+        ],
+        [
+          62,
+          65.1786
+        ],
+        [
+          62,
+          65.5714
+        ],
+        [
+          62,
+          65.9643
+        ],
+        [
+          62,
+          66.3571
+        ],
+        [
+          62,
+          66.75
+        ],
+        [
+          62,
+          67.1429
+        ],
+        [
+          62,
+          67.5357
+        ],
+        [
+          62,
+          67.9286
+        ],
+        [
+          62,
+          68.3214
+        ],
+        [
+          62,
+          68.7143
+        ],
+        [
+          62,
+          69.1071
+        ],
+        [
+          62,
+          69.5
+        ],
+        [
+          62,
+          69.8929
+        ],
+        [
+          62,
+          70.2857
+        ],
+        [
+          62,
+          70.6786
+        ],
+        [
+          62,
+          71.0714
+        ],
+        [
+          62,
+          71.4643
+        ],
+        [
+          62,
+          71.8571
+        ],
+        [
+          62,
+          72.25
+        ],
+        [
+          62,
+          72.6429
+        ],
+        [
+          62,
+          73.0357
+        ],
+        [
+          62,
+          73.4286
+        ],
+        [
+          62,
+          73.8214
+        ],
+        [
+          62,
+          74.2143
+        ],
+        [
+          62,
+          74.6071
+        ],
+        [
+          62,
+          75
+        ],
+        [
+          61.9554,
+          75
+        ],
+        [
+          58.1161,
+          75
+        ],
+        [
+          54.2768,
+          75
+        ],
+        [
+          50.4375,
+          75
+        ],
+        [
+          46.5982,
+          75
+        ],
+        [
+          42.7589,
+          75
+        ],
+        [
+          38.9196,
+          75
+        ],
+        [
+          35.0804,
+          75
+        ],
+        [
+          31.2411,
+          75
+        ],
+        [
+          27.4018,
+          75
+        ],
+        [
+          23.5625,
+          75
+        ],
+        [
+          19.7232,
+          75
+        ],
+        [
+          15.8839,
+          75
+        ],
+        [
+          12.0446,
+          75
+        ],
+        [
+          8.2054,
+          75
+        ],
+        [
+          4.3661,
+          75
+        ],
+        [
+          0.5268,
+          75
+        ],
+        [
+          -3.3125,
+          75
+        ],
+        [
+          -7.1518,
+          75
+        ],
+        [
+          -10.9911,
+          75
+        ],
+        [
+          -10.9911,
+          74.6071
+        ],
+        [
+          -10.9911,
+          74.2143
+        ],
+        [
+          -10.9911,
+          73.8214
+        ],
+        [
+          -10.9911,
+          73.4286
+        ],
+        [
+          -10.9911,
+          73.0357
+        ],
+        [
+          -10.9911,
+          72.6429
+        ],
+        [
+          -10.9911,
+          72.25
+        ],
+        [
+          -10.9911,
+          71.8571
+        ],
+        [
+          -10.9911,
+          71.4643
+        ],
+        [
+          -10.9911,
+          71.0714
+        ],
+        [
+          -10.9911,
+          70.6786
+        ],
+        [
+          -10.9911,
+          70.2857
+        ],
+        [
+          -10.9911,
+          69.8929
+        ],
+        [
+          -10.9911,
+          69.5
+        ],
+        [
+          -10.9911,
+          69.1071
+        ],
+        [
+          -10.9911,
+          68.7143
+        ],
+        [
+          -10.9911,
+          68.3214
+        ],
+        [
+          -10.9911,
+          67.9286
+        ],
+        [
+          -10.9911,
+          67.5357
+        ],
+        [
+          -10.9911,
+          67.1429
+        ],
+        [
+          -10.9911,
+          66.75
+        ],
+        [
+          -10.9911,
+          66.3571
+        ],
+        [
+          -10.9911,
+          65.9643
+        ],
+        [
+          -10.9911,
+          65.5714
+        ],
+        [
+          -10.9911,
+          65.1786
+        ],
+        [
+          -10.9911,
+          64.7857
+        ],
+        [
+          -10.9911,
+          64.3929
+        ],
+        [
+          -10.9911,
+          64
+        ],
+        [
+          -10.9911,
+          63.6071
+        ],
+        [
+          -10.9911,
+          63.2143
+        ],
+        [
+          -10.9911,
+          62.8214
+        ],
+        [
+          -10.9911,
+          62.4286
+        ],
+        [
+          -10.9911,
+          62.0357
+        ],
+        [
+          -10.9911,
+          61.6429
+        ],
+        [
+          -10.9911,
+          61.25
+        ],
+        [
+          -10.9911,
+          60.8571
+        ],
+        [
+          -10.9911,
+          60.4643
+        ],
+        [
+          -10.9911,
+          60.0714
+        ],
+        [
+          -10.9911,
+          59.6786
+        ],
+        [
+          -10.9911,
+          59.2857
+        ],
+        [
+          -10.9911,
+          58.8929
+        ],
+        [
+          -10.9911,
+          58.5
+        ],
+        [
+          -10.9911,
+          58.1071
+        ],
+        [
+          -10.9911,
+          57.7143
+        ],
+        [
+          -10.9911,
+          57.3214
+        ],
+        [
+          -10.9911,
+          56.9286
+        ],
+        [
+          -10.9911,
+          56.5357
+        ],
+        [
+          -10.9911,
+          56.1429
+        ],
+        [
+          -10.9911,
+          55.75
+        ],
+        [
+          -10.9911,
+          55.3571
+        ],
+        [
+          -10.9911,
+          54.9643
+        ],
+        [
+          -10.9911,
+          54.5714
+        ],
+        [
+          -10.9911,
+          54.1786
+        ],
+        [
+          -10.9911,
+          53.7857
+        ],
+        [
+          -10.9911,
+          53.3929
+        ],
+        [
+          -10.9911,
+          53
+        ],
+        [
+          -10.9911,
+          52.6071
+        ],
+        [
+          -10.9911,
+          52.2143
+        ],
+        [
+          -10.9911,
+          51.8214
+        ],
+        [
+          -10.9911,
+          51.4286
+        ],
+        [
+          -10.9911,
+          51.0357
+        ],
+        [
+          -10.9911,
+          50.6429
+        ],
+        [
+          -10.9911,
+          50.25
+        ],
+        [
+          -10.9911,
+          49.8571
+        ],
+        [
+          -10.9911,
+          49.4643
+        ],
+        [
+          -10.9911,
+          49.0714
+        ],
+        [
+          -10.9911,
+          48.6786
+        ],
+        [
+          -10.9911,
+          48.2857
+        ],
+        [
+          -10.9911,
+          47.8929
+        ],
+        [
+          -10.9911,
+          47.5
+        ],
+        [
+          -10.9911,
+          47.1071
+        ],
+        [
+          -10.9911,
+          46.7143
+        ],
+        [
+          -10.9911,
+          46.3214
+        ],
+        [
+          -10.9911,
+          45.9286
+        ],
+        [
+          -10.9911,
+          45.5357
+        ],
+        [
+          -10.9911,
+          45.1429
+        ],
+        [
+          -10.9911,
+          44.75
+        ],
+        [
+          -10.9911,
+          44.3571
+        ],
+        [
+          -10.9911,
+          43.9643
+        ],
+        [
+          -10.9911,
+          43.5714
+        ],
+        [
+          -10.9911,
+          43.1786
+        ],
+        [
+          -10.9911,
+          42.7857
+        ],
+        [
+          -10.9911,
+          42.3929
+        ],
+        [
+          -10.9911,
+          42
+        ],
+        [
+          -10.9911,
+          41.6071
+        ],
+        [
+          -10.9911,
+          41.2143
+        ],
+        [
+          -10.9911,
+          40.8214
+        ],
+        [
+          -10.9911,
+          40.4286
+        ],
+        [
+          -10.9911,
+          40.0357
+        ],
+        [
+          -10.9911,
+          39.6429
+        ],
+        [
+          -10.9911,
+          39.25
+        ],
+        [
+          -10.9911,
+          38.8571
+        ],
+        [
+          -10.9911,
+          38.4643
+        ],
+        [
+          -10.9911,
+          38.0714
+        ],
+        [
+          -10.9911,
+          37.6786
+        ],
+        [
+          -10.9911,
+          37.2857
+        ],
+        [
+          -10.9911,
+          36.8929
+        ],
+        [
+          -10.9911,
+          36.5
+        ],
+        [
+          -10.9911,
+          36.1071
+        ],
+        [
+          -10.9911,
+          35.7143
+        ],
+        [
+          -10.9911,
+          35.3214
+        ],
+        [
+          -10.9911,
+          34.9286
+        ],
+        [
+          -10.9911,
+          34.5357
+        ],
+        [
+          -10.9911,
+          34.1429
+        ],
+        [
+          -10.9911,
+          33.75
+        ],
+        [
+          -10.9911,
+          33.3571
+        ],
+        [
+          -10.9911,
+          32.9643
+        ],
+        [
+          -10.9911,
+          32.5714
+        ],
+        [
+          -10.9911,
+          32.1786
+        ],
+        [
+          -10.9911,
+          31.7857
+        ],
+        [
+          -10.9911,
+          31.3929
+        ],
+        [
+          -10.9911,
+          31
+        ],
+        [
+          -10.9911,
+          30.6071
+        ],
+        [
+          -10.9911,
+          30.2143
+        ],
+        [
+          -10.9911,
+          29.8214
+        ],
+        [
+          -10.9911,
+          29.4286
+        ],
+        [
+          -10.9911,
+          29.0357
+        ],
+        [
+          -10.9911,
+          28.6429
+        ],
+        [
+          -10.9911,
+          28.25
+        ],
+        [
+          -10.9911,
+          27.8571
+        ],
+        [
+          -10.9911,
+          27.4643
+        ],
+        [
+          -10.9911,
+          27.0714
+        ],
+        [
+          -10.9911,
+          26.6786
+        ],
+        [
+          -10.9911,
+          26.2857
+        ],
+        [
+          -10.9911,
+          25.8929
+        ],
+        [
+          -10.9911,
+          25.5
+        ],
+        [
+          -10.9911,
+          25.1071
+        ],
+        [
+          -10.9911,
+          25
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-synergy-v10-l2-netcdf",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

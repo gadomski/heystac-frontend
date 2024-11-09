@@ -1,0 +1,215 @@
+{
+  "links": [
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-sr/items/LC09_CU_007015_20241023_20241027_02_SR",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-st/items/LC09_CU_007015_20241023_20241027_02_ST",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-ta/items/LC09_CU_007015_20241023_20241027_02_TOA",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2ard-bt/items/LC09_CU_007015_20241023_20241027_02_BT",
+      "rel": "derived_from"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l3-ba/items/LC09_CU_007015_20241023_20241027_02_BA",
+      "rel": "canonical"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "LC09_CU_007015_20241023_20241027_02_BA",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "datetime": "2024-10-23T17:58:23.5347180Z",
+    "platform": "LANDSAT_9",
+    "instruments": [
+      "OLI",
+      "TIRS"
+    ],
+    "landsat:grid_horizontal": "07",
+    "landsat:grid_vertical": "15",
+    "landsat:grid_region": "CU",
+    "landsat:scene_count": 1,
+    "eo:cloud_cover": 0.005,
+    "landsat:cloud_shadow_cover": 0.0177,
+    "landsat:snow_ice_cover": 0,
+    "landsat:fill": 44.7579,
+    "proj:shape": [
+      5000,
+      5000
+    ],
+    "proj:transform": [
+      30,
+      0,
+      -1515585,
+      0,
+      -30,
+      1064805
+    ],
+    "created": "2024-10-28T11:13:20.185Z",
+    "updated": "2024-10-28T11:13:20.185Z"
+  },
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://landsat.usgs.gov/stac/landsat-ard-extension/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/alternate-assets/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
+  "description": "Landsat Collection 2 Level-3 Burned Area Product",
+  "bbox": [
+    -112.09311274130404,
+    30.68551754228553,
+    -110.48312404924222,
+    31.716769974571733
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -112.09311274130404,
+          31.50066176530173
+        ],
+        [
+          -111.98115674812385,
+          30.94142658325084
+        ],
+        [
+          -110.70191401093389,
+          30.68551754228553
+        ],
+        [
+          -110.48312404924222,
+          31.478146502389063
+        ],
+        [
+          -110.52636341993922,
+          31.716769974571733
+        ],
+        [
+          -112.09311274130404,
+          31.50066176530173
+        ]
+      ]
+    ]
+  },
+  "assets": {
+    "index": {
+      "title": "HTML index page",
+      "type": "text/html",
+      "roles": [
+        "metadata"
+      ],
+      "href": "https://landsatlook.usgs.gov/stac-browser/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02"
+    },
+    "json": {
+      "title": "Albers Extensible Metadata File (json)",
+      "description": "Collection 2 Level-3 Albers Extensible Metadata File (json)",
+      "type": "application/json",
+      "roles": [
+        "metadata"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02.json",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02.json"
+        }
+      }
+    },
+    "bp": {
+      "title": "Burn Probability",
+      "description": "Collection 2 Level-3 Albers Burn Probability Burned Area",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02_BP.TIF",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02_BP.TIF"
+        }
+      }
+    },
+    "bc": {
+      "title": "Burn Classification",
+      "description": "Collection 2 Level-3 Albers Burn Classification Burned Area",
+      "type": "image/vnd.stac.geotiff; cloud-optimized=true",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02_BC.TIF",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02_BC.TIF"
+        }
+      }
+    },
+    "quick_look": {
+      "title": "Quick Look File",
+      "description": "Collection 2 Level-3 Albers Quick Look File Burned Area",
+      "type": "image/png",
+      "roles": [
+        "data"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02_QuickLook.png",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02_QuickLook.png"
+        }
+      }
+    },
+    "xml": {
+      "title": "Albers Extensible Metadata File",
+      "description": "Collection 2 Level-3 Albers Extensible Metadata File (xml)",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "href": "https://landsatlook.usgs.gov/level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02.xml",
+      "alternate": {
+        "s3": {
+          "storage:platform": "AWS",
+          "storage:requester_pays": true,
+          "href": "s3://usgs-landsat-level-3/collection02/BA/2024/CU/007/015/LC09_CU_007015_20241023_20241027_02_BA/LC09_CU_007015_20241023_20241027_02.xml"
+        }
+      }
+    }
+  },
+  "collection": "landsat-c2l3-ba"
+}

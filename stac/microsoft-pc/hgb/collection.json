@@ -1,0 +1,173 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hgb/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://earthdata.nasa.gov/earth-observation-data/data-use-policy",
+      "title": "EOSDIS Data Use Policy",
+      "rel": "license"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/hgb",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hgb",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./hgb.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 2,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "hgb",
+  "heystac:rating": 1,
+  "title": "HGB: Harmonized Global Biomass for 2010",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/hgb.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Harmonized Global Biomass"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/hgb.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -61.002778,
+          180.0,
+          84.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2010-12-31T00:00:00Z",
+          "2010-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Biomass",
+    "Carbon",
+    "ORNL"
+  ],
+  "providers": [
+    {
+      "url": "https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1763",
+      "name": "Oak Ridge National Laboratory Distributed Active Archive Center",
+      "roles": [
+        "producer",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://carbonplan.org",
+      "name": "CarbonPlan",
+      "roles": [
+        "processor"
+      ]
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "host",
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "gsd": [
+      300
+    ]
+  },
+  "description": "This dataset provides temporally consistent and harmonized global maps of aboveground and belowground biomass carbon density for the year 2010 at 300m resolution. The aboveground biomass map integrates land-cover-specific, remotely sensed maps of woody, grassland, cropland, and tundra biomass. Input maps were amassed from the published literature and, where necessary, updated to cover the focal extent or time period. The belowground biomass map similarly integrates matching maps derived from each aboveground biomass map and land-cover-specific empirical models. Aboveground and belowground maps were then integrated separately using ancillary maps of percent tree/land cover and a rule-based decision tree. Maps reporting the accumulated uncertainty of pixel-level estimates are also provided.\n",
+  "item_assets": {
+    "aboveground": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Global above-ground biomass"
+    },
+    "belowground": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Global below-ground biomass"
+    },
+    "aboveground_uncertainty": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Uncertainty associated with global above-ground biomass"
+    },
+    "belowground_uncertainty": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Uncertainty associated with global below-ground biomass"
+    }
+  },
+  "stac_version": "1.0.0",
+  "msft:container": "cpdata",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "msft:storage_account": "cpdataeuwest",
+  "msft:short_description": "Global maps of aboveground and belowground biomass carbon density for the year 2010 at 300m resolution",
+  "msft:region": "westeurope"
+}

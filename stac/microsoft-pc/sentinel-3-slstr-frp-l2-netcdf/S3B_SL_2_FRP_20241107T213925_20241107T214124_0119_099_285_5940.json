@@ -1,0 +1,642 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-slstr-frp-l2-netcdf/items/S3B_SL_2_FRP_20241107T213925_20241107T214124_0119_099_285_5940",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "S3B_SL_2_FRP_20241107T213925_20241107T214124_0119_099_285_5940",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "s3:gsd": {
+      "S1-S6": 500,
+      "S7-S9 and F1-F2": 1000
+    },
+    "s3:land": 31.27204,
+    "datetime": "2024-11-07T21:40:24.818675Z",
+    "platform": "Sentinel-3B",
+    "s3:coastal": 1.460957,
+    "instruments": [
+      "SLSTR"
+    ],
+    "s3:cosmetic": 19.418892,
+    "end_datetime": "2024-11-07T21:41:24.399867Z",
+    "s3:saturated": 0.58094,
+    "constellation": "Sentinel-3",
+    "s3:duplicated": 4.022334,
+    "eo:cloud_cover": 82.190596,
+    "start_datetime": "2024-11-07T21:39:25.237483Z",
+    "s3:out_of_range": 5.762217,
+    "s3:product_name": "slstr-frp",
+    "s3:product_type": "SL_2_FRP___",
+    "s3:saline_water": 68.72796,
+    "s3:tidal_region": 0.397061,
+    "sat:orbit_state": "ascending",
+    "sat:absolute_orbit": 34052,
+    "sat:relative_orbit": 285,
+    "s3:fresh_inland_water": 0.302267,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2018-039A"
+  },
+  "bbox": [
+    0.4479,
+    -8.0015,
+    15.1753,
+    1.9451
+  ],
+  "type": "Feature",
+  "assets": {
+    "frp-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/FRP_in.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 281574,
+      "file:checksum": "7ba5caba1ef0a16df6852d710f9d5c16",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "S5",
+          "description": "Band 5 - Cloud clearing, ice, snow, vegetation monitoring",
+          "center_wavelength": 1.6134,
+          "full_width_half_max": 0.06068
+        },
+        {
+          "name": "S6",
+          "description": "Band 6 - Vegetation state and cloud clearing",
+          "center_wavelength": 2.2557,
+          "full_width_half_max": 0.05015
+        },
+        {
+          "name": "S7",
+          "description": "Band 7 - SST, LST, Active fire",
+          "center_wavelength": 3.742,
+          "full_width_half_max": 0.398
+        },
+        {
+          "name": "F1",
+          "description": "Band 10 - Active fire",
+          "center_wavelength": 3.742,
+          "full_width_half_max": 0.398
+        }
+      ],
+      "description": "Fire Radiative Power (FRP) dataset"
+    },
+    "slstr-met-tx": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/met_tx.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 23718699,
+      "file:checksum": "8704fe4e0a02d62b27c6a51848725b86",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Meteorological parameters regridded onto the 16km tie points"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/xfdumanifest.xml",
+      "file:size": 120950,
+      "file:checksum": "a84b94a663ecf2b97a46dbfe022bf683",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    },
+    "slstr-time-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/time_in.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 58686,
+      "file:checksum": "3adb569cc744f96a51274427e7d0e861",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Time annotations for the 1 KM grid"
+    },
+    "slstr-flags-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/flags_fn.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 696799,
+      "file:checksum": "5e31a45bfd4c7586867500226e048bcc",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Global flags for the 1km F1 grid, nadir view"
+    },
+    "slstr-flags-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/flags_in.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 709182,
+      "file:checksum": "d60820e4b803f3f61cf88a378fa927f3",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Global flags for the 1km TIR grid, nadir view"
+    },
+    "slstr-indices-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/indices_fn.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 660212,
+      "file:checksum": "0314b573d580da98c27d0fa818832302",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Scan, pixel and detector annotations for the 1km F1 grid, nadir view"
+    },
+    "slstr-indices-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/indices_in.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 581898,
+      "file:checksum": "3f403089c5cde325707e6e2250fe09c2",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Scan, pixel and detector annotations for the 1km TIR grid, nadir view"
+    },
+    "slstr-geodetic-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/geodetic_fn.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 5157243,
+      "file:checksum": "0737b3fdc9c2b8c6763d0b77fc0d1acf",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution geodetic coordinates for the 1km F1 grid, nadir view"
+    },
+    "slstr-geodetic-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/geodetic_in.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 5130059,
+      "file:checksum": "4520784bd6fa34b33d0d4cf4009a917a",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution geodetic coordinates for the 1km TIR grid, nadir view"
+    },
+    "slstr-geodetic-tx": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/geodetic_tx.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 1171970,
+      "file:checksum": "75af2136bd9c18254600cc68988d31f2",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "16km geodetic coordinates"
+    },
+    "slstr-geometry-tn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/geometry_tn.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 2266900,
+      "file:checksum": "4dea7c57eca50097aa113deed0d755b9",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "16km solar and satellite geometry annotations, nadir view"
+    },
+    "slstr-cartesian-fn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/cartesian_fn.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 3070500,
+      "file:checksum": "ed91a43cb8775cfcf62e41fe8a2b6813",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution cartesian coordinates for the 1km F1 grid, nadir view"
+    },
+    "slstr-cartesian-in": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/cartesian_in.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 2988070,
+      "file:checksum": "fead2277752adadc5c8241f7ec82e344",
+      "s3:spatial_resolution": [
+        1000,
+        1000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Full resolution cartesian coordinates for the 1km TIR grid, nadir view"
+    },
+    "slstr-cartesian-tx": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SLSTR/SL_2_FRP___/2024/11/07/S3B_SL_2_FRP____20241107T213925_20241107T214124_20241108T111217_0119_099_285_5940_PS2_O_NT_004.SEN3/cartesian_tx.nc",
+      "s3:shape": [
+        794,
+        1500
+      ],
+      "file:size": 33170,
+      "file:checksum": "6888e4bae0c1976685695a0ced4450e9",
+      "s3:spatial_resolution": [
+        1000,
+        16000
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "16km cartesian coordinates"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          0.4479,
+          -0.9925
+        ],
+        [
+          1.2025,
+          -4.4856
+        ],
+        [
+          1.9574,
+          -7.9945
+        ],
+        [
+          1.9681,
+          -8.0015
+        ],
+        [
+          2.1381,
+          -7.9664
+        ],
+        [
+          2.5877,
+          -7.8713
+        ],
+        [
+          3.042,
+          -7.7692
+        ],
+        [
+          3.4902,
+          -7.6798
+        ],
+        [
+          3.9448,
+          -7.5739
+        ],
+        [
+          4.3972,
+          -7.4786
+        ],
+        [
+          4.8508,
+          -7.3816
+        ],
+        [
+          5.2952,
+          -7.2778
+        ],
+        [
+          5.7451,
+          -7.1805
+        ],
+        [
+          6.2011,
+          -7.0811
+        ],
+        [
+          6.6553,
+          -6.982
+        ],
+        [
+          7.0998,
+          -6.875
+        ],
+        [
+          7.5492,
+          -6.7755
+        ],
+        [
+          8.0052,
+          -6.6754
+        ],
+        [
+          8.4484,
+          -6.5746
+        ],
+        [
+          8.8997,
+          -6.4727
+        ],
+        [
+          9.3541,
+          -6.3703
+        ],
+        [
+          9.7924,
+          -6.2641
+        ],
+        [
+          10.2441,
+          -6.1579
+        ],
+        [
+          10.6932,
+          -6.0572
+        ],
+        [
+          11.1461,
+          -5.9547
+        ],
+        [
+          11.586,
+          -5.8444
+        ],
+        [
+          12.0375,
+          -5.7417
+        ],
+        [
+          12.4918,
+          -5.6354
+        ],
+        [
+          12.9321,
+          -5.5255
+        ],
+        [
+          13.3849,
+          -5.4213
+        ],
+        [
+          13.8343,
+          -5.3217
+        ],
+        [
+          14.2813,
+          -5.2148
+        ],
+        [
+          14.7281,
+          -5.1019
+        ],
+        [
+          15.1753,
+          -4.9943
+        ],
+        [
+          15.1732,
+          -4.9855
+        ],
+        [
+          14.3601,
+          -1.5133
+        ],
+        [
+          13.5863,
+          1.9451
+        ],
+        [
+          13.1387,
+          1.8459
+        ],
+        [
+          12.6903,
+          1.7515
+        ],
+        [
+          12.2406,
+          1.6547
+        ],
+        [
+          11.7967,
+          1.5463
+        ],
+        [
+          11.3423,
+          1.4508
+        ],
+        [
+          10.9018,
+          1.3486
+        ],
+        [
+          10.4481,
+          1.2494
+        ],
+        [
+          10.0015,
+          1.1534
+        ],
+        [
+          9.5635,
+          1.0489
+        ],
+        [
+          9.1119,
+          0.9519
+        ],
+        [
+          8.6638,
+          0.848
+        ],
+        [
+          8.2144,
+          0.746
+        ],
+        [
+          7.7679,
+          0.6533
+        ],
+        [
+          7.3198,
+          0.5446
+        ],
+        [
+          6.8787,
+          0.4452
+        ],
+        [
+          6.4292,
+          0.3466
+        ],
+        [
+          5.9783,
+          0.248
+        ],
+        [
+          5.5324,
+          0.1498
+        ],
+        [
+          5.0914,
+          0.0436
+        ],
+        [
+          4.6409,
+          -0.0552
+        ],
+        [
+          4.1897,
+          -0.1545
+        ],
+        [
+          3.7445,
+          -0.252
+        ],
+        [
+          3.2934,
+          -0.3517
+        ],
+        [
+          2.8474,
+          -0.4586
+        ],
+        [
+          2.4066,
+          -0.5524
+        ],
+        [
+          1.9596,
+          -0.658
+        ],
+        [
+          1.5045,
+          -0.7586
+        ],
+        [
+          1.0591,
+          -0.8604
+        ],
+        [
+          0.615,
+          -0.9588
+        ],
+        [
+          0.4479,
+          -0.9925
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-slstr-frp-l2-netcdf",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

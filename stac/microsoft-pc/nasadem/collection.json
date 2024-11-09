@@ -1,0 +1,172 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://lpdaac.usgs.gov/data/data-citation-and-policies/",
+      "title": "Public Domain",
+      "rel": "license"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/dataset/nasadem",
+      "title": "Human readable dataset overview and reference",
+      "rel": "describedby",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "./NASADEM_HGT_s56w072.json",
+      "rel": "item"
+    }
+  ],
+  "heystac:cumulative_rating": 2,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 2,
+  "heystac:stars": 5.0,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "type": "Collection",
+  "id": "nasadem",
+  "heystac:rating": 1,
+  "title": "NASADEM HGT v001",
+  "assets": {
+    "thumbnail": {
+      "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pc_thumbnails/nasadem.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "NASADEM"
+    },
+    "geoparquet-items": {
+      "href": "abfs://items/nasadem.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "stac-items"
+      ],
+      "title": "GeoParquet STAC items",
+      "description": "Snapshot of the collection's STAC items exported to GeoParquet format.",
+      "msft:partition_info": {
+        "is_partitioned": false
+      },
+      "table:storage_options": {
+        "account_name": "pcstacitems"
+      }
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.000139,
+          -56.000139,
+          179.000139,
+          61.000139
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-02-20T00:00:00Z",
+          "2000-02-20T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "NASA",
+    "JPL",
+    "Elevation",
+    "DEM",
+    "USGS",
+    "NGA",
+    "SRTM"
+  ],
+  "providers": [
+    {
+      "url": "https://earthdata.nasa.gov/esds/competitive-programs/measures/nasadem",
+      "name": "NASA",
+      "roles": [
+        "producer",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://trs.jpl.nasa.gov/handle/2014/46123",
+      "name": "JPL",
+      "roles": [
+        "producer",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://lpdaac.usgs.gov/products/nasadem_hgtv001/",
+      "name": "USGS",
+      "roles": [
+        "producer",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.5069/G93T9FD9",
+      "name": "OpenTopography",
+      "roles": [
+        "processor"
+      ]
+    },
+    {
+      "url": "https://planetarycomputer.microsoft.com",
+      "name": "Microsoft",
+      "roles": [
+        "host",
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "gsd": [
+      30
+    ]
+  },
+  "description": "[NASADEM](https://earthdata.nasa.gov/esds/competitive-programs/measures/nasadem) provides global topographic data at 1 arc-second (~30m) horizontal resolution, derived primarily from data captured via the [Shuttle Radar Topography Mission](https://www2.jpl.nasa.gov/srtm/) (SRTM).\n\n",
+  "item_assets": {
+    "elevation": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Elevation"
+    }
+  },
+  "stac_version": "1.0.0",
+  "msft:container": "nasadem-cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
+  "msft:storage_account": "nasademeuwest",
+  "msft:short_description": "Global topographic data at 1 arc-second (~30m) horizontal resolution, derived primarily from data captured via the Shuttle Radar Topography Mission",
+  "msft:region": "westeurope"
+}

@@ -1,0 +1,135 @@
+{
+  "links": [
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/conformance",
+      "rel": "conformance",
+      "type": "application/json"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections",
+      "rel": "data",
+      "type": "application/json"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/search",
+      "rel": "search",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/api",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/api.html",
+      "rel": "service-doc",
+      "type": "text/html"
+    },
+    {
+      "href": "https://stac-utils.github.io/stac-server/",
+      "rel": "docs",
+      "type": "text/html"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "root"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent"
+    },
+    {
+      "href": "./landsat-c2l2-sr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l2-st/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2ard-st/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l2alb-bt/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l3-fsca/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2ard-bt/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l1/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l3-ba/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l2alb-st/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2ard-sr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l2alb-sr/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l2alb-ta/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2l3-dswe/collection.json",
+      "rel": "child"
+    },
+    {
+      "href": "./landsat-c2ard-ta/collection.json",
+      "rel": "child"
+    }
+  ],
+  "heystac:cumulative_rating": 15,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 29,
+  "heystac:stars": 2.586206896551724,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
+  "stac_version": "1.0.0",
+  "type": "Catalog",
+  "id": "usgs-landsat",
+  "title": "STAC API",
+  "description": "Production STAC API using stac-server",
+  "heystac:rating": 1,
+  "conformsTo": [
+    "https://api.stacspec.org/v1.0.0-beta.5/core",
+    "https://api.stacspec.org/v1.0.0-beta.5/collections",
+    "https://api.stacspec.org/v1.0.0-beta.5/ogcapi-features",
+    "https://api.stacspec.org/v1.0.0-beta.5/ogcapi-features#fields",
+    "https://api.stacspec.org/v1.0.0-beta.5/ogcapi-features#sort",
+    "https://api.stacspec.org/v1.0.0-beta.5/ogcapi-features#query",
+    "https://api.stacspec.org/v1.0.0-beta.5/item-search",
+    "https://api.stacspec.org/v1.0.0-beta.5/item-search#fields",
+    "https://api.stacspec.org/v1.0.0-beta.5/item-search#sort",
+    "https://api.stacspec.org/v1.0.0-beta.5/item-search#query",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson"
+  ]
+}

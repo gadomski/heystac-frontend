@@ -1,0 +1,168 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=io-biodiversity&item=bii_2020_85.0_99.9940942766454_cog",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-biodiversity/items/bii_2020_85.0_99.9940942766454_cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "bii_2020_85.0_99.9940942766454_cog",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID bii_2020_85.0_99.9940942766454_cog against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID bii_2020_85.0_99.9940942766454_cog against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:epsg': 4326, 'proj:shape': [7992, 7992], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [0.0008983152841195215, 0.0, 99.9940942766454, 0.0, -0.0008983152841195215, 85.0, 0.0, 0.0, 1.0], 'start_datetime': '2020-01-01T00:00:00Z'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:epsg': 4326,\\n     'proj:shape': [7992, 7992],\\n     'end_datetime': '2020-12-31T23:59:59Z',\\n     'proj:transform': [0.0008983152841195215,\\n                        0.0,\\n                        99.9940942766454,\\n                        0.0,\\n                        -0.0008983152841195215,\\n                        85.0,\\n                        0.0,\\n                        0.0,\\n                        1.0],\\n     'start_datetime': '2020-01-01T00:00:00Z'}\"}], 'proj:epsg': 4326, 'proj:shape': [7992, 7992], 'end_datetime': '2020-12-31T23:59:59Z', 'proj:transform': [0.0008983152841195215, 0.0, 99.9940942766454, 0.0, -0.0008983152841195215, 85.0, 0.0, 0.0, 1.0], 'start_datetime': '2020-01-01T00:00:00Z'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'bii_2020_85.0_99.9940942766454_cog '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[7992, 7992], 'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z', \"\n                                    \"'proj:transform': \"\n                                    '[0.0008983152841195215, 0.0, '\n                                    '99.9940942766454, 0.0, '\n                                    '-0.0008983152841195215, 85.0, 0.0, '\n                                    \"0.0, 1.0], 'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z'} is not valid \"\n                                    'under any of the given schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [7992, 7992],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2020-12-31T23:59:59Z',\\n\"\n                                    \"     'proj:transform': \"\n                                    '[0.0008983152841195215,\\n'\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '99.9940942766454,\\n'\n                                    '                        0.0,\\n'\n                                    '                        '\n                                    '-0.0008983152841195215,\\n'\n                                    '                        85.0,\\n'\n                                    '                        0.0,\\n'\n                                    '                        0.0,\\n'\n                                    '                        1.0],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2020-01-01T00:00:00Z'}\"}],\n     'proj:epsg': 4326,\n     'proj:shape': [7992, 7992],\n     'end_datetime': '2020-12-31T23:59:59Z',\n     'proj:transform': [0.0008983152841195215,\n                        0.0,\n                        99.9940942766454,\n                        0.0,\n                        -0.0008983152841195215,\n                        85.0,\n                        0.0,\n                        0.0,\n                        1.0],\n     'start_datetime': '2020-01-01T00:00:00Z'}"
+      }
+    ],
+    "proj:epsg": 4326,
+    "proj:shape": [
+      7992,
+      7992
+    ],
+    "end_datetime": "2020-12-31T23:59:59Z",
+    "proj:transform": [
+      0.0008983152841195215,
+      0.0,
+      99.9940942766454,
+      0.0,
+      -0.0008983152841195215,
+      85.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "start_datetime": "2020-01-01T00:00:00Z"
+  },
+  "bbox": [
+    99.9940943,
+    77.9185806,
+    107.17343,
+    79.842772
+  ],
+  "type": "Feature",
+  "assets": {
+    "data": {
+      "href": "https://pcdata01euw.blob.core.windows.net/impact/bii-v1/bii_2020/bii_2020_85.0_99.9940942766454_cog.tif",
+      "version": "v1",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "Biodiversity Intactness",
+      "description": "Terrestrial biodiversity intactness at 100m resolution",
+      "raster:bands": [
+        {
+          "sampling": "area",
+          "data_type": "float32",
+          "spatial_resolution": 100
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=io-biodiversity&item=bii_2020_85.0_99.9940942766454_cog&assets=data&tile_format=png&colormap_name=io-bii&rescale=0%2C1&expression=0.97%2A%28data_b1%2A%2A3.84%29&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=io-biodiversity&item=bii_2020_85.0_99.9940942766454_cog&assets=data&tile_format=png&colormap_name=io-bii&rescale=0%2C1&expression=0.97%2A%28data_b1%2A%2A3.84%29&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          100.2626905,
+          77.9185806
+        ],
+        [
+          107.1545654,
+          78.0766841
+        ],
+        [
+          107.17343,
+          78.0775824
+        ],
+        [
+          107.17343,
+          78.1539392
+        ],
+        [
+          106.8132056,
+          78.3057545
+        ],
+        [
+          106.646119,
+          78.3722298
+        ],
+        [
+          104.985134,
+          78.8878628
+        ],
+        [
+          103.1741304,
+          79.4142756
+        ],
+        [
+          100.0030774,
+          79.842772
+        ],
+        [
+          99.9940943,
+          79.842772
+        ],
+        [
+          99.9940943,
+          77.9392419
+        ],
+        [
+          100.2195714,
+          77.9203772
+        ],
+        [
+          100.2626905,
+          77.9185806
+        ]
+      ]
+    ]
+  },
+  "collection": "io-biodiversity",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/version/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

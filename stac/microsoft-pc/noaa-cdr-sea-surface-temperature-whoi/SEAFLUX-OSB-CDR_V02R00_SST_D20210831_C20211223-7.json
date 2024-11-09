@@ -1,0 +1,146 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-cdr-sea-surface-temperature-whoi&item=SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7",
+      "title": "Map of item",
+      "rel": "preview",
+      "type": "text/html"
+    },
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-whoi/items/SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7",
+  "properties": {
+    "heystac:rating": 0,
+    "heystac:total": 1,
+    "heystac:stars": 0.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 0,
+        "total": 1,
+        "message": "Validation failed for Feature with ID SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\n{'heystac:rating': 0, 'heystac:total': 1, 'heystac:stars': 0.0, 'heystac:checks': [{'name': 'validate-core', 'rating': 0, 'total': 1, 'message': \"Validation failed for Feature with ID SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n{'proj:epsg': 4326, 'proj:shape': [720, 1440], 'end_datetime': '2021-09-01T00:00:00Z', 'proj:transform': [0.25, 0.0, -180.0, 0.0, -0.25, 90.0], 'start_datetime': '2021-08-31T21:00:00Z', 'processing:level': 'L4', 'noaa_cdr:interval': 'three-hourly'} is not valid under any of the given schemas\\n\\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n    {'anyOf': [{'required': ['datetime'],\\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\\n               {'required': ['datetime',\\n                             'start_datetime',\\n                             'end_datetime']}]}\\n\\nOn instance['properties']:\\n    {'proj:epsg': 4326,\\n     'proj:shape': [720, 1440],\\n     'end_datetime': '2021-09-01T00:00:00Z',\\n     'proj:transform': [0.25, 0.0, -180.0, 0.0, -0.25, 90.0],\\n     'start_datetime': '2021-08-31T21:00:00Z',\\n     'processing:level': 'L4',\\n     'noaa_cdr:interval': 'three-hourly'}\"}], 'proj:epsg': 4326, 'proj:shape': [720, 1440], 'end_datetime': '2021-09-01T00:00:00Z', 'proj:transform': [0.25, 0.0, -180.0, 0.0, -0.25, 90.0], 'start_datetime': '2021-08-31T21:00:00Z', 'processing:level': 'L4', 'noaa_cdr:interval': 'three-hourly'} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\n    {'anyOf': [{'required': ['datetime'],\n                'properties': {'datetime': {'not': {'type': 'null'}}}},\n               {'required': ['datetime',\n                             'start_datetime',\n                             'end_datetime']}]}\n\nOn instance['properties']:\n    {'heystac:rating': 0,\n     'heystac:total': 1,\n     'heystac:stars': 0.0,\n     'heystac:checks': [{'name': 'validate-core',\n                         'rating': 0,\n                         'total': 1,\n                         'message': 'Validation failed for Feature with ID '\n                                    'SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7 '\n                                    'against schema at '\n                                    'https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json\\n'\n                                    \"{'proj:epsg': 4326, 'proj:shape': \"\n                                    \"[720, 1440], 'end_datetime': \"\n                                    \"'2021-09-01T00:00:00Z', \"\n                                    \"'proj:transform': [0.25, 0.0, -180.0, \"\n                                    \"0.0, -0.25, 90.0], 'start_datetime': \"\n                                    \"'2021-08-31T21:00:00Z', \"\n                                    \"'processing:level': 'L4', \"\n                                    \"'noaa_cdr:interval': 'three-hourly'} \"\n                                    'is not valid under any of the given '\n                                    'schemas\\n'\n                                    '\\n'\n                                    \"Failed validating 'anyOf' in \"\n                                    \"schema['allOf'][0]['allOf'][2]['properties']['properties']['allOf'][1]:\\n\"\n                                    \"    {'anyOf': [{'required': \"\n                                    \"['datetime'],\\n\"\n                                    \"                'properties': \"\n                                    \"{'datetime': {'not': {'type': \"\n                                    \"'null'}}}},\\n\"\n                                    \"               {'required': \"\n                                    \"['datetime',\\n\"\n                                    '                             '\n                                    \"'start_datetime',\\n\"\n                                    '                             '\n                                    \"'end_datetime']}]}\\n\"\n                                    '\\n'\n                                    \"On instance['properties']:\\n\"\n                                    \"    {'proj:epsg': 4326,\\n\"\n                                    \"     'proj:shape': [720, 1440],\\n\"\n                                    \"     'end_datetime': \"\n                                    \"'2021-09-01T00:00:00Z',\\n\"\n                                    \"     'proj:transform': [0.25, 0.0, \"\n                                    '-180.0, 0.0, -0.25, 90.0],\\n'\n                                    \"     'start_datetime': \"\n                                    \"'2021-08-31T21:00:00Z',\\n\"\n                                    \"     'processing:level': 'L4',\\n\"\n                                    \"     'noaa_cdr:interval': \"\n                                    \"'three-hourly'}\"}],\n     'proj:epsg': 4326,\n     'proj:shape': [720, 1440],\n     'end_datetime': '2021-09-01T00:00:00Z',\n     'proj:transform': [0.25, 0.0, -180.0, 0.0, -0.25, 90.0],\n     'start_datetime': '2021-08-31T21:00:00Z',\n     'processing:level': 'L4',\n     'noaa_cdr:interval': 'three-hourly'}"
+      }
+    ],
+    "proj:epsg": 4326,
+    "proj:shape": [
+      720,
+      1440
+    ],
+    "end_datetime": "2021-09-01T00:00:00Z",
+    "proj:transform": [
+      0.25,
+      0.0,
+      -180.0,
+      0.0,
+      -0.25,
+      90.0
+    ],
+    "start_datetime": "2021-08-31T21:00:00Z",
+    "processing:level": "L4",
+    "noaa_cdr:interval": "three-hourly"
+  },
+  "bbox": [
+    -180,
+    -90.0,
+    180,
+    90.0
+  ],
+  "type": "Feature",
+  "assets": {
+    "fill_missing_qc": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/sea-surface-temperature-whoi/2021/SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7-fill_missing_qc.tif",
+      "title": "Quality flag for missing data",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "sea_surface_temperature": {
+      "href": "https://noaacdr.blob.core.windows.net/cogs/sea-surface-temperature-whoi/2021/SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7-sea_surface_temperature.tif",
+      "title": "NOAA CDR of sea surface temperature",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "raster:bands": [
+        {
+          "unit": "degree Celsius",
+          "nodata": "nan",
+          "data_type": "float32"
+        }
+      ]
+    },
+    "tilejson": {
+      "title": "TileJSON with default rendering",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=noaa-cdr-sea-surface-temperature-whoi&item=SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7&assets=sea_surface_temperature&tile_format=png&colormap_name=rdylbu_r&rescale=0%2C35&format=png",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=noaa-cdr-sea-surface-temperature-whoi&item=SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223-7&assets=sea_surface_temperature&tile_format=png&colormap_name=rdylbu_r&rescale=0%2C35&format=png",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-cdr-sea-surface-temperature-whoi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}
