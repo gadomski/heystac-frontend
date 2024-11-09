@@ -1,5 +1,3 @@
-import sys
-
 import click
 
 from .config import Config
@@ -21,24 +19,16 @@ def bootstrap() -> None:
 
 
 @click.command()
-@click.argument("id", default=None)
-@click.option("--all", is_flag=True, help="Crawl every catalog")
-def crawl(id: str | None, all: bool) -> None:
+@click.argument("id")
+def crawl(id: str) -> None:
     """Crawl a STAC API.
 
-    We don't crawl every API because that'd be expensive.
+    If id == "all" then we'll crawl all the catalogs — this could take a while.
     """
     config = Config()
-    if id is None:
-        if all:
-            for id in config.catalogs.keys():
-                config.crawl(id)
-        else:
-            print(
-                "To crawl every catalog, pass the --all flag",
-                file=sys.stderr,
-            )
-            sys.exit(1)
+    if id == "all":
+        for id in config.catalogs.keys():
+            config.crawl(id)
     else:
         config.crawl(id)
 

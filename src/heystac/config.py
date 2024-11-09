@@ -106,7 +106,7 @@ class Config(BaseSettings):
         catalog.links.append(Link(href="../catalog.json", rel="root"))
         catalog.links.append(Link(href="../catalog.json", rel="parent"))
 
-        progress_bar = tqdm.tqdm(total=len(child_links) * 2)
+        progress_bar = tqdm.tqdm(total=len(child_links) * 2, desc=id)
         if (self.stac_path / id).exists():
             shutil.rmtree(self.stac_path / id)
         for link in child_links:
@@ -131,8 +131,8 @@ class Config(BaseSettings):
                 for item in items.features:
                     item.remove_structural_links()
                     child.links.append(Link(href=f"./{item.id}.json", rel="item"))
-                    item.links.append(Link(href="../collection.json", rel="parent"))
-                    item.links.append(Link(href="../collection.json", rel="collection"))
+                    item.links.append(Link(href="./collection.json", rel="parent"))
+                    item.links.append(Link(href="./collection.json", rel="collection"))
                     item.links.append(Link(href="../../../catalog.json", rel="root"))
                     self.write_stac(item, f"{id}/{child.id}/{item.id}.json")
             self.write_stac(child, f"{id}/{child.id}/collection.json")
