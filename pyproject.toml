@@ -24,7 +24,6 @@ build-backend = "hatchling.build"
 dev = [
     "mypy>=1.13.0",
     "ruff>=0.7.3",
-    "stacrs-cli>=0.4.0",
     "types-requests>=2.32.0.20241016",
     "types-tqdm>=4.66.0.20240417",
 ]

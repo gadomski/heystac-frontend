@@ -109,7 +109,6 @@ dependencies = [
 dev = [
     { name = "mypy" },
     { name = "ruff" },
-    { name = "stacrs-cli" },
     { name = "types-requests" },
     { name = "types-tqdm" },
 ]
@@ -128,7 +127,6 @@ requires-dist = [
 dev = [
     { name = "mypy", specifier = ">=1.13.0" },
     { name = "ruff", specifier = ">=0.7.3" },
-    { name = "stacrs-cli", specifier = ">=0.4.0" },
     { name = "types-requests", specifier = ">=2.32.0.20241016" },
     { name = "types-tqdm", specifier = ">=4.66.0.20240417" },
 ]
@@ -395,19 +393,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926", size = 34041 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254", size = 11053 },
-]
-
-[[package]]
-name = "stacrs-cli"
-version = "0.4.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/19/3d/7a9db01edc39b7634a09d676f6214b9408317cb550b5ee40c3d92388202a/stacrs_cli-0.4.0.tar.gz", hash = "sha256:65cf64dd8a0e43f7fd841510c79ba356d6b7006a84a5683576e65fe795bcddbc", size = 1548388 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/53/52/23a03892778138cab4156b97ccba762f17b3269afae8b0fda3f2102bf781/stacrs_cli-0.4.0-cp312-cp312-macosx_10_12_x86_64.whl", hash = "sha256:ac36ea6c350d3bb4485e50a3c36a7bf7d39e2c65729434e2bf47ae9e321dcb2f", size = 11530392 },
-    { url = "https://files.pythonhosted.org/packages/e9/78/ad5e5e86b287f130c7480219ccae8cbbbd253e593afe70b360e52b49e7cc/stacrs_cli-0.4.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:6f654196ef23a520cfafd77f6fcfcc7d476751fb219c5356fe6d0042c21ccda5", size = 11006856 },
-    { url = "https://files.pythonhosted.org/packages/8c/df/3fba118a1d728de9b9fb92103c7045b021804f9fd5290557fc9402ba7752/stacrs_cli-0.4.0-cp312-cp312-manylinux_2_34_x86_64.whl", hash = "sha256:cb06da9b57fa74c1406f937ed212bb37597c7521af9a25191b2a360540a61f7f", size = 15034868 },
-    { url = "https://files.pythonhosted.org/packages/93/db/b92fe0812d5f2bbd2b1952fe0cd5e93096deff446d14927020dc2a59a614/stacrs_cli-0.4.0-cp312-none-win32.whl", hash = "sha256:6162ec725160f110e3ffefa38f26f9691dbfdbeea8e373b6152c1a75840c539c", size = 9702227 },
-    { url = "https://files.pythonhosted.org/packages/b8/c0/4d74fd1cb4fb4433e268e07a6e7a5a8902e3f03baab1c938df9d4e0057df/stacrs_cli-0.4.0-cp312-none-win_amd64.whl", hash = "sha256:5433e7eba8e3cf09697698ad2a5bc105b5ce2bd8442abf28ea1f039bb380ee48", size = 10774783 },
 ]
 
 [[package]]
