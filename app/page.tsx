@@ -1,19 +1,28 @@
 import Link from "next/link";
 import { use } from "react";
-import Root from "../stac/catalog.json";
-import Stars from "./components/stars";
+import { Rating, Stars } from "./components/stars";
 import { Heading, Lead, Subtitle } from "./components/typography";
+import Root from "./stac/catalog.json";
 import { Catalog, Link as StacLink } from "./types/Stac";
 
 function getCatalog({ link }: { link: StacLink }): Catalog {
-  return use(import("../stac/" + link["heystac:id"] + "/catalog.json"));
+  return use(import("./stac/" + link["heystac:id"] + "/catalog.json"));
 }
 
 function CatalogListItem({ catalog }: { catalog: Catalog }) {
   return (
     <li className="py-2" key={catalog.id}>
-      <Link href={"/catalogs/" + catalog.id}>{catalog.title}</Link>
-      <Stars stars={catalog["heystac:stars"] || 0}></Stars>
+      <Link href={"/catalogs/" + catalog.id + "/collections"}>
+        {catalog.title}
+      </Link>
+      <div className="text-slate-400 grid my-1 grid-cols-1 justify-items-center">
+        <div className="">
+          <Stars stars={catalog["heystac:stars"] || 0}></Stars>
+        </div>
+        <div>
+          <Rating stars={catalog["heystac:stars"] || 0}></Rating>
+        </div>
+      </div>
     </li>
   );
 }

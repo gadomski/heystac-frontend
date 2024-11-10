@@ -1,7 +1,8 @@
 import { Catalog, Collection } from "../../types/Stac";
+import Map from "../map";
 import { Heading, Subtitle } from "../typography";
 
-export default function CatalogPage({
+export default function CollectionsPage({
   catalog,
   collections,
   title,
@@ -24,7 +25,9 @@ export default function CatalogPage({
 
       <div className="row-start-2 col-start-1 p-4"></div>
 
-      <div className="row-start-3 col-start-1 md:col-start-2 md:row-start-2"></div>
+      <div className="row-start-3 col-start-1 md:col-start-2 md:row-start-2">
+        <Map center={[-105, 39.7373]} zoom={2} />
+      </div>
     </div>
   );
 }

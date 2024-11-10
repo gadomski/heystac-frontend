@@ -1,14 +1,12 @@
 import { CollecticonStar } from "./collecticons";
 
-export default function Stars({ stars }: { stars: number }) {
-  const starsRounded = Math.round(10 * stars) / 10;
+export function Stars({ stars }: { stars: number }) {
   const starIcons = Array(Math.round(stars)).fill(
-    <CollecticonStar className="col-span-1"></CollecticonStar>
+    <CollecticonStar></CollecticonStar>
   );
-  return (
-    <div className="text-slate-400 block my-1">
-      <div className="w-20 mx-auto flex justify-center">{starIcons}</div>
-      <div className="flex justify-center">{starsRounded.toFixed(1)} / 5.0</div>
-    </div>
-  );
+  return <span className="flex">{starIcons}</span>;
+}
+
+export function Rating({ stars }: { stars: number }) {
+  return <span>{(Math.round(10 * stars) / 10).toFixed(1)} / 5.0</span>;
 }
