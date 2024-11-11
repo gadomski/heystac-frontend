@@ -12,6 +12,12 @@ export interface Catalog {
   "heystac:stars"?: number;
 }
 
+export interface Collection {
+  id: string;
+  title: string;
+  "heystac:stars"?: number;
+}
+
 export interface Link {
   href: string;
   rel: string;
