@@ -4,7 +4,9 @@ export default function Card({ heading, subtitle, children }) {
   return (
     <div>
       <div className="my-4">
-        <Heading>{heading}</Heading>
+        <Heading size="4xl" color="teal.600">
+          {heading + "test"}
+        </Heading>
 
         <Text>{subtitle}</Text>
       </div>

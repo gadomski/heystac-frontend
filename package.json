@@ -11,7 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.0.2",
+    "@chakra-ui/react": "^3.1.1",
     "@devseed-ui/collecticons-chakra": "^3.0.3",
     "@devseed-ui/theme-provider": "^4.1.0",
     "@emotion/react": "^11.13.3",

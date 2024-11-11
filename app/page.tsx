@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="h-full grid grid-cols-1 text-center content-center">
       <div className="my-8">
-        <Heading className="py-2" size="3xl">
+        <Heading className="py-2" size="xl">
           heystac
         </Heading>
 

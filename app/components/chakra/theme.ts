@@ -9,7 +9,11 @@ export const theme = {
         danger: { value: "#A71D31" },
         warning: { value: "#E2C044" },
         success: { value: "#4DA167" },
-        link: { value: "#2E86AB" },
+        link: { value: "#CF3F02" },
+      },
+      fonts: {
+        heading: { value: `'Figtree', sans-serif` },
+        body: { value: `'Figtree', sans-serif` },
       },
     },
   },

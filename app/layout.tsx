@@ -1,6 +1,5 @@
 import "./open-sans.css";
-import "./globals.css";
-import ChakraProvider from "@/components/chakra-ui/provider";
+import ChakraProvider from "@/components/chakra/provider";
 import Navbar from "@/components/navbar";
 
 export const metadata = {
@@ -14,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <ChakraProvider>
           <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
-            <Navbar></Navbar>
+            <Navbar />
             {children}
           </div>
         </ChakraProvider>

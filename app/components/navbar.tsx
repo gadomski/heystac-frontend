@@ -1,14 +1,20 @@
-import { Box } from "@chakra-ui/react";
-import Link from "next/link";
+import { Box, Link as ChakraLink } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export default function Navbar() {
   return (
-    <Box className="mx-auto w-screen h-12 flex items-center px-8 shadow red-400">
-      <Link href="/">
-        <Box color="primary" className="font-bold">
-          heystac
-        </Box>
-      </Link>
+    <Box
+      mx="auto"
+      w="100vw"
+      h="12"
+      display="flex"
+      alignItems="center"
+      px="8"
+      boxShadow="md"
+    >
+      <ChakraLink as={NextLink} href="/" fontWeight="bold" color="primary">
+        heystac
+      </ChakraLink>
     </Box>
   );
 }
