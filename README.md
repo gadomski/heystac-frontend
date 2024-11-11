@@ -7,20 +7,19 @@
 > This is a work in progress, _and_ @gadomski is 🗑️ at front-end dev, so set your expectations low.
 
 A curated geospatial asset discovery experience™.
+**heystac** lives on [Github Pages](https://github.com/gadomski/heystac/deployments/github-pages) and has no other infrastructure.
 
 ![The heystac home page](./img/home.png)
 
 ## Developing
 
-Get [yarn](https://yarnpkg.com/) and [Rust](https://rustup.rs/).
+Get [yarn](https://yarnpkg.com/).
 Then:
 
 ```shell
 yarn install
 yarn dev
 ```
-
-**heystac** is hosted with [Github Pages](https://github.com/gadomski/heystac/deployments/github-pages).
 
 ### Frontend
 
@@ -29,20 +28,24 @@ The frontend code lives in [app](./app/).
 
 ### Backend
 
-We have our own Rust command-line interface (CLI), also called **heystac**, for generating pre-rendered content.
-To run:
+We have a command-line interface (CLI), also called **heystac**, for generating pre-rendered content.
+The Python code for the CLI lives in [src](./src/).
+The CLI builds our STAC catalog, which lives in a submodule at [heystac-catalog](https://github.com/gadomski/heystac-catalog).
+
+If you want to build the catalog from scratch:
 
 ```shell
-yarn build
+heystac bootstrap
+heystac crawl all
+heystac rate
 ```
 
-Under the hood, the prebuild script does this:
+However, most of the time you'll just be (re)crawling catalogs and then rating them:
 
 ```shell
-cargo run -- prebuild
+heystac crawl my-new-catalog
+heystac rate
 ```
-
-The Rust code for the prebuild script lives in [src](./src/).
 
 ## License
 

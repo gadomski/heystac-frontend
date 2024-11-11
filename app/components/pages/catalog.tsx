@@ -1,20 +1,38 @@
 import Link from "next/link";
-import { use } from "react";
-import { CollecticonExpandTopRight } from "@devseed-ui/collecticons-chakra";
-import Map from "../map";
-import {
-  Box,
-  Heading,
-  Text,
-  Grid,
-  GridItem,
-  Flex,
-  Spacer,
-} from "@chakra-ui/react";
+import { Catalog, Collection } from "../../types/Stac";
+import { Stars } from "../stars";
+import { Heading, Lead, Prose, Subtitle } from "../typography";
+import { Box, Grid, GridItem, Flex } from "@chakra-ui/react";
 
-export default function CatalogPage({ title, href }) {
-  const data = use(fetch(href));
-  const catalog = use(data.json());
+function CollectionCard({
+  catalogId,
+  collection,
+}: {
+  catalogId: string;
+  collection: Collection;
+}) {
+  return (
+    <Flex>
+      <Link href={`/catalogs/${catalogId}/collections/${collection.id}`}>
+        {collection.title}
+      </Link>
+      <Stars stars={collection["heystac:stars"] || 0} />
+    </Flex>
+  );
+}
+
+export default function CatalogPage({
+  catalog,
+  collections,
+  title,
+}: {
+  catalog: Catalog;
+  collections: Collection[];
+  title: string;
+}) {
+  const collectionCards = collections
+    .sort((a, b) => (b["heystac:stars"] || 0) - (a["heystac:stars"] || 0))
+    .map(collection => CollectionCard({ catalogId: catalog.id, collection }));
 
   return (
     <Grid
@@ -27,30 +45,22 @@ export default function CatalogPage({ title, href }) {
     >
       <GridItem rowSpan={1} colSpan={2}>
         <Heading>
-          <Flex align="center">
-            {title}
-            <Spacer mx="2">
-              <Link href={href} passHref>
-                {/* <CollecticonExpandTopRight /> */}
-              </Link>
-            </Spacer>
-          </Flex>
+          <Flex align="center">{title}</Flex>
         </Heading>
-        <Text>STAC version {catalog["stac_version"]}</Text>
+        <Subtitle>STAC version {catalog["stac_version"]}</Subtitle>
       </GridItem>
 
-      <GridItem
-        rowStart={2}
-        colStart={1}
-        border="1px"
-        borderColor="gray.200"
-        p="4"
-      >
-        Placeholder for your content
+      <GridItem rowStart={2} colStart={1} p="4">
+        <Lead>{catalog.description}</Lead>
+        <Flex justify="center" my="4" color="gray.400">
+          <Prose>
+            <Stars stars={catalog["heystac:stars"] || 0} />
+          </Prose>
+        </Flex>
       </GridItem>
 
       <GridItem rowStart={{ base: 3, md: 2 }} colStart={{ base: 1, md: 2 }}>
-        <Map center={[-105, 39.7373]} zoom={2} />
+        {collectionCards}
       </GridItem>
     </Grid>
   );

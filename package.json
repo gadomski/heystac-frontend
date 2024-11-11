@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prebuild": "cargo run -- prebuild",
     "start": "next start",
     "lint": "prettier app -c && next lint",
     "prepare": "husky"
+  },
+  "exports": {
+    "@stac/*.json": "./app/stac/*.json"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.1.1",
