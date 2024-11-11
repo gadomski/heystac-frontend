@@ -12,9 +12,7 @@ function getCatalog({ link }: { link: StacLink }): Catalog {
 function CatalogListItem({ catalog }: { catalog: Catalog }) {
   return (
     <li className="py-2" key={catalog.id}>
-      <Link href={"/catalogs/" + catalog.id + "/collections"}>
-        {catalog.title}
-      </Link>
+      <Link href={"/catalogs/" + catalog.id}>{catalog.title}</Link>
       <div className="text-slate-400 grid my-1 grid-cols-1 justify-items-center">
         <div className="">
           <Stars stars={catalog["heystac:stars"] || 0}></Stars>
