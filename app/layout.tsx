@@ -1,6 +1,7 @@
 import "./open-sans.css";
 import ChakraProvider from "@/components/chakra/provider";
 import Navbar from "@/components/navbar";
+import { Box, Flex } from "@chakra-ui/react";
 
 export const metadata = {
   title: "heystac",
@@ -12,10 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <ChakraProvider>
-          <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
+          <Flex direction="column" w="100vw" h="100vh">
             <Navbar />
-            {children}
-          </div>
+            <Box flex="1">{children}</Box>
+          </Flex>
         </ChakraProvider>
       </body>
     </html>

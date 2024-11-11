@@ -1,5 +1,5 @@
 import Card from "./base";
-import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as ChakraLink, List, ListItem } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 const items = [
@@ -11,21 +11,20 @@ const items = [
 export default function CatalogsCard({ catalogs }) {
   const catalogList = catalogs.map(catalog => {
     return (
-      <li className="py-2" key={catalog.href}>
-        <ChakraLink asChild>
-          <NextLink href={"/catalogs/" + catalog["heystac:id"]}>
-            {catalog.title}
-          </NextLink>
+      <ListItem py="2" key={catalog.href}>
+        <ChakraLink as={NextLink} href={"/catalogs/" + catalog["heystac:id"]}>
+          {catalog.title}
         </ChakraLink>
-      </li>
+      </ListItem>
     );
   });
+
   return (
     <Card
       heading={"Catalogs"}
       subtitle={"A hand-picked list of quality STAC APIs"}
     >
-      <ul>{catalogList}</ul>
+      <List.Root>{catalogList}</List.Root>
     </Card>
   );
 }

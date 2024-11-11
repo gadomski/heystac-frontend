@@ -4,6 +4,7 @@ import React, { useRef, useState, ReactNode } from "react";
 import Map, { MapRef } from "react-map-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import maplibregl from "maplibre-gl";
+import { Box } from "@chakra-ui/react";
 
 type MapViewProps = {
   children?: ReactNode;
@@ -19,7 +20,13 @@ const MapView = ({ center, zoom, children }: MapViewProps) => {
   const setMapRef = (m: MapRef) => setMap(m);
 
   return (
-    <div ref={mapContainer} className="h-full w-full border border-gray-200">
+    <Box
+      ref={mapContainer}
+      h="100%"
+      w="100%"
+      border="1px"
+      borderColor="gray.200"
+    >
       <Map
         ref={setMapRef}
         style={{ width: "100%", height: "100%" }}
@@ -31,14 +38,14 @@ const MapView = ({ center, zoom, children }: MapViewProps) => {
         mapLib={maplibregl as any}
         mapStyle="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json"
       >
-        <div> Test</div>
+        <Box>Test</Box>
         {map &&
           children &&
           React.Children.map(children, child =>
             React.cloneElement(child as JSX.Element, {})
           )}
       </Map>
-    </div>
+    </Box>
   );
 };
 

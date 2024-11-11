@@ -1,17 +1,13 @@
-import { Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 
 export default function Card({ heading, subtitle, children }) {
   return (
-    <div>
-      <div className="my-4">
-        <Heading size="4xl" color="teal.600">
-          {heading + "test"}
-        </Heading>
-
+    <Box>
+      <Box my="4">
+        <Heading size="3xl">{heading}</Heading>
         <Text>{subtitle}</Text>
-      </div>
-
-      <div>{children}</div>
-    </div>
+      </Box>
+      <Box>{children}</Box>
+    </Box>
   );
 }
