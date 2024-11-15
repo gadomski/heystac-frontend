@@ -28,6 +28,7 @@ import {
   IconWarning,
 } from "../../components/icons";
 import Stars from "../../components/stars";
+import StatusChecker from "../../components/status-checker";
 import { InfoTip } from "../../components/toggle-tip";
 import { Catalog, Check, Collection, StacObject } from "../../stac";
 
@@ -53,6 +54,7 @@ function Overview({ catalog }: { catalog: Catalog }) {
   const canonicalLink = catalog.links.find(link => link.rel == "canonical");
   let stacBrowserButton;
   let apiButton;
+  let statusChecker;
   if (canonicalLink && canonicalLink.href.startsWith("https://")) {
     const href =
       "https://radiantearth.github.io/stac-browser/#/external/" +
@@ -71,12 +73,16 @@ function Overview({ catalog }: { catalog: Catalog }) {
         </Button>
       </Link>
     );
+    statusChecker = <StatusChecker href={canonicalLink.href}></StatusChecker>;
+  } else {
+    throw "Mis-configured app, no canonical link";
   }
+
   return (
     <Stack gap="8">
       <BreadcrumbRoot size="sm">
         <BreadcrumbLink asChild>
-          <Link href="/">heystac</Link>
+          <Link href="..">heystac</Link>
         </BreadcrumbLink>
         <BreadcrumbSeparator as="span" mx="2">
           /
@@ -96,6 +102,12 @@ function Overview({ catalog }: { catalog: Catalog }) {
         </Heading>
         <Stars stars={catalog["heystac:stars"]}></Stars>
         <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
+      </Stack>
+      <Stack gap="2">
+        <Heading size="md" color="grey">
+          Status
+        </Heading>
+        <HStack>{statusChecker}</HStack>
       </Stack>
       <Stack>
         <Heading size="md" color="grey">
