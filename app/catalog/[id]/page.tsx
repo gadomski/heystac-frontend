@@ -3,6 +3,10 @@ import {
   AccordionItemContent,
   AccordionItemTrigger,
   AccordionRoot,
+  BreadcrumbCurrentLink,
+  BreadcrumbLink,
+  BreadcrumbRoot,
+  BreadcrumbSeparator,
   Button,
   DataListItem,
   DataListItemLabel,
@@ -69,19 +73,39 @@ function Overview({ catalog }: { catalog: Catalog }) {
     );
   }
   return (
-    <Stack gap="6">
+    <Stack gap="8">
+      <BreadcrumbRoot size="sm">
+        <BreadcrumbLink asChild>
+          <Link href="/">heystac</Link>
+        </BreadcrumbLink>
+        <BreadcrumbSeparator as="span" mx="2">
+          /
+        </BreadcrumbSeparator>
+        <BreadcrumbCurrentLink>{catalog.id}</BreadcrumbCurrentLink>
+      </BreadcrumbRoot>
       <Stack gap="1">
+        <Heading size="md" color="grey">
+          Catalog
+        </Heading>
         <Heading size="4xl">{catalog.title}</Heading>
         <Heading size="lg">{catalog.description}</Heading>
       </Stack>
-      <Stack gap="1">
+      <Stack gap="2">
+        <Heading size="md" color="grey">
+          Rating
+        </Heading>
         <Stars stars={catalog["heystac:stars"]}></Stars>
         <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
       </Stack>
-      <HStack>
-        {stacBrowserButton}
-        {apiButton}
-      </HStack>
+      <Stack>
+        <Heading size="md" color="grey">
+          External links
+        </Heading>
+        <HStack>
+          {stacBrowserButton}
+          {apiButton}
+        </HStack>
+      </Stack>
     </Stack>
   );
 }
