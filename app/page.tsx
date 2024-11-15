@@ -1,13 +1,16 @@
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import Link from "next/link";
+import { use } from "react";
 import Root from "../catalog/stac/catalog.json";
-import { getCatalog } from "./actions";
 import Stars from "./components/stars";
 import { Catalog } from "./stac";
 
 function CatalogCard({ catalog }: { catalog: Catalog }) {
   return (
     <VStack>
-      <Heading>{catalog.title}</Heading>
+      <Heading>
+        <Link href={"/catalog/" + catalog.id}>{catalog.title}</Link>
+      </Heading>
       <Stars stars={catalog["heystac:stars"]}></Stars>
       <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
     </VStack>
@@ -17,9 +20,7 @@ function CatalogCard({ catalog }: { catalog: Catalog }) {
 export default function Page() {
   const catalogs = Root.links
     .filter(link => link.rel == "child")
-    .map(link => {
-      return getCatalog("/catalog.json", link.href);
-    })
+    .map(link => use(import("../catalog/stac" + link.href.substring(1))))
     .sort((a, b) => b["heystac:stars"] - a["heystac:stars"])
     .map(catalog => (
       <CatalogCard catalog={catalog} key={catalog.id}></CatalogCard>

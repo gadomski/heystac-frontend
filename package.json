@@ -9,9 +9,6 @@
     "lint": "prettier app -c && next lint",
     "prepare": "husky"
   },
-  "exports": {
-    "@stac/*.json": "./app/stac/*.json"
-  },
   "dependencies": {
     "@chakra-ui/react": "^3.1.1",
     "@devseed-ui/collecticons-react": "^3.0.3",
