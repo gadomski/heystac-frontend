@@ -3,19 +3,26 @@ import {
   AccordionItemContent,
   AccordionItemTrigger,
   AccordionRoot,
+  Button,
   DataListItem,
   DataListItemLabel,
   DataListItemValue,
   DataListRoot,
   Heading,
   HStack,
+  Link,
   SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { use } from "react";
 import Root from "../../../catalog/stac/catalog.json";
-import { IconBad, IconOk, IconWarning } from "../../components/icons";
+import {
+  IconBad,
+  IconExternalLink,
+  IconOk,
+  IconWarning,
+} from "../../components/icons";
 import Stars from "../../components/stars";
 import { InfoTip } from "../../components/toggle-tip";
 import { Catalog, Check, Collection, StacObject } from "../../stac";
@@ -39,19 +46,43 @@ export async function generateStaticParams() {
 }
 
 function Overview({ catalog }: { catalog: Catalog }) {
+  const canonicalLink = catalog.links.find(link => link.rel == "canonical");
+  let stacBrowserButton;
+  let apiButton;
+  if (canonicalLink && canonicalLink.href.startsWith("https://")) {
+    const href =
+      "https://radiantearth.github.io/stac-browser/#/external/" +
+      canonicalLink.href.substring(8);
+    stacBrowserButton = (
+      <Link href={href} target="_blank">
+        <Button colorPalette="teal">
+          STAC Browser <IconExternalLink></IconExternalLink>
+        </Button>
+      </Link>
+    );
+    apiButton = (
+      <Link href={canonicalLink.href} target="_blank">
+        <Button variant="subtle" color="grey">
+          API <IconExternalLink></IconExternalLink>
+        </Button>
+      </Link>
+    );
+  }
   return (
-    <div>
-      <Stack gap="1" mb="2">
+    <Stack gap="6">
+      <Stack gap="1">
         <Heading size="4xl">{catalog.title}</Heading>
-        <Heading size="lg" mb="2">
-          {catalog.description}
-        </Heading>
+        <Heading size="lg">{catalog.description}</Heading>
       </Stack>
       <Stack gap="1">
         <Stars stars={catalog["heystac:stars"]}></Stars>
         <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
       </Stack>
-    </div>
+      <HStack>
+        {stacBrowserButton}
+        {apiButton}
+      </HStack>
+    </Stack>
   );
 }
 
@@ -74,13 +105,17 @@ function CheckDetail({
   if (check.message) {
     infoTip = <InfoTip content={check.message}></InfoTip>;
   }
+  let type = stacObject.type;
+  if (type == "Feature") {
+    type = "Item";
+  }
   return (
     <DataListItem key={stacObject.id + check.name}>
       <DataListItemLabel>{check.name}</DataListItemLabel>
       <DataListItemValue>
         <HStack>
           {icon}
-          <Text>{stacObject.type}</Text>
+          <Text>{type}</Text>
           {infoTip}
         </HStack>
       </DataListItemValue>

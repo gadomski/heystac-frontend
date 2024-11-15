@@ -1,24 +1,31 @@
 import { Icon } from "@chakra-ui/react";
 import {
-  CollecticonSignDanger,
-  CollecticonTick,
-  CollecticonXmark,
+  CollecticonCircleExclamation,
+  CollecticonCircleTick,
+  CollecticonCircleXmark,
+  CollecticonExpandTopRight,
 } from "@devseed-ui/collecticons-react";
 
 export const IconOk = () => (
   <Icon color="green">
-    <CollecticonTick></CollecticonTick>
+    <CollecticonCircleTick></CollecticonCircleTick>
   </Icon>
 );
 
 export const IconWarning = () => (
   <Icon color="orange">
-    <CollecticonSignDanger></CollecticonSignDanger>
+    <CollecticonCircleExclamation></CollecticonCircleExclamation>
   </Icon>
 );
 
 export const IconBad = () => (
   <Icon color="red">
-    <CollecticonXmark></CollecticonXmark>
+    <CollecticonCircleXmark></CollecticonCircleXmark>
+  </Icon>
+);
+
+export const IconExternalLink = () => (
+  <Icon>
+    <CollecticonExpandTopRight></CollecticonExpandTopRight>
   </Icon>
 );
