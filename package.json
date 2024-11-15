@@ -13,17 +13,18 @@
     "@stac/*.json": "./app/stac/*.json"
   },
   "dependencies": {
-    "@devseed-ui/collecticons": "^4.1.0",
+    "@chakra-ui/react": "^3.1.1",
     "@devseed-ui/collecticons-react": "^3.0.3",
-    "@devseed-ui/theme-provider": "^4.1.0",
-    "@devseed-ui/typography": "^4.1.0",
+    "@emotion/react": "^11.13.3",
+    "lucide-react": "^0.459.0",
     "mapbox-gl": "^3.7.0",
     "maplibre-gl": "^4.7.1",
     "next": "15.0.1",
+    "next-themes": "^0.4.3",
     "react": "19.0.0-rc-69d4b800-20241021",
     "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "react-map-gl": "^7.1.7",
-    "styled-components": "^6.1.13"
+    "react-icons": "^5.3.0",
+    "react-map-gl": "^7.1.7"
   },
   "devDependencies": {
     "@types/node": "^22.8.1",
@@ -31,9 +32,7 @@
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
     "husky": "^9.1.6",
-    "postcss": "^8",
     "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.1",
     "typescript": "^5.6.3"
   }
 }
