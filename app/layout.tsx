@@ -1,24 +1,30 @@
-import "./open-sans.css";
-import "./globals.css";
-import DevseedUiThemeProvider from "./components/theme-provider";
-import Navbar from "./components/navbar";
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Header from "./header";
+import Provider from "./provider";
 
-export const metadata = {
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
   title: "heystac",
-  description: "A curated geospatial asset discovery experience™",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
+    <html className={inter.className} suppressHydrationWarning>
+      <head></head>
       <body>
-        {/* @ts-expect-error */}
-        <DevseedUiThemeProvider>
-          <div className="grid grid-rows-[auto,1fr] w-screen h-screen">
-            <Navbar></Navbar>
-            {children}
-          </div>
-        </DevseedUiThemeProvider>
+        <Provider>
+          <Header></Header>
+          <main>{children}</main>
+        </Provider>
       </body>
     </html>
   );

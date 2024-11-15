@@ -1,56 +1,44 @@
-import Link from "next/link";
-import { use } from "react";
-import { Rating, Stars } from "./components/stars";
-import { Heading, Lead, Subtitle } from "./components/typography";
-import Root from "./stac/catalog.json";
-import { Catalog, Link as StacLink } from "./types/Stac";
+import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import Root from "../catalog/stac/catalog.json";
+import Stars from "../components/stars";
+import { getCatalog } from "./actions";
+import { Catalog } from "./stac";
 
-function getCatalog({ link }: { link: StacLink }): Catalog {
-  return use(import("./stac/" + link["heystac:id"] + "/catalog.json"));
-}
-
-function CatalogListItem({ catalog }: { catalog: Catalog }) {
+function CatalogCard({ catalog }: { catalog: Catalog }) {
   return (
-    <li className="py-2" key={catalog.id}>
-      <Link href={"/catalogs/" + catalog.id}>{catalog.title}</Link>
-      <div className="text-slate-400 grid my-1 grid-cols-1 justify-items-center">
-        <div className="">
-          <Stars stars={catalog["heystac:stars"] || 0}></Stars>
-        </div>
-        <div>
-          <Rating stars={catalog["heystac:stars"] || 0}></Rating>
-        </div>
-      </div>
-    </li>
+    <VStack>
+      <Heading>{catalog.title}</Heading>
+      <Stars stars={catalog["heystac:stars"]}></Stars>
+      <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
+    </VStack>
   );
 }
 
-export default function Home() {
-  let catalogs = Root["links"]
-    .filter(link => link["rel"] == "child")
-    .map(link => getCatalog({ link }));
-  catalogs.sort(
-    (a, b) => (b["heystac:stars"] || 0) - (a["heystac:stars"] || 0)
-  );
-  let catalogListItems = catalogs.map(catalog => (
-    <CatalogListItem catalog={catalog} key={catalog.id}></CatalogListItem>
-  ));
+export default function Page() {
+  const catalogs = Root.links
+    .filter(link => link.rel == "child")
+    .map(link => {
+      return getCatalog("/catalog.json", link.href);
+    })
+    .sort((a, b) => b["heystac:stars"] - a["heystac:stars"])
+    .map(catalog => (
+      <CatalogCard catalog={catalog} key={catalog.id}></CatalogCard>
+    ));
   return (
-    <div className="h-full grid grid-cols-1 text-center content-center">
-      <div className="my-8">
-        <Heading className="py-2" size="jumbo">
+    <Box textAlign="center" pt="20vh">
+      <VStack gap="8">
+        <Heading size="4xl" letterSpacing="tight">
           heystac
         </Heading>
 
-        <Lead>A curated geospatial asset discovery experience™</Lead>
-      </div>
+        <Heading size="lg" letterSpacing="tight">
+          A curated geospatial asset discovery experience™
+        </Heading>
+      </VStack>
 
-      <div>
-        <Heading>Catalogs</Heading>
-        <Subtitle>A hand-picked list of quality STAC APIs</Subtitle>
-
-        <ul className="my-4">{catalogListItems}</ul>
-      </div>
-    </div>
+      <VStack pt="16" gap="8">
+        {catalogs}
+      </VStack>
+    </Box>
   );
 }
