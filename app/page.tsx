@@ -1,7 +1,7 @@
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
 import Root from "../catalog/stac/catalog.json";
-import Stars from "../components/stars";
 import { getCatalog } from "./actions";
+import Stars from "./components/stars";
 import { Catalog } from "./stac";
 
 function CatalogCard({ catalog }: { catalog: Catalog }) {

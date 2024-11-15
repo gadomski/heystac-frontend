@@ -1,5 +1,5 @@
 import { Box, ClientOnly, Skeleton } from "@chakra-ui/react";
-import { ColorModeToggle } from "../components/color-mode-toggle";
+import { ColorModeToggle } from "./components/color-mode-toggle";
 
 export default function Header() {
   return (
