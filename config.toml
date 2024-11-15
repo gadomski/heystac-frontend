@@ -1,4 +1,4 @@
-stac-path = "stac"
+stac-path = "catalog/stac"
 url = "https://www.gadom.ski/heystac"
 
 [root]

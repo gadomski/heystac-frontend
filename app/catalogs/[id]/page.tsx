@@ -182,11 +182,11 @@ function CollectionCheck({
         )
       )
       .flatMap(item =>
-        item.properties["heystac:checks"].map(check => (
+        item.properties["heystac:checks"]?.map(check => (
           <CheckDetail
             stacObject={item}
             check={check}
-            key={item.id + "-" + check.name}
+            key={"item-" + item.id + "-" + check.name}
           ></CheckDetail>
         ))
       )

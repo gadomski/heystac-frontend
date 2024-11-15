@@ -9,7 +9,7 @@ function CatalogCard({ catalog }: { catalog: Catalog }) {
   return (
     <VStack>
       <Heading>
-        <Link href={"/catalog/" + catalog.id}>{catalog.title}</Link>
+        <Link href={"/catalogs/" + catalog.id}>{catalog.title}</Link>
       </Heading>
       <Stars stars={catalog["heystac:stars"]}></Stars>
       <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
