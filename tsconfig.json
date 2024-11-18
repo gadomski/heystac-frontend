@@ -19,7 +19,14 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@actions": ["app/actions"],
+      "@components/*": ["app/components/*"],
+      "@stac/*": ["app/stac/*"],
+      "@stac-types": ["app/stac-types"]
+    },
+    "baseUrl": "."
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]

@@ -4,9 +4,8 @@ export interface Link {
 }
 
 export interface Check {
-  name: string;
-  rating: number;
-  total: number;
+  rule_id: string;
+  score: number;
   message?: string;
 }
 
@@ -27,19 +26,21 @@ export interface StacObject {
   assets: Assets;
 }
 
+export interface Rating {
+  stars: number;
+  checks: Check[];
+}
+
 export interface Catalog extends StacObject {
-  "heystac:stars": number;
-  "heystac:checks": Check[];
+  "heystac:rating": Rating;
 }
 export interface Collection extends StacObject {
-  "heystac:stars": number;
-  "heystac:checks": Check[];
+  "heystac:rating": Rating;
 }
 export interface Container extends StacObject {}
 
 export interface Properties {
-  "heystac:stars": number;
-  "heystac:checks": Check[];
+  "heystac:rating": Rating;
 }
 export interface Item extends StacObject {
   properties: Properties;

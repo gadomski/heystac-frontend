@@ -1,96 +1,68 @@
 from __future__ import annotations
 
-from typing import Any
+import abc
+from abc import ABC
+from typing import Any, Type
 
-import pystac.validation
-from pydantic import BaseModel, Field
-from pystac.errors import STACValidationError
+from pydantic import BaseModel, ConfigDict, Field
 
 from .link import Link
+from .rating import Rating
 
-STRUCTURAL_RELS = ["root", "parent", "child", "collection", "self"]
+STRUCTURAL_LINKS = ["self", "child", "parent", "root", "item"]
 
 
-class Check(BaseModel):
-    name: str
-    rating: int
-    total: int
-    message: str | None = Field(default=None)
+class StacObject(BaseModel, ABC):
+    """All the fields shared by STAC objects
+
+    We're very permissive so we can always deserialize.
+    """
+
+    model_config = ConfigDict(extra="allow")
+
+    type: str | None = Field(default=None)
+    stac_version: str = Field(default="1.0.0")
+    id: str
+    stac_extensions: list[str] = Field(default_factory=list)
+    links: list[Link] = Field(default_factory=list)
 
     @classmethod
-    def validate_core(cls, stac_dict: dict[str, Any]) -> Check:
-        rating = 1
-        message = None
-        try:
-            pystac.validation.validate_dict(stac_dict, extensions=[])
-        except STACValidationError as e:
-            rating = 0
-            message = str(e)
-            if len(message) > 100:
-                message = message[0:100] + "..."
-        return Check(name="validate-core", rating=rating, total=1, message=message)
+    def from_dict(cls: Type[StacObject], data: dict[str, Any]) -> StacObject:
+        from .catalog import Catalog
+        from .collection import Collection
+        from .item import Item
 
+        if type_ := data.get("type"):
+            if type_ == "Catalog":
+                return Catalog.model_validate(data)
+            elif type_ == "Collection":
+                return Collection.model_validate(data)
+            elif type_ == "Feature":
+                return Item.model_validate(data)
+            else:
+                raise ValueError(f"unknown type: {type_}")
+        else:
+            raise ValueError("no type set on STAC object")
 
-class StacObject(BaseModel):
-    links: list[Link]
-    rating: int | None = Field(
-        default=None,
-        alias="heystac:rating",
-    )
-    cumulative_rating: int | None = Field(
-        default=None,
-        alias="heystac:cumulative_rating",
-    )
-    total: int | None = Field(
-        default=None,
-        alias="heystac:total",
-    )
-    cumulative_total: int | None = Field(
-        default=None,
-        alias="heystac:cumulative_total",
-    )
-    stars: float | None = Field(
-        default=None,
-        alias="heystac:stars",
-    )
-    checks: list[Check] | None = Field(
-        default=None,
-        alias="heystac:checks",
-    )
-
-    def rate(self) -> None:
-        stac_dict = self.to_dict()
-        checks = [Check.validate_core(stac_dict)]
-        rating = 0
-        total = 0
-        for check in checks:
-            rating += check.rating
-            total += check.total
-        self.set_rating(rating, total, checks)
-
-    def set_rating(self, rating: int, total: int, checks: list[Check]) -> None:
-        self.rating = rating
-        self.total = total
-        self.stars = 5 * rating / total
-        self.checks = checks
-
-    def to_json(self) -> str:
-        return self.model_dump_json(indent=2, by_alias=True, exclude_none=True)
-
-    def to_dict(self) -> dict[str, Any]:
-        return self.model_dump(by_alias=True, exclude_none=True)
-
-    def child_links(self) -> list[Link]:
-        return [link for link in self.links if link.rel == "child"]
-
-    def items_link(self) -> Link | None:
-        return next((link for link in self.links if link.rel == "items"), None)
+    @abc.abstractmethod
+    def get_file_name(self) -> str: ...
 
     def remove_structural_links(self) -> None:
-        self._set_canonical_link()
-        self.links = [link for link in self.links if link.rel not in STRUCTURAL_RELS]
+        new_links = []
+        canonical_link = None
+        for link in self.links:
+            if link.rel == "self":
+                canonical_link = link.model_copy(update={"rel": "canonical"})
+            if link.rel not in STRUCTURAL_LINKS:
+                new_links.append(link)
+        self.links = new_links
+        if canonical_link:
+            self.links.append(canonical_link)
 
-    def _set_canonical_link(self) -> None:
-        self_link = next((link for link in self.links if link.rel == "self"), None)
-        if self_link:
-            self.links.append(self_link.model_copy(update={"rel": "canonical"}))
+    def set_link(self, link: Link) -> None:
+        links = [k for k in self.links if k.rel != link.rel]
+        links.append(link)
+        self.links = links
+
+    @abc.abstractmethod
+    def set_rating(self, rating: Rating) -> None: ...

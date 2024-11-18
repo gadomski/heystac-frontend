@@ -1,10 +1,17 @@
-from pydantic import ConfigDict, Field
+from pydantic import Field
 
+from .rating import Rating
 from .stac_object import StacObject
 
 
 class Collection(StacObject):
-    model_config = ConfigDict(extra="allow")
+    """A STAC collection"""
 
-    type_: str = Field(alias="type", default="Collection", frozen=True)
-    id: str
+    type: str = Field(default="Collection")
+    rating: Rating | None = Field(default=None, alias="heystac:rating")
+
+    def get_file_name(self) -> str:
+        return "collection.json"
+
+    def set_rating(self, rating: Rating) -> None:
+        self.rating = rating

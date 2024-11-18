@@ -1,27 +1,35 @@
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import Stars from "@components/stars";
+import { Catalog } from "@stac-types";
+import Root from "@stac/catalog.json";
 import Link from "next/link";
-import { use } from "react";
-import Root from "../catalog/stac/catalog.json";
-import Stars from "./components/stars";
-import { Catalog } from "./stac";
 
 function CatalogCard({ catalog }: { catalog: Catalog }) {
+  const rating = catalog["heystac:rating"];
   return (
     <VStack>
       <Heading>
-        <Link href={"/catalogs/" + catalog.id}>{catalog.title}</Link>
+        <Link href={"./catalogs/" + catalog.id}>{catalog.title}</Link>
       </Heading>
-      <Stars stars={catalog["heystac:stars"]}></Stars>
-      <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
+      <Stars stars={rating.stars}></Stars>
+      <Text>{rating.stars.toFixed(1)} / 5.0</Text>
     </VStack>
   );
 }
 
-export default function Page() {
-  const catalogs = Root.links
-    .filter(link => link.rel == "child")
-    .map(link => use(import("../catalog/stac" + link.href.substring(1))))
-    .sort((a, b) => b["heystac:stars"] - a["heystac:stars"])
+async function getCatalogs(): Promise<Catalog[]> {
+  return await Promise.all(
+    Root.links
+      .filter(link => link.rel == "child")
+      .map(async link => {
+        return await import("./stac" + link.href.substring(1));
+      })
+  );
+}
+
+export default async function Page() {
+  const catalogs = (await getCatalogs())
+    .sort((a, b) => b["heystac:rating"].stars - a["heystac:rating"].stars)
     .map(catalog => (
       <CatalogCard catalog={catalog} key={catalog.id}></CatalogCard>
     ));

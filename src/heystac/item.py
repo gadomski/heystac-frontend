@@ -1,37 +1,36 @@
+from __future__ import annotations
+
+import datetime
+
 from pydantic import BaseModel, ConfigDict, Field
 
-from .stac_object import Check, StacObject
+from .rating import Rating
+from .stac_object import StacObject
 
 
 class Properties(BaseModel):
+    """Item properties"""
+
     model_config = ConfigDict(extra="allow")
 
-    rating: int | None = Field(
-        default=None,
-        alias="heystac:rating",
+    dt: datetime.datetime | None = Field(
+        alias="datetime", default_factory=datetime.datetime.now
     )
-    total: int | None = Field(
-        default=None,
-        alias="heystac:total",
-    )
-    stars: float | None = Field(
-        default=None,
-        alias="heystac:stars",
-    )
-    checks: list[Check] | None = Field(
-        default=None,
-        alias="heystac:checks",
-    )
+    rating: Rating | None = Field(default=None, alias="heystac:rating")
 
 
 class Item(StacObject):
-    model_config = ConfigDict(extra="allow")
+    """A STAC item"""
 
-    id: str
-    properties: Properties
+    type: str = Field(default="Feature")
+    properties: Properties = Field(default_factory=Properties)
 
-    def set_rating(self, rating: int, total: int, checks: list[Check]) -> None:
+    def get_file_name(self) -> str:
+        return self.id.replace("/", "_") + ".json"
+
+    def set_rating(self, rating: Rating) -> None:
         self.properties.rating = rating
-        self.properties.total = total
-        self.properties.stars = 5 * rating / total
-        self.properties.checks = checks
+
+
+class ItemCollection(BaseModel):
+    features: list[Item]

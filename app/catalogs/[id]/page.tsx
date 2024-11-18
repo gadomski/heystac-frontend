@@ -1,260 +1,148 @@
 import {
-  AccordionItem,
-  AccordionItemContent,
-  AccordionItemTrigger,
-  AccordionRoot,
-  BreadcrumbCurrentLink,
-  BreadcrumbLink,
-  BreadcrumbRoot,
-  BreadcrumbSeparator,
-  Button,
-  DataListItem,
-  DataListItemLabel,
-  DataListItemValue,
-  DataListRoot,
+  Link as ChakraLink,
   Heading,
   HStack,
-  Link,
   SimpleGrid,
   Stack,
+  Table,
   Text,
 } from "@chakra-ui/react";
-import { use } from "react";
-import Root from "../../../catalog/stac/catalog.json";
-import {
-  IconBad,
-  IconExternalLink,
-  IconOk,
-  IconWarning,
-} from "../../components/icons";
-import Stars from "../../components/stars";
-import StatusChecker from "../../components/status-checker";
-import { InfoTip } from "../../components/toggle-tip";
-import { Catalog, Check, Collection, StacObject } from "../../stac";
+import ApiStatus from "@components/api-status";
+import { ButtonApi, ButtonStacBrowser } from "@components/buttons";
+import Stars from "@components/stars";
+import { Catalog, Collection, Link } from "@stac-types";
+import Root from "@stac/catalog.json";
+import { getCanonicalLink } from "app/actions";
+import NextLink from "next/link";
+import { ReactNode } from "react";
 
 type Params = {
   id: string;
 };
+
+async function getCatalog(id: string): Promise<Catalog> {
+  return await import("../../stac/" + id + "/catalog.json");
+}
+
+async function getCatalogFromLink(link: Link): Promise<Catalog> {
+  return await import("../../stac" + link.href.substring(1));
+}
+
+async function getCollections(catalog: Catalog): Promise<Collection[]> {
+  return await Promise.all(
+    await catalog.links
+      .filter(link => link.rel == "child")
+      .map(async link => {
+        return await import(
+          "../../stac/" + catalog.id + link.href.substring(1)
+        );
+      })
+  );
+}
 
 export async function generateStaticParams() {
   let params: Params[] = Array();
   for (let index = 0; index < Root.links.length; index++) {
     const link = Root.links[index];
     if (link.rel == "child") {
-      const catalog: Catalog = await import(
-        "../../../catalog/stac" + link.href.substring(1)
-      );
+      const catalog: Catalog = await getCatalogFromLink(link);
       params.push({ id: catalog.id });
     }
   }
   return params;
 }
 
-function Overview({ catalog }: { catalog: Catalog }) {
-  const canonicalLink = catalog.links.find(link => link.rel == "canonical");
-  let stacBrowserButton;
-  let apiButton;
-  let statusChecker;
-  if (canonicalLink && canonicalLink.href.startsWith("https://")) {
-    const href =
-      "https://radiantearth.github.io/stac-browser/#/external/" +
-      canonicalLink.href.substring(8);
-    stacBrowserButton = (
-      <Link href={href} target="_blank">
-        <Button colorPalette="teal">
-          STAC Browser <IconExternalLink></IconExternalLink>
-        </Button>
-      </Link>
-    );
-    apiButton = (
-      <Link href={canonicalLink.href} target="_blank">
-        <Button variant="subtle" color="grey">
-          API <IconExternalLink></IconExternalLink>
-        </Button>
-      </Link>
-    );
-    statusChecker = <StatusChecker href={canonicalLink.href}></StatusChecker>;
-  } else {
-    throw "Mis-configured app, no canonical link";
-  }
-
-  return (
-    <Stack gap="8">
-      <BreadcrumbRoot size="sm">
-        <BreadcrumbLink asChild>
-          <Link href="..">heystac</Link>
-        </BreadcrumbLink>
-        <BreadcrumbSeparator as="span" mx="2">
-          /
-        </BreadcrumbSeparator>
-        <BreadcrumbCurrentLink>{catalog.id}</BreadcrumbCurrentLink>
-      </BreadcrumbRoot>
-      <Stack gap="1">
-        <Heading size="md" color="grey">
-          Catalog
-        </Heading>
-        <Heading size="4xl">{catalog.title}</Heading>
-        <Heading size="lg">{catalog.description}</Heading>
-      </Stack>
-      <Stack gap="2">
-        <Heading size="md" color="grey">
-          Rating
-        </Heading>
-        <Stars stars={catalog["heystac:stars"]}></Stars>
-        <Text>{catalog["heystac:stars"].toFixed(1)} / 5.0</Text>
-      </Stack>
-      <Stack gap="2">
-        <Heading size="md" color="grey">
-          Status
-        </Heading>
-        <HStack>{statusChecker}</HStack>
-      </Stack>
-      <Stack>
-        <Heading size="md" color="grey">
-          External links
-        </Heading>
-        <HStack>
-          {stacBrowserButton}
-          {apiButton}
-        </HStack>
-      </Stack>
-    </Stack>
-  );
-}
-
-function CheckDetail({
-  stacObject,
-  check,
+function Section({
+  heading,
+  children,
 }: {
-  stacObject: StacObject;
-  check: Check;
+  heading: string;
+  children: ReactNode;
 }) {
-  let icon;
-  if (check.rating == check.total) {
-    icon = <IconOk></IconOk>;
-  } else if (check.rating > 0) {
-    icon = <IconWarning></IconWarning>;
-  } else {
-    icon = <IconBad></IconBad>;
-  }
-  let infoTip;
-  if (check.message) {
-    infoTip = <InfoTip content={check.message}></InfoTip>;
-  }
-  let type = stacObject.type;
-  if (type == "Feature") {
-    type = "Item";
-  }
   return (
-    <DataListItem key={stacObject.id + check.name}>
-      <DataListItemLabel>{check.name}</DataListItemLabel>
-      <DataListItemValue>
-        <HStack>
-          {icon}
-          <Text>{type}</Text>
-          {infoTip}
-        </HStack>
-      </DataListItemValue>
-    </DataListItem>
-  );
-}
-
-function CollectionCheck({
-  catalog,
-  collection,
-}: {
-  catalog: Catalog;
-  collection: Collection;
-}) {
-  let icon = <IconOk></IconOk>;
-  if (collection["heystac:stars"] <= 4) {
-    icon = <IconWarning></IconWarning>;
-  } else if (collection["heystac:stars"] <= 2) {
-    icon = <IconBad></IconBad>;
-  }
-  let checks = collection["heystac:checks"].map(check => (
-    <CheckDetail
-      stacObject={collection}
-      check={check}
-      key={collection.id + "-" + check.name}
-    ></CheckDetail>
-  ));
-  checks.push(
-    ...collection.links
-      .filter(link => link.rel == "item")
-      .map(link =>
-        use(
-          import(
-            "../../../catalog/stac/" +
-              catalog.id +
-              "/" +
-              collection.id +
-              link.href.substring(1)
-          )
-        )
-      )
-      .flatMap(item =>
-        item.properties["heystac:checks"]?.map(check => (
-          <CheckDetail
-            stacObject={item}
-            check={check}
-            key={"item-" + item.id + "-" + check.name}
-          ></CheckDetail>
-        ))
-      )
-  );
-  return (
-    <AccordionItem key={collection.id} value={collection.id}>
-      <AccordionItemTrigger>
-        {icon}
-        <Text>{collection.id}</Text>
-        <Text color="grey">{collection["heystac:stars"].toFixed(1)}</Text>
-      </AccordionItemTrigger>
-      <AccordionItemContent>
-        <DataListRoot size="sm" orientation="horizontal" my="4">
-          {checks}
-        </DataListRoot>
-      </AccordionItemContent>
-    </AccordionItem>
-  );
-}
-
-function Checks({ catalog }: { catalog: Catalog }) {
-  const collections: Collection[] = catalog.links
-    .filter(link => link.rel == "child")
-    .map(link =>
-      use(
-        import("../../../catalog/stac/" + catalog.id + link.href.substring(1))
-      )
-    );
-  collections.sort((a, b) => b["heystac:stars"] - a["heystac:stars"]);
-  const collectionChecks = collections.map(collection => (
-    <CollectionCheck
-      catalog={catalog}
-      collection={collection}
-      key={collection.id}
-    ></CollectionCheck>
-  ));
-
-  return (
-    <Stack>
-      <Heading size="xl">Collections</Heading>
-
-      <AccordionRoot size="sm">{collectionChecks}</AccordionRoot>
+    <Stack my="4">
+      <Heading size="sm" color="grey">
+        {heading}
+      </Heading>
+      {children}
     </Stack>
   );
 }
 
 export default async function Page({ params }) {
   const { id } = await params;
-  const catalog: Catalog = await import(
-    "../../../catalog/stac/" + id + "/catalog.json"
+  const catalog = await getCatalog(id);
+  const canonicalLink = getCanonicalLink(catalog);
+  const collections = (await getCollections(catalog)).sort(
+    (a, b) => b["heystac:rating"].stars - a["heystac:rating"].stars
   );
   return (
-    <SimpleGrid pt="8" gap="12" mx="8" columns={2}>
-      <Overview catalog={catalog}></Overview>
+    <SimpleGrid minChildWidth="md" m="8" gap="8">
+      <Stack>
+        <Section heading="Catalog">
+          <Heading size="4xl">{catalog.title}</Heading>
+          <Text>{catalog.description}</Text>
+          <HStack>
+            <Stars stars={catalog["heystac:rating"].stars}></Stars>
+            {catalog["heystac:rating"].stars.toFixed(1)}
+          </HStack>
+        </Section>
 
-      <Checks catalog={catalog}></Checks>
+        <Section heading="Status">
+          {canonicalLink && (
+            <HStack>
+              <ApiStatus link={canonicalLink}></ApiStatus>
+              <Text fontSize="sm" color="gray">
+                {canonicalLink.href}
+              </Text>
+            </HStack>
+          )}
+        </Section>
+
+        <Section heading="External links">
+          {canonicalLink && (
+            <HStack>
+              <ButtonStacBrowser link={canonicalLink}></ButtonStacBrowser>
+              <ButtonApi link={canonicalLink}></ButtonApi>
+            </HStack>
+          )}
+        </Section>
+      </Stack>
+
+      <Stack>
+        <Section heading="Collections">
+          {collections.length} collections
+          <Table.Root size="sm" stickyHeader>
+            <Table.Header>
+              <Table.Row>
+                <Table.ColumnHeader>Stars</Table.ColumnHeader>
+                <Table.ColumnHeader>ID</Table.ColumnHeader>
+              </Table.Row>
+            </Table.Header>
+            <Table.Body>
+              {collections.map(collection => (
+                <Table.Row key={collection.id}>
+                  <Table.Cell>
+                    <HStack>
+                      <Stars stars={collection["heystac:rating"].stars}></Stars>
+                      {collection["heystac:rating"].stars.toFixed(1)}
+                    </HStack>
+                  </Table.Cell>
+                  <Table.Cell>
+                    <ChakraLink asChild>
+                      <NextLink
+                        href={catalog.id + "/collections/" + collection.id}
+                      >
+                        {collection.id}
+                      </NextLink>
+                    </ChakraLink>
+                  </Table.Cell>
+                </Table.Row>
+              ))}
+            </Table.Body>
+          </Table.Root>
+        </Section>
+      </Stack>
     </SimpleGrid>
   );
 }

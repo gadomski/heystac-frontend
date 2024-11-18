@@ -1,0 +1,59 @@
+[catalog]
+path = "catalog/stac"
+
+[root]
+id = "heystac"
+title = "heystac"
+description = "A curated geospatial asset discovery experience™\n\nEach collection has a single item, fetched regularly when we crawl the APIs."
+created = "2024-11-08T08:12:00-07:00"
+license = "MIT"
+providers = [
+    { name = "Pete Gadomski", roles = [
+        "licensor",
+        "producer",
+        "processor",
+    ], url = "https://www.gadom.ski/" },
+]
+
+[catalogs.microsoft-pc]
+href = "https://planetarycomputer.microsoft.com/api/stac/v1"
+title = "Microsoft Planetary Computer"
+
+[catalogs.earth-search-aws]
+href = "https://earth-search.aws.element84.com/v1"
+title = "Earth Search by Element 84"
+
+[catalogs.usgs-landsat]
+href = "https://landsatlook.usgs.gov/stac-server"
+title = "USGS Landsat"
+
+[weights]
+high = 8
+medium = 2
+low = 1
+
+[rules.validate-core]
+# TODO can we use the docstring for the description?
+description = "Validate the STAC object against its core json-schema"
+importance = "high"
+function = "heystac.rules:validate_core"
+
+[rules.validate-geometry]
+description = "Validate item geometries"
+importance = "high"
+function = "heystac.rules:validate_geometry"
+
+# [rules.links]
+# description = "Check that all http and https links are accessible"
+# importance = "medium"
+# function = "heystac.rules:links"
+
+[rules.validate-extensions]
+description = "Validate the STAC object against all it's extension schemas"
+importance = "medium"
+function = "heystac.rules:validate_extensions"
+
+[rules.version]
+description = "Ensure the STAC version is \"modern\""
+importance = "medium"
+function = "heystac.rules:version"
