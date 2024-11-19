@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "./header";
+import Navbar from "./navbar";
 import Provider from "./provider";
 
 const inter = Inter({
@@ -22,7 +22,7 @@ export default function RootLayout({
       <head></head>
       <body>
         <Provider>
-          <Header></Header>
+          <Navbar></Navbar>
           <main>{children}</main>
         </Provider>
       </body>
