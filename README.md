@@ -4,7 +4,7 @@
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/gadomski/heystac/pages.yaml?style=for-the-badge&label=pages)](https://github.com/gadomski/heystac/actions/workflows/pages.yaml)
 
 > [!WARNING]
-> <https://gadom.ski/heystac> is a Proof-of-Concept and not intended to be used as a Real Website™ (yet). The backend **heystac** command-line utility _is_ fit-for-purpose.
+> <https://gadom.ski/heystac> is a Proof-of-Concept and not intended to be used as a Real Website™ (yet). The backend [Python command-line utility (CLI)](./README-python.md) _is_ fit-for-purpose.
 
 A curated geospatial asset discovery experience™.
 **heystac** lives on [Github Pages](https://github.com/gadomski/heystac/deployments/github-pages) and has no other infrastructure.
