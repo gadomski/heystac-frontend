@@ -1,15 +1,15 @@
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { LinkCatalog } from "@components/links";
 import Stars from "@components/stars";
 import { Catalog } from "@stac-types";
 import Root from "@stac/catalog.json";
-import Link from "next/link";
 
 function CatalogCard({ catalog }: { catalog: Catalog }) {
   const rating = catalog["heystac:rating"];
   return (
     <VStack>
       <Heading>
-        <Link href={"./catalogs/" + catalog.id}>{catalog.title}</Link>
+        <LinkCatalog catalog={catalog}>{catalog.title}</LinkCatalog>
       </Heading>
       <Stars stars={rating.stars}></Stars>
       <Text>{rating.stars.toFixed(1)} / 5.0</Text>
