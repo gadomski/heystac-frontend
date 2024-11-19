@@ -95,7 +95,7 @@ The item file names are generated from the item ID, with all `/` characters repl
 If you want to customize anything, such as the importance weights or the rule descriptions, save the default configuration to a file called `heystac.toml`:
 
 ```shell
-heystac config > heystac.tomml
+heystac config > heystac.toml
 ```
 
 You can then edit that file to your heart's content.
