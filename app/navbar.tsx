@@ -6,6 +6,7 @@ import {
   BreadcrumbLink,
   BreadcrumbRoot,
 } from "@components/breadcrumb";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ColorModeToggle } from "./components/color-mode-toggle";
 
@@ -15,13 +16,17 @@ function getBreadcrumbs() {
     return <BreadcrumbCurrentLink>heystac</BreadcrumbCurrentLink>;
   } else if (parts.length == 3 && parts[1] == "catalogs") {
     return [
-      <BreadcrumbLink href="/" key={0}>
-        heystac
+      <BreadcrumbLink key={0} asChild>
+        <Link href="/">heystac</Link>
       </BreadcrumbLink>,
       <BreadcrumbCurrentLink key={1}>{parts[2]}</BreadcrumbCurrentLink>,
     ];
   } else {
-    return <BreadcrumbLink href="/">heystac</BreadcrumbLink>;
+    return (
+      <BreadcrumbLink asChild>
+        <Link href="/">heystac</Link>
+      </BreadcrumbLink>
+    );
   }
 }
 
