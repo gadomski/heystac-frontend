@@ -5,7 +5,9 @@ from pathlib import Path
 
 import click
 import httpx
+import pystac.validation
 import tabulate
+import toml
 from click import Context
 
 from .check import Check
@@ -15,11 +17,22 @@ from .stac_object import StacObject
 
 
 @click.group()
+@click.option(
+    "-c",
+    "--config",
+    help="Path to a heystac configuration TOML. If not provided, config will be read from heystac.toml in the current directory",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+)
 @click.pass_context
-def cli(ctx: Context) -> None:
+def cli(ctx: Context, config: Path | None) -> None:
     """Crawl and rate STAC catalogs"""
     ctx.ensure_object(dict)
-    ctx.obj["config"] = Config()
+    if config:
+        with open(config) as f:
+            data = toml.load(f)
+        ctx.obj["config"] = Config.model_validate(data)
+    else:
+        ctx.obj["config"] = Config()
 
 
 @click.command()
@@ -121,9 +134,34 @@ def rate_catalog(ctx: Context, exclude: list[str]) -> None:
     node.write_to(config.catalog.path)
 
 
+@click.command
+@click.argument("href")
+def validate(href: str) -> None:
+    """Validate a STAC value with json-schema."""
+    url = urllib.parse.urlparse(href)
+    if url.scheme:
+        response = httpx.get(href)
+        response.raise_for_status()
+        data = response.json()
+    else:
+        with open(href) as f:
+            data = json.load(f)
+    pystac.validation.validate_dict(data)
+
+
+@click.command
+@click.pass_context
+def config(ctx: Context) -> None:
+    """Print the current configuration to standard output."""
+    config: Config = ctx.obj["config"]
+    toml.dump(json.loads(config.model_dump_json()), sys.stdout)
+
+
 cli.add_command(crawl)
 cli.add_command(rate)
 cli.add_command(rate_catalog)
+cli.add_command(validate)
+cli.add_command(config)
 
 if __name__ == "__main__":
     cli()
