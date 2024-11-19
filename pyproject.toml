@@ -56,3 +56,16 @@ ignore_missing_imports = true
 
 [tool.ruff.lint]
 extend-select = ["I"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "app/*",
+    ".husky/*",
+    ".eslintrc.json",
+    ".gitmodules",
+    "next.config.ts",
+    "package.json",
+    "tsconfig.json",
+    "yarn.lock",
+    "catalog/*",
+]
