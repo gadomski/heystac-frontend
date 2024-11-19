@@ -1,6 +1,7 @@
 # heystac
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/gadomski/heystac/ci.yaml?style=for-the-badge)](https://github.com/gadomski/heystac/actions/workflows/ci.yaml)
+[![PyPI - Version](https://img.shields.io/pypi/v/heystac?style=for-the-badge)](https://pypi.org/project/heystac/)
 
 A command-line utility (CLI) for rating and crawling [STAC](https://stacspec.org/) catalogs.
 **heystac** generates the ratings for <https://www.gadom.ski/heystac/>.
