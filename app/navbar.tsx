@@ -1,9 +1,32 @@
 "use client";
 
-import { Box, ClientOnly, Flex, Skeleton, Text } from "@chakra-ui/react";
+import { Box, ClientOnly, Flex, Skeleton, Stack } from "@chakra-ui/react";
+import {
+  BreadcrumbCurrentLink,
+  BreadcrumbLink,
+  BreadcrumbRoot,
+} from "@components/breadcrumb";
+import { usePathname } from "next/navigation";
 import { ColorModeToggle } from "./components/color-mode-toggle";
 
+function getBreadcrumbs() {
+  const parts = usePathname().split("/");
+  if (parts.length == 2 && !parts[0] && !parts[1]) {
+    return <BreadcrumbCurrentLink>heystac</BreadcrumbCurrentLink>;
+  } else if (parts.length == 3 && parts[1] == "catalogs") {
+    return [
+      <BreadcrumbLink href="/" key={0}>
+        heystac
+      </BreadcrumbLink>,
+      <BreadcrumbCurrentLink key={1}>{parts[2]}</BreadcrumbCurrentLink>,
+    ];
+  } else {
+    return <BreadcrumbLink href="/">heystac</BreadcrumbLink>;
+  }
+}
+
 export default function Navbar() {
+  const breadcrumbs = getBreadcrumbs();
   return (
     <Box>
       <Flex
@@ -17,14 +40,14 @@ export default function Navbar() {
         borderColor={{ base: "gray.200", _dark: "gray.900" }}
         align={"center"}
       >
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text>heystac</Text>
+        <Flex flex={1} justify={"start"}>
+          <BreadcrumbRoot separator="/">{breadcrumbs}</BreadcrumbRoot>
         </Flex>
-        <Flex>
+        <Stack>
           <ClientOnly fallback={<Skeleton w="10" h="10" rounded="md" />}>
             <ColorModeToggle />
           </ClientOnly>
-        </Flex>
+        </Stack>
       </Flex>
     </Box>
   );
