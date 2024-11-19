@@ -1,5 +1,4 @@
 import {
-  Link as ChakraLink,
   Heading,
   HStack,
   SimpleGrid,
@@ -9,11 +8,11 @@ import {
 } from "@chakra-ui/react";
 import ApiStatus from "@components/api-status";
 import { ButtonApi, ButtonStacBrowser } from "@components/buttons";
+import { LinkCollection } from "@components/links";
 import Stars from "@components/stars";
 import { Catalog, Collection, Link } from "@stac-types";
 import Root from "@stac/catalog.json";
 import { getCanonicalLink } from "app/actions";
-import NextLink from "next/link";
 import { ReactNode } from "react";
 
 type Params = {
@@ -129,13 +128,9 @@ export default async function Page({ params }) {
                     </HStack>
                   </Table.Cell>
                   <Table.Cell>
-                    <ChakraLink asChild>
-                      <NextLink
-                        href={catalog.id + "/collections/" + collection.id}
-                      >
-                        {collection.id}
-                      </NextLink>
-                    </ChakraLink>
+                    <LinkCollection catalog={catalog} collection={collection}>
+                      {collection.id}
+                    </LinkCollection>
                   </Table.Cell>
                 </Table.Row>
               ))}
