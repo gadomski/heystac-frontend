@@ -17,7 +17,6 @@ import {
 import ApiStatus from "@components/api-status";
 import { ButtonApi, ButtonStacBrowser } from "@components/buttons";
 import { DataListItem } from "@components/data-list";
-import { LinkCollection } from "@components/links";
 import Stars from "@components/stars";
 import {
   Catalog,
@@ -213,11 +212,7 @@ export default async function Page({ params }) {
                       {collection["heystac:rating"].stars.toFixed(1)}
                     </HStack>
                   </Table.Cell>
-                  <Table.Cell>
-                    <LinkCollection catalog={catalog} collection={collection}>
-                      {collection.id}
-                    </LinkCollection>
-                  </Table.Cell>
+                  <Table.Cell>{collection.id}</Table.Cell>
                 </Table.Row>
               ))}
             </Table.Body>
