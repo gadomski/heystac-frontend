@@ -26,3 +26,7 @@ title = "Earth Search by Element 84"
 [catalogs.usgs-landsat]
 href = "https://landsatlook.usgs.gov/stac-server"
 title = "USGS Landsat"
+
+[catalogs.veda]
+href = "https://openveda.cloud/api/stac/"
+title = "NASA VEDA"

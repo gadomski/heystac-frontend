@@ -34,7 +34,7 @@ export default async function Page() {
       <CatalogCard catalog={catalog} key={catalog.id}></CatalogCard>
     ));
   return (
-    <Box textAlign="center" pt="20vh">
+    <Box textAlign="center" pt="10vh" pb="8">
       <VStack gap="8">
         <Heading size="4xl" letterSpacing="tight">
           heystac

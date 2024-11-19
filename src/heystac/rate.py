@@ -121,7 +121,7 @@ class Context:
                 error = f"{url} errored on GET: {str(e)}"
             else:
                 if response.is_error:
-                    error = f"{url} errored on GET ({response.status_code}): {response.text}"
+                    error = f"{url} errored on GET ({response.status_code})"
                 else:
                     error = None
             self._response_cache[url] = error
