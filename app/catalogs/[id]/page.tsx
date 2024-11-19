@@ -77,7 +77,7 @@ export default async function Page({ params }) {
     (a, b) => b["heystac:rating"].stars - a["heystac:rating"].stars
   );
   return (
-    <SimpleGrid minChildWidth="md" m="8" gap="8">
+    <SimpleGrid minChildWidth="md" p="8" gap="8">
       <Stack>
         <Section heading="Catalog">
           <Heading size="4xl">{catalog.title}</Heading>
