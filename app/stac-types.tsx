@@ -26,9 +26,30 @@ export interface StacObject {
   assets: Assets;
 }
 
+export interface Issues {
+  high: Check[];
+  medium: Check[];
+  low: Check[];
+}
+
+export type OwnedCheck = {
+  rule_id: string;
+  score: number;
+  message?: string;
+  catalog: Catalog;
+  collection?: Collection;
+  item?: Item;
+};
+
+export type OwnedIssues = {
+  high: OwnedCheck[];
+  medium: OwnedCheck[];
+  low: OwnedCheck[];
+};
+
 export interface Rating {
   stars: number;
-  checks: Check[];
+  issues: Issues;
 }
 
 export interface Catalog extends StacObject {
