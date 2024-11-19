@@ -4,7 +4,7 @@
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/gadomski/heystac/pages.yaml?style=for-the-badge&label=pages)](https://github.com/gadomski/heystac/actions/workflows/pages.yaml)
 
 > [!WARNING]
-> This is a work in progress, _and_ @gadomski is 🗑️ at front-end dev, so set your expectations low.
+> <https://gadom.ski/heystac> is a Proof-of-Concept and not intended to be used as a Real Website™ (yet). The backend **heystac** command-line utility _is_ fit-for-purpose.
 
 A curated geospatial asset discovery experience™.
 **heystac** lives on [Github Pages](https://github.com/gadomski/heystac/deployments/github-pages) and has no other infrastructure.
@@ -13,38 +13,29 @@ A curated geospatial asset discovery experience™.
 
 ## Developing
 
-Get [yarn](https://yarnpkg.com/).
+Get [yarn](https://yarnpkg.com/) and [uv](https://docs.astral.sh/uv/getting-started/installation/).
 Then:
 
 ```shell
-yarn install
-yarn dev
+scripts/setup
 ```
 
-### Frontend
-
-The frontend is built in [next.js](https://nextjs.org/), using [tailwind css](https://tailwindcss.com/) and [Development Seed's UI components](https://ui.ds.io).
-The frontend code lives in [app](./app/).
-
-### Backend
-
-We have a command-line interface (CLI), also called **heystac**, for generating pre-rendered content.
-The Python code for the CLI lives in [src](./src/).
-The CLI builds our STAC catalog, which lives in a submodule at [heystac-catalog](https://github.com/gadomski/heystac-catalog).
-
-If you want to build the catalog from scratch:
+To start the development server:
 
 ```shell
-heystac bootstrap
-heystac crawl all
-heystac rate
+scripts/start
 ```
 
-However, most of the time you'll just be (re)crawling catalogs and then rating them:
+To run all tests:
 
 ```shell
-heystac crawl my-new-catalog
-heystac rate
+scripts/test
+```
+
+To run all linters and format checkers:
+
+```shell
+scripts/lint
 ```
 
 ## License
