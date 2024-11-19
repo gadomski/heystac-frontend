@@ -118,7 +118,7 @@ class Context:
             try:
                 response = self._client.get(url)
             except Exception as e:
-                error = str(e)
+                error = f"{url} errored on GET: {str(e)}"
             else:
                 if response.is_error:
                     error = f"{url} errored on GET ({response.status_code}): {response.text}"

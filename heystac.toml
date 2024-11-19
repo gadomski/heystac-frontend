@@ -43,10 +43,10 @@ description = "Validate item geometries"
 importance = "high"
 function = "heystac.rules:validate_geometry"
 
-# [rules.links]
-# description = "Check that all http and https links are accessible"
-# importance = "medium"
-# function = "heystac.rules:links"
+[rules.links]
+description = "Check that all http and https links are accessible"
+importance = "medium"
+function = "heystac.rules:links"
 
 [rules.validate-extensions]
 description = "Validate the STAC object against all it's extension schemas"

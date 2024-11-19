@@ -9,7 +9,26 @@ from pystac.errors import STACValidationError
 from pystac.validation import JsonSchemaSTACValidator, RegisteredValidator
 
 from .rate import CheckResult, Context
-from .stac_object import STRUCTURAL_LINKS, StacObject
+from .stac_object import StacObject
+
+LINK_REL_TYPES_TO_CHECK = {
+    "about",
+    "alternate",
+    "archives",
+    "cite-as",
+    "describedby",
+    "docs",
+    "documentation",
+    "handbook",
+    "help",
+    "license",
+    "preview",
+    "related",
+    "server",
+    "source",
+    "thumbnail",
+    "via",
+}
 
 
 def validate_core(context: Context, stac_object: StacObject) -> CheckResult | None:
@@ -30,21 +49,20 @@ def validate_core(context: Context, stac_object: StacObject) -> CheckResult | No
 def links(context: Context, stac_object: StacObject) -> CheckResult | None:
     total = 0
     score = 0
-    message = ""
+    messages = []
     for link in stac_object.links:
         url = urllib.parse.urlparse(link.href)
-        if link.rel not in STRUCTURAL_LINKS and url.scheme in ("http", "https"):
+        if link.rel in LINK_REL_TYPES_TO_CHECK and url.scheme in ("http", "https"):
             total += 1
             error = context.get_error(link.href)
             if error:
-                message += error
-                message += "\n"
+                messages.append(str(error))
             else:
                 score += 1
     if total == 0:
         return None
     else:
-        return CheckResult(score=(score / total), message=message or None)
+        return CheckResult(score=(score / total), message="\n".join(messages) or None)
 
 
 def validate_geometry(context: Context, stac_object: StacObject) -> CheckResult | None:
