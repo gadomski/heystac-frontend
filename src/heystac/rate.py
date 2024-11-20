@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import importlib
-from enum import Enum
 
 import tqdm
 from httpx import Client
@@ -11,23 +10,12 @@ from typing_extensions import Annotated
 from .check import Check
 from .node import Node
 from .rating import Issues
+from .rule import Importance, Rule, Weights
 from .stac_object import StacObject
 
 
 class FunctionError(ImportError):
     """Raised when a function is mis-configured."""
-
-
-class Rule(BaseModel):
-    description: str
-    importance: Importance
-    function: str
-
-
-class Importance(str, Enum):
-    high = "high"
-    medium = "medium"
-    low = "low"
 
 
 class CheckResult(BaseModel):
@@ -126,12 +114,6 @@ class Context:
                     error = None
             self._response_cache[url] = error
             return error
-
-
-class Weights(BaseModel):
-    high: int
-    medium: int
-    low: int
 
 
 class Rating:

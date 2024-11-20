@@ -5,7 +5,8 @@ from .config import Config
 from .item import Item
 from .link import Link
 from .node import Node
-from .rate import Context, Importance
+from .rate import Context
+from .rule import Importance, Rule
 
 __all__ = [
     "Catalog",
@@ -16,5 +17,6 @@ __all__ = [
     "Item",
     "Link",
     "Node",
+    "Rule",
     "rules",
 ]

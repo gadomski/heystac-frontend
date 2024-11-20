@@ -52,8 +52,30 @@ export interface Rating {
   issues: Issues;
 }
 
+export enum Importance {
+  High = "high",
+  Medium = "medium",
+  Low = "low",
+}
+
+export interface Rule {
+  description: string;
+  importance: Importance;
+  function: string;
+}
+
+export interface Weights {
+  high: number;
+  medium: number;
+  low: number;
+}
+
 export interface Catalog extends StacObject {
   "heystac:rating": Rating;
+  "heystac:rules": {
+    [id: string]: Rule;
+  };
+  "heystac:weights": Weights;
 }
 export interface Collection extends StacObject {
   "heystac:rating": Rating;

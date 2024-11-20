@@ -157,11 +157,25 @@ def config(ctx: Context) -> None:
     toml.dump(json.loads(config.model_dump_json()), sys.stdout)
 
 
+@click.command
+@click.pass_context
+def rewrite_catalog(ctx: Context) -> None:
+    """Rewrite the entire catalog.
+
+    E.g., useful if you've updated a config value for the root catalog but don't
+    want to re-rate everything. Should be a no-op in most cases.
+    """
+    config: Config = ctx.obj["config"]
+    node = config.get_root_node()
+    node.write_to(config.catalog.path)
+
+
 cli.add_command(crawl)
 cli.add_command(rate)
 cli.add_command(rate_catalog)
 cli.add_command(validate)
 cli.add_command(config)
+cli.add_command(rewrite_catalog)
 
 if __name__ == "__main__":
     cli()

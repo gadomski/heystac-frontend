@@ -1,12 +1,19 @@
 "use client";
 
-import { Box, ClientOnly, Flex, Skeleton, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  ClientOnly,
+  Flex,
+  HStack,
+  Link as LinkChakra,
+  Skeleton,
+} from "@chakra-ui/react";
 import {
   BreadcrumbCurrentLink,
   BreadcrumbLink,
   BreadcrumbRoot,
 } from "@components/breadcrumb";
-import Link from "next/link";
+import LinkNext from "next/link";
 import { usePathname } from "next/navigation";
 import { ColorModeToggle } from "./components/color-mode-toggle";
 
@@ -17,14 +24,14 @@ function getBreadcrumbs() {
   } else if (parts.length == 3 && parts[1] == "catalogs") {
     return [
       <BreadcrumbLink key={0} asChild>
-        <Link href="/">heystac</Link>
+        <LinkNext href="/">heystac</LinkNext>
       </BreadcrumbLink>,
       <BreadcrumbCurrentLink key={1}>{parts[2]}</BreadcrumbCurrentLink>,
     ];
   } else {
     return (
       <BreadcrumbLink asChild>
-        <Link href="/">heystac</Link>
+        <LinkNext href="/">heystac</LinkNext>
       </BreadcrumbLink>
     );
   }
@@ -48,11 +55,14 @@ export default function Navbar() {
         <Flex flex={1} justify={"start"}>
           <BreadcrumbRoot separator="/">{breadcrumbs}</BreadcrumbRoot>
         </Flex>
-        <Stack>
+        <HStack>
           <ClientOnly fallback={<Skeleton w="10" h="10" rounded="md" />}>
             <ColorModeToggle />
           </ClientOnly>
-        </Stack>
+          <LinkChakra asChild>
+            <LinkNext href={"/rules"}>Rules</LinkNext>
+          </LinkChakra>
+        </HStack>
       </Flex>
     </Box>
   );

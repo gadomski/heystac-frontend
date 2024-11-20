@@ -12,7 +12,8 @@ from pydantic_settings import (
 
 from .catalog import Catalog
 from .node import Node
-from .rate import Rater, Rule, Weights
+from .rate import Rater
+from .rule import Rule, Weights
 
 
 class Config(BaseSettings):
@@ -39,9 +40,13 @@ class Config(BaseSettings):
 
     def get_root_node(self) -> Node:
         if (catalog_path := self.catalog.path / "catalog.json").exists():
-            return Node.read_from(catalog_path)
+            root = Node.read_from(catalog_path)
         else:
-            return Node(self.root)
+            root = Node(self.root)
+        assert isinstance(root.value, Catalog)
+        root.value.rules = self.rules
+        root.value.weights = self.weights
+        return root
 
     def get_rater(self, exclude: list[str] | None = None) -> Rater:
         if exclude:
@@ -76,22 +81,22 @@ def default_rules() -> dict[str, Rule]:
             function="heystac.rules:validate_core",
         ),
         "validate-geometry": Rule(
-            description="Validate item geometries",
+            description="Validate item geometries using shapely",
             importance="high",
             function="heystac.rules:validate_geometry",
         ),
         "links": Rule(
-            description="Check that all http and https links are accessible",
+            description="Check that http and https links are accessible",
             importance="medium",
             function="heystac.rules:links",
         ),
         "validate-extensions": Rule(
-            description="Validate the STAC object against all it's extension schemas",
+            description="Validate the STAC object against all of its extension schemas",
             importance="medium",
             function="heystac.rules:validate_extensions",
         ),
         "version": Rule(
-            description='Ensure the STAC version is "modern"',
+            description="Ensure the STAC version is v1.0.0 or v1.1.0",
             importance="medium",
             function="heystac.rules:version",
         ),
