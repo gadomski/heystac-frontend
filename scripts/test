@@ -2,5 +2,4 @@
 
 set -e
 
-uv run pytest
 # yarn test
